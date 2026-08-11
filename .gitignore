@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+data/
+cache/
+*.pt
+*.npz
+*.tar.gz
+*.log

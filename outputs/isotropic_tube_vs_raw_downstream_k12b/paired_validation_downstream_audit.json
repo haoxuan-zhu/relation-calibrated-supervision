@@ -1,0 +1,382 @@
+{
+  "budgets": {
+    "160": {
+      "seeds": {
+        "0": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.040238118181626,
+            "edge_auroc": 0.5666666666666667,
+            "shd": 10
+          },
+          "tube": {
+            "ccrl_total": 0.26981927982966103,
+            "edge_auroc": 0.6466666666666666,
+            "shd": 7
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.22958116164803502,
+            "edge_auroc": 0.07999999999999996,
+            "shd": -3.0
+          }
+        },
+        "3407": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.15093612895409267,
+            "edge_auroc": 0.5533333333333333,
+            "shd": 9
+          },
+          "tube": {
+            "ccrl_total": 0.2549079733689626,
+            "edge_auroc": 0.6733333333333333,
+            "shd": 5
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.10397184441486992,
+            "edge_auroc": 0.12,
+            "shd": -4.0
+          }
+        },
+        "42": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.10524975426991781,
+            "edge_auroc": 0.5933333333333334,
+            "shd": 8
+          },
+          "tube": {
+            "ccrl_total": 0.27579259808858236,
+            "edge_auroc": 0.66,
+            "shd": 7
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.17054284381866455,
+            "edge_auroc": 0.06666666666666665,
+            "shd": -1.0
+          }
+        }
+      },
+      "summary": {
+        "ccrl_total_delta": {
+          "maximum": 0.22958116164803502,
+          "mean": 0.16803194996052317,
+          "minimum": 0.10397184441486992,
+          "population_std": 0.05131051604314406
+        },
+        "edge_auroc_delta": {
+          "maximum": 0.12,
+          "mean": 0.08888888888888886,
+          "minimum": 0.06666666666666665,
+          "population_std": 0.022662308949301276,
+          "strict_positive_count": 3
+        },
+        "joint_graph_improvement_count": 3,
+        "shd_delta": {
+          "maximum": -1.0,
+          "mean": -2.6666666666666665,
+          "minimum": -4.0,
+          "nonpositive_count": 3,
+          "population_std": 1.247219128924647,
+          "strict_negative_count": 3
+        }
+      }
+    },
+    "20": {
+      "seeds": {
+        "0": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.08244025933742523,
+            "edge_auroc": 0.5666666666666667,
+            "shd": 9
+          },
+          "tube": {
+            "ccrl_total": 0.12784153993924458,
+            "edge_auroc": 0.5933333333333334,
+            "shd": 7
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.04540128060181935,
+            "edge_auroc": 0.026666666666666727,
+            "shd": -2.0
+          }
+        },
+        "3407": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.14164786831537882,
+            "edge_auroc": 0.58,
+            "shd": 9
+          },
+          "tube": {
+            "ccrl_total": 0.14329450925191242,
+            "edge_auroc": 0.5933333333333334,
+            "shd": 7
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.0016466409365336054,
+            "edge_auroc": 0.01333333333333342,
+            "shd": -2.0
+          }
+        },
+        "42": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.11599282503128051,
+            "edge_auroc": 0.58,
+            "shd": 8
+          },
+          "tube": {
+            "ccrl_total": 0.13978842933972677,
+            "edge_auroc": 0.5933333333333334,
+            "shd": 6
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.023795604308446253,
+            "edge_auroc": 0.01333333333333342,
+            "shd": -2.0
+          }
+        }
+      },
+      "summary": {
+        "ccrl_total_delta": {
+          "maximum": 0.04540128060181935,
+          "mean": 0.023614508615599734,
+          "minimum": 0.0016466409365336054,
+          "population_std": 0.01786321583211759
+        },
+        "edge_auroc_delta": {
+          "maximum": 0.026666666666666727,
+          "mean": 0.017777777777777854,
+          "minimum": 0.01333333333333342,
+          "population_std": 0.006285393610547077,
+          "strict_positive_count": 3
+        },
+        "joint_graph_improvement_count": 3,
+        "shd_delta": {
+          "maximum": -2.0,
+          "mean": -2.0,
+          "minimum": -2.0,
+          "nonpositive_count": 3,
+          "population_std": 0.0,
+          "strict_negative_count": 3
+        }
+      }
+    },
+    "40": {
+      "seeds": {
+        "0": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.038902719736099246,
+            "edge_auroc": 0.5533333333333333,
+            "shd": 10
+          },
+          "tube": {
+            "ccrl_total": 0.15595076934496563,
+            "edge_auroc": 0.6866666666666666,
+            "shd": 6
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.11704804960886639,
+            "edge_auroc": 0.1333333333333333,
+            "shd": -4.0
+          }
+        },
+        "3407": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.15161250527699788,
+            "edge_auroc": 0.5,
+            "shd": 10
+          },
+          "tube": {
+            "ccrl_total": 0.19421516609191894,
+            "edge_auroc": 0.6733333333333333,
+            "shd": 6
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.04260266081492106,
+            "edge_auroc": 0.17333333333333334,
+            "shd": -4.0
+          }
+        },
+        "42": {
+          "joint_graph_improvement": false,
+          "raw_representation": {
+            "ccrl_total": 0.044535955250263215,
+            "edge_auroc": 0.66,
+            "shd": 6
+          },
+          "tube": {
+            "ccrl_total": 0.16809733565648396,
+            "edge_auroc": 0.66,
+            "shd": 6
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.12356138040622075,
+            "edge_auroc": 0.0,
+            "shd": 0.0
+          }
+        }
+      },
+      "summary": {
+        "ccrl_total_delta": {
+          "maximum": 0.12356138040622075,
+          "mean": 0.0944040302766694,
+          "minimum": 0.04260266081492106,
+          "population_std": 0.036725488679329656
+        },
+        "edge_auroc_delta": {
+          "maximum": 0.17333333333333334,
+          "mean": 0.10222222222222221,
+          "minimum": 0.0,
+          "population_std": 0.07410369778014696,
+          "strict_positive_count": 2
+        },
+        "joint_graph_improvement_count": 2,
+        "shd_delta": {
+          "maximum": 0.0,
+          "mean": -2.6666666666666665,
+          "minimum": -4.0,
+          "nonpositive_count": 3,
+          "population_std": 1.8856180831641267,
+          "strict_negative_count": 2
+        }
+      }
+    },
+    "80": {
+      "seeds": {
+        "0": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.04078618162870407,
+            "edge_auroc": 0.58,
+            "shd": 10
+          },
+          "tube": {
+            "ccrl_total": 0.2308150074481964,
+            "edge_auroc": 0.6733333333333333,
+            "shd": 7
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.19002882581949235,
+            "edge_auroc": 0.09333333333333338,
+            "shd": -3.0
+          }
+        },
+        "3407": {
+          "joint_graph_improvement": true,
+          "raw_representation": {
+            "ccrl_total": 0.08719138709704082,
+            "edge_auroc": 0.54,
+            "shd": 8
+          },
+          "tube": {
+            "ccrl_total": 0.205681560754776,
+            "edge_auroc": 0.6733333333333333,
+            "shd": 7
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.11849017365773519,
+            "edge_auroc": 0.1333333333333333,
+            "shd": -1.0
+          }
+        },
+        "42": {
+          "joint_graph_improvement": false,
+          "raw_representation": {
+            "ccrl_total": 0.1086064929564794,
+            "edge_auroc": 0.6733333333333333,
+            "shd": 5
+          },
+          "tube": {
+            "ccrl_total": 0.2079941520690918,
+            "edge_auroc": 0.66,
+            "shd": 6
+          },
+          "tube_minus_raw_representation": {
+            "ccrl_total": 0.09938765911261241,
+            "edge_auroc": -0.013333333333333308,
+            "shd": 1.0
+          }
+        }
+      },
+      "summary": {
+        "ccrl_total_delta": {
+          "maximum": 0.19002882581949235,
+          "mean": 0.13596888619661332,
+          "minimum": 0.09938765911261241,
+          "population_std": 0.03901353884237839
+        },
+        "edge_auroc_delta": {
+          "maximum": 0.1333333333333333,
+          "mean": 0.07111111111111112,
+          "minimum": -0.013333333333333308,
+          "population_std": 0.06190394789859607,
+          "strict_positive_count": 2
+        },
+        "joint_graph_improvement_count": 2,
+        "shd_delta": {
+          "maximum": 1.0,
+          "mean": -1.0,
+          "minimum": -3.0,
+          "nonpositive_count": 2,
+          "population_std": 1.632993161855452,
+          "strict_negative_count": 2
+        }
+      }
+    }
+  },
+  "decision": {
+    "ccrl_used_as_success_gate": false,
+    "geometry_selection_reopened": false,
+    "semantic_k12_reopened": false,
+    "test_evaluated": false,
+    "verdict": "semantic_advantage_with_most_graph_pairs_supportive"
+  },
+  "inputs": {
+    "k11_aggregate": {
+      "path": ".\\outputs\\isotropic_relation_tube_budget_k11\\aggregate\\budget_validation_aggregate.json",
+      "sha256": "866ee265cba5db828dfda30e0b9264e12ee54c9a0fc9e74ae6c417a2b526c810"
+    },
+    "raw_comparator": {
+      "path": ".\\outputs\\raw_ridge_propagation_aggregate_v1\\raw\\raw_downstream_validation_comparator_k12b.json",
+      "sha256": "00e31267b1ba36536ba05049aee6bcb35f89013000ca6558a8f39253cfeb6d34"
+    }
+  },
+  "mode": "paired_four_budget_three_seed_validation_downstream_audit",
+  "new_test_evaluation": false,
+  "overall": {
+    "ccrl_total_delta": {
+      "maximum": 0.22958116164803502,
+      "mean": 0.1055048437623514,
+      "minimum": 0.0016466409365336054,
+      "population_std": 0.06612418848209986
+    },
+    "edge_auroc_delta": {
+      "maximum": 0.17333333333333334,
+      "mean": 0.07000000000000002,
+      "minimum": -0.013333333333333308,
+      "population_std": 0.059160797830996134
+    },
+    "edge_auroc_strict_positive_count": 10,
+    "joint_graph_improvement_count": 10,
+    "shd_delta": {
+      "maximum": 1.0,
+      "mean": -2.0833333333333335,
+      "minimum": -4.0,
+      "population_std": 1.552328000849763
+    },
+    "shd_nonpositive_count": 11,
+    "shd_strict_negative_count": 10
+  },
+  "protocol_version": "isotropic_tube_vs_raw_downstream_k12b_v1",
+  "semantic_validation_evaluated": true,
+  "source_files_sha256": {
+    "audit_isotropic_tube_vs_raw_downstream_k12b.py": "fea3644c56c7021ac891e55ce790ad72f0f3741a2b0a8553acf7c4c7fa7eddaf",
+    "extract_raw_ridge_downstream_comparator_k12b.py": "ee30dd578ca3746c9bdcd7ca84f11773bd51836c2f44ec95293eeb5b2efa2705"
+  },
+  "test_evaluated": false
+}

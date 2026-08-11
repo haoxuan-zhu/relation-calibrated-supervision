@@ -1,0 +1,62 @@
+protocol_version: resistance_spot_welding_relation_v1
+phase: validation
+
+data:
+  evaluation_split: validation
+  heldout_target_evaluated: false
+  csv_path: data/resistance_spot_welding_v3/Data_RSW.csv
+  csv_sha256: 917dac7251795bb333970529f3c5a4b6c780874af83c2f1b08c57a9627e4e027
+  split_path: data/resistance_spot_welding_v3/weld_product_split_v1.json
+  split_sha256: 14321d698a9038a58c914a0f826ef9326c3cb4ec3ef64d3f1509f704f0e0738e
+  features_path: data/resistance_spot_welding_v3/weld_dinov2_features.npz
+  features_sha256: 03da4aca967baed1d679443beedb4333f465bdb93d74b50e18753459689af23b
+  feature_manifest_path: data/resistance_spot_welding_v3/weld_dinov2_features_manifest.json
+  feature_manifest_sha256: 3759719f1a8ddda4dc5352b7931026dee1cd10c4f86a0b2e7b7350372d818673
+  image_manifest_path: data/resistance_spot_welding_v3/official_image_manifest.json
+  image_manifest_sha256: ff0c7477f90ab3631d566765e2fbdc1c2ea389873b63da4d604bf3aee4d8aabe
+
+task:
+  target: PullTest (N)
+  side_features:
+    - Pressure (PSI)
+    - Welding Time (ms)
+    - Angle (Deg)
+    - Thickness A median (mm)
+    - Thickness B median (mm)
+    - Force mean (N)
+    - Force min (N)
+    - Force max (N)
+    - Current mean (A)
+    - Current min (A)
+    - Current max (A)
+
+model:
+  frozen_encoder: dinov2-with-registers-base
+  frozen_encoder_revision: a1d738ccfa7ae170945f210395d99dde8adb1805
+  view_order: [rgb_front, rgb_back, infrared]
+  primary_modality: infrared
+  relation_ridge_alpha: 0.1
+  image_ridge_alpha:
+    rgb: 1.0
+    infrared: 0.1
+
+probe:
+  budgets: [20, 40, 80, 160]
+  seeds: [3407, 42, 0]
+  relation_derangement_seed_base: 20260805
+  bootstrap_seed_base: 20264300
+  bootstrap_replicates: 5000
+
+implementation:
+  files:
+    - path: src/relation_tube/welding.py
+      sha256: 64564ff86de1416dca03aea24c677c7b63e2a084c9c5d1b971f2fafb7509909b
+    - path: scripts/evaluate_resistance_spot_welding_relation_v1.py
+      sha256: 173a6c8910ef13e6e4db698f7141e151ab6ac692f3cbc666783aeaf75850ab7c
+    - path: scripts/prepare_resistance_spot_welding_split_v1.py
+      sha256: bdc307136ef26f7cdbc8229e161250023edc7ffed47118bc6de19c33abd74106
+    - path: scripts/extract_resistance_spot_welding_dinov2_v1.py
+      sha256: 89d2728a8696cbb7b7625e84972f5c2a6c779896ad920c6aad4cad90bbbaaafe
+
+output:
+  audit_json_path: data/resistance_spot_welding_v3/formal_k43/formal_validation_v1.json

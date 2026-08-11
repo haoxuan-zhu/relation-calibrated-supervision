@@ -1,0 +1,66 @@
+protocol_version: instrumented_slope_external_k31
+protocol_document: PROTOCOLS.md
+source_contract:
+  preextract_config: configs/config_instrumented_slope_external_k31_preextract.yaml
+  preextract_config_sha256: 18163bc2812bdf2029b3fe3e1af140930589bf3b975ad45ba58f39dec5f58042
+  metadata_audit: outputs/instrumented_slope_external_k31/metadata_audit.json
+  metadata_audit_sha256: 030bbd3dea192e5eee2017bdbeac530a67c492909f8d6d773fb0d7934b15b43b
+  neural_config: configs/config_instrumented_slope_neural_tube_k30.yaml
+  neural_config_sha256: feca94c56d84cf9c38b2852ce89cb0e8d5d69e7460dfb1acb4b016354dd16751
+  neural_validation_result: outputs/instrumented_slope_neural_tube_k30/validation_results.json
+  neural_validation_result_sha256: 353513f28dbf825cd786276b3d4831f12370de0bb43168260d2c145d8f0450d8
+dataset:
+  source_id: causalverse_image
+  split: slope
+  dataset_revision: dc6765d10ae80894034d643067ff212e33e500f7
+  parquet_revision: refs/convert/parquet
+  root: data/causalverse_image/slope_instrumented_external_k31
+  shards: [0005.parquet, 0012.parquet, 0014.parquet, 0003.parquet]
+  shard_contracts:
+    0005.parquet:
+      bytes: 993232887
+      sha256: 1592aa83212f853d183e8eb6d741c953541646fcba96917f4b9d0b401d59b0b3
+    0012.parquet:
+      bytes: 980581854
+      sha256: cc30b9c141f79d1b9c6e2c2631aad448e8f71cafaf4e2a8661d09af391e6a8e4
+    0014.parquet:
+      bytes: 984968846
+      sha256: eb5b225f9439f25d7c00d3a3fdb185bddb57defe28c9fe230decc01a4fd1445b
+    0003.parquet:
+      bytes: 978985832
+      sha256: fb7069392d3bb1bc528e81e8d5c5040ee76e57a57fed02624a56e6a3c683eb7e
+  selection:
+    universe: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+    permutation_seed: 20260804
+    frozen_permutation: [2, 7, 10, 6, 5, 12, 14, 3, 16, 13, 9, 15, 4, 1, 11, 8]
+    selected_rule: positions_five_through_eight_after_k22
+  latent_columns: [roughness, theta, v0, mu_1, mu_2, v1, l]
+  id_column: id
+  view_column: view
+  required_views: [0, 1, 2, 3]
+  incomplete_product_policy: drop_exact_ids_frozen_by_presemantic_metadata_audit
+  expected_incomplete_product_ids: [1764, 2941, 3529, 7647, 8235, 8823]
+backbone:
+  family: facebook/dinov2-with-registers-base
+  local_snapshot: artifacts/.cache/huggingface/hub/models--facebook--dinov2-with-registers-base/snapshots/a1d738ccfa7ae170945f210395d99dde8adb1805
+  frozen: true
+  image_size: 224
+  image_mean: [0.485, 0.456, 0.406]
+  image_std: [0.229, 0.224, 0.225]
+  feature_dim: 768
+evaluation:
+  seeds: [3407, 42, 0]
+  candidates:
+    - physical_center
+    - unbounded
+    - isotropic
+    - formula_from_unbounded_roughness
+    - nonlinear_curve_from_unbounded
+  bootstrap_repetitions: 2000
+  bootstrap_seed: 20260804
+  bootstrap_confidence: 0.95
+runtime:
+  python: artifacts/envs/context_residual_ad/bin/python
+  feature_cache: outputs/instrumented_slope_external_k31/features_dinov2_registers_base.npz
+  feature_cache_sha256: 939e4a438fadba94b2ba9e3fac3c51f8524b9264b2aacbc04b70fc818f90498a
+  output: outputs/instrumented_slope_external_k31/external_results.json

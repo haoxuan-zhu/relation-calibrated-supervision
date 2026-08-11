@@ -1,0 +1,295 @@
+{
+  "budget": 40,
+  "config_path": "./config_raw_ridge_propagation_v1a.yaml",
+  "config_sha256": "12022010923d08c199a009b8b3db72739f6f1bad62c3731b31a766b4e568f3f4",
+  "decision": {
+    "all_valid": true,
+    "checks": {
+      "leave_one_out_curve_complete": true,
+      "raw_coefficients_shape_exact": true,
+      "raw_design_shape_exact": true,
+      "raw_feature_scale_positive": true,
+      "raw_teacher_finite": true,
+      "raw_validation_finite": true,
+      "rgb_mean_finite": true,
+      "rgb_std_finite_positive": true,
+      "subset_hash_exact": true,
+      "subset_unique_exact": true
+    },
+    "performance_threshold_used": false
+  },
+  "mode": "teacher_audit_train_validation_only",
+  "normalization": {
+    "latent_mean": [
+      130.3249969482422,
+      127.92500305175781,
+      133.5500030517578,
+      -0.06193770095705986,
+      0.013499962165951729
+    ],
+    "latent_std": [
+      27.742013931274414,
+      20.35606575012207,
+      23.673770904541016,
+      17.909988403320312,
+      18.040651321411133
+    ]
+  },
+  "protocol_version": "raw_ridge_propagation_v1",
+  "subset": {
+    "budget": 40,
+    "expected_subset_sha256": "5345ec49fa3f372f489491f78af66711157afcb6aa91138c9caa124a1a7c7187",
+    "is_master_prefix": true,
+    "subset_rows": [
+      6807,
+      4968,
+      7614,
+      3154,
+      1759,
+      1579,
+      5799,
+      2535,
+      7825,
+      1490,
+      1889,
+      1623,
+      1056,
+      5732,
+      5061,
+      5139,
+      7332,
+      4907,
+      3261,
+      2436,
+      1448,
+      6785,
+      4542,
+      163,
+      2128,
+      703,
+      7817,
+      6327,
+      4970,
+      6454,
+      3353,
+      570,
+      6191,
+      4181,
+      3628,
+      3042,
+      174,
+      1997,
+      2725,
+      6588
+    ],
+    "subset_seed": 20260731,
+    "subset_sha256": "5345ec49fa3f372f489491f78af66711157afcb6aa91138c9caa124a1a7c7187",
+    "unique_rows": 40
+  },
+  "teachers": {
+    "empirical_coefficients": {
+      "alpha": 0.1,
+      "coefficients": [
+        [
+          0.5110784313725489,
+          0.5016666666666667,
+          0.5237254901960784
+        ],
+        [
+          0.10318713341462049,
+          0.014693166025295162,
+          0.004436075064059047
+        ],
+        [
+          0.03749432182358093,
+          0.1355171150773248,
+          -0.009937559687895538
+        ],
+        [
+          -0.02279111724820118,
+          -0.037967932045515615,
+          0.12337862973024553
+        ],
+        [
+          -0.0931965603637839,
+          -0.08353683202305531,
+          -0.0866041435516812
+        ]
+      ],
+      "feature_mean": [
+        0.21888664694393384,
+        0.3109354415594363,
+        0.4319132247625612,
+        0.8735508851706981
+      ],
+      "feature_scale": [
+        0.05146161734382454,
+        0.05661595709274135,
+        0.06707342845728391,
+        0.1735773390706986
+      ]
+    },
+    "empirical_fit": {
+      "alpha_candidates": [
+        0.0,
+        1e-06,
+        1e-05,
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "calibration_mse": 0.00044619471911430734,
+      "coefficient_count": 15,
+      "coefficient_shape": [
+        5,
+        3
+      ],
+      "coefficients_sha256": "73dbf6b7bdee9f559a1c6e0c6032f76d001f441fa9a7efe8e3afbf071f45b573",
+      "design_shape": [
+        40,
+        5
+      ],
+      "family": "raw_ridge_[m,tau]_to_rgb",
+      "fit_environment": "obs",
+      "label_rows": [
+        6807,
+        4968,
+        7614,
+        3154,
+        1759,
+        1579,
+        5799,
+        2535,
+        7825,
+        1490,
+        1889,
+        1623,
+        1056,
+        5732,
+        5061,
+        5139,
+        7332,
+        4907,
+        3261,
+        2436,
+        1448,
+        6785,
+        4542,
+        163,
+        2128,
+        703,
+        7817,
+        6327,
+        4970,
+        6454,
+        3353,
+        570,
+        6191,
+        4181,
+        3628,
+        3042,
+        174,
+        1997,
+        2725,
+        6588
+      ],
+      "leave_one_out_curve": [
+        {
+          "alpha": 0.0,
+          "leave_one_out_mse": 0.0006462148519393364
+        },
+        {
+          "alpha": 1e-06,
+          "leave_one_out_mse": 0.0006462147988747002
+        },
+        {
+          "alpha": 1e-05,
+          "leave_one_out_mse": 0.0006462143213118237
+        },
+        {
+          "alpha": 0.0001,
+          "leave_one_out_mse": 0.0006462095475502688
+        },
+        {
+          "alpha": 0.001,
+          "leave_one_out_mse": 0.0006461619965079988
+        },
+        {
+          "alpha": 0.01,
+          "leave_one_out_mse": 0.0006457049980639552
+        },
+        {
+          "alpha": 0.1,
+          "leave_one_out_mse": 0.0006428504628695747
+        },
+        {
+          "alpha": 1.0,
+          "leave_one_out_mse": 0.0007073943023636106
+        },
+        {
+          "alpha": 10.0,
+          "leave_one_out_mse": 0.002085271369398306
+        }
+      ],
+      "leave_one_out_mse": 0.0006428504628695747,
+      "selected_alpha": 0.1,
+      "selection_rule": "deterministic_leave_one_out_mse_ties_choose_larger_alpha",
+      "semantic_rows_read": 40,
+      "tau_source": "cos_squared_known_angle_difference",
+      "unique_label_rows": 40
+    },
+    "numerical_gate": {
+      "all_valid": true,
+      "checks": {
+        "leave_one_out_curve_complete": true,
+        "raw_coefficients_shape_exact": true,
+        "raw_design_shape_exact": true,
+        "raw_feature_scale_positive": true,
+        "raw_teacher_finite": true,
+        "raw_validation_finite": true
+      },
+      "performance_threshold_used": false
+    },
+    "physical_fit": {
+      "not_applicable": true,
+      "reason": "raw_ridge_only_protocol"
+    },
+    "post_fit_validation": {
+      "raw_ridge": {
+        "assignment": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "direct_correlation": [
+          0.9187508198940951,
+          0.950231880149854,
+          0.9661268828041234
+        ],
+        "direct_r2": [
+          0.8309306574974736,
+          0.8873376667103557,
+          0.9291984162466885
+        ],
+        "finite": true,
+        "hungarian_mcc": 0.9450365276160247,
+        "mae": 0.026135024678078118,
+        "mean_direct_correlation": 0.9450365276160242,
+        "mean_direct_r2": 0.8824889134848393
+      }
+    }
+  },
+  "test_evaluated": false
+}

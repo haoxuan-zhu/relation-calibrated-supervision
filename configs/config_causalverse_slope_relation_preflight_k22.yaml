@@ -1,0 +1,97 @@
+protocol_version: causalverse_slope_relation_preflight_k22
+protocol_document: PROTOCOLS.md
+dataset:
+  source_id: causalverse_image
+  split: slope
+  dataset_revision: dc6765d10ae80894034d643067ff212e33e500f7
+  parquet_revision: refs/convert/parquet
+  root: data/causalverse_image/slope_parquet_preflight_k22
+  shards: [0002.parquet, 0007.parquet, 0010.parquet, 0006.parquet]
+  shard_contracts:
+    0002.parquet:
+      bytes: 988250561
+      sha256: 52440765a66710cf6b639a5357e3ae1d2ce3e96c651e5726d574c41967c170f4
+    0007.parquet:
+      bytes: 986629421
+      sha256: e8d7ed1ec4f79965dbe2ed2b816f21e808f9e2882bbf0f32e6fb3d4d3d039971
+    0010.parquet:
+      bytes: 974933232
+      sha256: ba06082f4ef4a01a2b233958c30a974d3700870f89dd5257ebc6f8dfd09975bd
+    0006.parquet:
+      bytes: 993852352
+      sha256: 24ab79ca2239f37c391f8290491c83cd7a8d045dae8d3891d2b87799a626306a
+  selection:
+    schema_inspected_shards: [0]
+    universe: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+    permutation_seed: 20260804
+    frozen_permutation: [2, 7, 10, 6, 5, 12, 14, 3, 16, 13, 9, 15, 4, 1, 11, 8]
+    selected_rule: first_four
+  latent_columns: [roughness, theta, v0, mu_1, mu_2, v1, l]
+  id_column: id
+  view_column: view
+  required_views: [0, 1, 2, 3]
+  incomplete_product_policy: drop_exact_ids_before_split
+  expected_incomplete_product_ids: [1176, 1764, 3529, 5882, 6470]
+split:
+  id_permutation_seed: 20260731
+  train_fraction: 0.70
+  validation_fraction: 0.15
+  test_fraction: 0.15
+labels:
+  count: 40
+  id_permutation_seed: 20260732
+  normalization: k40_train_ids_only
+backbone:
+  family: facebook/dinov2-with-registers-base
+  local_snapshot: artifacts/.cache/huggingface/hub/models--facebook--dinov2-with-registers-base/snapshots/a1d738ccfa7ae170945f210395d99dde8adb1805
+  frozen: true
+  image_size: 224
+  image_mean: [0.485, 0.456, 0.406]
+  image_std: [0.229, 0.224, 0.225]
+  feature_dim: 768
+model:
+  hidden_dims: [512, 256]
+  output_dim: 7
+  normalization: layer_norm
+  activation: gelu
+conditions: [point, correct_relation, coefficient_permuted_relation]
+relation:
+  equations:
+    - mu_1_equals_a1_roughness_plus_b1
+    - mu_2_equals_a2_roughness_plus_b2
+    - v0_minus_v1_equals_c_mu_1
+    - v1_squared_equals_d_l_incline_term
+  fit: least_squares_k40
+  permutation: explicit_id_derangement_cycle_over_seeded_order
+  permutation_seed: 20260733
+  expected_parameters: [0.9, 0.1, 0.5, 0.1, 9.81, 19.62]
+  correct_parameter_max_abs_tolerance: 0.005
+  correct_label_mean_nrmse_max: 0.0001
+  loss: mean_smooth_l1_over_four_scaled_residuals
+training:
+  seeds: [3407]
+  epochs: 500
+  optimizer: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  full_batch_by_id: true
+  checkpoint_epoch: 500
+loss_weights:
+  view: 1.0
+  variance: 1.0
+  covariance: 0.04
+  point: 1.0
+  relation: 1.0
+  range: 0.001
+  range_zscore_limit: 6.0
+evaluation:
+  primary_indices: [3, 4, 5, 6]
+  free_indices: [0, 1, 2]
+  point_saturation_mean_correlation: 0.95
+  maximum_free_correlation_drop: 0.05
+runtime:
+  python: artifacts/envs/context_residual_ad/bin/python
+  cublas_workspace_config: ":4096:8"
+  feature_cache: outputs/causalverse_slope_relation_preflight_k22/features_dinov2_registers_base.npz
+  feature_cache_sha256: 3a5a1dfa876bdcb6db622f48cd8ce29167071c161064d5242d358c886dc7f88e
+  output_root: outputs/causalverse_slope_relation_preflight_k22

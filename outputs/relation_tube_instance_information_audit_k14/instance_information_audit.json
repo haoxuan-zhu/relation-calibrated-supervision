@@ -1,0 +1,2177 @@
+{
+  "config_path": "./config_relation_tube_instance_information_audit_k14.yaml",
+  "config_sha256": "5bff4c242adcfc28c4c910377bdfc66217b72d07b786a5906cc1e3b93eb82770",
+  "decision": {
+    "directional_counts": {
+      "fixed_anchor_visual_derangement": {
+        "output_full_affine_r2_positive_seeds": 3,
+        "residual_full_affine_r2_positive_seeds": 3
+      },
+      "projected_residual_reassignment": {
+        "output_full_affine_r2_positive_seeds": 3,
+        "residual_full_affine_r2_positive_seeds": 3
+      }
+    },
+    "test_evaluated": false,
+    "validity": {
+      "all_derangements_no_self": true,
+      "all_test_unread": true,
+      "all_upstream_reproduced": true
+    },
+    "verdict": "instance_specific_residual_signal_supported",
+    "visual_derangement_bootstrap_positive_counts": {
+      "output_full_affine": 3,
+      "residual_full_affine": 3
+    }
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "numpy": "1.26.4",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "mode": "frozen_k80_three_seed_validation_only_instance_information_audit",
+  "protocol_version": "relation_tube_instance_information_audit_k14_v1",
+  "results": {
+    "0": {
+      "bootstrap": {
+        "fixed_anchor_visual_derangement": {
+          "output_full_affine": {
+            "ci95_high": 0.5673737353757384,
+            "ci95_low": 0.48939394034536593,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.5285373619439283,
+            "replicates": 2000,
+            "seed": 20260804
+          },
+          "residual_full_affine": {
+            "ci95_high": 0.009342771715394639,
+            "ci95_low": 0.004847158050746863,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.0071097621813783025,
+            "replicates": 2000,
+            "seed": 20260805
+          }
+        },
+        "projected_residual_reassignment": {
+          "output_full_affine": {
+            "ci95_high": 0.5498153730801539,
+            "ci95_low": 0.4753957053606104,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.5148281509701846,
+            "replicates": 2000,
+            "seed": 20260806
+          },
+          "residual_full_affine": {
+            "ci95_high": 0.01134238743301933,
+            "ci95_low": 0.005892895474236643,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.008586621672159398,
+            "replicates": 2000,
+            "seed": 20260807
+          }
+        }
+      },
+      "deltas": {
+        "fixed_anchor_visual_derangement": {
+          "correct_minus_control_output_full_affine_r2": 0.46848646351972495,
+          "correct_minus_control_output_raw_correlation": 0.022070300502726736,
+          "correct_minus_control_residual_full_affine_r2": 0.06857833200350505
+        },
+        "projected_residual_reassignment": {
+          "correct_minus_control_output_full_affine_r2": 0.46702521134933067,
+          "correct_minus_control_output_raw_correlation": 0.03660689275795881,
+          "correct_minus_control_residual_full_affine_r2": 0.08436477580187977
+        }
+      },
+      "distribution": {
+        "correct_image": {
+          "boundary_active_fraction": 0.966,
+          "projected_l2_mean": 0.9442868232727051,
+          "projected_l2_p95": 0.952633261680603,
+          "projection_scale_mean": 0.4090958833694458,
+          "raw_score_mean": 92.31515502929688,
+          "raw_score_p95": 236.61195449829097
+        },
+        "fixed_anchor_visual_derangement": {
+          "boundary_active_fraction": 0.957,
+          "projected_l2_mean": 0.9423258304595947,
+          "projected_l2_p95": 0.9526333212852478,
+          "projection_scale_mean": 0.43575218319892883,
+          "raw_score_mean": 82.5135269165039,
+          "raw_score_p95": 223.31157836914056
+        },
+        "projected_residual_reassignment": {
+          "boundary_active_fraction": 0.966,
+          "projected_l2_mean": 0.9442868828773499,
+          "projected_l2_p95": 0.952633261680603,
+          "projection_scale_mean": 0.4090958833694458,
+          "raw_score_mean": 92.31515502929688,
+          "raw_score_p95": 236.61195449829097
+        }
+      },
+      "output_metrics": {
+        "center_only": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.9579375647801871,
+              0.9649161896798647,
+              0.963837125718526
+            ],
+            "mean_direct_abs_correlation": 0.9622302933928593,
+            "mean_r2": 0.861886268670673,
+            "mse": 0.17709526443082108,
+            "r2": [
+              0.8152072542695317,
+              0.8530728559785931,
+              0.9173786957638944
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.7442888548341512,
+              0.9232237979840842,
+              0.9330553749931281
+            ],
+            "mean_direct_abs_correlation": 0.8668560092704545,
+            "mean_r2": 0.7007081266280428,
+            "mse": 0.3419130957419824,
+            "r2": [
+              0.4192942351006701,
+              0.8492043100007497,
+              0.833625834782709
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.9579375647801874,
+              0.9649161896798648,
+              0.9638371257185261
+            ],
+            "mean_direct_abs_correlation": 0.9622302933928594,
+            "mean_r2": 0.9232125282287598,
+            "mse": 0.10000040382146835,
+            "r2": [
+              0.9160586595535278,
+              0.9283984899520874,
+              0.9251804947853088
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.962230384349823
+        },
+        "correct_image": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.8297843229410995,
+              0.8996032307932692,
+              0.9256852512389121
+            ],
+            "mean_direct_abs_correlation": 0.8850242683244268,
+            "mean_r2": 0.7781799099711039,
+            "mse": 0.27904574576945657,
+            "r2": [
+              0.6859189962884427,
+              0.7934409291986427,
+              0.855179804426226
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8932887940497815,
+              0.9130815767732338,
+              0.940072643400279
+            ],
+            "mean_direct_abs_correlation": 0.9154810047410981,
+            "mean_r2": 0.8322767661760926,
+            "mse": 0.21711065272695748,
+            "r2": [
+              0.7953417509193647,
+              0.8279697820791835,
+              0.8735187655297297
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8297843229410987,
+              0.8996032307932692,
+              0.9256852512389119
+            ],
+            "mean_direct_abs_correlation": 0.8850242683244266,
+            "mean_r2": 0.702673614025116,
+            "mse": 0.3537213206291199,
+            "r2": [
+              0.4784787893295288,
+              0.7870221138000488,
+              0.8425199389457703
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8850244879722595
+        },
+        "fixed_anchor_visual_derangement": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.8016266124257343,
+              0.873334960265902,
+              0.913900330773463
+            ],
+            "mean_direct_abs_correlation": 0.8629539678216998,
+            "mean_r2": 0.7410831214603889,
+            "mse": 0.3274639965471792,
+            "r2": [
+              0.6404043144767082,
+              0.7511746470369355,
+              0.8316704028675227
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.6279978341149182,
+              0.8081954653101688,
+              0.8872738436913113
+            ],
+            "mean_direct_abs_correlation": 0.7744890477054661,
+            "mean_r2": 0.36379030265636764,
+            "mse": 0.7456480146708858,
+            "r2": [
+              -0.17078748543220224,
+              0.5806208488175822,
+              0.6815375445837231
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8016266124257349,
+              0.8733349602659017,
+              0.9139003307734633
+            ],
+            "mean_direct_abs_correlation": 0.8629539678216999,
+            "mean_r2": 0.6710360646247864,
+            "mse": 0.4014584422111511,
+            "r2": [
+              0.4751025438308716,
+              0.7354368567466736,
+              0.8025689721107483
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8629546165466309
+        },
+        "projected_residual_reassignment": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.765891481137781,
+              0.8686668023663603,
+              0.9106938431952624
+            ],
+            "mean_direct_abs_correlation": 0.8484173755664678,
+            "mean_r2": 0.7160040813664027,
+            "mse": 0.35552523912576045,
+            "r2": [
+              0.5847632477694957,
+              0.7349612554076634,
+              0.8282877409220489
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.5811724029767562,
+              0.8130332644198773,
+              0.8868093280806539
+            ],
+            "mean_direct_abs_correlation": 0.7603383318257624,
+            "mean_r2": 0.3652515548267619,
+            "mse": 0.7319388036971421,
+            "r2": [
+              -0.22993115727584823,
+              0.616046193164922,
+              0.709639628591212
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.7658914811377816,
+              0.8686668023663596,
+              0.9106938431952624
+            ],
+            "mean_direct_abs_correlation": 0.8484173755664678,
+            "mean_r2": 0.6541189551353455,
+            "mse": 0.41503626108169556,
+            "r2": [
+              0.41030287742614746,
+              0.7402907609939575,
+              0.8117632269859314
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8484174609184265
+        }
+      },
+      "permutation": {
+        "fixed_points": 0,
+        "seed": 20260803,
+        "sha256_int64": "63a0c6db6abfe50a71ece61eb7f15f18addd24ae8fad0ea401b11bce8655e61d",
+        "size": 1000
+      },
+      "prediction_hashes": {
+        "correct_output_float32": "62898a07bae37bbb032ec47076293b042d66f377d34f7b083b86b0fa335cc99d",
+        "reassigned_output_float32": "7a3a0c03884ef259c36da1c1afbdff3507b1abe5e15be3c3ca3a7b4c2312496c",
+        "validation_derangement": "63a0c6db6abfe50a71ece61eb7f15f18addd24ae8fad0ea401b11bce8655e61d",
+        "visual_swap_output_float32": "6c3d1b6f05b8a2481379c5203bff842451ba20bb940cf1a72ad4a8bc0c9a5d27"
+      },
+      "reproduction": {
+        "coordinatewise_affine.mean_direct_abs_correlation": true,
+        "coordinatewise_affine.mean_r2": true,
+        "coordinatewise_affine.mse": true,
+        "full_affine.mean_direct_abs_correlation": true,
+        "full_affine.mean_r2": true,
+        "full_affine.mse": true,
+        "raw.mean_direct_abs_correlation": true,
+        "raw.mean_r2": true,
+        "raw.mse": true,
+        "rgb_hungarian_mcc": true
+      },
+      "residual_metrics": {
+        "center_only": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.01677147238602557,
+            "mse": 0.09901121069139272,
+            "r2": [
+              -0.005783609157402392,
+              -0.009019558956449902,
+              -0.035511249044224424
+            ]
+          },
+          "cosine": {
+            "mean": null,
+            "median": null,
+            "valid_fraction": 0.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.013515211244051306,
+            "mse": 0.09868544240642751,
+            "r2": [
+              -0.005083682402322154,
+              -0.006783230508733418,
+              -0.028678720821098347
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.026927432045340538,
+            "mse": 0.10000040382146835,
+            "r2": [
+              -0.013821125030517578,
+              -0.017319321632385254,
+              -0.04964184761047363
+            ]
+          },
+          "rgb_hungarian_assignment": null,
+          "rgb_hungarian_mcc": null
+        },
+        "correct_image": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.17259995824512347,
+              0.12567017710229486,
+              0.12940908053973407
+            ],
+            "mean_direct_abs_correlation": 0.1425597386290508,
+            "mean_r2": -0.0033787546525611,
+            "mse": 0.09777043445899074,
+            "r2": [
+              0.017745222363769964,
+              0.004216707482170512,
+              -0.032098193803623776
+            ]
+          },
+          "cosine": {
+            "mean": 0.15588027238845825,
+            "median": 0.30067574977874756,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.09216937370044365,
+              0.20077754792347036,
+              0.1585798188492893
+            ],
+            "mean_direct_abs_correlation": 0.15050891349106776,
+            "mean_r2": 0.0019498136275608962,
+            "mse": 0.09689032348126393,
+            "r2": [
+              -0.011326876648696915,
+              0.03165512026006112,
+              -0.014478802728681517
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.17259995824512345,
+              0.12567017710229492,
+              0.1294090805397341
+            ],
+            "mean_direct_abs_correlation": 0.14255973862905083,
+            "mean_r2": -2.8446948528289795,
+            "mse": 0.3537213206291199,
+            "r2": [
+              -5.298792362213135,
+              -2.026005268096924,
+              -1.2092862129211426
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.1757999062538147
+        },
+        "fixed_anchor_visual_derangement": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.06812307670667354,
+              0.05359876476755054,
+              0.034721673597228116
+            ],
+            "mean_direct_abs_correlation": 0.05214783835715073,
+            "mean_r2": -0.06385507884743775,
+            "mse": 0.10394230677973866,
+            "r2": [
+              -0.005460383831381144,
+              -0.0643776163556169,
+              -0.12172723635531524
+            ]
+          },
+          "cosine": {
+            "mean": -0.03738265484571457,
+            "median": -0.08084437996149063,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.060341060431031164,
+              0.003963075271115683,
+              0.04107001822692156
+            ],
+            "mean_direct_abs_correlation": 0.035124717976356135,
+            "mean_r2": -0.06662851837594415,
+            "mse": 0.10400008566264225,
+            "r2": [
+              -0.0244175433815228,
+              -0.05053671223805578,
+              -0.12493129950825388
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.06812307670667354,
+              0.053598764767550516,
+              0.03472167359722812
+            ],
+            "mean_direct_abs_correlation": 0.05214783835715073,
+            "mean_r2": -3.2894203662872314,
+            "mse": 0.4014584422111511,
+            "r2": [
+              -5.33957052230835,
+              -2.7589333057403564,
+              -1.7697572708129883
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.0688490942120552
+        },
+        "projected_residual_reassignment": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.002779594441631172,
+              0.08828270142483124,
+              0.049380152746467204
+            ],
+            "mean_direct_abs_correlation": 0.04681414953764321,
+            "mean_r2": -0.07083824525593323,
+            "mse": 0.10458474697600863,
+            "r2": [
+              -0.022208363379392138,
+              -0.07464959427145823,
+              -0.1156567781169493
+            ]
+          },
+          "cosine": {
+            "mean": -0.056966375559568405,
+            "median": -0.08869331330060959,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.015032635603367612,
+              0.05057117061323608,
+              0.05397835496190164
+            ],
+            "mean_direct_abs_correlation": 0.039860720392835114,
+            "mean_r2": -0.08241496217431887,
+            "mse": 0.10547694515342336,
+            "r2": [
+              -0.05447734893208689,
+              -0.07033674590107686,
+              -0.12243079168979287
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.002779594441631122,
+              0.08828270142483127,
+              0.04938015274646725
+            ],
+            "mean_direct_abs_correlation": 0.046814149537643214,
+            "mean_r2": -3.4843146800994873,
+            "mse": 0.41503626108169556,
+            "r2": [
+              -6.122203350067139,
+              -2.6899683475494385,
+              -1.6407716274261475
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.04681416228413582
+        }
+      },
+      "seed": 0,
+      "subset": {
+        "budget": 80,
+        "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+        "subset_rows": [
+          6807,
+          4968,
+          7614,
+          3154,
+          1759,
+          1579,
+          5799,
+          2535,
+          7825,
+          1490,
+          1889,
+          1623,
+          1056,
+          5732,
+          5061,
+          5139,
+          7332,
+          4907,
+          3261,
+          2436,
+          1448,
+          6785,
+          4542,
+          163,
+          2128,
+          703,
+          7817,
+          6327,
+          4970,
+          6454,
+          3353,
+          570,
+          6191,
+          4181,
+          3628,
+          3042,
+          174,
+          1997,
+          2725,
+          6588,
+          1988,
+          1242,
+          7752,
+          4531,
+          4780,
+          3168,
+          1689,
+          1079,
+          4393,
+          6810,
+          7092,
+          2833,
+          7958,
+          3397,
+          878,
+          7129,
+          370,
+          5821,
+          4626,
+          7018,
+          4992,
+          4682,
+          724,
+          4082,
+          7774,
+          4544,
+          2214,
+          2232,
+          2856,
+          97,
+          3681,
+          707,
+          608,
+          2963,
+          3242,
+          4119,
+          6797,
+          3710,
+          3368,
+          2981
+        ],
+        "subset_seed": 20260731,
+        "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+        "unique_rows": 80
+      },
+      "test_evaluated": false,
+      "upstream": {
+        "checkpoint_path": "outputs/relation_tube_geometry_tradeoff_k5_seed0/formal/isotropic/tube_correct_seed0.pt",
+        "checkpoint_sha256": "34c793edfed8e8517e743bfe3c4f0b18f4901e22e063c236fed29da1f44e1c18",
+        "downstream_readout_path": "outputs/relation_tube_geometry_downstream_k6_seed0/downstream_validation_readout.json",
+        "downstream_readout_sha256": "6e925138ae5358ee6fec3c2fe465624fe3ed9bb60ac7c9616da2f126397c9551",
+        "geometry_config_path": "./config_relation_tube_geometry_tradeoff_k5_seed0.yaml",
+        "geometry_config_sha256": "b30b17a2904acffca099fd9b3dbad03a4cb5ff08cde286115159deeb6938e635",
+        "preflight_lock_sha256": "79700f3eb275d3405d7d25ed5d2055d4809f375305643946459ebe744f81af09",
+        "training_lock_path": "outputs/relation_tube_geometry_tradeoff_k5_seed0/formal/isotropic/training_lock.json",
+        "training_lock_sha256": "a6232c8d56740474403c94c3c4571472475a6e3435cf79e6555fe65af4f49bb1"
+      }
+    },
+    "3407": {
+      "bootstrap": {
+        "fixed_anchor_visual_derangement": {
+          "output_full_affine": {
+            "ci95_high": 0.5658948955693351,
+            "ci95_low": 0.49833303367976606,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.5318146306488569,
+            "replicates": 2000,
+            "seed": 20294874
+          },
+          "residual_full_affine": {
+            "ci95_high": 0.008412018400731329,
+            "ci95_low": 0.0025009687601407413,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.005479984942322155,
+            "replicates": 2000,
+            "seed": 20294875
+          }
+        },
+        "projected_residual_reassignment": {
+          "output_full_affine": {
+            "ci95_high": 0.5710924411825432,
+            "ci95_low": 0.49839335091202697,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.534537954980785,
+            "replicates": 2000,
+            "seed": 20294876
+          },
+          "residual_full_affine": {
+            "ci95_high": 0.010622847216838992,
+            "ci95_low": 0.004308051016336279,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.007574466545457815,
+            "replicates": 2000,
+            "seed": 20294877
+          }
+        }
+      },
+      "deltas": {
+        "fixed_anchor_visual_derangement": {
+          "correct_minus_control_output_full_affine_r2": 0.48721675712147927,
+          "correct_minus_control_output_raw_correlation": 0.011019254276110613,
+          "correct_minus_control_residual_full_affine_r2": 0.057383436447261335
+        },
+        "projected_residual_reassignment": {
+          "correct_minus_control_output_full_affine_r2": 0.4983227253835466,
+          "correct_minus_control_output_raw_correlation": 0.0275058999280825,
+          "correct_minus_control_residual_full_affine_r2": 0.07982702509531125
+        }
+      },
+      "distribution": {
+        "correct_image": {
+          "boundary_active_fraction": 0.968,
+          "projected_l2_mean": 0.9446162581443787,
+          "projected_l2_p95": 0.9526333212852478,
+          "projection_scale_mean": 0.38076433539390564,
+          "raw_score_mean": 101.16210174560547,
+          "raw_score_p95": 222.02825546264646
+        },
+        "fixed_anchor_visual_derangement": {
+          "boundary_active_fraction": 0.959,
+          "projected_l2_mean": 0.9413394927978516,
+          "projected_l2_p95": 0.9526333212852478,
+          "projection_scale_mean": 0.4121992886066437,
+          "raw_score_mean": 90.41098022460938,
+          "raw_score_p95": 226.2622215270996
+        },
+        "projected_residual_reassignment": {
+          "boundary_active_fraction": 0.968,
+          "projected_l2_mean": 0.9446163177490234,
+          "projected_l2_p95": 0.9526333212852478,
+          "projection_scale_mean": 0.38076433539390564,
+          "raw_score_mean": 101.16210174560547,
+          "raw_score_p95": 222.02825546264646
+        }
+      },
+      "output_metrics": {
+        "center_only": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.9579375647801865,
+              0.9649161896798648,
+              0.9638371257185263
+            ],
+            "mean_direct_abs_correlation": 0.9622302933928593,
+            "mean_r2": 0.8619941121331895,
+            "mse": 0.1769423005430849,
+            "r2": [
+              0.8179474593159095,
+              0.8567995931432522,
+              0.9112352839404069
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.7303574220090953,
+              0.9455720309482895,
+              0.8988680456093506
+            ],
+            "mean_direct_abs_correlation": 0.8582658328555784,
+            "mean_r2": 0.6810948851398022,
+            "mse": 0.3652693151707772,
+            "r2": [
+              0.4189789761365964,
+              0.8804798560908652,
+              0.7438258231919449
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.9579375647801874,
+              0.9649161896798648,
+              0.9638371257185261
+            ],
+            "mean_direct_abs_correlation": 0.9622302933928594,
+            "mean_r2": 0.9232125282287598,
+            "mse": 0.10000040382146835,
+            "r2": [
+              0.9160586595535278,
+              0.9283984899520874,
+              0.9251804947853088
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.962230384349823
+        },
+        "correct_image": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.8194059640211762,
+              0.9087533342355273,
+              0.9103167079824211
+            ],
+            "mean_direct_abs_correlation": 0.8794920020797082,
+            "mean_r2": 0.7683184024226621,
+            "mse": 0.28842278045990427,
+            "r2": [
+              0.6689324649592814,
+              0.8097761993339637,
+              0.8262465429747416
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.903446906434506,
+              0.915746766827295,
+              0.9321639609546747
+            ],
+            "mean_direct_abs_correlation": 0.9171192114054918,
+            "mean_r2": 0.8348661730851353,
+            "mse": 0.21602229007665485,
+            "r2": [
+              0.8138991454488034,
+              0.8291090583683818,
+              0.8615903154382207
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8194059640211759,
+              0.9087533342355282,
+              0.9103167079824211
+            ],
+            "mean_direct_abs_correlation": 0.8794920020797083,
+            "mean_r2": 0.6873424649238586,
+            "mse": 0.3715272545814514,
+            "r2": [
+              0.46415698528289795,
+              0.7970620393753052,
+              0.800808310508728
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8794920444488525
+        },
+        "fixed_anchor_visual_derangement": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.8048563718168397,
+              0.8928238332848076,
+              0.9077380383091455
+            ],
+            "mean_direct_abs_correlation": 0.8684727478035975,
+            "mean_r2": 0.7509370518497582,
+            "mse": 0.31154496716176366,
+            "r2": [
+              0.6470859904131545,
+              0.7850186389164125,
+              0.8207065262197079
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.6237906224799284,
+              0.8570022951296351,
+              0.8518902171465397
+            ],
+            "mean_direct_abs_correlation": 0.7775610449187011,
+            "mean_r2": 0.34764941596365606,
+            "mse": 0.7478369207255117,
+            "r2": [
+              -0.20657889494561,
+              0.7251124672100842,
+              0.5244146756264939
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8048563718168394,
+              0.8928238332848086,
+              0.9077380383091447
+            ],
+            "mean_direct_abs_correlation": 0.8684727478035977,
+            "mean_r2": 0.6677885055541992,
+            "mse": 0.4032265245914459,
+            "r2": [
+              0.47780054807662964,
+              0.7647788524627686,
+              0.7607859969139099
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8684732913970947
+        },
+        "projected_residual_reassignment": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.7652287873625463,
+              0.8908423071262662,
+              0.8998872119660647
+            ],
+            "mean_direct_abs_correlation": 0.8519861021516258,
+            "mean_r2": 0.7211661442332153,
+            "mse": 0.34482234937577677,
+            "r2": [
+              0.5840700599217263,
+              0.7701553490844403,
+              0.8092730236934793
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.5709306739220908,
+              0.8644969515719687,
+              0.8416166169013245
+            ],
+            "mean_direct_abs_correlation": 0.759014747465128,
+            "mean_r2": 0.3365434477015887,
+            "mse": 0.7505602450574399,
+            "r2": [
+              -0.2810210048217152,
+              0.7460879299351555,
+              0.5445634179913259
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.7652287873625458,
+              0.890842307126267,
+              0.8998872119660645
+            ],
+            "mean_direct_abs_correlation": 0.8519861021516258,
+            "mean_r2": 0.6526755690574646,
+            "mse": 0.4139607846736908,
+            "r2": [
+              0.41300129890441895,
+              0.7735015749931335,
+              0.771523654460907
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8519861698150635
+        }
+      },
+      "permutation": {
+        "fixed_points": 0,
+        "seed": 20260803,
+        "sha256_int64": "63a0c6db6abfe50a71ece61eb7f15f18addd24ae8fad0ea401b11bce8655e61d",
+        "size": 1000
+      },
+      "prediction_hashes": {
+        "correct_output_float32": "c428c80ab25954d1e881ed05dee3069ed1daae1aeda4941c29726506f9244424",
+        "reassigned_output_float32": "91ebb808856487f27b165d5c9165fd7ad362c9db60fe9713cbda5d116ea6552c",
+        "validation_derangement": "63a0c6db6abfe50a71ece61eb7f15f18addd24ae8fad0ea401b11bce8655e61d",
+        "visual_swap_output_float32": "3d09550233d569713bc45c6a4f14d1c37f667333f59835b033004a32542dec6b"
+      },
+      "reproduction": {
+        "coordinatewise_affine.mean_direct_abs_correlation": true,
+        "coordinatewise_affine.mean_r2": true,
+        "coordinatewise_affine.mse": true,
+        "full_affine.mean_direct_abs_correlation": true,
+        "full_affine.mean_r2": true,
+        "full_affine.mse": true,
+        "raw.mean_direct_abs_correlation": true,
+        "raw.mean_r2": true,
+        "raw.mse": true,
+        "rgb_hungarian_mcc": true
+      },
+      "residual_metrics": {
+        "center_only": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.014479373161286743,
+            "mse": 0.09878967236575162,
+            "r2": [
+              -0.009212486282787813,
+              -0.012119235448885934,
+              -0.02210639775218648
+            ]
+          },
+          "cosine": {
+            "mean": null,
+            "median": null,
+            "valid_fraction": 0.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.022329119883591913,
+            "mse": 0.09943157678901529,
+            "r2": [
+              -0.025491896145774184,
+              -0.009578300324706301,
+              -0.03191716318029525
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.026927432045340538,
+            "mse": 0.10000040382146835,
+            "r2": [
+              -0.013821125030517578,
+              -0.017319321632385254,
+              -0.04964184761047363
+            ]
+          },
+          "rgb_hungarian_assignment": null,
+          "rgb_hungarian_mcc": null
+        },
+        "correct_image": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.13749319869202634,
+              0.0719449538132628,
+              0.1145609261009852
+            ],
+            "mean_direct_abs_correlation": 0.1079996928687581,
+            "mean_r2": -0.013491861354006152,
+            "mse": 0.09876721823706362,
+            "r2": [
+              0.005186582287504238,
+              -0.009881988514084394,
+              -0.0357801778354383
+            ]
+          },
+          "cosine": {
+            "mean": 0.11933490633964539,
+            "median": 0.28026339411735535,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.22309288506341896,
+              0.15382321853330602,
+              0.10239904375467093
+            ],
+            "mean_direct_abs_correlation": 0.15977171578379865,
+            "mean_r2": -0.00947474746660859,
+            "mse": 0.09846489416041913,
+            "r2": [
+              0.03209448306976381,
+              0.0017026663878139114,
+              -0.062221391857403496
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.13749319869202625,
+              0.07194495381326278,
+              0.11456092610098528
+            ],
+            "mean_direct_abs_correlation": 0.1079996928687581,
+            "mean_r2": -3.049861192703247,
+            "mse": 0.3715272545814514,
+            "r2": [
+              -5.471767902374268,
+              -1.8833575248718262,
+              -1.7944579124450684
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.16037382185459137
+        },
+        "fixed_anchor_visual_derangement": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.07690164071132786,
+              0.03265433302560056,
+              0.029739534614884582
+            ],
+            "mean_direct_abs_correlation": 0.046431836117271,
+            "mean_r2": -0.044839337984399354,
+            "mse": 0.10181068984526699,
+            "r2": [
+              -0.004672980946283545,
+              -0.020608284882353223,
+              -0.1092367481245613
+            ]
+          },
+          "cosine": {
+            "mean": -0.0442516952753067,
+            "median": -0.06908681243658066,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.10396827094007698,
+              0.07859364583984778,
+              0.00344107668828493
+            ],
+            "mean_direct_abs_correlation": 0.062000997822736555,
+            "mean_r2": -0.06685818391386993,
+            "mse": 0.10394487910274128,
+            "r2": [
+              -0.026766363392245918,
+              -0.04127670675176942,
+              -0.13253148159759442
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.07690164071132785,
+              0.03265433302560056,
+              0.029739534614884603
+            ],
+            "mean_direct_abs_correlation": 0.046431836117271,
+            "mean_r2": -3.33498477935791,
+            "mse": 0.4032265245914459,
+            "r2": [
+              -5.3069844245910645,
+              -2.3420398235321045,
+              -2.3559305667877197
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.07420413941144943
+        },
+        "projected_residual_reassignment": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.011383674898545141,
+              0.04944566352872538,
+              0.035647084563273146
+            ],
+            "mean_direct_abs_correlation": 0.03215880766351455,
+            "mean_r2": -0.04723342950577162,
+            "mse": 0.1019795088144731,
+            "r2": [
+              -0.016510717344099257,
+              -0.022062038212026236,
+              -0.10312753296118937
+            ]
+          },
+          "cosine": {
+            "mean": -0.059290774166584015,
+            "median": -0.1008141040802002,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.008494250061217627,
+              0.006741318067230808,
+              0.02168305362754722
+            ],
+            "mean_direct_abs_correlation": 0.012306207251998552,
+            "mean_r2": -0.08930177256191985,
+            "mse": 0.10603936070587694,
+            "r2": [
+              -0.06946219500698247,
+              -0.068630553773956,
+              -0.12981256890482107
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.011383674898545122,
+              0.049445663528725474,
+              0.035647084563273056
+            ],
+            "mean_direct_abs_correlation": 0.03215880766351455,
+            "mean_r2": -3.5043365955352783,
+            "mse": 0.4139607846736908,
+            "r2": [
+              -6.0896124839782715,
+              -2.218106269836426,
+              -2.205291986465454
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.038166411221027374
+        }
+      },
+      "seed": 3407,
+      "subset": {
+        "budget": 80,
+        "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+        "subset_rows": [
+          6807,
+          4968,
+          7614,
+          3154,
+          1759,
+          1579,
+          5799,
+          2535,
+          7825,
+          1490,
+          1889,
+          1623,
+          1056,
+          5732,
+          5061,
+          5139,
+          7332,
+          4907,
+          3261,
+          2436,
+          1448,
+          6785,
+          4542,
+          163,
+          2128,
+          703,
+          7817,
+          6327,
+          4970,
+          6454,
+          3353,
+          570,
+          6191,
+          4181,
+          3628,
+          3042,
+          174,
+          1997,
+          2725,
+          6588,
+          1988,
+          1242,
+          7752,
+          4531,
+          4780,
+          3168,
+          1689,
+          1079,
+          4393,
+          6810,
+          7092,
+          2833,
+          7958,
+          3397,
+          878,
+          7129,
+          370,
+          5821,
+          4626,
+          7018,
+          4992,
+          4682,
+          724,
+          4082,
+          7774,
+          4544,
+          2214,
+          2232,
+          2856,
+          97,
+          3681,
+          707,
+          608,
+          2963,
+          3242,
+          4119,
+          6797,
+          3710,
+          3368,
+          2981
+        ],
+        "subset_seed": 20260731,
+        "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+        "unique_rows": 80
+      },
+      "test_evaluated": false,
+      "upstream": {
+        "checkpoint_path": "outputs/relation_tube_geometry_ablation_k4_seed3407/formal/isotropic/tube_correct_seed3407.pt",
+        "checkpoint_sha256": "5e065c0d6806ee84b59817478dcab498088376b8fc368b6b58b1def483d82f2e",
+        "downstream_readout_path": "outputs/relation_tube_geometry_downstream_k6_seed3407/downstream_validation_readout.json",
+        "downstream_readout_sha256": "2e0fa9b12dd5f8f9f354602076b3f0337dc5690bde787f95edc4925f8f8e98e4",
+        "geometry_config_path": "./config_relation_tube_geometry_ablation_k4_seed3407.yaml",
+        "geometry_config_sha256": "f008d07c3daf4fb7ec80ae7ab029531e509c54ea3f760d60885795fe182c3b1c",
+        "preflight_lock_sha256": "473d69520a44fe4d5ed5a2d847ccb75d01cb138a9bdf6b99b5a515bd22ffc107",
+        "training_lock_path": "outputs/relation_tube_geometry_ablation_k4_seed3407/formal/isotropic/training_lock.json",
+        "training_lock_sha256": "8e3bcf4990f5ff24e43191a7259bdeab4e7054b3eea75ff0ea778c1503a28551"
+      }
+    },
+    "42": {
+      "bootstrap": {
+        "fixed_anchor_visual_derangement": {
+          "output_full_affine": {
+            "ci95_high": 0.6490315720701025,
+            "ci95_low": 0.5705827364471516,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.6100951516414373,
+            "replicates": 2000,
+            "seed": 20261224
+          },
+          "residual_full_affine": {
+            "ci95_high": 0.007804896181324868,
+            "ci95_low": 0.0028758738686634755,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.0053885550032201955,
+            "replicates": 2000,
+            "seed": 20261225
+          }
+        },
+        "projected_residual_reassignment": {
+          "output_full_affine": {
+            "ci95_high": 0.6291311394136038,
+            "ci95_low": 0.5545642358560766,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.5924532938500339,
+            "replicates": 2000,
+            "seed": 20261226
+          },
+          "residual_full_affine": {
+            "ci95_high": 0.01060824802225509,
+            "ci95_low": 0.004936713012923025,
+            "ci_strictly_positive": true,
+            "observed_control_minus_correct_mse": 0.0077643963385503395,
+            "replicates": 2000,
+            "seed": 20261227
+          }
+        }
+      },
+      "deltas": {
+        "fixed_anchor_visual_derangement": {
+          "correct_minus_control_output_full_affine_r2": 0.5595921623824088,
+          "correct_minus_control_output_raw_correlation": 0.019539395279971394,
+          "correct_minus_control_residual_full_affine_r2": 0.052152404505907114
+        },
+        "projected_residual_reassignment": {
+          "correct_minus_control_output_full_affine_r2": 0.5527042867190999,
+          "correct_minus_control_output_raw_correlation": 0.033909893265128166,
+          "correct_minus_control_residual_full_affine_r2": 0.0771188034869333
+        }
+      },
+      "distribution": {
+        "correct_image": {
+          "boundary_active_fraction": 0.978,
+          "projected_l2_mean": 0.9481012225151062,
+          "projected_l2_p95": 0.952633261680603,
+          "projection_scale_mean": 0.38700881600379944,
+          "raw_score_mean": 104.9679183959961,
+          "raw_score_p95": 282.4643157958984
+        },
+        "fixed_anchor_visual_derangement": {
+          "boundary_active_fraction": 0.972,
+          "projected_l2_mean": 0.9466690421104431,
+          "projected_l2_p95": 0.952633261680603,
+          "projection_scale_mean": 0.404379278421402,
+          "raw_score_mean": 98.47354125976562,
+          "raw_score_p95": 263.94806060791
+        },
+        "projected_residual_reassignment": {
+          "boundary_active_fraction": 0.978,
+          "projected_l2_mean": 0.9481012225151062,
+          "projected_l2_p95": 0.952633261680603,
+          "projection_scale_mean": 0.38700881600379944,
+          "raw_score_mean": 104.9679183959961,
+          "raw_score_p95": 282.4643157958984
+        }
+      },
+      "output_metrics": {
+        "center_only": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.9579375647801871,
+              0.964916189679865,
+              0.9638371257185261
+            ],
+            "mean_direct_abs_correlation": 0.9622302933928594,
+            "mean_r2": 0.8652254765532593,
+            "mse": 0.17210134125974005,
+            "r2": [
+              0.8162179738465231,
+              0.8589571637576843,
+              0.9205012920555706
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.7122488245230252,
+              0.9382149709388768,
+              0.9148981204438035
+            ],
+            "mean_direct_abs_correlation": 0.8551206386352351,
+            "mean_r2": 0.6612509304951804,
+            "mse": 0.381877734457245,
+            "r2": [
+              0.34109271213118086,
+              0.8770147970698772,
+              0.7656452822844831
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.9579375647801874,
+              0.9649161896798648,
+              0.9638371257185261
+            ],
+            "mean_direct_abs_correlation": 0.9622302933928594,
+            "mean_r2": 0.9232125282287598,
+            "mse": 0.10000040382146835,
+            "r2": [
+              0.9160586595535278,
+              0.9283984899520874,
+              0.9251804947853088
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.962230384349823
+        },
+        "correct_image": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.8203631825682135,
+              0.9064792311760942,
+              0.9171234825610807
+            ],
+            "mean_direct_abs_correlation": 0.8813219654351294,
+            "mean_r2": 0.7718873485652447,
+            "mse": 0.28429167749381135,
+            "r2": [
+              0.670304482771104,
+              0.8046809584795374,
+              0.8406766044450928
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.9016262403987887,
+              0.9163470929629789,
+              0.9337888911321796
+            ],
+            "mean_direct_abs_correlation": 0.9172540748313157,
+            "mean_r2": 0.8340249833295524,
+            "mse": 0.21659374984339802,
+            "r2": [
+              0.8111933290754277,
+              0.8310521982265326,
+              0.8598294226866973
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8203631825682131,
+              0.9064792311760947,
+              0.9171234825610807
+            ],
+            "mean_direct_abs_correlation": 0.8813219654351294,
+            "mean_r2": 0.6968868374824524,
+            "mse": 0.35751309990882874,
+            "r2": [
+              0.46059370040893555,
+              0.8027248978614807,
+              0.8273419141769409
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8813228011131287
+        },
+        "fixed_anchor_visual_derangement": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.7938687872741865,
+              0.8784337513468272,
+              0.9130451718444608
+            ],
+            "mean_direct_abs_correlation": 0.8617825701551581,
+            "mean_r2": 0.740228742232667,
+            "mse": 0.32585527824254995,
+            "r2": [
+              0.6281085183729033,
+              0.7617561486011166,
+              0.8308215597239813
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.5967009493872437,
+              0.8302357139449665,
+              0.8724342323090956
+            ],
+            "mean_direct_abs_correlation": 0.7664569652137686,
+            "mean_r2": 0.2744328209471436,
+            "mse": 0.8266889014848354,
+            "r2": [
+              -0.4134883724444598,
+              0.6483299310033559,
+              0.5884569042825347
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.793868787274186,
+              0.8784337513468273,
+              0.9130451718444608
+            ],
+            "mean_direct_abs_correlation": 0.861782570155158,
+            "mean_r2": 0.6654905676841736,
+            "mse": 0.40538305044174194,
+            "r2": [
+              0.4544804096221924,
+              0.7429914474487305,
+              0.7989999055862427
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8617832064628601
+        },
+        "projected_residual_reassignment": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.7560774782477213,
+              0.8796149383549579,
+              0.9065437999073241
+            ],
+            "mean_direct_abs_correlation": 0.847412072170001,
+            "mean_r2": 0.7147769560722387,
+            "mse": 0.3531437584797044,
+            "r2": [
+              0.569193644707112,
+              0.7536448034239989,
+              0.8214924200856052
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.5515011781608596,
+              0.8418606625142595,
+              0.863475598904925
+            ],
+            "mean_direct_abs_correlation": 0.7522791465266815,
+            "mean_r2": 0.2813206966104525,
+            "mse": 0.8090470436934319,
+            "r2": [
+              -0.4407741821117086,
+              0.6928662293342865,
+              0.5918700426087795
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.7560774782477221,
+              0.8796149383549576,
+              0.9065437999073239
+            ],
+            "mean_direct_abs_correlation": 0.8474120721700013,
+            "mean_r2": 0.6494054794311523,
+            "mse": 0.4163297414779663,
+            "r2": [
+              0.38789552450180054,
+              0.7601246237754822,
+              0.8001963496208191
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8474128246307373
+        }
+      },
+      "permutation": {
+        "fixed_points": 0,
+        "seed": 20260803,
+        "sha256_int64": "63a0c6db6abfe50a71ece61eb7f15f18addd24ae8fad0ea401b11bce8655e61d",
+        "size": 1000
+      },
+      "prediction_hashes": {
+        "correct_output_float32": "f0894351d409d4e995a6063dea26d5231b6a23182ee639ea01fc2c1bad868be5",
+        "reassigned_output_float32": "0bdbb9523f758af84578b019b129fb5df0a2e6088d5fc053aa4247e3a1a77ded",
+        "validation_derangement": "63a0c6db6abfe50a71ece61eb7f15f18addd24ae8fad0ea401b11bce8655e61d",
+        "visual_swap_output_float32": "d7e0d5b14d1e80fd43393829f713d68e6b14c9690a3363cb1cebfafecdfe5fb7"
+      },
+      "reproduction": {
+        "coordinatewise_affine.mean_direct_abs_correlation": true,
+        "coordinatewise_affine.mean_r2": true,
+        "coordinatewise_affine.mse": true,
+        "full_affine.mean_direct_abs_correlation": true,
+        "full_affine.mean_r2": true,
+        "full_affine.mse": true,
+        "raw.mean_direct_abs_correlation": true,
+        "raw.mean_r2": true,
+        "raw.mse": true,
+        "rgb_hungarian_mcc": true
+      },
+      "residual_metrics": {
+        "center_only": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.015738242705036615,
+            "mse": 0.09886640148687263,
+            "r2": [
+              -0.009131241196145945,
+              -0.00543532762732668,
+              -0.032648159291637224
+            ]
+          },
+          "cosine": {
+            "mean": null,
+            "median": null,
+            "valid_fraction": 0.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.010976820241006768,
+            "mse": 0.09836250024534313,
+            "r2": [
+              -0.013548700659761659,
+              -0.0030169637727872622,
+              -0.016364796290471384
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              null,
+              null,
+              null
+            ],
+            "mean_direct_abs_correlation": null,
+            "mean_r2": -0.026927432045340538,
+            "mse": 0.10000040382146835,
+            "r2": [
+              -0.013821125030517578,
+              -0.017319321632385254,
+              -0.04964184761047363
+            ]
+          },
+          "rgb_hungarian_assignment": null,
+          "rgb_hungarian_mcc": null
+        },
+        "correct_image": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.16896147019275842,
+              0.12383850894129846,
+              0.11032808581063491
+            ],
+            "mean_direct_abs_correlation": 0.1343760216482306,
+            "mean_r2": -0.004566015923531785,
+            "mse": 0.09783317357284554,
+            "r2": [
+              0.01177490232142353,
+              0.006488840994941181,
+              -0.03196179108696007
+            ]
+          },
+          "cosine": {
+            "mean": 0.15861603617668152,
+            "median": 0.2890211343765259,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.1554263287183492,
+              0.2103542438675635,
+              0.11914470439644918
+            ],
+            "mean_direct_abs_correlation": 0.16164175899412062,
+            "mean_r2": 0.006101118162083141,
+            "mse": 0.09656396690201571,
+            "r2": [
+              0.008735909679402853,
+              0.03869985942586096,
+              -0.02913241461901439
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.1689614701927585,
+              0.12383850894129839,
+              0.11032808581063491
+            ],
+            "mean_direct_abs_correlation": 0.1343760216482306,
+            "mean_r2": -2.9133074283599854,
+            "mse": 0.35751309990882874,
+            "r2": [
+              -5.514804840087891,
+              -1.8028998374938965,
+              -1.4222180843353271
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.1561673879623413
+        },
+        "fixed_anchor_visual_derangement": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.05491597905117149,
+              0.06256083843826239,
+              0.030452071944911688
+            ],
+            "mean_direct_abs_correlation": 0.04930962981144852,
+            "mean_r2": -0.054352711314546255,
+            "mse": 0.10298188136079842,
+            "r2": [
+              -0.007505870553343952,
+              -0.06009711344234647,
+              -0.09545514994794835
+            ]
+          },
+          "cosine": {
+            "mean": -0.03426763042807579,
+            "median": -0.05694985389709473,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.08893547631213632,
+              0.043203643880512045,
+              0.014458193088391516
+            ],
+            "mean_direct_abs_correlation": 0.04886577109367996,
+            "mean_r2": -0.04605128634382397,
+            "mse": 0.1019525219052359,
+            "r2": [
+              -0.013125253954819449,
+              -0.03184305075626592,
+              -0.09318555432038655
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.0549159790511715,
+              0.06256083843826239,
+              0.030452071944911716
+            ],
+            "mean_direct_abs_correlation": 0.04930962981144854,
+            "mean_r2": -3.3533546924591064,
+            "mse": 0.40538305044174194,
+            "r2": [
+              -5.588638782501221,
+              -2.6515965461730957,
+              -1.819828748703003
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.0771903395652771
+        },
+        "projected_residual_reassignment": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.006422340930373828,
+              0.08430884374503957,
+              0.038613308822928974
+            ],
+            "mean_direct_abs_correlation": 0.04311483116611412,
+            "mean_r2": -0.0584954354526391,
+            "mse": 0.10332549805591464,
+            "r2": [
+              -0.019669563417994418,
+              -0.06268599159461052,
+              -0.09313075134531235
+            ]
+          },
+          "cosine": {
+            "mean": -0.04882259666919708,
+            "median": -0.08642850816249847,
+            "valid_fraction": 1.0
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.008098516916861084,
+              0.00652524333918663,
+              0.023757633923598608
+            ],
+            "mean_direct_abs_correlation": 0.012793798059882108,
+            "mean_r2": -0.07101768532485016,
+            "mse": 0.10432836324056603,
+            "r2": [
+              -0.04942848044340131,
+              -0.0589406312115095,
+              -0.10468394431963968
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.006422340930373791,
+              0.08430884374503954,
+              0.03861330882292899
+            ],
+            "mean_direct_abs_correlation": 0.04311483116611411,
+            "mean_r2": -3.5346810817718506,
+            "mse": 0.4163297414779663,
+            "r2": [
+              -6.3928327560424805,
+              -2.4081671237945557,
+              -1.8030433654785156
+            ]
+          },
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.04311482980847359
+        }
+      },
+      "seed": 42,
+      "subset": {
+        "budget": 80,
+        "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+        "subset_rows": [
+          6807,
+          4968,
+          7614,
+          3154,
+          1759,
+          1579,
+          5799,
+          2535,
+          7825,
+          1490,
+          1889,
+          1623,
+          1056,
+          5732,
+          5061,
+          5139,
+          7332,
+          4907,
+          3261,
+          2436,
+          1448,
+          6785,
+          4542,
+          163,
+          2128,
+          703,
+          7817,
+          6327,
+          4970,
+          6454,
+          3353,
+          570,
+          6191,
+          4181,
+          3628,
+          3042,
+          174,
+          1997,
+          2725,
+          6588,
+          1988,
+          1242,
+          7752,
+          4531,
+          4780,
+          3168,
+          1689,
+          1079,
+          4393,
+          6810,
+          7092,
+          2833,
+          7958,
+          3397,
+          878,
+          7129,
+          370,
+          5821,
+          4626,
+          7018,
+          4992,
+          4682,
+          724,
+          4082,
+          7774,
+          4544,
+          2214,
+          2232,
+          2856,
+          97,
+          3681,
+          707,
+          608,
+          2963,
+          3242,
+          4119,
+          6797,
+          3710,
+          3368,
+          2981
+        ],
+        "subset_seed": 20260731,
+        "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+        "unique_rows": 80
+      },
+      "test_evaluated": false,
+      "upstream": {
+        "checkpoint_path": "outputs/relation_tube_geometry_tradeoff_k5_seed42/formal/isotropic/tube_correct_seed42.pt",
+        "checkpoint_sha256": "532e93ae7881d46ffa30780c91039fca448a54e37976add9a611631d8b96a8d3",
+        "downstream_readout_path": "outputs/relation_tube_geometry_downstream_k6_seed42/downstream_validation_readout.json",
+        "downstream_readout_sha256": "c81a6f074e7a8bd42272957975d367da5d7ec9432d8d13b05369dd1402d99e98",
+        "geometry_config_path": "./config_relation_tube_geometry_tradeoff_k5_seed42.yaml",
+        "geometry_config_sha256": "6e1c9a8699241405b9aabb242ae7d2cd3ae967133a57302602d84cbf29ce2511",
+        "preflight_lock_sha256": "fae1fa7d57af51ddc95f03700612cc4bd716a0aa5ece89ee59828c6c238e576e",
+        "training_lock_path": "outputs/relation_tube_geometry_tradeoff_k5_seed42/formal/isotropic/training_lock.json",
+        "training_lock_sha256": "42e893807e519ec40ac458b8351275f8a04ffa02e2b5dcd6f522620d5e17be5d"
+      }
+    }
+  },
+  "semantic_validation_evaluated": true,
+  "source_files_sha256": {
+    "run_relation_tube_instance_information_audit_k14.py": "4b42a250351197ced6bd1613d55e65003d9f33d3bdeb35cb85028233adeb4dc7"
+  },
+  "test_evaluated": false,
+  "training_performed": false
+}

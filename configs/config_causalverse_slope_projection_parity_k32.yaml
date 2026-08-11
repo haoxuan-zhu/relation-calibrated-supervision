@@ -1,0 +1,28 @@
+protocol_version: causalverse_slope_projection_parity_k32
+protocol_document: PROTOCOLS.md
+parent:
+  config: configs/config_causalverse_slope_relation_confirmation_k23.yaml
+  config_sha256: a8fffaa82f7bd38bf57ca299046dd83dd1ec8666799c7557c5a399fd2fc8aff3
+  contract_audit: outputs/causalverse_slope_relation_confirmation_k23/contract_audit.json
+  contract_audit_sha256: 0020abeac9b477203d6e9986df6c3a3d0a9759f76ce18542214f5cd41654a54f
+  confirmation_result: outputs/causalverse_slope_relation_confirmation_k23/multiseed_results.json
+  confirmation_result_sha256: 2b734ac0d3cfd8fba8d124628a152bc7f884860c855e10075ac2801a3e577843
+  bounded_projection_result: outputs/causalverse_slope_manifold_projection_k25/manifold_projection_results.json
+  bounded_projection_result_sha256: a71dc1956964153126f01c540977c9d57b3403d8f8ef73814482b89c1ef15c91
+  checkpoint_root: outputs/causalverse_slope_relation_confirmation_k23
+projection:
+  split: validation
+  variants:
+    - bounded_k40_std_replay
+    - unbounded_k40_std
+    - unbounded_k40_minmax
+  max_nfev: 400
+  tolerance: 1.0e-10
+  replay_metric_tolerance: 1.0e-10
+bootstrap:
+  resamples: 2000
+  seed: 20260805
+  confidence: 0.95
+runtime:
+  python: artifacts/envs/context_residual_ad/bin/python
+  output: outputs/causalverse_slope_projection_parity_k32/projection_parity_results.json

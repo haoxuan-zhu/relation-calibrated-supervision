@@ -1,0 +1,24 @@
+protocol_version: instrumented_slope_validation_k29
+protocol_document: PROTOCOLS.md
+source_contract:
+  geometry_config: configs/config_instrumented_slope_geometry_k28.yaml
+  geometry_config_sha256: 8884bc6221370e063180b6321c7ae4de0ba5a143eb94cd4ed71b6959ddc8980b
+  geometry_result: outputs/instrumented_slope_geometry_k28/instrumented_slope_geometry_audit.json
+  geometry_result_sha256: 9676d9d1e7febfb245769bb06b0a4ec027de008cce89de0bb515b79bba9f9eb4
+candidates:
+  - physical_center
+  - unbounded_five_residual
+  - isotropic_rank_tube
+  - formula_physical_bounds
+  - nonlinear_curve_rank_tube
+bootstrap:
+  repetitions: 2000
+  seed: 20260804
+  confidence: 0.95
+comparisons:
+  - [isotropic_rank_tube, unbounded_five_residual]
+  - [formula_physical_bounds, unbounded_five_residual]
+  - [nonlinear_curve_rank_tube, unbounded_five_residual]
+  - [nonlinear_curve_rank_tube, formula_physical_bounds]
+runtime:
+  output: outputs/instrumented_slope_validation_k29/instrumented_slope_validation_results.json

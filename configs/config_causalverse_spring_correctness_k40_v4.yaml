@@ -1,0 +1,112 @@
+protocol_version: causalverse_spring_correctness_k40_v4_unread_shards
+protocol_document: PROTOCOLS.md
+protocol_amendment: PROTOCOLS.md
+upstream_protocol: PROTOCOLS.md
+dataset:
+  source_id: causalverse_image
+  split: spring
+  dataset_revision: e2a509570fdbd1e341d22764e5058bac4425007b
+  parquet_revision: refs/convert/parquet
+  root: data/causalverse_image/spring_parquet_unread_v4
+  shards: [0013.parquet, 0008.parquet, 0011.parquet, 0014.parquet]
+  shard_contracts:
+    0013.parquet:
+      bytes: 974159915
+      sha256: 3b89c89c2d81574301fc209459bfffffd3db82a3f6456dad7914767c830d107f
+    0008.parquet:
+      bytes: 965847614
+      sha256: 0540230c959b2d8209d1ce9e9ebee56e1f37e84ab6052b35cd4ca141c190ed3a
+    0011.parquet:
+      bytes: 970088876
+      sha256: 7923e2a5aea6d11081a6802c6454930f7a86b1a42a8727258af7b6c75ac18111
+    0014.parquet:
+      bytes: 974901794
+      sha256: 00bb59c2c3617a8d1dfbadf152ec6b3d7dd4d93da32c9700df43de20bdc8998e
+  selection:
+    universe: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    previously_decoded: [0, 3, 5, 6, 9, 10, 12, 15]
+    unused_before_v4: [1, 2, 4, 7, 8, 11, 13, 14]
+    permutation_seed: 20260801
+    frozen_permutation: [13, 8, 11, 14, 7, 2, 4, 1]
+    selected_rule: first_four
+    reserved_unread: [7, 2, 4, 1]
+  latent_columns: [h, r, m, k, l]
+  id_column: id
+  view_column: view
+  required_views: [0, 1, 2, 3]
+split:
+  id_permutation_seed: 20260731
+  train_fraction: 0.70
+  validation_fraction: 0.15
+  test_fraction: 0.15
+labels:
+  count: 40
+  id_permutation_seed: 20260732
+  normalization: k40_train_ids_only
+backbone:
+  family: facebook/dinov2-with-registers-base
+  local_snapshot: artifacts/.cache/huggingface/hub/models--facebook--dinov2-with-registers-base/snapshots/a1d738ccfa7ae170945f210395d99dde8adb1805
+  frozen: true
+  image_size: 224
+  image_mean: [0.485, 0.456, 0.406]
+  image_std: [0.229, 0.224, 0.225]
+  feature_dim: 768
+model:
+  hidden_dims: [512, 256]
+  output_dim: 5
+  normalization: layer_norm
+  activation: gelu
+conditions:
+  - point
+  - correct_relation
+  - coefficient_permuted_relation
+  - wrong_lm_to_k_relation
+  - wrong_km_to_l_relation
+relation:
+  correct_equation: l_times_k_equals_c_times_m
+  wrong_equations: [l_times_m_equals_c_times_k, k_times_m_equals_c_times_l]
+  fit: least_squares_through_origin
+  permutation: explicit_id_derangement_cycle_over_seeded_order
+  permutation_seed: 20260733
+  expected_correct_coefficient: 9.81
+  minimum_wrong_train_nrmse: 0.10
+  loss: smooth_l1
+training:
+  seeds: [3407, 42, 0]
+  epochs: 500
+  optimizer: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  full_batch_by_id: true
+  checkpoint_epoch: 500
+loss_weights:
+  view: 1.0
+  variance: 1.0
+  covariance: 0.04
+  point: 1.0
+  relation: 1.0
+  range: 0.001
+  range_zscore_limit: 6.0
+evaluation:
+  identity_metric: relation3_mean_direct_absolute_pearson
+  numerical_metric: relation3_mean_direct_r2
+  error_metric: relation3_normalized_rmse
+  relation_indices: [2, 3, 4]
+  free_indices: [0, 1]
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 20260802
+  minimum_prediction_std_ratio: 0.05
+  required_correct_minus_point_positive_seed_splits: 6
+  required_correct_minus_coefficient_positive_seed_splits: 5
+  required_positive_coefficient_validation_bootstrap_seeds: 2
+  soft_mean_correctness_r2_gain: 0.02
+  soft_mean_correctness_pearson_gain: 0.01
+reference_assets:
+  v3_aggregate: outputs/causalverse_spring_correctness_k40_v3/aggregate_results.json
+  v3_aggregate_sha256: 78849f7778e252861533b83d16b464a910f1eacb747bc41c6d3c51f10b3b1831
+runtime:
+  python: artifacts/envs/context_residual_ad/bin/python
+  cublas_workspace_config: ":4096:8"
+  feature_cache: outputs/causalverse_spring_correctness_k40_v4_unread/features_dinov2_registers_base.npz
+  feature_cache_sha256: d0bab792083088da4a1dd08e969eeb57e7f8bcb53c48dab1252c5c5101e831ef
+  output_root: outputs/causalverse_spring_correctness_k40_v4_unread

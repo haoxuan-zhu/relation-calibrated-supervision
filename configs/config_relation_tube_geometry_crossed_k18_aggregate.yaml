@@ -1,0 +1,32 @@
+protocol_version: relation_tube_geometry_crossed_k18_aggregate_v1
+preregistration: PROTOCOLS.md
+test_evaluated: false
+inputs:
+  "20260811:0":
+    path: outputs/relation_tube_geometry_crossed_k18/s20260811/seed0/formal/paired_validation_readout.json
+    sha256: 3d2763bdca22a2d9fd9b12aa472edf2ac30d60d8cdb741d43c6a9554e9bedbcf
+  "20260811:42":
+    path: outputs/relation_tube_geometry_crossed_k18/s20260811/seed42/formal/paired_validation_readout.json
+    sha256: d6f1bfe4c841ce4f66f7444b989270189d5ce030f0b87987e11c372e6efffb22
+  "20260811:3407":
+    path: outputs/relation_tube_calibration_subset_k8_20260811/formal/subset_validation_readout.json
+    sha256: 6cd7555cad95d840b99c8a4238eeeaa8627fc0c441495d535d2d6368eabb198a
+  "20260821:0":
+    path: outputs/relation_tube_geometry_crossed_k18/s20260821/seed0/formal/paired_validation_readout.json
+    sha256: f4fa11897b5c428cea18aa1f14518abe18ad6cb76d206fd89d20e1b69d3011c0
+  "20260821:42":
+    path: outputs/relation_tube_geometry_crossed_k18/s20260821/seed42/formal/paired_validation_readout.json
+    sha256: 434cb6922e555191fc4abc97576a4db46e1633c659f6acf2715237b866254f37
+  "20260821:3407":
+    path: outputs/relation_tube_calibration_subset_k8_20260821/formal/subset_validation_readout.json
+    sha256: 0bdbdc734db913efd80bc3a811b173de8bd012ed1eb5a3856fd7dedafe5f4bdf
+  "20260831:0":
+    path: outputs/relation_tube_geometry_crossed_k18/s20260831/seed0/formal/paired_validation_readout.json
+    sha256: 00657439caa98814d01b69fb08174085ea4767922b22b7bdce92a82e2a15f60d
+  "20260831:42":
+    path: outputs/relation_tube_geometry_crossed_k18/s20260831/seed42/formal/paired_validation_readout.json
+    sha256: 806f1a95f98b543bf695b5e30e44301db8f96671a6b133ece8ca06ec110ca1ac
+  "20260831:3407":
+    path: outputs/relation_tube_calibration_subset_k8_20260831/formal/subset_validation_readout.json
+    sha256: 177c55311c8dc93cf869668bea1f10f20b17c305c3cc878139bbf004bc08d472
+output_path: outputs/relation_tube_geometry_crossed_k18/aggregate/crossed_geometry_aggregate.json

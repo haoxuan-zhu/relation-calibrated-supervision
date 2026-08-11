@@ -1,0 +1,11 @@
+{
+  "protocol": "resistance_spot_welding_anchor_replay_audit_v1",
+  "independent_solver": "numpy.linalg.solve_on_regularized_dual_system",
+  "checked_prediction_values": 7488,
+  "train_evaluation_unit_overlap": {
+    "validation": 0,
+    "heldout": 0
+  },
+  "maximum_prediction_absolute_error": 2.573870006017387e-10,
+  "passed": true
+}

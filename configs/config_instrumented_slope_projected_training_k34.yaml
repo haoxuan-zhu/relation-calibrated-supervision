@@ -1,0 +1,55 @@
+protocol_version: instrumented_slope_projected_training_k34
+protocol_document: PROTOCOLS.md
+source_contract:
+  validation_config: configs/config_instrumented_slope_validation_k29.yaml
+  validation_config_sha256: b4980922781b2947bceecf621ef3cf6efd06dc2cfaf1633ea7441a88d22511ee
+  validation_result: outputs/instrumented_slope_validation_k29/instrumented_slope_validation_results.json
+  validation_result_sha256: 6155f5069d24883a3243feb53a02f587591a30ef95812ac57604f5317bf8f430
+  k30_config: configs/config_instrumented_slope_neural_tube_k30.yaml
+  k30_config_sha256: feca94c56d84cf9c38b2852ce89cb0e8d5d69e7460dfb1acb4b016354dd16751
+  k30_result: outputs/instrumented_slope_neural_tube_k30/evaluation/validation_results.json
+  k30_result_sha256: 353513f28dbf825cd786276b3d4831f12370de0bb43168260d2c145d8f0450d8
+  k30_output_root: outputs/instrumented_slope_neural_tube_k30
+  k33_result: outputs/instrumented_slope_relation_decoder_k33/evaluation/validation_results.json
+  k33_result_sha256: c17a6da30df708c98d383db6ccbd4b33a446b4a306ba0cd2a335bfb2b7dcb8b6
+model:
+  feature_dim: 768
+  hidden_dims: [512, 256]
+  anchor_conditioning: film
+  output_dim: 5
+  conditions: [joint_projected, projected_only]
+projection:
+  family: differentiable_gauss_newton_curve
+  iterations: 8
+  roughness_bounds: [0.0, 1.0]
+training:
+  seeds: [3407, 42, 0]
+  epochs: 500
+  optimizer: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  full_batch_by_id: true
+  checkpoint_epoch: 500
+point_loss:
+  joint_projected:
+    raw_weight: 0.5
+    projected_weight: 0.5
+  projected_only:
+    raw_weight: 0.0
+    projected_weight: 1.0
+loss_weights:
+  view: 1.0
+  variance: 1.0
+  covariance: 0.04
+  point: 1.0
+  range: 0.001
+  range_zscore_limit: 6.0
+evaluation:
+  candidates: [k30_posthoc_curve, joint_projected_curve, projected_only_curve]
+  bootstrap_repetitions: 1000
+  bootstrap_seed: 20260804
+  bootstrap_confidence: 0.95
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/instrumented_slope_projected_training_k34

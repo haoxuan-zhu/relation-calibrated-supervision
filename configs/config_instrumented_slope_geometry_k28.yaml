@@ -1,0 +1,32 @@
+protocol_version: instrumented_slope_geometry_k28
+protocol_document: PROTOCOLS.md
+source_contract:
+  interface_config: configs/config_instrumented_slope_interface_k27.yaml
+  interface_config_sha256: 6d516c50d0516c9cf0a10bfb420bb8c0053877f9d8524c1c60a9a632dde452e7
+  interface_result: outputs/instrumented_slope_interface_k27/instrumented_slope_interface_audit.json
+  interface_result_sha256: f631b622979df31bdca1f1b2834967973679113acd8cfda5655269dc63dea72e
+calibration:
+  coverage: 0.95
+  roughness_physical_bounds: [0.0, 1.0]
+  score_rule: ceil_n_plus_1_coverage_capped_at_n
+  residual_scale: k40_target_standard_deviation
+  center_residuals: exact_leave_one_out_k39
+raw_predictor:
+  family: standardized_dual_ridge
+  ridge_alpha: 0.1
+  fit_ids: k40_labels_only
+  input: mean_over_four_frozen_features
+candidates:
+  - physical_center
+  - unbounded_five_residual
+  - isotropic_rank_tube
+  - tangent_rank_tube
+  - formula_from_predicted_roughness
+  - formula_physical_bounds
+  - formula_rank_tube
+  - nonlinear_curve_rank_tube
+projection:
+  nonlinear_tolerance: 1.0e-10
+  nonlinear_max_iterations: 200
+runtime:
+  output: outputs/instrumented_slope_geometry_k28/instrumented_slope_geometry_audit.json

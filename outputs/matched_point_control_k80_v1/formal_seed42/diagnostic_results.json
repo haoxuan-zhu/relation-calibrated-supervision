@@ -1,0 +1,1828 @@
+{
+  "config": {
+    "dataset": {
+      "cache_path": "outputs/stochastic_measurement_crl_oracle_v1/cache/real_images_uint8.npy",
+      "domain_suffix": "",
+      "environments": [
+        "obs",
+        "red",
+        "green",
+        "blue",
+        "pol_1",
+        "pol_2"
+      ],
+      "experiment_prefix": "buchholz_1",
+      "latent_columns": [
+        "red",
+        "green",
+        "blue",
+        "pol_1",
+        "pol_2"
+      ],
+      "root": "data/causal_chamber/lt_crl_benchmark_v1",
+      "samples_per_environment": 10000
+    },
+    "evaluation": {
+      "graph_threshold": 0.3,
+      "minimum_oracle_anchor_r2": 0.999,
+      "positive_small_test_delta_each_gt": 0.0,
+      "positive_small_test_mean_delta_min": 0.05,
+      "strong_test_delta_each_min": 0.05,
+      "strong_test_mean_delta_min": 0.1,
+      "strong_validation_delta_each_gt": 0.0,
+      "strong_validation_mean_delta_min": 0.05
+    },
+    "floor_schedule": {
+      "decay_end_epoch": 80,
+      "hold_epochs": 20,
+      "hold_weight": 1.0,
+      "nonzero_floor": 0.1
+    },
+    "implementation": {
+      "runner": "run_matched_point_control_k80.py",
+      "runner_sha256": "15367bb35cd7c4893c71774313dde12051a570b4154a2c906ce7f569fd889633"
+    },
+    "initialization": {
+      "expected_state_dict_sha256": "9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56",
+      "mode": "same_seed_random_no_warm",
+      "provenance": "matched_to_v18_seed42"
+    },
+    "matched_reference": {
+      "condition": "vanilla_correct_floor",
+      "expected_parameter_count": 16902384,
+      "functional_result_sha256": "3994b655ab3e708dcc65173a497aaa085993290fec371fc647d1b410031d2661",
+      "functional_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84"
+    },
+    "model": {
+      "anchor_indices": [
+        3,
+        4
+      ],
+      "conv_layers": 2,
+      "hidden_channels": 64,
+      "latent_dim": 5,
+      "learned_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    "normalization": {
+      "angle_statistics_source": "all_8000_known_sensor_anchors",
+      "rgb_statistics_budget": 80,
+      "rgb_statistics_source": "k80_calibration_subset_rgb_full_train_known_angles_v17",
+      "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84"
+    },
+    "point_anchor": {
+      "budget": 80,
+      "sampling": "ccrl_row_modulo_registered_subset",
+      "subset_seed": 20260731,
+      "supervised_environments": [
+        "obs"
+      ]
+    },
+    "preregistration": "PROTOCOLS.md",
+    "protocol_version": "partial_anchor_crl_matched_point_k80_v1",
+    "runtime": {
+      "device": "cuda",
+      "num_threads": 8,
+      "output_dir": "outputs/partial_anchor_crl_matched_point_k80_v1/real_seed42"
+    },
+    "split": {
+      "test_end": 10000,
+      "train_end": 8000,
+      "validation_end": 9000
+    },
+    "training": {
+      "batch_size": 512,
+      "conditions": [
+        "matched_point_correct_floor"
+      ],
+      "epochs": 100,
+      "eta": 0.0001,
+      "kappa": 0.1,
+      "learning_rate": 0.0005,
+      "mu": 1e-05,
+      "scheduler_factor": 0.3,
+      "scheduler_patience": 3,
+      "seed": 42,
+      "shuffle_seed": 20260730,
+      "targets": [
+        0,
+        1,
+        2
+      ],
+      "validation_interval": 10
+    }
+  },
+  "config_sha256": "38aeb75881ebfd25918bae5dfbfd12b2f2eef82b75386da37af4e0d25fc87cd1",
+  "decision": {
+    "effect_judgment_deferred_to_three_seed_aggregate": true,
+    "readout": {
+      "test_rgb_mean_direct_abs_correlation": 0.5235287547111511,
+      "validation_rgb_mean_direct_abs_correlation": 0.5309148847122415
+    },
+    "validity": {
+      "anchors_exact": true,
+      "floor_exact": true,
+      "k80_rgb_statistics_source_registered": true,
+      "locked_before_semantic_and_test": true,
+      "no_semantic_truth_before_lock": true,
+      "no_warm_checkpoint_in_config": true,
+      "point_budget_exact": true,
+      "point_observational_only": true,
+      "point_sampling_registered": true,
+      "point_subset_matches_functional_reference": true,
+      "point_subset_matches_normalization": true,
+      "point_unique_rows_exact": true,
+      "random_initial_state_exact": true,
+      "same_initial_state_loaded": true,
+      "same_parameter_count_as_functional": true,
+      "semantic_metrics_finite": true,
+      "training_values_finite": true
+    },
+    "verdict": "matched_point_control_valid_seed42"
+  },
+  "duration_seconds": 313.5846734046936,
+  "duration_seconds_before_semantic_and_test": 313.22081446647644,
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "numpy": "1.26.4",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "initial_state": {
+    "file_sha256": "a67bc552fe3f99b76e8fede8238b0a0259b4be762d421c46e52b02e380a5e77a",
+    "path": "outputs/partial_anchor_crl_matched_point_k80_v1/formal_seed42/initial_state_seed42.pt",
+    "state_dict_sha256": "9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56"
+  },
+  "metrics": {
+    "absolute_correlation_matrix": [
+      [
+        0.4744492471218109,
+        0.1276477426290512,
+        0.03801022097468376,
+        0.6922220587730408,
+        0.11174043267965317
+      ],
+      [
+        0.09800589084625244,
+        0.6248679757118225,
+        0.44215449690818787,
+        0.14820799231529236,
+        0.5579666495323181
+      ],
+      [
+        0.08731255680322647,
+        0.6310126185417175,
+        0.4712691307067871,
+        0.16589605808258057,
+        0.5853391885757446
+      ],
+      [
+        0.5907866954803467,
+        0.04062075912952423,
+        0.008001085370779037,
+        1.0,
+        0.02110333740711212
+      ],
+      [
+        0.39057955145835876,
+        0.7480960488319397,
+        0.7641063332557678,
+        0.02110333740711212,
+        1.0
+      ]
+    ],
+    "anchor_direct_r2": [
+      1.0,
+      1.0
+    ],
+    "anchor_mean_direct_r2": 1.0,
+    "direct_abs_correlation": [
+      0.4744492471218109,
+      0.6248679757118225,
+      0.4712691307067871,
+      1.0,
+      1.0
+    ],
+    "estimated_A": [
+      [
+        9.651838627178222e-05,
+        0.07843725383281708,
+        -0.22032946348190308,
+        0.24530749022960663,
+        0.1584879457950592
+      ],
+      [
+        -0.18881691992282867,
+        9.466909250477329e-05,
+        -0.24174165725708008,
+        0.08388189971446991,
+        0.28060585260391235
+      ],
+      [
+        -0.1338120698928833,
+        0.4663129448890686,
+        9.410059283254668e-05,
+        0.021930845454335213,
+        0.18736355006694794
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        9.854671952780336e-05,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        9.854671952780336e-05
+      ]
+    ],
+    "full_assignment": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "full_mcc": 0.7141172289848328,
+    "graph": {
+      "edge_auroc": 0.7666666666666667,
+      "fixed_threshold_shd": 4
+    },
+    "linear_readout_mean_r2": 0.7487571709075771,
+    "linear_readout_r2": [
+      0.5343119739383978,
+      0.619241610659333,
+      0.5902322699401548,
+      1.0,
+      1.0
+    ],
+    "unanchored_assignment": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "unanchored_mcc": 0.5235289931297302
+  },
+  "mode": "formal",
+  "normalization": {
+    "latent_mean": [
+      131.1999969482422,
+      128.91250610351562,
+      128.3625030517578,
+      -0.06193770095705986,
+      0.013499962165951729
+    ],
+    "latent_std": [
+      25.905790328979492,
+      19.90489387512207,
+      21.795209884643555,
+      17.909988403320312,
+      18.040651321411133
+    ],
+    "rgb_statistics_source": "k80_calibration_subset_rgb_full_train_known_angles_v17"
+  },
+  "point_anchor": {
+    "budget": 80,
+    "sampling": "ccrl_row_modulo_registered_subset",
+    "subset_rows": [
+      6807,
+      4968,
+      7614,
+      3154,
+      1759,
+      1579,
+      5799,
+      2535,
+      7825,
+      1490,
+      1889,
+      1623,
+      1056,
+      5732,
+      5061,
+      5139,
+      7332,
+      4907,
+      3261,
+      2436,
+      1448,
+      6785,
+      4542,
+      163,
+      2128,
+      703,
+      7817,
+      6327,
+      4970,
+      6454,
+      3353,
+      570,
+      6191,
+      4181,
+      3628,
+      3042,
+      174,
+      1997,
+      2725,
+      6588,
+      1988,
+      1242,
+      7752,
+      4531,
+      4780,
+      3168,
+      1689,
+      1079,
+      4393,
+      6810,
+      7092,
+      2833,
+      7958,
+      3397,
+      878,
+      7129,
+      370,
+      5821,
+      4626,
+      7018,
+      4992,
+      4682,
+      724,
+      4082,
+      7774,
+      4544,
+      2214,
+      2232,
+      2856,
+      97,
+      3681,
+      707,
+      608,
+      2963,
+      3242,
+      4119,
+      6797,
+      3710,
+      3368,
+      2981
+    ],
+    "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+    "supervised_environments": [
+      "obs"
+    ],
+    "unique_rows": 80
+  },
+  "post_lock_validation_semantics": {
+    "direct_abs_correlation": [
+      0.4521610476482277,
+      0.6296101986276731,
+      0.5109734078608236
+    ],
+    "mean_direct_abs_correlation": 0.5309148847122415,
+    "mean_r2": -3.8983476161956787,
+    "mse": 5.916088581085205,
+    "r2": [
+      -6.259822845458984,
+      -1.5940780639648438,
+      -3.841141700744629
+    ]
+  },
+  "protocol_version": "partial_anchor_crl_matched_point_k80_v1",
+  "source_files_sha256": {
+    "run_clamped_anchor_diagnostic.py": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+    "run_conditioned_film_diagnostic.py": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+    "run_conflict_projected_physics_from_scratch.py": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+    "run_conflict_projected_physics_k80_closed.py": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+    "run_conflict_projected_physics_training.py": "038d6e407517dffa51df8277649c8c4f3017ed62db940de72aa36f87aa2c53e2",
+    "run_diagnostic.py": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+    "run_matched_point_control_k80.py": "15367bb35cd7c4893c71774313dde12051a570b4154a2c906ce7f569fd889633"
+  },
+  "training": {
+    "checkpoint": "outputs/partial_anchor_crl_matched_point_k80_v1/formal_seed42/matched_point_correct_floor_seed42.pt",
+    "checkpoint_sha256": "54895ebf36365ea195d261ad0809826a473a14a1acfb7e203055f5d7af1e2cfc",
+    "condition": "matched_point_correct_floor",
+    "duration_seconds": 311.69547963142395,
+    "final_epoch": 100,
+    "final_supervision_weight": 0.1,
+    "history": [
+      {
+        "epoch": 1,
+        "learning_rate": 0.0005,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.4474760074615478,
+          "graph_regularizer": 0.000580874467579027,
+          "mean_regularizer": 0.16661374573921786,
+          "optimized_total": 2.9063968410491943,
+          "point_mse": 1.2917262040774027,
+          "supervision_weight": 1.0,
+          "total": 1.6146706399917603
+        },
+        "validation": {
+          "classifier": 1.378621295928955,
+          "graph_regularizer": 0.0005749556585215032,
+          "mean_regularizer": 0.0019156940883646408,
+          "total": 1.381111917813619
+        }
+      },
+      {
+        "epoch": 2,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.3320285396575928,
+          "graph_regularizer": 0.0005713773012782136,
+          "mean_regularizer": 0.00781315295646588,
+          "optimized_total": 1.7634165925979615,
+          "point_mse": 0.42300353074073793,
+          "supervision_weight": 1.0,
+          "total": 1.3404130624135335
+        }
+      },
+      {
+        "epoch": 3,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.2714717067082724,
+          "graph_regularizer": 0.0005628360767538349,
+          "mean_regularizer": 0.012660674798302353,
+          "optimized_total": 1.6671529280344646,
+          "point_mse": 0.3824577060540517,
+          "supervision_weight": 1.0,
+          "total": 1.2846952174504598
+        }
+      },
+      {
+        "epoch": 4,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.9683388276100159,
+          "graph_regularizer": 0.0005511342994868755,
+          "mean_regularizer": 0.016065599486231805,
+          "optimized_total": 1.2677179425557454,
+          "point_mse": 0.2827623732089996,
+          "supervision_weight": 1.0,
+          "total": 0.984955560207367
+        }
+      },
+      {
+        "epoch": 5,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.6632451244990031,
+          "graph_regularizer": 0.0005503001192895075,
+          "mean_regularizer": 0.01292400363770624,
+          "optimized_total": 0.8486727778116862,
+          "point_mse": 0.171953351020813,
+          "supervision_weight": 1.0,
+          "total": 0.6767194221814473
+        }
+      },
+      {
+        "epoch": 6,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.5806375801563263,
+          "graph_regularizer": 0.0005499637497899433,
+          "mean_regularizer": 0.024861143233254553,
+          "optimized_total": 0.7061848971048991,
+          "point_mse": 0.10013621425628662,
+          "supervision_weight": 1.0,
+          "total": 0.6060486884117127
+        }
+      },
+      {
+        "epoch": 7,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.5246032748222351,
+          "graph_regularizer": 0.0005467223779608806,
+          "mean_regularizer": 0.03227484164138635,
+          "optimized_total": 0.6020088178316753,
+          "point_mse": 0.044583987961212795,
+          "supervision_weight": 1.0,
+          "total": 0.5574248356819153
+        }
+      },
+      {
+        "epoch": 8,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.5036429187456767,
+          "graph_regularizer": 0.0005429300010825197,
+          "mean_regularizer": 0.03351647404332956,
+          "optimized_total": 0.5994155484835307,
+          "point_mse": 0.06171323490142822,
+          "supervision_weight": 1.0,
+          "total": 0.5377023186683655
+        }
+      },
+      {
+        "epoch": 9,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.44777804668744403,
+          "graph_regularizer": 0.000538610235011826,
+          "mean_regularizer": 0.0367882265150547,
+          "optimized_total": 0.5041518393357595,
+          "point_mse": 0.0190469526425004,
+          "supervision_weight": 1.0,
+          "total": 0.4851048838297526
+        }
+      },
+      {
+        "epoch": 10,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.4026096804936727,
+          "graph_regularizer": 0.0005333100183246036,
+          "mean_regularizer": 0.03787620505690575,
+          "optimized_total": 0.47151319805781045,
+          "point_mse": 0.030494005406896275,
+          "supervision_weight": 1.0,
+          "total": 0.4410191944440206
+        }
+      },
+      {
+        "epoch": 11,
+        "learning_rate": 0.0005,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.3606900967756907,
+          "graph_regularizer": 0.0005273024090565741,
+          "mean_regularizer": 0.03377401314179103,
+          "optimized_total": 0.42860061168670655,
+          "point_mse": 0.033609200129906334,
+          "supervision_weight": 1.0,
+          "total": 0.3949914121627808
+        },
+        "validation": {
+          "classifier": 0.3678528071244558,
+          "graph_regularizer": 0.0005240681348368526,
+          "mean_regularizer": 0.024332618266344072,
+          "total": 0.3927094995975494
+        }
+      },
+      {
+        "epoch": 12,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.33539794898033143,
+          "graph_regularizer": 0.000520809431715558,
+          "mean_regularizer": 0.0313698466916879,
+          "optimized_total": 0.4128709433078766,
+          "point_mse": 0.04558234017093976,
+          "supervision_weight": 1.0,
+          "total": 0.36728860505421956
+        }
+      },
+      {
+        "epoch": 13,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.2904415973822276,
+          "graph_regularizer": 0.00051444171089679,
+          "mean_regularizer": 0.029640092621246974,
+          "optimized_total": 0.34626753759384155,
+          "point_mse": 0.02567140989502271,
+          "supervision_weight": 1.0,
+          "total": 0.3205961312452952
+        }
+      },
+      {
+        "epoch": 14,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.269070437669754,
+          "graph_regularizer": 0.0005064245308749378,
+          "mean_regularizer": 0.027829642698168754,
+          "optimized_total": 0.33390336449941,
+          "point_mse": 0.036496860340237615,
+          "supervision_weight": 1.0,
+          "total": 0.2974065066973368
+        }
+      },
+      {
+        "epoch": 15,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.24377300095558166,
+          "graph_regularizer": 0.0004985486643078427,
+          "mean_regularizer": 0.02473190063238144,
+          "optimized_total": 0.2993602917194366,
+          "point_mse": 0.030356843332449594,
+          "supervision_weight": 1.0,
+          "total": 0.26900344824790956
+        }
+      },
+      {
+        "epoch": 16,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.2193530892531077,
+          "graph_regularizer": 0.0004924110531186064,
+          "mean_regularizer": 0.020894461606939634,
+          "optimized_total": 0.27731244611740113,
+          "point_mse": 0.03657248676319917,
+          "supervision_weight": 1.0,
+          "total": 0.2407399608294169
+        }
+      },
+      {
+        "epoch": 17,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.18957174158096313,
+          "graph_regularizer": 0.0004861433788513144,
+          "mean_regularizer": 0.016501393680771193,
+          "optimized_total": 0.25019865469137825,
+          "point_mse": 0.04363937916358312,
+          "supervision_weight": 1.0,
+          "total": 0.206559277455012
+        }
+      },
+      {
+        "epoch": 18,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.16912406984965006,
+          "graph_regularizer": 0.00047901903667176764,
+          "mean_regularizer": 0.019256754864938556,
+          "optimized_total": 0.23092684503396352,
+          "point_mse": 0.042067000237603985,
+          "supervision_weight": 1.0,
+          "total": 0.18885984440644582
+        }
+      },
+      {
+        "epoch": 19,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.13959723695119222,
+          "graph_regularizer": 0.0004701875778846443,
+          "mean_regularizer": 0.014746316553403934,
+          "optimized_total": 0.19132632235685984,
+          "point_mse": 0.03651258280376593,
+          "supervision_weight": 1.0,
+          "total": 0.15481373977661134
+        }
+      },
+      {
+        "epoch": 20,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.12115463425715764,
+          "graph_regularizer": 0.00046033396199345587,
+          "mean_regularizer": 0.014104733690619469,
+          "optimized_total": 0.177561203956604,
+          "point_mse": 0.04184150171279907,
+          "supervision_weight": 1.0,
+          "total": 0.13571970162789027
+        }
+      },
+      {
+        "epoch": 21,
+        "learning_rate": 0.0005,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.11197489617268244,
+          "graph_regularizer": 0.00045023362284215786,
+          "mean_regularizer": 0.019204992348949113,
+          "optimized_total": 0.17024605059623718,
+          "point_mse": 0.03861592702070872,
+          "supervision_weight": 1.0,
+          "total": 0.13163012266159058
+        },
+        "validation": {
+          "classifier": 0.09127633217970531,
+          "graph_regularizer": 0.00044523243559524417,
+          "mean_regularizer": 0.011879533355434735,
+          "total": 0.10360109706719717
+        }
+      },
+      {
+        "epoch": 22,
+        "supervision_weight": 0.9847457627118644,
+        "train": {
+          "classifier": 0.09441608170668284,
+          "graph_regularizer": 0.00043984532860728604,
+          "mean_regularizer": 0.01749572969476382,
+          "optimized_total": 0.15195658679803212,
+          "point_mse": 0.04021843345463276,
+          "supervision_weight": 0.9847457627118649,
+          "total": 0.1123516555428505
+        }
+      },
+      {
+        "epoch": 23,
+        "supervision_weight": 0.9694915254237287,
+        "train": {
+          "classifier": 0.08685652468601862,
+          "graph_regularizer": 0.0004292254149137686,
+          "mean_regularizer": 0.015657298331459363,
+          "optimized_total": 0.13272641760110854,
+          "point_mse": 0.03072060675919056,
+          "supervision_weight": 0.9694915254237279,
+          "total": 0.1029430491924286
+        }
+      },
+      {
+        "epoch": 24,
+        "supervision_weight": 0.9542372881355933,
+        "train": {
+          "classifier": 0.07236940882603328,
+          "graph_regularizer": 0.0004185502907882134,
+          "mean_regularizer": 0.015225824274122715,
+          "optimized_total": 0.11612581058343252,
+          "point_mse": 0.02946020571887493,
+          "supervision_weight": 0.9542372881355938,
+          "total": 0.08801378411054611
+        }
+      },
+      {
+        "epoch": 25,
+        "supervision_weight": 0.9389830508474576,
+        "train": {
+          "classifier": 0.06422056877613068,
+          "graph_regularizer": 0.00040755532612092793,
+          "mean_regularizer": 0.015522080184270938,
+          "optimized_total": 0.10928782916069031,
+          "point_mse": 0.03103104449311892,
+          "supervision_weight": 0.9389830508474571,
+          "total": 0.08015020422140758
+        }
+      },
+      {
+        "epoch": 26,
+        "supervision_weight": 0.923728813559322,
+        "train": {
+          "classifier": 0.05800700625777245,
+          "graph_regularizer": 0.0003967563872380803,
+          "mean_regularizer": 0.014370192856838306,
+          "optimized_total": 0.09557364586989085,
+          "point_mse": 0.024682233586907385,
+          "supervision_weight": 0.923728813559322,
+          "total": 0.07277395570278168
+        }
+      },
+      {
+        "epoch": 27,
+        "supervision_weight": 0.9084745762711864,
+        "train": {
+          "classifier": 0.054968111644188564,
+          "graph_regularizer": 0.0003860371878060202,
+          "mean_regularizer": 0.02012790292004744,
+          "optimized_total": 0.1026255330046018,
+          "point_mse": 0.029878087346752485,
+          "supervision_weight": 0.9084745762711869,
+          "total": 0.07548205077648162
+        }
+      },
+      {
+        "epoch": 28,
+        "supervision_weight": 0.8932203389830509,
+        "train": {
+          "classifier": 0.044432887425025304,
+          "graph_regularizer": 0.00037539158288079006,
+          "mean_regularizer": 0.014425424526135126,
+          "optimized_total": 0.07923207636674245,
+          "point_mse": 0.022389070123434066,
+          "supervision_weight": 0.8932203389830499,
+          "total": 0.05923370329538981
+        }
+      },
+      {
+        "epoch": 29,
+        "supervision_weight": 0.8779661016949153,
+        "train": {
+          "classifier": 0.042422798305749895,
+          "graph_regularizer": 0.00036465042503550647,
+          "mean_regularizer": 0.015911411372323832,
+          "optimized_total": 0.07901935217777888,
+          "point_mse": 0.023144961945712566,
+          "supervision_weight": 0.8779661016949156,
+          "total": 0.05869885976115863
+        }
+      },
+      {
+        "epoch": 30,
+        "supervision_weight": 0.8627118644067796,
+        "train": {
+          "classifier": 0.04065843176841736,
+          "graph_regularizer": 0.0003541541452674816,
+          "mean_regularizer": 0.015256882019573823,
+          "optimized_total": 0.0746501716375351,
+          "point_mse": 0.02130572730799516,
+          "supervision_weight": 0.8627118644067792,
+          "total": 0.05626946799953778
+        }
+      },
+      {
+        "epoch": 31,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.847457627118644,
+        "train": {
+          "classifier": 0.03480368720491727,
+          "graph_regularizer": 0.0003436272645679613,
+          "mean_regularizer": 0.015207669789592424,
+          "optimized_total": 0.06737833660840988,
+          "point_mse": 0.020087554362912974,
+          "supervision_weight": 0.8474576271186438,
+          "total": 0.050354984601338706
+        },
+        "validation": {
+          "classifier": 0.03932660998900731,
+          "graph_regularizer": 0.00033818339579738677,
+          "mean_regularizer": 0.02745085162917773,
+          "total": 0.06711564322312673
+        }
+      },
+      {
+        "epoch": 32,
+        "supervision_weight": 0.8322033898305086,
+        "train": {
+          "classifier": 0.0366248792608579,
+          "graph_regularizer": 0.00033309435308910904,
+          "mean_regularizer": 0.019335564273099105,
+          "optimized_total": 0.07920010737578075,
+          "point_mse": 0.02752520485719045,
+          "supervision_weight": 0.8322033898305086,
+          "total": 0.05629353825251261
+        }
+      },
+      {
+        "epoch": 33,
+        "supervision_weight": 0.8169491525423729,
+        "train": {
+          "classifier": 0.032772712195913,
+          "graph_regularizer": 0.0003228540349130829,
+          "mean_regularizer": 0.01163503431280454,
+          "optimized_total": 0.06275295575459798,
+          "point_mse": 0.022060560216506323,
+          "supervision_weight": 0.8169491525423732,
+          "total": 0.044730600416660306
+        }
+      },
+      {
+        "epoch": 34,
+        "supervision_weight": 0.8016949152542373,
+        "train": {
+          "classifier": 0.029672019923726718,
+          "graph_regularizer": 0.0003123744439023236,
+          "mean_regularizer": 0.012073190656801064,
+          "optimized_total": 0.05923018030325572,
+          "point_mse": 0.021420361598332723,
+          "supervision_weight": 0.8016949152542379,
+          "total": 0.042057584782441454
+        }
+      },
+      {
+        "epoch": 35,
+        "supervision_weight": 0.7864406779661016,
+        "train": {
+          "classifier": 0.02890705600877603,
+          "graph_regularizer": 0.00030216136838619905,
+          "mean_regularizer": 0.01255782716224591,
+          "optimized_total": 0.05626196748018265,
+          "point_mse": 0.018431044071912765,
+          "supervision_weight": 0.7864406779661013,
+          "total": 0.041767044862111406
+        }
+      },
+      {
+        "epoch": 36,
+        "supervision_weight": 0.7711864406779662,
+        "train": {
+          "classifier": 0.026852053227523962,
+          "graph_regularizer": 0.00029186235973611475,
+          "mean_regularizer": 0.013811118838066856,
+          "optimized_total": 0.056968872487545015,
+          "point_mse": 0.02076519771416982,
+          "supervision_weight": 0.7711864406779656,
+          "total": 0.04095503428081671
+        }
+      },
+      {
+        "epoch": 37,
+        "supervision_weight": 0.7559322033898305,
+        "train": {
+          "classifier": 0.022766054297486942,
+          "graph_regularizer": 0.00028154446821038924,
+          "mean_regularizer": 0.012500362532834212,
+          "optimized_total": 0.04520816349983215,
+          "point_mse": 0.01277919023980697,
+          "supervision_weight": 0.75593220338983,
+          "total": 0.03554796180129051
+        }
+      },
+      {
+        "epoch": 38,
+        "supervision_weight": 0.7406779661016949,
+        "train": {
+          "classifier": 0.023049670934677125,
+          "graph_regularizer": 0.00027109708877590794,
+          "mean_regularizer": 0.015811739039917786,
+          "optimized_total": 0.057330408294995625,
+          "point_mse": 0.024569249123334885,
+          "supervision_weight": 0.7406779661016953,
+          "total": 0.03913250706593196
+        }
+      },
+      {
+        "epoch": 39,
+        "supervision_weight": 0.7254237288135593,
+        "train": {
+          "classifier": 0.027710379535953202,
+          "graph_regularizer": 0.0002609333889558911,
+          "mean_regularizer": 0.016726259108011923,
+          "optimized_total": 0.0626763877471288,
+          "point_mse": 0.024783880800008772,
+          "supervision_weight": 0.7254237288135595,
+          "total": 0.04469757196803888
+        }
+      },
+      {
+        "epoch": 40,
+        "supervision_weight": 0.7101694915254237,
+        "train": {
+          "classifier": 0.020584550271431606,
+          "graph_regularizer": 0.0002507420883824428,
+          "mean_regularizer": 0.010096215028315782,
+          "optimized_total": 0.03855540810028712,
+          "point_mse": 0.0107353252209723,
+          "supervision_weight": 0.7101694915254236,
+          "total": 0.03093150761226813
+        }
+      },
+      {
+        "epoch": 41,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.6949152542372882,
+        "train": {
+          "classifier": 0.02029631877442201,
+          "graph_regularizer": 0.00024049968792436025,
+          "mean_regularizer": 0.013685472240361075,
+          "optimized_total": 0.04573887810111046,
+          "point_mse": 0.016572650762895744,
+          "supervision_weight": 0.694915254237288,
+          "total": 0.03422229074935118
+        },
+        "validation": {
+          "classifier": 0.027451948702335357,
+          "graph_regularizer": 0.00023530895123258233,
+          "mean_regularizer": 0.014295247584581375,
+          "total": 0.041982505202293394
+        }
+      },
+      {
+        "epoch": 42,
+        "supervision_weight": 0.6796610169491525,
+        "train": {
+          "classifier": 0.020422276839613916,
+          "graph_regularizer": 0.00023032243666239082,
+          "mean_regularizer": 0.013155154297128319,
+          "optimized_total": 0.04583000789086024,
+          "point_mse": 0.017688603788614272,
+          "supervision_weight": 0.6796610169491517,
+          "total": 0.033807753254969916
+        }
+      },
+      {
+        "epoch": 43,
+        "supervision_weight": 0.6644067796610169,
+        "train": {
+          "classifier": 0.02021144101023674,
+          "graph_regularizer": 0.0002202537478491043,
+          "mean_regularizer": 0.014201659993734211,
+          "optimized_total": 0.047835551023483275,
+          "point_mse": 0.019870652673145136,
+          "supervision_weight": 0.6644067796610174,
+          "total": 0.03463335471848647
+        }
+      },
+      {
+        "epoch": 44,
+        "supervision_weight": 0.6491525423728813,
+        "train": {
+          "classifier": 0.018900696575641633,
+          "graph_regularizer": 0.00021018441471581657,
+          "mean_regularizer": 0.014059964427103598,
+          "optimized_total": 0.04395482273896535,
+          "point_mse": 0.016612393110990525,
+          "supervision_weight": 0.6491525423728816,
+          "total": 0.03317084564765294
+        }
+      },
+      {
+        "epoch": 45,
+        "supervision_weight": 0.6338983050847458,
+        "train": {
+          "classifier": 0.017791921531160673,
+          "graph_regularizer": 0.00020005625401002666,
+          "mean_regularizer": 0.012270178911586603,
+          "optimized_total": 0.040237177699804304,
+          "point_mse": 0.015735994969805083,
+          "supervision_weight": 0.6338983050847453,
+          "total": 0.03026215664545695
+        }
+      },
+      {
+        "epoch": 46,
+        "supervision_weight": 0.6186440677966102,
+        "train": {
+          "classifier": 0.01779573304951191,
+          "graph_regularizer": 0.00019014993775635957,
+          "mean_regularizer": 0.013143346235776942,
+          "optimized_total": 0.04434818562368552,
+          "point_mse": 0.021367628547673424,
+          "supervision_weight": 0.6186440677966097,
+          "total": 0.031129229178031285
+        }
+      },
+      {
+        "epoch": 47,
+        "supervision_weight": 0.6033898305084745,
+        "train": {
+          "classifier": 0.014910860141118367,
+          "graph_regularizer": 0.0001824634465156123,
+          "mean_regularizer": 0.0104179518353194,
+          "optimized_total": 0.032738505979379016,
+          "point_mse": 0.011977713162700335,
+          "supervision_weight": 0.6033898305084752,
+          "total": 0.02551127534111341
+        }
+      },
+      {
+        "epoch": 48,
+        "supervision_weight": 0.588135593220339,
+        "train": {
+          "classifier": 0.014081321641802787,
+          "graph_regularizer": 0.00018223887138689557,
+          "mean_regularizer": 0.012072935310502847,
+          "optimized_total": 0.0343358562986056,
+          "point_mse": 0.013601218312978745,
+          "supervision_weight": 0.5881355932203396,
+          "total": 0.02633649573723475
+        }
+      },
+      {
+        "epoch": 49,
+        "supervision_weight": 0.5728813559322035,
+        "train": {
+          "classifier": 0.014531297981739045,
+          "graph_regularizer": 0.00018308645921448868,
+          "mean_regularizer": 0.011634228137632211,
+          "optimized_total": 0.036549121300379434,
+          "point_mse": 0.01780562167863051,
+          "supervision_weight": 0.5728813559322035,
+          "total": 0.026348612725734712
+        }
+      },
+      {
+        "epoch": 50,
+        "supervision_weight": 0.5576271186440678,
+        "train": {
+          "classifier": 0.01374251971890529,
+          "graph_regularizer": 0.00018420786662803342,
+          "mean_regularizer": 0.00943986418354325,
+          "optimized_total": 0.030686157539486884,
+          "point_mse": 0.01312627284352978,
+          "supervision_weight": 0.5576271186440674,
+          "total": 0.023366591428716978
+        }
+      },
+      {
+        "epoch": 51,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.5423728813559322,
+        "train": {
+          "classifier": 0.013575773107508819,
+          "graph_regularizer": 0.00018553219786069045,
+          "mean_regularizer": 0.013272633301094175,
+          "optimized_total": 0.03702832506100337,
+          "point_mse": 0.018427150135238966,
+          "supervision_weight": 0.5423728813559319,
+          "total": 0.027033938586711884
+        },
+        "validation": {
+          "classifier": 0.02525190481543541,
+          "graph_regularizer": 0.0001862536446424201,
+          "mean_regularizer": 0.008960471875965595,
+          "total": 0.03439862989385923
+        }
+      },
+      {
+        "epoch": 52,
+        "supervision_weight": 0.5271186440677966,
+        "train": {
+          "classifier": 0.014341151093443234,
+          "graph_regularizer": 0.00018690415180753917,
+          "mean_regularizer": 0.012513426038126151,
+          "optimized_total": 0.03532629041870435,
+          "point_mse": 0.015717161849141122,
+          "supervision_weight": 0.5271186440677968,
+          "total": 0.02704148150483767
+        }
+      },
+      {
+        "epoch": 53,
+        "supervision_weight": 0.511864406779661,
+        "train": {
+          "classifier": 0.012709655990203222,
+          "graph_regularizer": 0.00018821549594091872,
+          "mean_regularizer": 0.012662320444981258,
+          "optimized_total": 0.03307818328340848,
+          "point_mse": 0.014687465546031793,
+          "supervision_weight": 0.5118644067796614,
+          "total": 0.025560191959142685
+        }
+      },
+      {
+        "epoch": 54,
+        "supervision_weight": 0.4966101694915255,
+        "train": {
+          "classifier": 0.01255724615852038,
+          "graph_regularizer": 0.00018949442426674068,
+          "mean_regularizer": 0.012111843737463157,
+          "optimized_total": 0.03149260493119558,
+          "point_mse": 0.013358608494202296,
+          "supervision_weight": 0.4966101694915253,
+          "total": 0.024858584334452948
+        }
+      },
+      {
+        "epoch": 55,
+        "supervision_weight": 0.4813559322033898,
+        "train": {
+          "classifier": 0.012584491016964117,
+          "graph_regularizer": 0.00019077086949255317,
+          "mean_regularizer": 0.012695003927995762,
+          "optimized_total": 0.03250217620531718,
+          "point_mse": 0.014608546137809753,
+          "supervision_weight": 0.48135593220338924,
+          "total": 0.02547026593486468
+        }
+      },
+      {
+        "epoch": 56,
+        "supervision_weight": 0.4661016949152543,
+        "train": {
+          "classifier": 0.012612862408161164,
+          "graph_regularizer": 0.0001919294681865722,
+          "mean_regularizer": 0.011686745199064414,
+          "optimized_total": 0.03355841249227524,
+          "point_mse": 0.01945256849129995,
+          "supervision_weight": 0.46610169491525394,
+          "total": 0.024491537153720856
+        }
+      },
+      {
+        "epoch": 57,
+        "supervision_weight": 0.45084745762711864,
+        "train": {
+          "classifier": 0.01250365344931682,
+          "graph_regularizer": 0.00019316843505172679,
+          "mean_regularizer": 0.01347023115431269,
+          "optimized_total": 0.03268681793411573,
+          "point_mse": 0.014461132869124413,
+          "supervision_weight": 0.45084745762711864,
+          "total": 0.026167053128282228
+        }
+      },
+      {
+        "epoch": 58,
+        "supervision_weight": 0.43559322033898307,
+        "train": {
+          "classifier": 0.010812933797637621,
+          "graph_regularizer": 0.0001945967791446795,
+          "mean_regularizer": 0.01117336705327034,
+          "optimized_total": 0.02750323928395907,
+          "point_mse": 0.012218605269988378,
+          "supervision_weight": 0.43559322033898334,
+          "total": 0.02218089762330055
+        }
+      },
+      {
+        "epoch": 59,
+        "supervision_weight": 0.4203389830508475,
+        "train": {
+          "classifier": 0.010846789285540582,
+          "graph_regularizer": 0.0001959557889883096,
+          "mean_regularizer": 0.009546890291074911,
+          "optimized_total": 0.02629536152879397,
+          "point_mse": 0.013574106407662233,
+          "supervision_weight": 0.4203389830508472,
+          "total": 0.020589635342359542
+        }
+      },
+      {
+        "epoch": 60,
+        "supervision_weight": 0.4050847457627119,
+        "train": {
+          "classifier": 0.009782112295428911,
+          "graph_regularizer": 0.00019719893337848287,
+          "mean_regularizer": 0.007996429000670711,
+          "optimized_total": 0.02156640216211478,
+          "point_mse": 0.008863977094491323,
+          "supervision_weight": 0.4050847457627119,
+          "total": 0.017975740243991217
+        }
+      },
+      {
+        "epoch": 61,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.38983050847457623,
+        "train": {
+          "classifier": 0.00858846823622783,
+          "graph_regularizer": 0.00019818017053573083,
+          "mean_regularizer": 0.009174332946538926,
+          "optimized_total": 0.021819725900888442,
+          "point_mse": 0.009898518751064936,
+          "supervision_weight": 0.3898305084745763,
+          "total": 0.017960981351633865
+        },
+        "validation": {
+          "classifier": 0.017504206652442615,
+          "graph_regularizer": 0.00019872670236509293,
+          "mean_regularizer": 0.009420036606490613,
+          "total": 0.02712297022342682
+        }
+      },
+      {
+        "epoch": 62,
+        "supervision_weight": 0.37457627118644066,
+        "train": {
+          "classifier": 0.009024927208820978,
+          "graph_regularizer": 0.00019923232685929785,
+          "mean_regularizer": 0.011527693137216072,
+          "optimized_total": 0.025485026121139526,
+          "point_mse": 0.012636074314514797,
+          "supervision_weight": 0.3745762711864411,
+          "total": 0.02075185240805149
+        }
+      },
+      {
+        "epoch": 63,
+        "supervision_weight": 0.3593220338983051,
+        "train": {
+          "classifier": 0.011090030208230019,
+          "graph_regularizer": 0.00020023626290882626,
+          "mean_regularizer": 0.014859745590637128,
+          "optimized_total": 0.032304871012767154,
+          "point_mse": 0.017129088471333185,
+          "supervision_weight": 0.3593220338983051,
+          "total": 0.02615001191695531
+        }
+      },
+      {
+        "epoch": 64,
+        "supervision_weight": 0.3440677966101695,
+        "train": {
+          "classifier": 0.009379119404902062,
+          "graph_regularizer": 0.00020135994271064798,
+          "mean_regularizer": 0.010451072008659442,
+          "optimized_total": 0.024388688400387763,
+          "point_mse": 0.012663600832223893,
+          "supervision_weight": 0.3440677966101693,
+          "total": 0.020031551333765187
+        }
+      },
+      {
+        "epoch": 65,
+        "supervision_weight": 0.32881355932203393,
+        "train": {
+          "classifier": 0.009293655842542648,
+          "graph_regularizer": 0.0002024407951394096,
+          "mean_regularizer": 0.01052474824960033,
+          "optimized_total": 0.025010270446538925,
+          "point_mse": 0.01517402620613575,
+          "supervision_weight": 0.32881355932203415,
+          "total": 0.020020845050613086
+        }
+      },
+      {
+        "epoch": 66,
+        "supervision_weight": 0.31355932203389836,
+        "train": {
+          "classifier": 0.009704401198774576,
+          "graph_regularizer": 0.00020355852119003734,
+          "mean_regularizer": 0.01159221215173602,
+          "optimized_total": 0.025758256527284782,
+          "point_mse": 0.013579837749401729,
+          "supervision_weight": 0.313559322033898,
+          "total": 0.02150017193953196
+        }
+      },
+      {
+        "epoch": 67,
+        "supervision_weight": 0.2983050847457627,
+        "train": {
+          "classifier": 0.009737938176840544,
+          "graph_regularizer": 0.00020482272767306616,
+          "mean_regularizer": 0.011967546523859103,
+          "optimized_total": 0.027705529073874156,
+          "point_mse": 0.01942716254790624,
+          "supervision_weight": 0.2983050847457629,
+          "total": 0.021910307437181472
+        }
+      },
+      {
+        "epoch": 68,
+        "supervision_weight": 0.28305084745762715,
+        "train": {
+          "classifier": 0.00911675567055742,
+          "graph_regularizer": 0.0002060278928062568,
+          "mean_regularizer": 0.008216562733054161,
+          "optimized_total": 0.02124998583396276,
+          "point_mse": 0.013109445673724015,
+          "supervision_weight": 0.28305084745762704,
+          "total": 0.017539346237977347
+        }
+      },
+      {
+        "epoch": 69,
+        "supervision_weight": 0.2677966101694915,
+        "train": {
+          "classifier": 0.009315443250040214,
+          "graph_regularizer": 0.00020718361084194232,
+          "mean_regularizer": 0.009519838669647774,
+          "optimized_total": 0.02431368104616801,
+          "point_mse": 0.019683652626971405,
+          "supervision_weight": 0.26779661016949124,
+          "total": 0.019042465671896935
+        }
+      },
+      {
+        "epoch": 70,
+        "supervision_weight": 0.25254237288135595,
+        "train": {
+          "classifier": 0.007953237128754457,
+          "graph_regularizer": 0.0002081246885160605,
+          "mean_regularizer": 0.010669204166159034,
+          "optimized_total": 0.0222902055978775,
+          "point_mse": 0.013699244106809299,
+          "supervision_weight": 0.25254237288135606,
+          "total": 0.01883056587477525
+        }
+      },
+      {
+        "epoch": 71,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.23728813559322035,
+        "train": {
+          "classifier": 0.00830426424741745,
+          "graph_regularizer": 0.00020917304318087795,
+          "mean_regularizer": 0.01136482576156656,
+          "optimized_total": 0.023480058178305625,
+          "point_mse": 0.015178993947803974,
+          "supervision_weight": 0.23728813559322023,
+          "total": 0.01987826300660769
+        },
+        "validation": {
+          "classifier": 0.018274454846978188,
+          "graph_regularizer": 0.00020978435350116342,
+          "mean_regularizer": 0.006500965371727944,
+          "total": 0.024985204805930455
+        }
+      },
+      {
+        "epoch": 72,
+        "supervision_weight": 0.22203389830508474,
+        "train": {
+          "classifier": 0.007384446724007527,
+          "graph_regularizer": 0.00021029429972016563,
+          "mean_regularizer": 0.008324152020892749,
+          "optimized_total": 0.01796167099972566,
+          "point_mse": 0.009200297482311725,
+          "supervision_weight": 0.22203389830508494,
+          "total": 0.015918892964720727
+        }
+      },
+      {
+        "epoch": 73,
+        "supervision_weight": 0.20677966101694917,
+        "train": {
+          "classifier": 0.007712787958482901,
+          "graph_regularizer": 0.00021120241978981843,
+          "mean_regularizer": 0.010710941969727477,
+          "optimized_total": 0.020880111838380497,
+          "point_mse": 0.010857835277915001,
+          "supervision_weight": 0.20677966101694895,
+          "total": 0.018634932361543177
+        }
+      },
+      {
+        "epoch": 74,
+        "supervision_weight": 0.1915254237288136,
+        "train": {
+          "classifier": 0.007768959149718284,
+          "graph_regularizer": 0.00021207430605621388,
+          "mean_regularizer": 0.007964721924314896,
+          "optimized_total": 0.018266847332318623,
+          "point_mse": 0.012118975296616555,
+          "supervision_weight": 0.19152542372881354,
+          "total": 0.015945755367477735
+        }
+      },
+      {
+        "epoch": 75,
+        "supervision_weight": 0.17627118644067796,
+        "train": {
+          "classifier": 0.007740083436171214,
+          "graph_regularizer": 0.00021289475611411035,
+          "mean_regularizer": 0.008943408770176272,
+          "optimized_total": 0.020139999667803447,
+          "point_mse": 0.01840126529832681,
+          "supervision_weight": 0.1762711864406779,
+          "total": 0.01689638689160347
+        }
+      },
+      {
+        "epoch": 76,
+        "supervision_weight": 0.1610169491525424,
+        "train": {
+          "classifier": 0.009769591274360816,
+          "graph_regularizer": 0.00021383002838895967,
+          "mean_regularizer": 0.011131020180881024,
+          "optimized_total": 0.02521615235010783,
+          "point_mse": 0.025473784511288008,
+          "supervision_weight": 0.1610169491525424,
+          "total": 0.021114441419641177
+        }
+      },
+      {
+        "epoch": 77,
+        "supervision_weight": 0.14576271186440679,
+        "train": {
+          "classifier": 0.008343398434420427,
+          "graph_regularizer": 0.0002145767534384504,
+          "mean_regularizer": 0.010493268943081299,
+          "optimized_total": 0.021679298202196755,
+          "point_mse": 0.01802967422703902,
+          "supervision_weight": 0.14576271186440687,
+          "total": 0.019051244124770165
+        }
+      },
+      {
+        "epoch": 78,
+        "supervision_weight": 0.13050847457627118,
+        "train": {
+          "classifier": 0.00793160726254185,
+          "graph_regularizer": 0.00021527516512045015,
+          "mean_regularizer": 0.01037806665400664,
+          "optimized_total": 0.021254477789004644,
+          "point_mse": 0.020914571886261304,
+          "supervision_weight": 0.13050847457627124,
+          "total": 0.018524949058890343
+        }
+      },
+      {
+        "epoch": 79,
+        "supervision_weight": 0.1152542372881356,
+        "train": {
+          "classifier": 0.007288554850965738,
+          "graph_regularizer": 0.00021613156807143242,
+          "mean_regularizer": 0.007704923269959788,
+          "optimized_total": 0.01685214152187109,
+          "point_mse": 0.014251378963390985,
+          "supervision_weight": 0.11525423728813566,
+          "total": 0.01520960978170236
+        }
+      },
+      {
+        "epoch": 80,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.0065893608244756855,
+          "graph_regularizer": 0.00021682454750407488,
+          "mean_regularizer": 0.009324267234963676,
+          "optimized_total": 0.017255310371518135,
+          "point_mse": 0.01124857637534539,
+          "supervision_weight": 0.1,
+          "total": 0.016130452724794547
+        }
+      },
+      {
+        "epoch": 81,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.007420942535003026,
+          "graph_regularizer": 0.00021758839569520206,
+          "mean_regularizer": 0.01144241945942243,
+          "optimized_total": 0.020639345616102218,
+          "point_mse": 0.015583953027923902,
+          "supervision_weight": 0.1,
+          "total": 0.019080950483679773
+        },
+        "validation": {
+          "classifier": 0.014491005847851436,
+          "graph_regularizer": 0.0002179778239224106,
+          "mean_regularizer": 0.013830791282157104,
+          "total": 0.028539774745702743
+        }
+      },
+      {
+        "epoch": 82,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.008205851230770349,
+          "graph_regularizer": 0.00021835599257610737,
+          "mean_regularizer": 0.009676672214021286,
+          "optimized_total": 0.019943419235448043,
+          "point_mse": 0.018425396144390108,
+          "supervision_weight": 0.1,
+          "total": 0.018100879485408464
+        }
+      },
+      {
+        "epoch": 83,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.006809726943572362,
+          "graph_regularizer": 0.00021931190330845614,
+          "mean_regularizer": 0.008999017747739951,
+          "optimized_total": 0.017523964395125706,
+          "point_mse": 0.01495907777796189,
+          "supervision_weight": 0.1,
+          "total": 0.016028056629002096
+        }
+      },
+      {
+        "epoch": 84,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.005403154743214449,
+          "graph_regularizer": 0.00022023825937261184,
+          "mean_regularizer": 0.006300600874548157,
+          "optimized_total": 0.012864629991352558,
+          "point_mse": 0.009406359627842904,
+          "supervision_weight": 0.1,
+          "total": 0.011923993905385335
+        }
+      },
+      {
+        "epoch": 85,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.005630520559847355,
+          "graph_regularizer": 0.000220846822950989,
+          "mean_regularizer": 0.009117566782981158,
+          "optimized_total": 0.015915881062547366,
+          "point_mse": 0.009469470389187336,
+          "supervision_weight": 0.1,
+          "total": 0.014968934004505476
+        }
+      },
+      {
+        "epoch": 86,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.005230126989384493,
+          "graph_regularizer": 0.00022157744609285147,
+          "mean_regularizer": 0.006102572038769722,
+          "optimized_total": 0.012415417787929376,
+          "point_mse": 0.008611413231740396,
+          "supervision_weight": 0.1,
+          "total": 0.01155427648127079
+        }
+      },
+      {
+        "epoch": 87,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.005663265205919743,
+          "graph_regularizer": 0.000222162432425345,
+          "mean_regularizer": 0.008688975570723415,
+          "optimized_total": 0.015538894067207973,
+          "point_mse": 0.00964490876098474,
+          "supervision_weight": 0.1,
+          "total": 0.014574403284738462
+        }
+      },
+      {
+        "epoch": 88,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.0057534488874177135,
+          "graph_regularizer": 0.00022267974234030892,
+          "mean_regularizer": 0.010822911063830059,
+          "optimized_total": 0.018323097991446654,
+          "point_mse": 0.015240581750869751,
+          "supervision_weight": 0.1,
+          "total": 0.016799039855599402
+        }
+      },
+      {
+        "epoch": 89,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.00562035042171677,
+          "graph_regularizer": 0.00022332210772826026,
+          "mean_regularizer": 0.0069612901794413725,
+          "optimized_total": 0.014005827647944292,
+          "point_mse": 0.01200865069590509,
+          "supervision_weight": 0.1,
+          "total": 0.01280496255060037
+        }
+      },
+      {
+        "epoch": 90,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.006874909034619728,
+          "graph_regularizer": 0.00022405258395398657,
+          "mean_regularizer": 0.00978185470898946,
+          "optimized_total": 0.01853929434219996,
+          "point_mse": 0.016584780688087147,
+          "supervision_weight": 0.1,
+          "total": 0.01688081622123718
+        }
+      },
+      {
+        "epoch": 91,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.006059710177282492,
+          "graph_regularizer": 0.00022482351846216868,
+          "mean_regularizer": 0.0071301882658153775,
+          "optimized_total": 0.015133555899063747,
+          "point_mse": 0.0171883393128713,
+          "supervision_weight": 0.1,
+          "total": 0.01341472189873457
+        },
+        "validation": {
+          "classifier": 0.015683043494820595,
+          "graph_regularizer": 0.00022518566402141005,
+          "mean_regularizer": 0.00822360530247291,
+          "total": 0.02413183536132177
+        }
+      },
+      {
+        "epoch": 92,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.006015160252650579,
+          "graph_regularizer": 0.00022546297517449904,
+          "mean_regularizer": 0.008380336673930287,
+          "optimized_total": 0.016275332445899647,
+          "point_mse": 0.01654372552037239,
+          "supervision_weight": 0.1,
+          "total": 0.01462095994502306
+        }
+      },
+      {
+        "epoch": 93,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.006104899694522222,
+          "graph_regularizer": 0.00022598535668415327,
+          "mean_regularizer": 0.008564203649759293,
+          "optimized_total": 0.01620372423529625,
+          "point_mse": 0.013086352832615375,
+          "supervision_weight": 0.1,
+          "total": 0.014895088814198971
+        }
+      },
+      {
+        "epoch": 94,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.005611895948027571,
+          "graph_regularizer": 0.00022647636065570016,
+          "mean_regularizer": 0.008737731931110224,
+          "optimized_total": 0.01601754584660133,
+          "point_mse": 0.01441441419472297,
+          "supervision_weight": 0.1,
+          "total": 0.014576104377706846
+        }
+      },
+      {
+        "epoch": 95,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.006012300293892622,
+          "graph_regularizer": 0.0002271769098006189,
+          "mean_regularizer": 0.009730255673329035,
+          "optimized_total": 0.01770756203432878,
+          "point_mse": 0.017378290722767514,
+          "supervision_weight": 0.1,
+          "total": 0.015969732830921807
+        }
+      },
+      {
+        "epoch": 96,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.006440717043355107,
+          "graph_regularizer": 0.0002279430290994545,
+          "mean_regularizer": 0.009860460773886491,
+          "optimized_total": 0.018214604884386063,
+          "point_mse": 0.01685484114289284,
+          "supervision_weight": 0.1,
+          "total": 0.016529120832681658
+        }
+      },
+      {
+        "epoch": 97,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.0056813530040284,
+          "graph_regularizer": 0.00022892019459201643,
+          "mean_regularizer": 0.00799963779002428,
+          "optimized_total": 0.015419926077127456,
+          "point_mse": 0.015100149805347124,
+          "supervision_weight": 0.1,
+          "total": 0.013909911119689543
+        }
+      },
+      {
+        "epoch": 98,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.005295146892468135,
+          "graph_regularizer": 0.00022940420747424165,
+          "mean_regularizer": 0.00894375532430907,
+          "optimized_total": 0.015524841547012329,
+          "point_mse": 0.010565350731213887,
+          "supervision_weight": 0.1,
+          "total": 0.014468306511640548
+        }
+      },
+      {
+        "epoch": 99,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.005885008554905653,
+          "graph_regularizer": 0.00022985688596963882,
+          "mean_regularizer": 0.007595343265061577,
+          "optimized_total": 0.015597389121850332,
+          "point_mse": 0.018871803070108096,
+          "supervision_weight": 0.1,
+          "total": 0.013710208758711815
+        }
+      },
+      {
+        "epoch": 100,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.0054441039053102335,
+          "graph_regularizer": 0.00023047756170853972,
+          "mean_regularizer": 0.007061508551860849,
+          "optimized_total": 0.013899414951602618,
+          "point_mse": 0.011633248791098595,
+          "supervision_weight": 0.1,
+          "total": 0.012736090042938788
+        },
+        "validation": {
+          "classifier": 0.013639298940698305,
+          "graph_regularizer": 0.0002308910625288263,
+          "mean_regularizer": 0.01234070370097955,
+          "total": 0.02621089403827985
+        }
+      }
+    ],
+    "initial_state_sha256": "9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56",
+    "parameter_count": 16902384,
+    "point_supervised_environments": [
+      "obs"
+    ],
+    "point_unique_supervised_rows": 80,
+    "semantic_truth_read_during_training": false
+  },
+  "training_lock": "outputs/partial_anchor_crl_matched_point_k80_v1/formal_seed42/training_lock.json",
+  "training_lock_sha256_before_semantic_and_test": "e93be1afd6622e5965d01897eaeeb9a6733012dc7d81bc6221ddf93cc4982c53"
+}

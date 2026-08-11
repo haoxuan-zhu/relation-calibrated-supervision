@@ -1,0 +1,2201 @@
+{
+  "budget": 80,
+  "condition_kind": "empirical",
+  "decision": {
+    "budget": 80,
+    "condition_kind": "empirical",
+    "effect_judgment_deferred_to_budget_aggregate": true,
+    "readout": {
+      "test_rgb_mean_direct_abs_correlation": 0.7780954837799072,
+      "validation_rgb_mean_direct_abs_correlation": 0.7948042635629801
+    },
+    "seed": 42,
+    "validity": {
+      "anchors_exact": true,
+      "floor_exact": true,
+      "no_semantic_truth_before_lock": true,
+      "no_warm_checkpoint_in_config": true,
+      "normalization_budget_exact": true,
+      "preflight_budget_exact": true,
+      "preflight_numerically_valid": true,
+      "random_initial_state_exact": true,
+      "same_initial_state_loaded": true,
+      "same_parameter_count": true,
+      "semantic_metrics_finite": true,
+      "subset_budget_exact": true,
+      "subset_hash_exact": true,
+      "training_values_finite": true
+    },
+    "verdict": "relation_budget_condition_valid"
+  },
+  "derived_config": {
+    "budget_curve": {
+      "budgets": [
+        20,
+        40,
+        80,
+        160
+      ],
+      "conditions": [
+        "empirical"
+      ],
+      "rgb_statistics_source": {
+        "160": "registered_k160_subset_rgb_all_known_angles_raw_ridge_v1",
+        "20": "registered_k20_subset_rgb_all_known_angles_raw_ridge_v1",
+        "40": "registered_k40_subset_rgb_all_known_angles_raw_ridge_v1",
+        "80": "registered_k80_subset_rgb_all_known_angles_raw_ridge_v1"
+      },
+      "seeds": [
+        0,
+        42,
+        3407
+      ],
+      "subset_seed": 20260731,
+      "subset_sha256": {
+        "160": "fd27b8e2045a01fe8eec95d706d3d60c4c1f3af6bd74ab0373abcf8ebddda31e",
+        "20": "f493e4899eb1fb98c9e6e55de571e42ae1d83e36c153163d8828c54727e224b7",
+        "40": "5345ec49fa3f372f489491f78af66711157afcb6aa91138c9caa124a1a7c7187",
+        "80": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84"
+      }
+    },
+    "dataset": {
+      "cache_path": "outputs/stochastic_measurement_crl_oracle_v1/cache/real_images_uint8.npy",
+      "domain_suffix": "",
+      "environments": [
+        "obs",
+        "red",
+        "green",
+        "blue",
+        "pol_1",
+        "pol_2"
+      ],
+      "experiment_prefix": "buchholz_1",
+      "latent_columns": [
+        "red",
+        "green",
+        "blue",
+        "pol_1",
+        "pol_2"
+      ],
+      "root": "data/causal_chamber/lt_crl_benchmark_v1",
+      "samples_per_environment": 10000
+    },
+    "empirical_anchor": {
+      "budget": 80,
+      "clip_predictions_to_unit_interval": true,
+      "family": "internal_slot_replaced_by_raw_ridge"
+    },
+    "evaluation": {
+      "graph_threshold": 0.3,
+      "minimum_oracle_anchor_r2": 0.999
+    },
+    "floor_schedule": {
+      "decay_end_epoch": 80,
+      "hold_epochs": 20,
+      "hold_weight": 1.0,
+      "nonzero_floor": 0.1
+    },
+    "functional_anchor": {
+      "budget": 80,
+      "clip_predictions_to_unit_interval": true,
+      "permutation_seed": 910246,
+      "pinv_rcond": 1e-06,
+      "subset_seed": 20260731
+    },
+    "implementation": {
+      "base_runner_sha256": "35b32aa4fb2a988bd34291b4cad6e158e6e124515f2206ad4b82f264ac3bd5a0",
+      "entrypoint": "run_raw_ridge_propagation_condition.py",
+      "entrypoint_sha256": "469703b79f643b33910b491a2b5ecbf0e969f68dd253aa52cc256b95ed5b5684",
+      "expected_parameter_count": 16902384,
+      "runner": "run_relation_budget_condition.py",
+      "runner_sha256": "35b32aa4fb2a988bd34291b4cad6e158e6e124515f2206ad4b82f264ac3bd5a0",
+      "teacher_module_sha256": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d"
+    },
+    "initialization": {
+      "expected_state_dict_sha256": "9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56",
+      "mode": "same_seed_random_no_warm",
+      "provenance": "registered_same_seed_random_state"
+    },
+    "model": {
+      "anchor_indices": [
+        3,
+        4
+      ],
+      "conv_layers": 2,
+      "hidden_channels": 64,
+      "latent_dim": 5,
+      "learned_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    "normalization": {
+      "angle_statistics_source": "all_8000_known_sensor_anchors",
+      "rgb_statistics_budget": 80,
+      "rgb_statistics_source": "registered_k80_subset_rgb_all_known_angles_raw_ridge_v1",
+      "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84"
+    },
+    "point_anchor": {
+      "budget": 80,
+      "sampling": "unused_in_raw_ridge_followup",
+      "subset_seed": 20260731,
+      "supervised_environments": [
+        "obs"
+      ]
+    },
+    "preregistration": "PROTOCOLS.md",
+    "protocol_version": "raw_ridge_propagation_v1",
+    "raw_ridge_anchor": {
+      "alphas": [
+        0.0,
+        1e-06,
+        1e-05,
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "clip_predictions_to_unit_interval": true,
+      "family": "raw_ridge_[m,tau]_to_rgb",
+      "selection": "deterministic_leave_one_out_mse_ties_choose_larger_alpha"
+    },
+    "runtime": {
+      "device": "cuda",
+      "num_threads": 8,
+      "output_dir": "outputs/raw_ridge_propagation_v1a/k80/seed42/empirical",
+      "output_root": "outputs/raw_ridge_propagation_v1a"
+    },
+    "runtime_amendment": "PROTOCOLS.md",
+    "selected_run": {
+      "budget": 80,
+      "condition_kind": "empirical",
+      "condition_name": "raw_ridge_correct_floor",
+      "seed": 42
+    },
+    "split": {
+      "test_end": 10000,
+      "train_end": 8000,
+      "validation_end": 9000
+    },
+    "training": {
+      "batch_size": 512,
+      "conditions": [
+        "raw_ridge_correct_floor"
+      ],
+      "epochs": 100,
+      "eta": 0.0001,
+      "kappa": 0.1,
+      "learning_rate": 0.0005,
+      "mu": 1e-05,
+      "scheduler_factor": 0.3,
+      "scheduler_patience": 3,
+      "seed": 42,
+      "shuffle_seed": 20260730,
+      "targets": [
+        0,
+        1,
+        2
+      ],
+      "validation_interval": 10
+    }
+  },
+  "derived_config_sha256": "72346f26f42b8b4d22ddaff5c45948269d0c308d3f7071369033214b39ab5f5e",
+  "duration_seconds": 396.8252432346344,
+  "duration_seconds_before_semantic_and_test": 395.7246160507202,
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "numpy": "1.26.4",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "initial_state": {
+    "file_sha256": "a67bc552fe3f99b76e8fede8238b0a0259b4be762d421c46e52b02e380a5e77a",
+    "path": "outputs/raw_ridge_propagation_v1a/formal/k80_seed42/initial_state_seed42.pt",
+    "state_dict_sha256": "9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56"
+  },
+  "metrics": {
+    "absolute_correlation_matrix": [
+      [
+        0.7616953253746033,
+        0.6185179352760315,
+        0.5742425322532654,
+        0.48824644088745117,
+        0.6619189381599426
+      ],
+      [
+        0.37655267119407654,
+        0.8000779151916504,
+        0.6953041553497314,
+        0.19122573733329773,
+        0.7984959483146667
+      ],
+      [
+        0.3382625877857208,
+        0.7634351849555969,
+        0.7725131511688232,
+        0.18207184970378876,
+        0.81217360496521
+      ],
+      [
+        0.5907866954803467,
+        0.04062075912952423,
+        0.008001085370779037,
+        1.0,
+        0.02110333740711212
+      ],
+      [
+        0.39057955145835876,
+        0.7480960488319397,
+        0.7641063332557678,
+        0.02110333740711212,
+        1.0
+      ]
+    ],
+    "anchor_direct_r2": [
+      1.0,
+      1.0
+    ],
+    "anchor_mean_direct_r2": 1.0,
+    "direct_abs_correlation": [
+      0.7616953253746033,
+      0.8000779151916504,
+      0.7725131511688232,
+      1.0,
+      1.0
+    ],
+    "estimated_A": [
+      [
+        5.285436418489553e-05,
+        0.7996203303337097,
+        0.09700031578540802,
+        1.0251482725143433,
+        0.1815827190876007
+      ],
+      [
+        0.5333770513534546,
+        -5.1587107009254396e-05,
+        1.0656684637069702,
+        -0.48217689990997314,
+        -0.32195231318473816
+      ],
+      [
+        0.1563601791858673,
+        0.8731556534767151,
+        -7.897167233750224e-05,
+        -0.0872851237654686,
+        -0.3389553427696228
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        9.847552428254858e-05,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        9.847552428254858e-05
+      ]
+    ],
+    "full_assignment": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "full_mcc": 0.8668573498725891,
+    "graph": {
+      "edge_auroc": 0.6733333333333333,
+      "fixed_threshold_shd": 5
+    },
+    "linear_readout_mean_r2": 0.8385961180848748,
+    "linear_readout_r2": [
+      0.6823673231792665,
+      0.714402670733879,
+      0.7962105965112283,
+      1.0,
+      1.0
+    ],
+    "unanchored_assignment": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "unanchored_mcc": 0.7780959010124207
+  },
+  "mode": "formal",
+  "normalization": {
+    "latent_mean": [
+      131.1999969482422,
+      128.91250610351562,
+      128.3625030517578,
+      -0.06193770095705986,
+      0.013499962165951729
+    ],
+    "latent_std": [
+      25.905790328979492,
+      19.90489387512207,
+      21.795209884643555,
+      17.909988403320312,
+      18.040651321411133
+    ],
+    "rgb_statistics_source": "registered_k80_subset_rgb_all_known_angles_raw_ridge_v1",
+    "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84"
+  },
+  "post_lock_teacher_validation": {
+    "assignment": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "direct_correlation": [
+      0.9383665640542971,
+      0.9484960148339047,
+      0.9607173676480385
+    ],
+    "direct_r2": [
+      0.8776921600013715,
+      0.8882130388046728,
+      0.9217459571660359
+    ],
+    "finite": true,
+    "hungarian_mcc": 0.9491933155120819,
+    "mae": 0.025633891399041035,
+    "mean_direct_correlation": 0.9491933155120801,
+    "mean_direct_r2": 0.8958837186573602
+  },
+  "post_lock_validation_semantics": {
+    "direct_abs_correlation": [
+      0.7621774861101477,
+      0.8323778393049482,
+      0.7898574652738445
+    ],
+    "mean_direct_abs_correlation": 0.7948042635629801,
+    "mean_r2": 0.46098220348358154,
+    "mse": 0.679997980594635,
+    "r2": [
+      0.32596355676651,
+      0.5984532833099365,
+      0.4585297703742981
+    ]
+  },
+  "protocol_version": "raw_ridge_propagation_v1",
+  "registry_config_path": "./config_raw_ridge_propagation_v1a.yaml",
+  "registry_config_sha256": "12022010923d08c199a009b8b3db72739f6f1bad62c3731b31a766b4e568f3f4",
+  "seed": 42,
+  "semantic_validation_evaluated": true,
+  "source_files_sha256": {
+    "audit_physics_functional_anchor.py": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2",
+    "raw_ridge_propagation.py": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+    "run_clamped_anchor_diagnostic.py": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+    "run_conditioned_film_diagnostic.py": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+    "run_conflict_projected_physics_from_scratch.py": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+    "run_conflict_projected_physics_k80_closed.py": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+    "run_conflict_projected_physics_training.py": "038d6e407517dffa51df8277649c8c4f3017ed62db940de72aa36f87aa2c53e2",
+    "run_diagnostic.py": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+    "run_empirical_function_control_k80.py": "47129c1fa316adc8121b712e54fba7ac45528083ed52ba0709e6acb6c21cf6e4",
+    "run_matched_point_control_k80.py": "15367bb35cd7c4893c71774313dde12051a570b4154a2c906ce7f569fd889633",
+    "run_physics_functional_anchor_training.py": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+    "run_relation_budget_condition.py": "35b32aa4fb2a988bd34291b4cad6e158e6e124515f2206ad4b82f264ac3bd5a0",
+    "run_raw_ridge_propagation_condition.py": "469703b79f643b33910b491a2b5ecbf0e969f68dd253aa52cc256b95ed5b5684",
+    "run_supervised_continuation_diagnostic.py": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757"
+  },
+  "subset": {
+    "budget": 80,
+    "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+    "is_master_prefix": true,
+    "subset_rows": [
+      6807,
+      4968,
+      7614,
+      3154,
+      1759,
+      1579,
+      5799,
+      2535,
+      7825,
+      1490,
+      1889,
+      1623,
+      1056,
+      5732,
+      5061,
+      5139,
+      7332,
+      4907,
+      3261,
+      2436,
+      1448,
+      6785,
+      4542,
+      163,
+      2128,
+      703,
+      7817,
+      6327,
+      4970,
+      6454,
+      3353,
+      570,
+      6191,
+      4181,
+      3628,
+      3042,
+      174,
+      1997,
+      2725,
+      6588,
+      1988,
+      1242,
+      7752,
+      4531,
+      4780,
+      3168,
+      1689,
+      1079,
+      4393,
+      6810,
+      7092,
+      2833,
+      7958,
+      3397,
+      878,
+      7129,
+      370,
+      5821,
+      4626,
+      7018,
+      4992,
+      4682,
+      724,
+      4082,
+      7774,
+      4544,
+      2214,
+      2232,
+      2856,
+      97,
+      3681,
+      707,
+      608,
+      2963,
+      3242,
+      4119,
+      6797,
+      3710,
+      3368,
+      2981
+    ],
+    "subset_seed": 20260731,
+    "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+    "unique_rows": 80
+  },
+  "teacher_preflight": {
+    "all_valid": true,
+    "path": "outputs/raw_ridge_propagation_v1a/preflight/audit_k80/teacher_audit.json",
+    "sha256": "96225a61e2045d209db2456215d8a962746dea3e869f5cbbbf3918f71f5b87e9"
+  },
+  "test_evaluated": true,
+  "train_only_teacher_fit": {
+    "empirical": {
+      "alpha_candidates": [
+        0.0,
+        1e-06,
+        1e-05,
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "calibration_mse": 0.0005524652123064935,
+      "coefficient_count": 15,
+      "coefficient_shape": [
+        5,
+        3
+      ],
+      "coefficients_sha256": "bf2c38933d9c5c4288fc1ef0075bf0eb2b088c452a80fb763382888b87bac693",
+      "design_shape": [
+        80,
+        5
+      ],
+      "family": "raw_ridge_[m,tau]_to_rgb",
+      "fit_environment": "obs",
+      "label_rows": [
+        6807,
+        4968,
+        7614,
+        3154,
+        1759,
+        1579,
+        5799,
+        2535,
+        7825,
+        1490,
+        1889,
+        1623,
+        1056,
+        5732,
+        5061,
+        5139,
+        7332,
+        4907,
+        3261,
+        2436,
+        1448,
+        6785,
+        4542,
+        163,
+        2128,
+        703,
+        7817,
+        6327,
+        4970,
+        6454,
+        3353,
+        570,
+        6191,
+        4181,
+        3628,
+        3042,
+        174,
+        1997,
+        2725,
+        6588,
+        1988,
+        1242,
+        7752,
+        4531,
+        4780,
+        3168,
+        1689,
+        1079,
+        4393,
+        6810,
+        7092,
+        2833,
+        7958,
+        3397,
+        878,
+        7129,
+        370,
+        5821,
+        4626,
+        7018,
+        4992,
+        4682,
+        724,
+        4082,
+        7774,
+        4544,
+        2214,
+        2232,
+        2856,
+        97,
+        3681,
+        707,
+        608,
+        2963,
+        3242,
+        4119,
+        6797,
+        3710,
+        3368,
+        2981
+      ],
+      "leave_one_out_curve": [
+        {
+          "alpha": 0.0,
+          "leave_one_out_mse": 0.0007607018531645331
+        },
+        {
+          "alpha": 1e-06,
+          "leave_one_out_mse": 0.0007607018431530398
+        },
+        {
+          "alpha": 1e-05,
+          "leave_one_out_mse": 0.0007607017530531946
+        },
+        {
+          "alpha": 0.0001,
+          "leave_one_out_mse": 0.0007607008524119104
+        },
+        {
+          "alpha": 0.001,
+          "leave_one_out_mse": 0.000760691881704374
+        },
+        {
+          "alpha": 0.01,
+          "leave_one_out_mse": 0.0007606057357647228
+        },
+        {
+          "alpha": 0.1,
+          "leave_one_out_mse": 0.000760091212961173
+        },
+        {
+          "alpha": 1.0,
+          "leave_one_out_mse": 0.0007822432919804718
+        },
+        {
+          "alpha": 10.0,
+          "leave_one_out_mse": 0.0016303505116661797
+        }
+      ],
+      "leave_one_out_mse": 0.000760091212961173,
+      "selected_alpha": 0.1,
+      "selection_rule": "deterministic_leave_one_out_mse_ties_choose_larger_alpha",
+      "semantic_rows_read": 80,
+      "tau_source": "cos_squared_known_angle_difference",
+      "unique_label_rows": 80
+    },
+    "numerical_gate": {
+      "all_valid": true,
+      "checks": {
+        "leave_one_out_curve_complete": true,
+        "raw_coefficients_shape_exact": true,
+        "raw_design_shape_exact": true,
+        "raw_feature_scale_positive": true,
+        "raw_teacher_finite": true
+      },
+      "performance_threshold_used": false
+    },
+    "physical": {
+      "not_applicable": true,
+      "reason": "raw_ridge_only_protocol"
+    }
+  },
+  "training": {
+    "checkpoint": "outputs/raw_ridge_propagation_v1a/formal/k80_seed42/raw_ridge_correct_floor_seed42.pt",
+    "checkpoint_sha256": "c7d4609725dabe1a1e37a14577b394a6d17b4c0f43ede1f5429fec8d403d661c",
+    "condition": "raw_ridge_correct_floor",
+    "duration_seconds": 394.2205286026001,
+    "final_epoch": 100,
+    "final_supervision_weight": 0.1,
+    "history": [
+      {
+        "epoch": 1,
+        "learning_rate": 0.0005,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.4732503490448,
+          "graph_regularizer": 0.0005811532836717864,
+          "mean_regularizer": 0.1918117662159105,
+          "optimized_total": 3.314127291361491,
+          "physics_loss": 1.6484840049743652,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.6656432886123658
+        },
+        "validation": {
+          "classifier": 1.42806569480896,
+          "graph_regularizer": 0.000575668818783015,
+          "mean_regularizer": 0.0019453494468082983,
+          "total": 1.4305867087046304
+        }
+      },
+      {
+        "epoch": 2,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.3637664578755697,
+          "graph_regularizer": 0.0005724085122346878,
+          "mean_regularizer": 0.008100088951488336,
+          "optimized_total": 1.8608473580678304,
+          "physics_loss": 0.4884083905220032,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.372438961982727
+        }
+      },
+      {
+        "epoch": 3,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.2130685704549153,
+          "graph_regularizer": 0.0005655830663939317,
+          "mean_regularizer": 0.016267883131901424,
+          "optimized_total": 1.6238490349451702,
+          "physics_loss": 0.3939469935099284,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.2299020299911498
+        }
+      },
+      {
+        "epoch": 4,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.1690963986714682,
+          "graph_regularizer": 0.0005619113453043004,
+          "mean_regularizer": 0.018547400042414664,
+          "optimized_total": 1.5526235669453938,
+          "physics_loss": 0.3644178655942281,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.1882057107289632
+        }
+      },
+      {
+        "epoch": 5,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.1409254770278932,
+          "graph_regularizer": 0.0005580256548710168,
+          "mean_regularizer": 0.01749110962077975,
+          "optimized_total": 1.5071659806569417,
+          "physics_loss": 0.34819136969248454,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.1589746116002402
+        }
+      },
+      {
+        "epoch": 6,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.1144757709503175,
+          "graph_regularizer": 0.0005533439439410965,
+          "mean_regularizer": 0.017274832819898923,
+          "optimized_total": 1.470933952331543,
+          "physics_loss": 0.3386300154527028,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.1323039452234904
+        }
+      },
+      {
+        "epoch": 7,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.0786351296106975,
+          "graph_regularizer": 0.0005475675750834247,
+          "mean_regularizer": 0.015962729513645173,
+          "optimized_total": 1.422127182006836,
+          "physics_loss": 0.32698177750905355,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.095145411491394
+        }
+      },
+      {
+        "epoch": 8,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.0591522954305013,
+          "graph_regularizer": 0.0005422242662558953,
+          "mean_regularizer": 0.01773394629607598,
+          "optimized_total": 1.3875768604278564,
+          "physics_loss": 0.31014840443929037,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.077428461074829
+        }
+      },
+      {
+        "epoch": 9,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 1.0219275363286335,
+          "graph_regularizer": 0.0005394466196497282,
+          "mean_regularizer": 0.014260914432505767,
+          "optimized_total": 1.3338296740849813,
+          "physics_loss": 0.2971017870108287,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.0367278928756714
+        }
+      },
+      {
+        "epoch": 10,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.9986334873835245,
+          "graph_regularizer": 0.0005391162705297272,
+          "mean_regularizer": 0.013125620403637489,
+          "optimized_total": 1.2877452297210694,
+          "physics_loss": 0.27544701115290326,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 1.0122982228597006
+        }
+      },
+      {
+        "epoch": 11,
+        "learning_rate": 0.0005,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.970635671933492,
+          "graph_regularizer": 0.0005401246376956503,
+          "mean_regularizer": 0.013009311440090338,
+          "optimized_total": 1.2469718627929687,
+          "physics_loss": 0.2627867581049601,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.9841851073900859
+        },
+        "validation": {
+          "classifier": 0.9902122427622477,
+          "graph_regularizer": 0.0005408987635746598,
+          "mean_regularizer": 0.007109217595309019,
+          "total": 0.9978623428344726
+        }
+      },
+      {
+        "epoch": 12,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.9469202343622843,
+          "graph_regularizer": 0.0005412147032717863,
+          "mean_regularizer": 0.01262137970328331,
+          "optimized_total": 1.2122194751103719,
+          "physics_loss": 0.25213663768768313,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.9600828371047974
+        }
+      },
+      {
+        "epoch": 13,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.9220055675506592,
+          "graph_regularizer": 0.000541735085658729,
+          "mean_regularizer": 0.013055931041638056,
+          "optimized_total": 1.1841140559514363,
+          "physics_loss": 0.24851081919670104,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.9356032365163167
+        }
+      },
+      {
+        "epoch": 14,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.8950046780904134,
+          "graph_regularizer": 0.0005434024099571009,
+          "mean_regularizer": 0.012100330594927072,
+          "optimized_total": 1.1512502193450929,
+          "physics_loss": 0.2436018005212148,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.9076484120686849
+        }
+      },
+      {
+        "epoch": 15,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.866322401046753,
+          "graph_regularizer": 0.0005462907222099602,
+          "mean_regularizer": 0.01070146181434393,
+          "optimized_total": 1.121208683013916,
+          "physics_loss": 0.24363852938016256,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.8775701494216919
+        }
+      },
+      {
+        "epoch": 16,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.8373870328267415,
+          "graph_regularizer": 0.0005503101817642649,
+          "mean_regularizer": 0.009801677589615186,
+          "optimized_total": 1.089298378308614,
+          "physics_loss": 0.24155936674276987,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.8477390168507893
+        }
+      },
+      {
+        "epoch": 17,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.8124101200103759,
+          "graph_regularizer": 0.0005540921213105321,
+          "mean_regularizer": 0.010289260151485602,
+          "optimized_total": 1.0700918591817221,
+          "physics_loss": 0.24683837946256001,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.8232534724871318
+        }
+      },
+      {
+        "epoch": 18,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.7855374733606975,
+          "graph_regularizer": 0.0005579786303763588,
+          "mean_regularizer": 0.009727122900386652,
+          "optimized_total": 1.0437186597188315,
+          "physics_loss": 0.24789608828226725,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.795822569847107
+        }
+      },
+      {
+        "epoch": 19,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.7597081586519877,
+          "graph_regularizer": 0.0005614585693304737,
+          "mean_regularizer": 0.009340822060902913,
+          "optimized_total": 1.022193337758382,
+          "physics_loss": 0.2525828797022502,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.769610443909963
+        }
+      },
+      {
+        "epoch": 20,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.7354890060424805,
+          "graph_regularizer": 0.0005648718783631921,
+          "mean_regularizer": 0.009866043920318285,
+          "optimized_total": 0.999687084197998,
+          "physics_loss": 0.25376716272036237,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.745919925848643
+        }
+      },
+      {
+        "epoch": 21,
+        "learning_rate": 0.0005,
+        "supervision_weight": 1.0,
+        "train": {
+          "classifier": 0.7067482263247172,
+          "graph_regularizer": 0.000568376950143526,
+          "mean_regularizer": 0.00844343440545102,
+          "optimized_total": 0.9719761158625285,
+          "physics_loss": 0.2562160709698995,
+          "projection_active": 0.0,
+          "supervision_weight": 1.0,
+          "total": 0.7157600385348002
+        },
+        "validation": {
+          "classifier": 0.7233647300402324,
+          "graph_regularizer": 0.0005696129519492388,
+          "mean_regularizer": 0.0021715041814992825,
+          "total": 0.7261058694521586
+        }
+      },
+      {
+        "epoch": 22,
+        "supervision_weight": 0.9847457627118644,
+        "train": {
+          "classifier": 0.6802502784729004,
+          "graph_regularizer": 0.0005708638286838929,
+          "mean_regularizer": 0.00838158796603481,
+          "optimized_total": 0.9440329697926839,
+          "physics_loss": 0.2587777012189229,
+          "projection_active": 0.0,
+          "supervision_weight": 0.9847457627118649,
+          "total": 0.6892027274767558
+        }
+      },
+      {
+        "epoch": 23,
+        "supervision_weight": 0.9694915254237287,
+        "train": {
+          "classifier": 0.6535520553588867,
+          "graph_regularizer": 0.0005730610396713019,
+          "mean_regularizer": 0.009267553210258484,
+          "optimized_total": 0.9218507095972697,
+          "physics_loss": 0.2665913298924764,
+          "projection_active": 0.0,
+          "supervision_weight": 0.9694915254237279,
+          "total": 0.6633926709493001
+        }
+      },
+      {
+        "epoch": 24,
+        "supervision_weight": 0.9542372881355933,
+        "train": {
+          "classifier": 0.6282787466049194,
+          "graph_regularizer": 0.0005746878546973069,
+          "mean_regularizer": 0.008088810057689745,
+          "optimized_total": 0.8950835873285929,
+          "physics_loss": 0.2705211317539215,
+          "projection_active": 0.0,
+          "supervision_weight": 0.9542372881355938,
+          "total": 0.6369422396024068
+        }
+      },
+      {
+        "epoch": 25,
+        "supervision_weight": 0.9389830508474576,
+        "train": {
+          "classifier": 0.6036422141393025,
+          "graph_regularizer": 0.0005756978681311011,
+          "mean_regularizer": 0.008223215724031131,
+          "optimized_total": 0.8706959705352784,
+          "physics_loss": 0.27503674761454266,
+          "projection_active": 0.0,
+          "supervision_weight": 0.9389830508474571,
+          "total": 0.6124411280949911
+        }
+      },
+      {
+        "epoch": 26,
+        "supervision_weight": 0.923728813559322,
+        "train": {
+          "classifier": 0.5825696587562561,
+          "graph_regularizer": 0.0005762260194557408,
+          "mean_regularizer": 0.009057148036857447,
+          "optimized_total": 0.85096355787913,
+          "physics_loss": 0.28012607447306315,
+          "projection_active": 0.0,
+          "supervision_weight": 0.923728813559322,
+          "total": 0.5922030259768168
+        }
+      },
+      {
+        "epoch": 27,
+        "supervision_weight": 0.9084745762711864,
+        "train": {
+          "classifier": 0.5587363840738933,
+          "graph_regularizer": 0.0005761112921560804,
+          "mean_regularizer": 0.008475085720419884,
+          "optimized_total": 0.8255619549751282,
+          "physics_loss": 0.2837441946665446,
+          "projection_active": 0.0,
+          "supervision_weight": 0.9084745762711869,
+          "total": 0.5677875746091207
+        }
+      },
+      {
+        "epoch": 28,
+        "supervision_weight": 0.8932203389830509,
+        "train": {
+          "classifier": 0.5345851160685221,
+          "graph_regularizer": 0.0005749590494669973,
+          "mean_regularizer": 0.009267088902493318,
+          "optimized_total": 0.8045673910776774,
+          "physics_loss": 0.2912385725975037,
+          "projection_active": 0.0,
+          "supervision_weight": 0.8932203389830499,
+          "total": 0.5444271656672159
+        }
+      },
+      {
+        "epoch": 29,
+        "supervision_weight": 0.8779661016949153,
+        "train": {
+          "classifier": 0.5129111406008402,
+          "graph_regularizer": 0.0005733136832714081,
+          "mean_regularizer": 0.008193498263756434,
+          "optimized_total": 0.7770231679280599,
+          "physics_loss": 0.290837219953537,
+          "projection_active": 0.0,
+          "supervision_weight": 0.8779661016949156,
+          "total": 0.5216779540379842
+        }
+      },
+      {
+        "epoch": 30,
+        "supervision_weight": 0.8627118644067796,
+        "train": {
+          "classifier": 0.4927365797360738,
+          "graph_regularizer": 0.0005711427375984688,
+          "mean_regularizer": 0.00729894986624519,
+          "optimized_total": 0.7542211286226909,
+          "physics_loss": 0.2939735322793325,
+          "projection_active": 0.0,
+          "supervision_weight": 0.8627118644067792,
+          "total": 0.5006066781679789
+        }
+      },
+      {
+        "epoch": 31,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.847457627118644,
+        "train": {
+          "classifier": 0.4745717978477478,
+          "graph_regularizer": 0.0005681347659168144,
+          "mean_regularizer": 0.007211263439928492,
+          "optimized_total": 0.7349842421213786,
+          "physics_loss": 0.298106987396876,
+          "projection_active": 0.0,
+          "supervision_weight": 0.8474576271186438,
+          "total": 0.48235119485855105
+        },
+        "validation": {
+          "classifier": 0.5064736022949219,
+          "graph_regularizer": 0.0005665858625434339,
+          "mean_regularizer": 0.002782824609428644,
+          "total": 0.5098230187098185
+        }
+      },
+      {
+        "epoch": 32,
+        "supervision_weight": 0.8322033898305086,
+        "train": {
+          "classifier": 0.45863246695200605,
+          "graph_regularizer": 0.0005649543044467767,
+          "mean_regularizer": 0.007200014840811491,
+          "optimized_total": 0.7169170387585958,
+          "physics_loss": 0.30103170172373456,
+          "projection_active": 0.0,
+          "supervision_weight": 0.8322033898305086,
+          "total": 0.46639743399620054
+        }
+      },
+      {
+        "epoch": 33,
+        "supervision_weight": 0.8169491525423729,
+        "train": {
+          "classifier": 0.4444370986620585,
+          "graph_regularizer": 0.0005612970606113473,
+          "mean_regularizer": 0.006537101323405902,
+          "optimized_total": 0.6999242401123047,
+          "physics_loss": 0.3040443215370178,
+          "projection_active": 0.0,
+          "supervision_weight": 0.8169491525423732,
+          "total": 0.4515354986985525
+        }
+      },
+      {
+        "epoch": 34,
+        "supervision_weight": 0.8016949152542373,
+        "train": {
+          "classifier": 0.4272134227752686,
+          "graph_regularizer": 0.0005571206395203869,
+          "mean_regularizer": 0.00877688862135013,
+          "optimized_total": 0.6833699048360189,
+          "physics_loss": 0.30787580291430156,
+          "projection_active": 0.0,
+          "supervision_weight": 0.8016949152542379,
+          "total": 0.4365474328994751
+        }
+      },
+      {
+        "epoch": 35,
+        "supervision_weight": 0.7864406779661016,
+        "train": {
+          "classifier": 0.4092921765645345,
+          "graph_regularizer": 0.0005531660613293449,
+          "mean_regularizer": 0.006537506015350422,
+          "optimized_total": 0.65753080590566,
+          "physics_loss": 0.3066321116288503,
+          "projection_active": 0.0,
+          "supervision_weight": 0.7864406779661013,
+          "total": 0.4163828439712524
+        }
+      },
+      {
+        "epoch": 36,
+        "supervision_weight": 0.7711864406779662,
+        "train": {
+          "classifier": 0.39927156964937843,
+          "graph_regularizer": 0.0005482343894739946,
+          "mean_regularizer": 0.006462835532302658,
+          "optimized_total": 0.6476775401433309,
+          "physics_loss": 0.3130175817012787,
+          "projection_active": 0.0,
+          "supervision_weight": 0.7711864406779656,
+          "total": 0.406282636086146
+        }
+      },
+      {
+        "epoch": 37,
+        "supervision_weight": 0.7559322033898305,
+        "train": {
+          "classifier": 0.38410212882359823,
+          "graph_regularizer": 0.0005431764277939995,
+          "mean_regularizer": 0.00838004057854414,
+          "optimized_total": 0.6307749924659729,
+          "physics_loss": 0.3145118583838145,
+          "projection_active": 0.0,
+          "supervision_weight": 0.75593220338983,
+          "total": 0.3930253465175629
+        }
+      },
+      {
+        "epoch": 38,
+        "supervision_weight": 0.7406779661016949,
+        "train": {
+          "classifier": 0.37176754426956177,
+          "graph_regularizer": 0.0005380363332418104,
+          "mean_regularizer": 0.0069980145605901874,
+          "optimized_total": 0.6126525349617005,
+          "physics_loss": 0.3150477754275004,
+          "projection_active": 0.0,
+          "supervision_weight": 0.7406779661016953,
+          "total": 0.37930359435081484
+        }
+      },
+      {
+        "epoch": 39,
+        "supervision_weight": 0.7254237288135593,
+        "train": {
+          "classifier": 0.3591820066769918,
+          "graph_regularizer": 0.0005323752822975318,
+          "mean_regularizer": 0.006430874358862639,
+          "optimized_total": 0.5995658340454102,
+          "physics_loss": 0.3217713457743327,
+          "projection_active": 0.0,
+          "supervision_weight": 0.7254237288135595,
+          "total": 0.366145258585612
+        }
+      },
+      {
+        "epoch": 40,
+        "supervision_weight": 0.7101694915254237,
+        "train": {
+          "classifier": 0.3417062400182088,
+          "graph_regularizer": 0.0005262844028572242,
+          "mean_regularizer": 0.005754944328218698,
+          "optimized_total": 0.5735740946133931,
+          "physics_loss": 0.31765180508295693,
+          "projection_active": 0.0,
+          "supervision_weight": 0.7101694915254236,
+          "total": 0.34798746879895526
+        }
+      },
+      {
+        "epoch": 41,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.6949152542372882,
+        "train": {
+          "classifier": 0.33365334995587664,
+          "graph_regularizer": 0.0005201446682525178,
+          "mean_regularizer": 0.006398206695914268,
+          "optimized_total": 0.5660302988688151,
+          "physics_loss": 0.32444042873382567,
+          "projection_active": 0.0,
+          "supervision_weight": 0.694915254237288,
+          "total": 0.3405716994603475
+        },
+        "validation": {
+          "classifier": 0.3885717274347941,
+          "graph_regularizer": 0.000516821863129735,
+          "mean_regularizer": 0.0031602587879945836,
+          "total": 0.39224881490071617
+        }
+      },
+      {
+        "epoch": 42,
+        "supervision_weight": 0.6796610169491525,
+        "train": {
+          "classifier": 0.3218050758043925,
+          "graph_regularizer": 0.0005136481363636752,
+          "mean_regularizer": 0.006545420215154687,
+          "optimized_total": 0.5480380824406942,
+          "physics_loss": 0.3224753637313843,
+          "projection_active": 0.0,
+          "supervision_weight": 0.6796610169491517,
+          "total": 0.3288641444047292
+        }
+      },
+      {
+        "epoch": 43,
+        "supervision_weight": 0.6644067796610169,
+        "train": {
+          "classifier": 0.3117627689043681,
+          "graph_regularizer": 0.0005073676365427673,
+          "mean_regularizer": 0.00705855377142628,
+          "optimized_total": 0.5385068696339925,
+          "physics_loss": 0.32988552697499596,
+          "projection_active": 0.0,
+          "supervision_weight": 0.6644067796610174,
+          "total": 0.31932869068781533
+        }
+      },
+      {
+        "epoch": 44,
+        "supervision_weight": 0.6491525423728813,
+        "train": {
+          "classifier": 0.3015794005393982,
+          "graph_regularizer": 0.0005008669450568656,
+          "mean_regularizer": 0.005895181383937597,
+          "optimized_total": 0.5238548455238342,
+          "physics_loss": 0.3325557436943054,
+          "projection_active": 0.0,
+          "supervision_weight": 0.6491525423728816,
+          "total": 0.3079754457473755
+        }
+      },
+      {
+        "epoch": 45,
+        "supervision_weight": 0.6338983050847458,
+        "train": {
+          "classifier": 0.29093260113398234,
+          "graph_regularizer": 0.0004942513451290627,
+          "mean_regularizer": 0.005942730338623126,
+          "optimized_total": 0.5066737291018168,
+          "physics_loss": 0.3301856784025828,
+          "projection_active": 0.0,
+          "supervision_weight": 0.6338983050847453,
+          "total": 0.2973695829709371
+        }
+      },
+      {
+        "epoch": 46,
+        "supervision_weight": 0.6186440677966102,
+        "train": {
+          "classifier": 0.28291415492693583,
+          "graph_regularizer": 0.00048748010691876213,
+          "mean_regularizer": 0.006301777688165506,
+          "optimized_total": 0.4983953910668691,
+          "physics_loss": 0.3373377316792806,
+          "projection_active": 0.0,
+          "supervision_weight": 0.6186440677966097,
+          "total": 0.2897034121354421
+        }
+      },
+      {
+        "epoch": 47,
+        "supervision_weight": 0.6033898305084745,
+        "train": {
+          "classifier": 0.27084114956855776,
+          "graph_regularizer": 0.0004820854974289735,
+          "mean_regularizer": 0.004568977798024813,
+          "optimized_total": 0.48140157492955526,
+          "physics_loss": 0.3405913508733114,
+          "projection_active": 0.0,
+          "supervision_weight": 0.6033898305084752,
+          "total": 0.275892209927241
+        }
+      },
+      {
+        "epoch": 48,
+        "supervision_weight": 0.588135593220339,
+        "train": {
+          "classifier": 0.2646365327835083,
+          "graph_regularizer": 0.00048423766492245097,
+          "mean_regularizer": 0.006209874682128429,
+          "optimized_total": 0.4730796788533529,
+          "physics_loss": 0.3430314900080363,
+          "projection_active": 0.0,
+          "supervision_weight": 0.5881355932203396,
+          "total": 0.27133064715067545
+        }
+      },
+      {
+        "epoch": 49,
+        "supervision_weight": 0.5728813559322035,
+        "train": {
+          "classifier": 0.25332027808825175,
+          "graph_regularizer": 0.0004875291856005788,
+          "mean_regularizer": 0.0052717625796794895,
+          "optimized_total": 0.4556447108586629,
+          "physics_loss": 0.34311667823791503,
+          "projection_active": 0.0,
+          "supervision_weight": 0.5728813559322035,
+          "total": 0.259079568306605
+        }
+      },
+      {
+        "epoch": 50,
+        "supervision_weight": 0.5576271186440678,
+        "train": {
+          "classifier": 0.24734483512242636,
+          "graph_regularizer": 0.0004909068204772969,
+          "mean_regularizer": 0.005357744622354706,
+          "optimized_total": 0.44807617298762004,
+          "physics_loss": 0.3494856626192729,
+          "projection_active": 0.0,
+          "supervision_weight": 0.5576271186440674,
+          "total": 0.25319348454475404
+        }
+      },
+      {
+        "epoch": 51,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.5423728813559322,
+        "train": {
+          "classifier": 0.2352614744901657,
+          "graph_regularizer": 0.0004934571576304733,
+          "mean_regularizer": 0.004860682249069214,
+          "optimized_total": 0.43180352958043416,
+          "physics_loss": 0.3525027159055074,
+          "projection_active": 0.0,
+          "supervision_weight": 0.5423728813559319,
+          "total": 0.24061561540762583
+        },
+        "validation": {
+          "classifier": 0.2882136336962382,
+          "graph_regularizer": 0.0004945874679833651,
+          "mean_regularizer": 0.0023500622219095628,
+          "total": 0.2910582915147146
+        }
+      },
+      {
+        "epoch": 52,
+        "supervision_weight": 0.5271186440677966,
+        "train": {
+          "classifier": 0.2312930274804433,
+          "graph_regularizer": 0.0004959895219653845,
+          "mean_regularizer": 0.004913399673998356,
+          "optimized_total": 0.4272319835027059,
+          "physics_loss": 0.3614548308054606,
+          "projection_active": 0.0,
+          "supervision_weight": 0.5271186440677968,
+          "total": 0.23670241467157999
+        }
+      },
+      {
+        "epoch": 53,
+        "supervision_weight": 0.511864406779661,
+        "train": {
+          "classifier": 0.22237481983502705,
+          "graph_regularizer": 0.0004984324428563316,
+          "mean_regularizer": 0.004495100004908939,
+          "optimized_total": 0.40950742435455323,
+          "physics_loss": 0.3558346049785614,
+          "projection_active": 0.0,
+          "supervision_weight": 0.5118644067796614,
+          "total": 0.22736835010846457
+        }
+      },
+      {
+        "epoch": 54,
+        "supervision_weight": 0.4966101694915255,
+        "train": {
+          "classifier": 0.21278846347332,
+          "graph_regularizer": 0.0005009950380772352,
+          "mean_regularizer": 0.005400235338757435,
+          "optimized_total": 0.3983107521533966,
+          "physics_loss": 0.3616942896842957,
+          "projection_active": 0.0,
+          "supervision_weight": 0.4966101694915253,
+          "total": 0.21868969253698986
+        }
+      },
+      {
+        "epoch": 55,
+        "supervision_weight": 0.4813559322033898,
+        "train": {
+          "classifier": 0.2063292179107666,
+          "graph_regularizer": 0.0005050596167954306,
+          "mean_regularizer": 0.004205706687644124,
+          "optimized_total": 0.38473112575213114,
+          "physics_loss": 0.3608372254371643,
+          "projection_active": 0.0,
+          "supervision_weight": 0.48135593220338924,
+          "total": 0.2110399844646454
+        }
+      },
+      {
+        "epoch": 56,
+        "supervision_weight": 0.4661016949152543,
+        "train": {
+          "classifier": 0.20580270731449127,
+          "graph_regularizer": 0.0005089196306653321,
+          "mean_regularizer": 0.005489006221915285,
+          "optimized_total": 0.3870629064242045,
+          "physics_loss": 0.37601723233858747,
+          "projection_active": 0.0,
+          "supervision_weight": 0.46610169491525394,
+          "total": 0.21180063275496164
+        }
+      },
+      {
+        "epoch": 57,
+        "supervision_weight": 0.45084745762711864,
+        "train": {
+          "classifier": 0.1990771304368973,
+          "graph_regularizer": 0.0005130687927206358,
+          "mean_regularizer": 0.004696246692289909,
+          "optimized_total": 0.37254308462142943,
+          "physics_loss": 0.373200825770696,
+          "projection_active": 0.0,
+          "supervision_weight": 0.45084745762711864,
+          "total": 0.20428644621372222
+        }
+      },
+      {
+        "epoch": 58,
+        "supervision_weight": 0.43559322033898307,
+        "train": {
+          "classifier": 0.1842670106093089,
+          "graph_regularizer": 0.0005168553049055239,
+          "mean_regularizer": 0.004186185865973433,
+          "optimized_total": 0.3491907739639282,
+          "physics_loss": 0.3678218924999237,
+          "projection_active": 0.0,
+          "supervision_weight": 0.43559322033898334,
+          "total": 0.18897005252043406
+        }
+      },
+      {
+        "epoch": 59,
+        "supervision_weight": 0.4203389830508475,
+        "train": {
+          "classifier": 0.1807069512605667,
+          "graph_regularizer": 0.0005206058997039994,
+          "mean_regularizer": 0.003907844677567482,
+          "optimized_total": 0.34328797181447346,
+          "physics_loss": 0.37625005849202475,
+          "projection_active": 0.0,
+          "supervision_weight": 0.4203389830508472,
+          "total": 0.1851354016462962
+        }
+      },
+      {
+        "epoch": 60,
+        "supervision_weight": 0.4050847457627119,
+        "train": {
+          "classifier": 0.17211717057228088,
+          "graph_regularizer": 0.0005241789855062962,
+          "mean_regularizer": 0.0037311355359852315,
+          "optimized_total": 0.3296569338639577,
+          "physics_loss": 0.3784009337425232,
+          "projection_active": 0.0,
+          "supervision_weight": 0.4050847457627119,
+          "total": 0.17637248464425404
+        }
+      },
+      {
+        "epoch": 61,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.38983050847457623,
+        "train": {
+          "classifier": 0.16618499839305878,
+          "graph_regularizer": 0.0005273509607650339,
+          "mean_regularizer": 0.00390963156024615,
+          "optimized_total": 0.3210022729237874,
+          "physics_loss": 0.38575814580917356,
+          "projection_active": 0.0,
+          "supervision_weight": 0.3898305084745763,
+          "total": 0.17062198082605998
+        },
+        "validation": {
+          "classifier": 0.20696219444274902,
+          "graph_regularizer": 0.0005289746914058924,
+          "mean_regularizer": 0.002524640046680967,
+          "total": 0.21001580754915875
+        }
+      },
+      {
+        "epoch": 62,
+        "supervision_weight": 0.37457627118644066,
+        "train": {
+          "classifier": 0.1587432424624761,
+          "graph_regularizer": 0.0005304866043540339,
+          "mean_regularizer": 0.0033204426411539314,
+          "optimized_total": 0.30891145579020185,
+          "physics_loss": 0.3906208028793335,
+          "projection_active": 0.0,
+          "supervision_weight": 0.3745762711864411,
+          "total": 0.16259417223930359
+        }
+      },
+      {
+        "epoch": 63,
+        "supervision_weight": 0.3593220338983051,
+        "train": {
+          "classifier": 0.15099188260237376,
+          "graph_regularizer": 0.0005337663932392995,
+          "mean_regularizer": 0.004270328520486752,
+          "optimized_total": 0.29646345059076945,
+          "physics_loss": 0.39148021427790325,
+          "projection_active": 0.0,
+          "supervision_weight": 0.3593220338983051,
+          "total": 0.15579597822825114
+        }
+      },
+      {
+        "epoch": 64,
+        "supervision_weight": 0.3440677966101695,
+        "train": {
+          "classifier": 0.14705833689371745,
+          "graph_regularizer": 0.0005365389745372037,
+          "mean_regularizer": 0.00331516017857939,
+          "optimized_total": 0.28786145242055255,
+          "physics_loss": 0.39803614966074624,
+          "projection_active": 0.0,
+          "supervision_weight": 0.3440677966101693,
+          "total": 0.15091003640492756
+        }
+      },
+      {
+        "epoch": 65,
+        "supervision_weight": 0.32881355932203393,
+        "train": {
+          "classifier": 0.1437317092816035,
+          "graph_regularizer": 0.0005393885869222383,
+          "mean_regularizer": 0.0039009126524130505,
+          "optimized_total": 0.2823048572540283,
+          "physics_loss": 0.4079298033714294,
+          "projection_active": 0.0,
+          "supervision_weight": 0.32881355932203415,
+          "total": 0.14817200875282288
+        }
+      },
+      {
+        "epoch": 66,
+        "supervision_weight": 0.31355932203389836,
+        "train": {
+          "classifier": 0.14718193793296813,
+          "graph_regularizer": 0.0005427187487172584,
+          "mean_regularizer": 0.0030583170134729394,
+          "optimized_total": 0.2846936110655467,
+          "physics_loss": 0.42706635093688966,
+          "projection_active": 0.0,
+          "supervision_weight": 0.313559322033898,
+          "total": 0.15078297209739686
+        }
+      },
+      {
+        "epoch": 67,
+        "supervision_weight": 0.2983050847457627,
+        "train": {
+          "classifier": 0.1358474452495575,
+          "graph_regularizer": 0.0005465111462399364,
+          "mean_regularizer": 0.002963232549838722,
+          "optimized_total": 0.2686295611858368,
+          "physics_loss": 0.4333562431335449,
+          "projection_active": 0.0,
+          "supervision_weight": 0.2983050847457629,
+          "total": 0.13935718739032746
+        }
+      },
+      {
+        "epoch": 68,
+        "supervision_weight": 0.28305084745762715,
+        "train": {
+          "classifier": 0.12691470527648926,
+          "graph_regularizer": 0.0005491196469714244,
+          "mean_regularizer": 0.002695068139427652,
+          "optimized_total": 0.25185206413269046,
+          "physics_loss": 0.4299339599609375,
+          "projection_active": 0.0,
+          "supervision_weight": 0.28305084745762704,
+          "total": 0.13015889302889505
+        }
+      },
+      {
+        "epoch": 69,
+        "supervision_weight": 0.2677966101694915,
+        "train": {
+          "classifier": 0.12051854304472605,
+          "graph_regularizer": 0.0005513214577610294,
+          "mean_regularizer": 0.003410842787940055,
+          "optimized_total": 0.24091769568125407,
+          "physics_loss": 0.4347963546117147,
+          "projection_active": 0.0,
+          "supervision_weight": 0.26779661016949124,
+          "total": 0.12448070720831553
+        }
+      },
+      {
+        "epoch": 70,
+        "supervision_weight": 0.25254237288135595,
+        "train": {
+          "classifier": 0.11230972111225128,
+          "graph_regularizer": 0.0005534755537907282,
+          "mean_regularizer": 0.003505915378841261,
+          "optimized_total": 0.22757123668988546,
+          "physics_loss": 0.4403305581410726,
+          "projection_active": 0.0,
+          "supervision_weight": 0.25254237288135606,
+          "total": 0.11636911114056905
+        }
+      },
+      {
+        "epoch": 71,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.23728813559322035,
+        "train": {
+          "classifier": 0.11145756357908249,
+          "graph_regularizer": 0.0005557808480225504,
+          "mean_regularizer": 0.003911661739461124,
+          "optimized_total": 0.22522234586874643,
+          "physics_loss": 0.460610222975413,
+          "projection_active": 0.0,
+          "supervision_weight": 0.23728813559322023,
+          "total": 0.11592500644922256
+        },
+        "validation": {
+          "classifier": 0.16593366845448812,
+          "graph_regularizer": 0.0005569276981987059,
+          "mean_regularizer": 0.0018107513189315797,
+          "total": 0.16830134816964468
+        }
+      },
+      {
+        "epoch": 72,
+        "supervision_weight": 0.22203389830508474,
+        "train": {
+          "classifier": 0.10354106881221135,
+          "graph_regularizer": 0.0005579411280341447,
+          "mean_regularizer": 0.0026794319512943427,
+          "optimized_total": 0.21097289983431497,
+          "physics_loss": 0.46927274084091186,
+          "projection_active": 0.0,
+          "supervision_weight": 0.22203389830508494,
+          "total": 0.10677844174702962
+        }
+      },
+      {
+        "epoch": 73,
+        "supervision_weight": 0.20677966101694917,
+        "train": {
+          "classifier": 0.10378058717648188,
+          "graph_regularizer": 0.000560397488065064,
+          "mean_regularizer": 0.003078697533036272,
+          "optimized_total": 0.20944088693459828,
+          "physics_loss": 0.4933812393347422,
+          "projection_active": 0.0,
+          "supervision_weight": 0.20677966101694895,
+          "total": 0.10741968222459157
+        }
+      },
+      {
+        "epoch": 74,
+        "supervision_weight": 0.1915254237288136,
+        "train": {
+          "classifier": 0.09418877712885539,
+          "graph_regularizer": 0.0005622754590585828,
+          "mean_regularizer": 0.0032021629624068735,
+          "optimized_total": 0.19424610865116118,
+          "physics_loss": 0.5027681913375854,
+          "projection_active": 0.0,
+          "supervision_weight": 0.19152542372881354,
+          "total": 0.097953215777874
+        }
+      },
+      {
+        "epoch": 75,
+        "supervision_weight": 0.17627118644067796,
+        "train": {
+          "classifier": 0.09226338066657384,
+          "graph_regularizer": 0.0005640515020738045,
+          "mean_regularizer": 0.0025544581591772537,
+          "optimized_total": 0.18670835439364114,
+          "physics_loss": 0.518102055867513,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1762711864406779,
+          "total": 0.09538189009825389
+        }
+      },
+      {
+        "epoch": 76,
+        "supervision_weight": 0.1610169491525424,
+        "train": {
+          "classifier": 0.08386336928606034,
+          "graph_regularizer": 0.0005665094867969553,
+          "mean_regularizer": 0.00333621793690448,
+          "optimized_total": 0.17213241163889567,
+          "physics_loss": 0.5239591898918152,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1610169491525424,
+          "total": 0.08776609736680985
+        }
+      },
+      {
+        "epoch": 77,
+        "supervision_weight": 0.14576271186440679,
+        "train": {
+          "classifier": 0.08457631925741832,
+          "graph_regularizer": 0.0005689425788198908,
+          "mean_regularizer": 0.002559817993392547,
+          "optimized_total": 0.16842526014645895,
+          "physics_loss": 0.5537779884338379,
+          "projection_active": 0.0,
+          "supervision_weight": 0.14576271186440687,
+          "total": 0.08770507880051931
+        }
+      },
+      {
+        "epoch": 78,
+        "supervision_weight": 0.13050847457627118,
+        "train": {
+          "classifier": 0.07579232180118561,
+          "graph_regularizer": 0.000570704897865653,
+          "mean_regularizer": 0.0031459786472842095,
+          "optimized_total": 0.1540035224755605,
+          "physics_loss": 0.5708021767934164,
+          "projection_active": 0.0,
+          "supervision_weight": 0.13050847457627124,
+          "total": 0.07950900536775589
+        }
+      },
+      {
+        "epoch": 79,
+        "supervision_weight": 0.1152542372881356,
+        "train": {
+          "classifier": 0.06896845483779908,
+          "graph_regularizer": 0.0005723589705303311,
+          "mean_regularizer": 0.002037656046450138,
+          "optimized_total": 0.1407506190141042,
+          "physics_loss": 0.6001701281865438,
+          "projection_active": 0.0,
+          "supervision_weight": 0.11525423728813566,
+          "total": 0.07157846877972285
+        }
+      },
+      {
+        "epoch": 80,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.07307677533229193,
+          "graph_regularizer": 0.0005737766778717439,
+          "mean_regularizer": 0.00306011962890625,
+          "optimized_total": 0.144630912621816,
+          "physics_loss": 0.6792023967107137,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.07671067098776499
+        }
+      },
+      {
+        "epoch": 81,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.07137468953927358,
+          "graph_regularizer": 0.0005755965746939183,
+          "mean_regularizer": 0.004577512180432677,
+          "optimized_total": 0.1471019430955251,
+          "physics_loss": 0.705741443157196,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.07652779799699784
+        },
+        "validation": {
+          "classifier": 0.10359521150588989,
+          "graph_regularizer": 0.0005762031069025397,
+          "mean_regularizer": 0.0065107199947039285,
+          "total": 0.11068213498592376
+        }
+      },
+      {
+        "epoch": 82,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.06113454027970632,
+          "graph_regularizer": 0.0005767977976550659,
+          "mean_regularizer": 0.002380529703106731,
+          "optimized_total": 0.1342775536775589,
+          "physics_loss": 0.7018568499883016,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.06409186811248462
+        }
+      },
+      {
+        "epoch": 83,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.05550567872325579,
+          "graph_regularizer": 0.000577608747407794,
+          "mean_regularizer": 0.002530185610987246,
+          "optimized_total": 0.12733428436517716,
+          "physics_loss": 0.6872080952326457,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.058613473494847614
+        }
+      },
+      {
+        "epoch": 84,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.052108117709557214,
+          "graph_regularizer": 0.0005784137402661145,
+          "mean_regularizer": 0.0025640312877173227,
+          "optimized_total": 0.12353276093800862,
+          "physics_loss": 0.6828219782511393,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.05525056231021881
+        }
+      },
+      {
+        "epoch": 85,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.049222987920045855,
+          "graph_regularizer": 0.0005799981388263405,
+          "mean_regularizer": 0.0027894946029409767,
+          "optimized_total": 0.12020992573102315,
+          "physics_loss": 0.6761744416554769,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.05259248042106628
+        }
+      },
+      {
+        "epoch": 86,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.04948883020877838,
+          "graph_regularizer": 0.0005818792122105757,
+          "mean_regularizer": 0.002786984665474544,
+          "optimized_total": 0.12154513239860534,
+          "physics_loss": 0.6868743747075399,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.05285769395033518
+        }
+      },
+      {
+        "epoch": 87,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.04809362412492434,
+          "graph_regularizer": 0.0005840500378981232,
+          "mean_regularizer": 0.004206019164994359,
+          "optimized_total": 0.12063922997315725,
+          "physics_loss": 0.6775553477605184,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.05288369368513425
+        }
+      },
+      {
+        "epoch": 88,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.04752772758404414,
+          "graph_regularizer": 0.0005860813089335958,
+          "mean_regularizer": 0.0024397775004617868,
+          "optimized_total": 0.11883827229340871,
+          "physics_loss": 0.6828468449910482,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.05055358636379242
+        }
+      },
+      {
+        "epoch": 89,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.04553703463077545,
+          "graph_regularizer": 0.0005883460280795892,
+          "mean_regularizer": 0.00433611068688333,
+          "optimized_total": 0.11745007222890853,
+          "physics_loss": 0.6698857933680217,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.05046149136622747
+        }
+      },
+      {
+        "epoch": 90,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.04287522514661153,
+          "graph_regularizer": 0.000590505425973485,
+          "mean_regularizer": 0.00198388038109988,
+          "optimized_total": 0.11165310325225195,
+          "physics_loss": 0.6620349089304606,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.04544961124658584
+        }
+      },
+      {
+        "epoch": 91,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.04651916380723317,
+          "graph_regularizer": 0.0005933247818611562,
+          "mean_regularizer": 0.003077060998650268,
+          "optimized_total": 0.11875949215888977,
+          "physics_loss": 0.6856994139353434,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.05018954933683077
+        },
+        "validation": {
+          "classifier": 0.09191969466209411,
+          "graph_regularizer": 0.0005949271726422012,
+          "mean_regularizer": 0.003556153781712055,
+          "total": 0.09607077807188034
+        }
+      },
+      {
+        "epoch": 92,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.04052711472908656,
+          "graph_regularizer": 0.0005958475791849196,
+          "mean_regularizer": 0.0027641248052629333,
+          "optimized_total": 0.10940356695652008,
+          "physics_loss": 0.655164792696635,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.04388708688815435
+        }
+      },
+      {
+        "epoch": 93,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.03956777087847392,
+          "graph_regularizer": 0.0005974735280809303,
+          "mean_regularizer": 0.00308880187664181,
+          "optimized_total": 0.10866138680775961,
+          "physics_loss": 0.6540733963648478,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.043254046271244684
+        }
+      },
+      {
+        "epoch": 94,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.036817103415727616,
+          "graph_regularizer": 0.0005991536034271122,
+          "mean_regularizer": 0.002045897877231861,
+          "optimized_total": 0.1031044225692749,
+          "physics_loss": 0.6364226733843485,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.03946215490500132
+        }
+      },
+      {
+        "epoch": 95,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.038202576736609144,
+          "graph_regularizer": 0.0006007547336630523,
+          "mean_regularizer": 0.0026054929519693055,
+          "optimized_total": 0.10535690418879191,
+          "physics_loss": 0.639480775197347,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.04140882454315822
+        }
+      },
+      {
+        "epoch": 96,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.03784510884682338,
+          "graph_regularizer": 0.0006021330243286987,
+          "mean_regularizer": 0.0033113483507186173,
+          "optimized_total": 0.10739985219637553,
+          "physics_loss": 0.6564126043319702,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.04175859020153681
+        }
+      },
+      {
+        "epoch": 97,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.035927311728398005,
+          "graph_regularizer": 0.0006027460919382671,
+          "mean_regularizer": 0.002943065253396829,
+          "optimized_total": 0.10454820438226065,
+          "physics_loss": 0.6507508071263631,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.03947312292456627
+        }
+      },
+      {
+        "epoch": 98,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.03360434576869011,
+          "graph_regularizer": 0.0006043833868267635,
+          "mean_regularizer": 0.0029014520592366656,
+          "optimized_total": 0.09918345443407695,
+          "physics_loss": 0.6207327219645182,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.03711018120249113
+        }
+      },
+      {
+        "epoch": 99,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.030475513279438017,
+          "graph_regularizer": 0.0006059242362777392,
+          "mean_regularizer": 0.0017714219959452748,
+          "optimized_total": 0.0944417716662089,
+          "physics_loss": 0.6158891126314799,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.03285285953680674
+        }
+      },
+      {
+        "epoch": 100,
+        "learning_rate": 0.0005,
+        "supervision_weight": 0.1,
+        "train": {
+          "classifier": 0.030428569411238036,
+          "graph_regularizer": 0.0006071718800812959,
+          "mean_regularizer": 0.002416790751274675,
+          "optimized_total": 0.09408274535338083,
+          "physics_loss": 0.6063021260897319,
+          "projection_active": 0.0,
+          "supervision_weight": 0.1,
+          "total": 0.03345253188411395
+        },
+        "validation": {
+          "classifier": 0.10660225665569305,
+          "graph_regularizer": 0.0006078014266677201,
+          "mean_regularizer": 0.001396432765449087,
+          "total": 0.1086064929564794
+        }
+      }
+    ],
+    "initial_state_sha256": "9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56",
+    "parameter_count": 16902384,
+    "semantic_truth_read_during_training": false
+  },
+  "training_lock": "outputs/raw_ridge_propagation_v1a/formal/k80_seed42/training_lock.json",
+  "training_lock_sha256_before_semantic_and_test": "d72eb45a3bd7d00d2ab5074d6ad4aba0d20aaf63d06b1a2831387e85d67a9b1e"
+}

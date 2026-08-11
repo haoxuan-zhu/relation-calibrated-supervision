@@ -1,0 +1,194 @@
+{
+  "ccrl_validation": {
+    "center_only_correct": {
+      "classifier": 1.0536211636861166,
+      "graph_regularizer": 0.0001694071397650987,
+      "mean_regularizer": 0.004224343314766884,
+      "total": 1.0580149075190226
+    },
+    "tube_correct": {
+      "classifier": 0.11553382825851441,
+      "graph_regularizer": 0.0005480900290422142,
+      "mean_regularizer": 0.0018002921709169943,
+      "total": 0.11788221128781637
+    },
+    "tube_permuted_matched": {
+      "classifier": 0.10688402696450551,
+      "graph_regularizer": 0.0007350969826802611,
+      "mean_regularizer": 0.030532277981440228,
+      "total": 0.138151407122612
+    },
+    "unbounded_correct": {
+      "classifier": 0.018203909809390705,
+      "graph_regularizer": 0.0001366634969599545,
+      "mean_regularizer": 0.07135881306231022,
+      "total": 0.08969938371578852
+    }
+  },
+  "center_comparator_checks": {
+    "correlation_matches_locked_direct_center": true,
+    "r2_matches_locked_direct_center": true
+  },
+  "config_sha256": "7e22d6782467b4f676669d302f63a24edbdf8ee3d8886fd147fb3ffe9c8f6a81",
+  "decision": {
+    "deltas": {
+      "tube_minus_center_ccrl_total": -0.9401326962312062,
+      "tube_minus_center_correlation": -0.11782650602933642,
+      "tube_minus_center_r2": -0.4620135724544525,
+      "tube_minus_permuted_correlation": 0.6482850996462578,
+      "tube_minus_permuted_r2": 0.6433469951152802,
+      "tube_minus_projected_physical_correlation": 0.0031697873635229135,
+      "tube_minus_projected_physical_r2": -0.11638904422569274,
+      "tube_minus_unbounded_correlation": 0.4787855294951692,
+      "tube_minus_unbounded_r2": 8.393552452325821
+    },
+    "mechanism_checks": {
+      "ccrl_not_worse_than_center": true,
+      "correlation_above_permuted": true,
+      "correlation_above_unbounded": true,
+      "r2_above_permuted": true,
+      "r2_above_unbounded": true,
+      "tube_actually_active": true
+    },
+    "paper_competitive_checks": {
+      "correlation_above_projected_physical": true,
+      "r2_above_projected_physical": false
+    },
+    "test_evaluated": false,
+    "verdict": "tube_structure_supported_not_paper_competitive"
+  },
+  "graph_parameter_metrics": {
+    "center_only_correct": {
+      "edge_auroc": 0.62,
+      "fixed_threshold_shd": 7
+    },
+    "tube_correct": {
+      "edge_auroc": 0.5933333333333334,
+      "fixed_threshold_shd": 8
+    },
+    "tube_permuted_matched": {
+      "edge_auroc": 0.66,
+      "fixed_threshold_shd": 7
+    },
+    "unbounded_correct": {
+      "edge_auroc": 0.5533333333333333,
+      "fixed_threshold_shd": 5
+    }
+  },
+  "matched_lock_checks": {
+    "geometry": true,
+    "initial_state": true,
+    "source": true
+  },
+  "mode": "four_condition_joint_validation_only_readout",
+  "preflight_lock_sha256": "56f1c2f7e4727d3113031be5d7795c4fbe2606395bdb3229bf07e8d0c69b6311",
+  "protocol_version": "calibrated_relation_tube_k0_v1",
+  "representation_audits": {
+    "center_only_correct": {
+      "boundary_active_fraction": 0.411,
+      "center_l2_mean": 1.6987457275390625,
+      "finite": true,
+      "projected_residual_l2_mean": 0.0,
+      "raw_mahalanobis_mean": 12.734321594238281,
+      "raw_mahalanobis_p95": 28.949567508697502,
+      "raw_residual_l2_mean": 0.38642898201942444
+    },
+    "tube_correct": {
+      "boundary_active_fraction": 0.941,
+      "center_l2_mean": 1.6987457275390625,
+      "finite": true,
+      "projected_residual_l2_mean": 1.278997540473938,
+      "raw_mahalanobis_mean": 310.9863586425781,
+      "raw_mahalanobis_p95": 1001.2603393554682,
+      "raw_residual_l2_mean": 5.376654148101807
+    },
+    "tube_permuted_matched": {
+      "boundary_active_fraction": 1.0,
+      "center_l2_mean": 0.5010377168655396,
+      "finite": true,
+      "projected_residual_l2_mean": 0.7560696005821228,
+      "raw_mahalanobis_mean": 1356.2581787109375,
+      "raw_mahalanobis_p95": 1836.2683837890625,
+      "raw_residual_l2_mean": 7.160810947418213
+    },
+    "unbounded_correct": {
+      "boundary_active_fraction": 0.97,
+      "center_l2_mean": 1.6987457275390625,
+      "finite": true,
+      "projected_residual_l2_mean": 4.211589336395264,
+      "raw_mahalanobis_mean": 346.9451904296875,
+      "raw_mahalanobis_p95": 1247.9545471191402,
+      "raw_residual_l2_mean": 4.211589336395264
+    }
+  },
+  "semantic_validation": {
+    "center_only_correct": {
+      "direct_abs_correlation": [
+        0.9579375647801874,
+        0.9649161896798648,
+        0.9638371257185261
+      ],
+      "mean_direct_abs_correlation": 0.9622302933928594,
+      "mean_r2": 0.9232125282287598,
+      "mse": 0.10000040382146835,
+      "r2": [
+        0.9160586595535278,
+        0.9283984899520874,
+        0.9251804947853088
+      ]
+    },
+    "tube_correct": {
+      "direct_abs_correlation": [
+        0.8235908443964557,
+        0.870174632589223,
+        0.8394458851048902
+      ],
+      "mean_direct_abs_correlation": 0.844403787363523,
+      "mean_r2": 0.46119895577430725,
+      "mse": 0.6437779664993286,
+      "r2": [
+        0.12334561347961426,
+        0.6783405542373657,
+        0.5819107294082642
+      ]
+    },
+    "tube_permuted_matched": {
+      "direct_abs_correlation": [
+        0.06778797355783048,
+        0.21308125870321157,
+        0.30748683089075346
+      ],
+      "mean_direct_abs_correlation": 0.19611868771726515,
+      "mean_r2": -0.1821480393409729,
+      "mse": 1.5406025648117065,
+      "r2": [
+        -0.3668532371520996,
+        -0.21258890628814697,
+        0.03299802541732788
+      ]
+    },
+    "unbounded_correct": {
+      "direct_abs_correlation": [
+        0.023611107519023813,
+        0.5830061604336549,
+        0.4902375056523824
+      ],
+      "mean_direct_abs_correlation": 0.3656182578683537,
+      "mean_r2": -7.932353496551514,
+      "mse": 10.148697853088379,
+      "r2": [
+        -16.691219329833984,
+        -3.43814754486084,
+        -3.667692184448242
+      ]
+    }
+  },
+  "semantic_validation_evaluated": true,
+  "test_evaluated": false,
+  "training_locks": {
+    "center_only_correct": "79e305dbd623e18f33085257b89f7285043d220c2063ba8d3dce520de7e717e8",
+    "tube_correct": "48bd449f5ce71d2a284d9aacaf1095c46239e2f8bc89c6175b9db2c0ba81a0dd",
+    "tube_permuted_matched": "05fbcb0ff468f45dc9fc729e607fcb63eeaa83b58c4bbc97c57404031452a22b",
+    "unbounded_correct": "296170eda4e20aef8766ddbf41b79a52e03228b19de18ccd1835dd02a6f968fe"
+  }
+}

@@ -1,0 +1,19 @@
+protocol_version: instrumented_slope_projected_external_k36
+protocol_document: PROTOCOLS.md
+source_contract:
+  external_config: configs/config_instrumented_slope_external_k31.yaml
+  external_config_sha256: 9b82091f4cb2de1fa22c1ea85da6548408cc55db6c9bcfb2983658d384aed366
+  k35_config: configs/config_instrumented_slope_projected_replication_k35.yaml
+  k35_config_sha256: edb8d97f68fbbb52eb73e5909794aa6e4e35281191f1ccbdfaf73e68b760e1c8
+  k35_result: outputs/instrumented_slope_projected_replication_k35/evaluation/validation_results.json
+  k35_result_sha256: ac8517b0a87e99c559a7f95d6bd5bacb4709bc40308801d000f62681a72eafea
+  k35_output_root: outputs/instrumented_slope_projected_replication_k35
+evaluation:
+  seeds: [123, 2026, 31415]
+  candidates: [raw_baseline_curve, projected_only_curve]
+  bootstrap_repetitions: 2000
+  bootstrap_seed: 20260804
+  bootstrap_confidence: 0.95
+runtime:
+  device: cuda
+  output: outputs/instrumented_slope_projected_external_k36/external_results.json

@@ -1,0 +1,223 @@
+{
+  "comparisons": {
+    "diagonal": {
+      "ccrl_total_delta": {
+        "maximum": 0.0031664058367411596,
+        "mean": -0.11086639147334627,
+        "minimum": -0.18008612330754598,
+        "sample_std": 0.09950643440227423
+      },
+      "complete_semantic_advantage_count": 1,
+      "graph_advantage_count": 0,
+      "semantic_deltas": {
+        "coordinatewise_r2": {
+          "maximum": 0.052157672754589046,
+          "mean": 0.011879465292271019,
+          "minimum": -0.018177148119159492,
+          "sample_std": 0.03626441086714945,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        },
+        "full_affine_r2": {
+          "maximum": 0.014262145671176785,
+          "mean": -0.0031908129851372,
+          "minimum": -0.018494131637470157,
+          "sample_std": 0.016483602151540825,
+          "strict_negative_count": 2,
+          "strict_positive_count": 1
+        },
+        "raw_correlation": {
+          "maximum": 0.029094462669060017,
+          "mean": 0.005817464122825429,
+          "minimum": -0.012877276191478604,
+          "sample_std": 0.02135777454751275,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        },
+        "raw_r2": {
+          "maximum": 0.14269506931304932,
+          "mean": 0.013722211122512817,
+          "minimum": -0.2110818326473236,
+          "sample_std": 0.19538995927969405,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        },
+        "rgb_mcc": {
+          "maximum": 0.029093801975250244,
+          "mean": 0.005817035833994548,
+          "minimum": -0.012878060340881348,
+          "sample_std": 0.021357740548374887,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        }
+      },
+      "subsets": {
+        "20260811": {
+          "candidate_minus_full_ccrl_total": -0.15567945694923402,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": 0.0,
+          "full_minus_candidate_shd": 1,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": 0.0016578712413835017,
+            "full_affine_r2": -0.018494131637470157,
+            "raw_correlation": 0.0012352058908948749,
+            "raw_r2": 0.10955339670181274,
+            "rgb_mcc": 0.001235365867614746
+          }
+        },
+        "20260821": {
+          "candidate_minus_full_ccrl_total": -0.18008612330754598,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": 0.0,
+          "full_minus_candidate_shd": 0,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": -0.018177148119159492,
+            "full_affine_r2": -0.005340452989118227,
+            "raw_correlation": -0.012877276191478604,
+            "raw_r2": -0.2110818326473236,
+            "rgb_mcc": -0.012878060340881348
+          }
+        },
+        "20260831": {
+          "candidate_minus_full_ccrl_total": 0.0031664058367411596,
+          "complete_semantic_advantage": true,
+          "edge_auroc_delta": 0.0,
+          "full_minus_candidate_shd": 0,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": 0.052157672754589046,
+            "full_affine_r2": 0.014262145671176785,
+            "raw_correlation": 0.029094462669060017,
+            "raw_r2": 0.14269506931304932,
+            "rgb_mcc": 0.029093801975250244
+          }
+        }
+      }
+    },
+    "isotropic": {
+      "ccrl_total_delta": {
+        "maximum": 0.011407141129175846,
+        "mean": -0.07880043828487396,
+        "minimum": -0.16622353816032412,
+        "sample_std": 0.08884807004621967
+      },
+      "complete_semantic_advantage_count": 1,
+      "graph_advantage_count": 1,
+      "semantic_deltas": {
+        "coordinatewise_r2": {
+          "maximum": 0.05986131103223702,
+          "mean": 0.035921832500875626,
+          "minimum": 0.009155445437952325,
+          "sample_std": 0.025470861004308024,
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        },
+        "full_affine_r2": {
+          "maximum": 0.011887202572505196,
+          "mean": 0.004526888430194442,
+          "minimum": -0.00870302812963697,
+          "sample_std": 0.011481662531910729,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        },
+        "raw_correlation": {
+          "maximum": 0.03270098373829755,
+          "mean": 0.02029935909257341,
+          "minimum": 0.007410434310599068,
+          "sample_std": 0.012652314754850479,
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        },
+        "raw_r2": {
+          "maximum": 0.15001040697097778,
+          "mean": 0.09063527981440227,
+          "minimum": -0.0007523894309997559,
+          "sample_std": 0.08031785189469212,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        },
+        "rgb_mcc": {
+          "maximum": 0.0327000617980957,
+          "mean": 0.020299255847930908,
+          "minimum": 0.007410883903503418,
+          "sample_std": 0.012651637051984806,
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        }
+      },
+      "subsets": {
+        "20260811": {
+          "candidate_minus_full_ccrl_total": -0.16622353816032412,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": -0.026666666666666727,
+          "full_minus_candidate_shd": 1,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": 0.009155445437952325,
+            "full_affine_r2": -0.00870302812963697,
+            "raw_correlation": 0.007410434310599068,
+            "raw_r2": 0.12264782190322876,
+            "rgb_mcc": 0.007410883903503418
+          }
+        },
+        "20260821": {
+          "candidate_minus_full_ccrl_total": -0.0815849178234736,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": -0.026666666666666616,
+          "full_minus_candidate_shd": 1,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": 0.03874874103243753,
+            "full_affine_r2": 0.011887202572505196,
+            "raw_correlation": 0.020786659228823612,
+            "raw_r2": -0.0007523894309997559,
+            "rgb_mcc": 0.020786821842193604
+          }
+        },
+        "20260831": {
+          "candidate_minus_full_ccrl_total": 0.011407141129175846,
+          "complete_semantic_advantage": true,
+          "edge_auroc_delta": 0.026666666666666727,
+          "full_minus_candidate_shd": 3,
+          "graph_advantage": true,
+          "semantic_deltas": {
+            "coordinatewise_r2": 0.05986131103223702,
+            "full_affine_r2": 0.0103964908477151,
+            "raw_correlation": 0.03270098373829755,
+            "raw_r2": 0.15001040697097778,
+            "rgb_mcc": 0.0327000617980957
+          }
+        }
+      }
+    }
+  },
+  "config_path": ".\\configs\\config_relation_tube_calibration_subset_k8_aggregate.yaml",
+  "config_sha256": "7b47997e756ef7f686b4f4b80a4b3111e3f886d4318b5079bc9ecec7c3302f12",
+  "decision": {
+    "isotropic_direct_coordinate_metrics_positive_all_subsets": true,
+    "isotropic_full_affine_r2_positive_count": 2,
+    "isotropic_raw_r2_positive_count": 2,
+    "preregistered_candidates": [],
+    "preregistered_core_support": false,
+    "test_evaluated": false
+  },
+  "inputs": {
+    "20260811": {
+      "path": ".\\outputs\\relation_tube_calibration_subset_k8_20260811\\formal\\subset_validation_readout.json",
+      "sha256": "6cd7555cad95d840b99c8a4238eeeaa8627fc0c441495d535d2d6368eabb198a"
+    },
+    "20260821": {
+      "path": ".\\outputs\\relation_tube_calibration_subset_k8_20260821\\formal\\subset_validation_readout.json",
+      "sha256": "0bdbdc734db913efd80bc3a811b173de8bd012ed1eb5a3856fd7dedafe5f4bdf"
+    },
+    "20260831": {
+      "path": ".\\outputs\\relation_tube_calibration_subset_k8_20260831\\formal\\subset_validation_readout.json",
+      "sha256": "177c55311c8dc93cf869668bea1f10f20b17c305c3cc878139bbf004bc08d472"
+    }
+  },
+  "mode": "three_calibration_subset_validation_only_aggregate",
+  "protocol_version": "relation_tube_calibration_subset_k8_aggregate_v1",
+  "test_evaluated": false
+}

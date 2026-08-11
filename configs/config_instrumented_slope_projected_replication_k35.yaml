@@ -1,0 +1,50 @@
+protocol_version: instrumented_slope_projected_replication_k35
+protocol_document: PROTOCOLS.md
+source_contract:
+  validation_config: configs/config_instrumented_slope_validation_k29.yaml
+  validation_config_sha256: b4980922781b2947bceecf621ef3cf6efd06dc2cfaf1633ea7441a88d22511ee
+  validation_result: outputs/instrumented_slope_validation_k29/instrumented_slope_validation_results.json
+  validation_result_sha256: 6155f5069d24883a3243feb53a02f587591a30ef95812ac57604f5317bf8f430
+  k34_result: outputs/instrumented_slope_projected_training_k34/evaluation/validation_results.json
+  k34_result_sha256: 757ca1780506fc5ea43f0863d80e41b9a3fcb2806cf52f0d38dbf79a4a0c44fa
+model:
+  feature_dim: 768
+  hidden_dims: [512, 256]
+  anchor_conditioning: film
+  output_dim: 5
+  conditions: [raw_baseline, projected_only]
+projection:
+  family: differentiable_gauss_newton_curve
+  iterations: 8
+  roughness_bounds: [0.0, 1.0]
+training:
+  seeds: [123, 2026, 31415]
+  epochs: 500
+  optimizer: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  full_batch_by_id: true
+  checkpoint_epoch: 500
+point_loss:
+  raw_baseline:
+    raw_weight: 1.0
+    projected_weight: 0.0
+  projected_only:
+    raw_weight: 0.0
+    projected_weight: 1.0
+loss_weights:
+  view: 1.0
+  variance: 1.0
+  covariance: 0.04
+  point: 1.0
+  range: 0.001
+  range_zscore_limit: 6.0
+evaluation:
+  candidates: [raw_baseline_curve, projected_only_curve]
+  bootstrap_repetitions: 1000
+  bootstrap_seed: 20260804
+  bootstrap_confidence: 0.95
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/instrumented_slope_projected_replication_k35

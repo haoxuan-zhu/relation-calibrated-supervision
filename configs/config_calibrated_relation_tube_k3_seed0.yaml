@@ -1,0 +1,62 @@
+protocol_version: calibrated_relation_tube_multiseed_k3_v1
+preregistration: PROTOCOLS.md
+dataset:
+  root: data/causal_chamber/lt_crl_benchmark_v1
+  cache_path: outputs/stochastic_measurement_crl_oracle_v1/cache/real_images_uint8.npy
+  experiment_prefix: buchholz_1
+  domain_suffix: ""
+  environments: [obs, red, green, blue, pol_1, pol_2]
+  samples_per_environment: 10000
+  latent_columns: [red, green, blue, pol_1, pol_2]
+split: {train_end: 8000, validation_end: 9000, test_end: 10000}
+model:
+  latent_dim: 5
+  learned_indices: [0, 1, 2]
+  anchor_indices: [3, 4]
+  hidden_channels: 64
+  conv_layers: 2
+initialization:
+  mode: same_seed_random_no_warm
+  seed: 0
+  expected_state_dict_sha256: 6037afc85fa38492ba8b6854e7467d610016d6bfe4a06e96276c11a1c302a7b2
+calibration:
+  budget: 80
+  subset_seed: 20260731
+  subset_sha256: 4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84
+  raw_ridge_alpha: 0.1
+  clip_predictions_to_unit_interval: true
+  covariance_diagonal_ridge: 0.000001
+  coverage: 0.95
+  expected_score_order_index_one_based: 77
+permutation_control:
+  seed: 20260802
+  expected_attempts: 1
+  expected_sha256: d97a728a61cf64ef07eef2c66d245584992b430e44fefb4333e0bc0012b6fc3b
+training:
+  conditions: [center_only_correct, unbounded_correct, tube_correct, tube_permuted_matched]
+  shuffle_seed: 20260730
+  seed: 0
+  epochs: 100
+  batch_size: 512
+  learning_rate: 0.0005
+  scheduler_factor: 0.3
+  scheduler_patience: 3
+  validation_interval: 10
+  targets: [0, 1, 2]
+  kappa: 0.1
+  eta: 0.0001
+  mu: 0.00001
+evaluation:
+  static_raw_validation_correlation: 0.7531210992649595
+  static_raw_validation_r2: 0.3291354775428772
+  projected_physical_validation_correlation: 0.8455364975177991
+  projected_physical_validation_r2: 0.5983039140701294
+  direct_center_validation_correlation: 0.962230388582101
+  direct_center_validation_r2: 0.9232128483134482
+  graph_threshold: 0.3
+implementation:
+  expected_parameter_count: 16902384
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/calibrated_relation_tube_k3_seed0

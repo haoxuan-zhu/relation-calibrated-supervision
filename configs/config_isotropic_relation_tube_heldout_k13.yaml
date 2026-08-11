@@ -1,0 +1,35 @@
+protocol_version: isotropic_relation_tube_heldout_k13_v1
+preregistration: PROTOCOLS.md
+k11:
+  config_path: ./config_isotropic_relation_tube_budget_k11.yaml
+  config_sha256: 50c3801d6070a71ca92e8d5671b34966669a067488a387714c0a6403197b7d5f
+  output_root: outputs/isotropic_relation_tube_budget_k11
+  validation_aggregate_path: ./k11_budget_validation_aggregate.json
+  validation_aggregate_sha256: 866ee265cba5db828dfda30e0b9264e12ee54c9a0fc9e74ae6c417a2b526c810
+baseline_comparator:
+  path: ./k13_baseline_comparator.json
+  sha256: e89060b444e71f2c710db0dda33d760f9bf9ab035f464086b61d9db2f163ed6d
+k80_loaders:
+  0:
+    path: ./config_relation_tube_geometry_downstream_k6_seed0.yaml
+    sha256: b8f2dedd4eee0b9c212b5384e131c1ceb8301d34b0ccdf72dbe775ab20cb0424
+  42:
+    path: ./config_relation_tube_geometry_downstream_k6_seed42.yaml
+    sha256: bb819bbc52f58a3d81d6c02f7288614a3085e765037751b5afb4edc244474f61
+  3407:
+    path: ./config_relation_tube_geometry_downstream_k6_seed3407.yaml
+    sha256: b1693aa316ae4080082f64503c02a8fbcc0c1273703f7678baa5883a92b4c4e6
+evaluation:
+  budgets: [20, 40, 80, 160]
+  seeds: [0, 42, 3407]
+  test_start: 9000
+  test_end: 10000
+  candidate_geometry: isotropic
+  test_guided_selection_allowed: false
+audit:
+  test_evaluation_authorized: true
+  training_allowed: false
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/isotropic_relation_tube_heldout_k13

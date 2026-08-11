@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relation-calibrated-supervision"
+version = "0.1.0"
+description = "Reference implementation of relation-calibrated supervision and bounded relation tubes"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "PyYAML>=6.0",
+  "scipy>=1.10",
+  "torch>=2.1"
+]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.7", "Pillow>=9.5", "PyMuPDF>=1.24"]
+vision = ["Pillow>=9.5", "transformers>=4.40"]
+movi = ["tfrecord==1.14.6"]
+test = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

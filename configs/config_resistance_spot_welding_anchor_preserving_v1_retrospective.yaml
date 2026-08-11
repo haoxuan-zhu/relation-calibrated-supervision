@@ -1,0 +1,52 @@
+protocol_version: resistance_spot_welding_anchor_preserving_v1
+status: retrospective_after_original_heldout_read
+
+data:
+  csv_path: data/resistance_spot_welding_v3/Data_RSW.csv
+  csv_sha256: 917dac7251795bb333970529f3c5a4b6c780874af83c2f1b08c57a9627e4e027
+  split_path: data/resistance_spot_welding_v3/weld_product_split_v1.json
+  split_sha256: 14321d698a9038a58c914a0f826ef9326c3cb4ec3ef64d3f1509f704f0e0738e
+  features_path: data/resistance_spot_welding_v3/weld_dinov2_features.npz
+  features_sha256: 03da4aca967baed1d679443beedb4333f465bdb93d74b50e18753459689af23b
+
+task:
+  target: PullTest (N)
+  side_features:
+    - Pressure (PSI)
+    - Welding Time (ms)
+    - Angle (Deg)
+    - Thickness A median (mm)
+    - Thickness B median (mm)
+    - Force mean (N)
+    - Force min (N)
+    - Force max (N)
+    - Current mean (A)
+    - Current min (A)
+    - Current max (A)
+
+model:
+  frozen_encoder: dinov2-with-registers-base
+  frozen_encoder_revision: a1d738ccfa7ae170945f210395d99dde8adb1805
+  primary_modality: infrared
+  relation_ridge_alpha: 0.1
+  image_ridge_alpha: 0.1
+  label_rule: preserve_exact_targets_on_labeled_rows_propagate_only_to_unlabeled_rows
+
+probe:
+  budgets: [20, 40, 80, 160]
+  seeds: [3407, 42, 0]
+  relation_derangement_seed_base: 20260805
+  bootstrap_seed_base: 20268000
+  bootstrap_replicates: 5000
+
+implementation:
+  files:
+    - path: src/relation_tube/welding.py
+      sha256: 64564ff86de1416dca03aea24c677c7b63e2a084c9c5d1b971f2fafb7509909b
+    - path: src/relation_tube/anchor_propagation.py
+      sha256: 60fb0d0ec702198231adffb1a4f6e5d1a61ea076ff5331215f2926e960983680
+    - path: scripts/evaluate_resistance_spot_welding_anchor_preserving_v1.py
+      sha256: b7f91ede072e1773f9ab58a02f554eba4ed2f0d91d4783c7ab09fad659fd4ae0
+
+output:
+  audit_json_path: data/resistance_spot_welding_v3/formal_k43/retrospective_anchor_preserving_v1_full.json

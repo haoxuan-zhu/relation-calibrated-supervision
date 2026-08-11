@@ -1,0 +1,490 @@
+{
+  "budgets": {
+    "160": {
+      "seeds": {
+        "0": {
+          "analytic_center": {
+            "raw_correlation": 0.9537201060997172,
+            "raw_r2": 0.9055966729673187
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5802022169086075,
+            "raw_r2": 0.553094042280028
+          },
+          "raw_representation": {
+            "raw_correlation": 0.8119260564962492,
+            "raw_r2": 0.5425198674201965
+          },
+          "tube": {
+            "raw_correlation": 0.8941952784206304,
+            "raw_r2": 0.743335485458374
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08226922192438124,
+            "raw_r2": 0.2008156180381775
+          }
+        },
+        "3407": {
+          "analytic_center": {
+            "raw_correlation": 0.9537201060997172,
+            "raw_r2": 0.9055966729673187
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6453495207752229,
+            "raw_r2": 0.674238779342946
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7780144637207801,
+            "raw_r2": 0.40538135170936584
+          },
+          "tube": {
+            "raw_correlation": 0.8914060158275299,
+            "raw_r2": 0.7426459193229675
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.11339155210674978,
+            "raw_r2": 0.3372645676136017
+          }
+        },
+        "42": {
+          "analytic_center": {
+            "raw_correlation": 0.9537201060997172,
+            "raw_r2": 0.9055966729673187
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6601448286718947,
+            "raw_r2": 0.6602519879034315
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7766971109115174,
+            "raw_r2": 0.4157564342021942
+          },
+          "tube": {
+            "raw_correlation": 0.8935579257410172,
+            "raw_r2": 0.7391744256019592
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.11686081482949984,
+            "raw_r2": 0.323417991399765
+          }
+        }
+      },
+      "summary": {
+        "raw_correlation": {
+          "analytic_gap_fraction_closed": {
+            "maximum": 0.6601448286718947,
+            "mean": 0.6285655221185751,
+            "minimum": 0.5802022169086075,
+            "population_std": 0.03472734035371059
+          },
+          "delta": {
+            "maximum": 0.11686081482949984,
+            "mean": 0.10417386295354363,
+            "minimum": 0.08226922192438124,
+            "population_std": 0.015553540216988408
+          },
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        },
+        "raw_r2": {
+          "analytic_gap_fraction_closed": {
+            "maximum": 0.674238779342946,
+            "mean": 0.6291949365088018,
+            "minimum": 0.553094042280028,
+            "population_std": 0.05411356675552743
+          },
+          "delta": {
+            "maximum": 0.3372645676136017,
+            "mean": 0.2871660590171814,
+            "minimum": 0.2008156180381775,
+            "population_std": 0.06132009410279105
+          },
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        }
+      }
+    },
+    "20": {
+      "seeds": {
+        "0": {
+          "analytic_center": {
+            "raw_correlation": 0.937562077221513,
+            "raw_r2": 0.8582266200044025
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6644000118524953,
+            "raw_r2": 0.5491811572346895
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7339367406680237,
+            "raw_r2": 0.28770941495895386
+          },
+          "tube": {
+            "raw_correlation": 0.8692254166876303,
+            "raw_r2": 0.601026713848114
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.1352886760196066,
+            "raw_r2": 0.31331729888916016
+          }
+        },
+        "3407": {
+          "analytic_center": {
+            "raw_correlation": 0.937562077221513,
+            "raw_r2": 0.8582266200044025
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6435334004379035,
+            "raw_r2": 0.5687501137951992
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7693985666544045,
+            "raw_r2": 0.30382734537124634
+          },
+          "tube": {
+            "raw_correlation": 0.8776174024392311,
+            "raw_r2": 0.6191419959068298
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.1082188357848266,
+            "raw_r2": 0.3153146505355835
+          }
+        },
+        "42": {
+          "analytic_center": {
+            "raw_correlation": 0.937562077221513,
+            "raw_r2": 0.8582266200044025
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6835796307247837,
+            "raw_r2": 0.6380289283925813
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7272004999674516,
+            "raw_r2": 0.12182971090078354
+          },
+          "tube": {
+            "raw_correlation": 0.8709993892654659,
+            "raw_r2": 0.5916722416877747
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.14379888929801432,
+            "raw_r2": 0.4698425307869911
+          }
+        }
+      },
+      "summary": {
+        "raw_correlation": {
+          "analytic_gap_fraction_closed": {
+            "maximum": 0.6835796307247837,
+            "mean": 0.6638376810050608,
+            "minimum": 0.6435334004379035,
+            "population_std": 0.016353639799423687
+          },
+          "delta": {
+            "maximum": 0.14379888929801432,
+            "mean": 0.12910213370081583,
+            "minimum": 0.1082188357848266,
+            "population_std": 0.015169927079520784
+          },
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        },
+        "raw_r2": {
+          "analytic_gap_fraction_closed": {
+            "maximum": 0.6380289283925813,
+            "mean": 0.5853200664741567,
+            "minimum": 0.5491811572346895,
+            "population_std": 0.03811739855384015
+          },
+          "delta": {
+            "maximum": 0.4698425307869911,
+            "mean": 0.3661581600705783,
+            "minimum": 0.31331729888916016,
+            "population_std": 0.07332045599759897
+          },
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        }
+      }
+    },
+    "40": {
+      "seeds": {
+        "0": {
+          "analytic_center": {
+            "raw_correlation": 0.9450365276160242,
+            "raw_r2": 0.8824889134848393
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.3237778263001067,
+            "raw_r2": 0.2684001394937333
+          },
+          "raw_representation": {
+            "raw_correlation": 0.823308161631556,
+            "raw_r2": 0.5444052815437317
+          },
+          "tube": {
+            "raw_correlation": 0.8627211073690709,
+            "raw_r2": 0.635146975517273
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.03941294573751497,
+            "raw_r2": 0.09074169397354126
+          }
+        },
+        "3407": {
+          "analytic_center": {
+            "raw_correlation": 0.9450365276160242,
+            "raw_r2": 0.8824889134848393
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5196382562292975,
+            "raw_r2": 0.5529009704456659
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7754200262878062,
+            "raw_r2": 0.3427509367465973
+          },
+          "tube": {
+            "raw_correlation": 0.8635592492657157,
+            "raw_r2": 0.6411725878715515
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08813922297790955,
+            "raw_r2": 0.2984216511249542
+          }
+        },
+        "42": {
+          "analytic_center": {
+            "raw_correlation": 0.9450365276160242,
+            "raw_r2": 0.8824889134848393
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.4862608883301773,
+            "raw_r2": 0.4488730935872523
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7840224563286218,
+            "raw_r2": 0.426087886095047
+          },
+          "tube": {
+            "raw_correlation": 0.8623173016664926,
+            "raw_r2": 0.6309540271759033
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.07829484533787079,
+            "raw_r2": 0.20486614108085632
+          }
+        }
+      },
+      "summary": {
+        "raw_correlation": {
+          "analytic_gap_fraction_closed": {
+            "maximum": 0.5196382562292975,
+            "mean": 0.4432256569531938,
+            "minimum": 0.3237778263001067,
+            "population_std": 0.08555446747643569
+          },
+          "delta": {
+            "maximum": 0.08813922297790955,
+            "mean": 0.06861567135109843,
+            "minimum": 0.03941294573751497,
+            "population_std": 0.02103690931397491
+          },
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        },
+        "raw_r2": {
+          "analytic_gap_fraction_closed": {
+            "maximum": 0.5529009704456659,
+            "mean": 0.42339140117555046,
+            "minimum": 0.2684001394937333,
+            "population_std": 0.11753628713212631
+          },
+          "delta": {
+            "maximum": 0.2984216511249542,
+            "mean": 0.1980098287264506,
+            "minimum": 0.09074169397354126,
+            "population_std": 0.08492348679813322
+          },
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        }
+      }
+    },
+    "80": {
+      "seeds": {
+        "0": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5674193741825839,
+            "raw_r2": 0.4897883252981715
+          },
+          "raw_representation": {
+            "raw_correlation": 0.8008532296231249,
+            "raw_r2": 0.5171975493431091
+          },
+          "tube": {
+            "raw_correlation": 0.8850242683244266,
+            "raw_r2": 0.702673614025116
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08417103870130171,
+            "raw_r2": 0.18547606468200684
+          }
+        },
+        "3407": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6445088275742034,
+            "raw_r2": 0.6320687685370109
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7531228675267062,
+            "raw_r2": 0.32908961176872253
+          },
+          "tube": {
+            "raw_correlation": 0.8794920020797083,
+            "raw_r2": 0.6873424649238586
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.12636913455300214,
+            "raw_r2": 0.3582528531551361
+          }
+        },
+        "42": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5604044082064891,
+            "raw_r2": 0.5424624418584149
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7947983412584904,
+            "raw_r2": 0.46095356345176697
+          },
+          "tube": {
+            "raw_correlation": 0.8813219654351294,
+            "raw_r2": 0.6968868374824524
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08652362417663906,
+            "raw_r2": 0.23593327403068542
+          }
+        }
+      },
+      "summary": {
+        "raw_correlation": {
+          "analytic_gap_fraction_closed": {
+            "maximum": 0.6445088275742034,
+            "mean": 0.5907775366544255,
+            "minimum": 0.5604044082064891,
+            "population_std": 0.03810154113104262
+          },
+          "delta": {
+            "maximum": 0.12636913455300214,
+            "mean": 0.0990212658103143,
+            "minimum": 0.08417103870130171,
+            "population_std": 0.01936169944641833
+          },
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        },
+        "raw_r2": {
+          "analytic_gap_fraction_closed": {
+            "maximum": 0.6320687685370109,
+            "mean": 0.5547731785645325,
+            "minimum": 0.4897883252981715,
+            "population_std": 0.05873441246121199
+          },
+          "delta": {
+            "maximum": 0.3582528531551361,
+            "mean": 0.2598873972892761,
+            "minimum": 0.18547606468200684,
+            "population_std": 0.0725410443569153
+          },
+          "strict_negative_count": 0,
+          "strict_positive_count": 3
+        }
+      }
+    }
+  },
+  "center_identity": {
+    "all_within_tolerance": true,
+    "maximum_absolute_difference_by_budget": {
+      "160": 5.140240795509232e-09,
+      "20": 1.868019589013059e-08,
+      "40": 1.3133570196666167e-08,
+      "80": 1.1163436203220911e-08
+    },
+    "tolerance": 5e-08
+  },
+  "decision": {
+    "geometry_selection_reopened": false,
+    "test_evaluated": false,
+    "threshold_beyond_direction_used": false,
+    "verdict": "tube_outperforms_raw_propagation_all_budget_seed_both_metrics"
+  },
+  "inputs": {
+    "k11_aggregate": {
+      "path": ".\\outputs\\isotropic_relation_tube_budget_k11\\aggregate\\budget_validation_aggregate.json",
+      "sha256": "866ee265cba5db828dfda30e0b9264e12ee54c9a0fc9e74ae6c417a2b526c810"
+    },
+    "preflights": {
+      "160": {
+        "path": ".\\outputs\\isotropic_relation_tube_budget_k11\\k160\\preflight\\isotropic_preflight.json",
+        "sha256": "761010ceb3bd7010f8a9407118c7dbf113679c227f2ba6a8303c8797b55829e9"
+      },
+      "20": {
+        "path": ".\\outputs\\isotropic_relation_tube_budget_k11\\k20\\preflight\\isotropic_preflight.json",
+        "sha256": "ed729da1448ab30d1da0a7faabba614b06298bc6269498a5586a7eadf3323798"
+      },
+      "40": {
+        "path": ".\\outputs\\isotropic_relation_tube_budget_k11\\k40\\preflight\\isotropic_preflight.json",
+        "sha256": "b15d70530b28e579873ae5bced8647e1c30ad2c5edf5aa3fab456be3043e0219"
+      },
+      "80": {
+        "path": ".\\outputs\\relation_tube_geometry_ablation_k4_seed3407\\preflight\\geometry_preflight.json",
+        "sha256": "19fedff09f232f5077dfbd8c1ee5b6eebe2852ff241848715dcdffa157a67221"
+      }
+    },
+    "raw_comparator": {
+      "path": ".\\outputs\\raw_ridge_propagation_aggregate_v1\\raw\\raw_validation_comparator_k12.json",
+      "sha256": "a004b234cac0bf0512be6db24eba48046b53fcb0f1f706a5a7e58d7e361e501c"
+    }
+  },
+  "mode": "paired_four_budget_three_seed_validation_only_audit",
+  "overall": {
+    "raw_correlation_delta": {
+      "maximum": 0.14379888929801432,
+      "mean": 0.10022823345394305,
+      "minimum": 0.03941294573751497,
+      "population_std": 0.028015831332617754
+    },
+    "raw_correlation_strict_positive_count": 12,
+    "raw_r2_delta": {
+      "maximum": 0.4698425307869911,
+      "mean": 0.2778053612758716,
+      "minimum": 0.09074169397354126,
+      "population_std": 0.09512158679835557
+    },
+    "raw_r2_strict_positive_count": 12
+  },
+  "protocol_version": "isotropic_tube_vs_raw_propagation_k12_v1",
+  "semantic_validation_evaluated": true,
+  "source_files_sha256": {
+    "aggregate_isotropic_relation_tube_budget_k11.py": "50e11092bc1d7cb1543f0970cc81430f39a7038743e7360a87fba856a6644155",
+    "audit_isotropic_tube_vs_raw_propagation_k12.py": "22b17a8c70deab51aa91a870fe054cbb7dd051bf10b8a88e061abe29d18b816f",
+    "extract_raw_ridge_validation_comparator_k12.py": "8074108ef179d8bf001fa7a0aa2477f9996700423763651910a3f5713b2f24f3",
+    "run_isotropic_relation_tube_budget_k11.py": "344101cc3382d56968537d2bd335fa180cfda4b28d05324c505d8efe87858b89"
+  },
+  "test_evaluated": false
+}

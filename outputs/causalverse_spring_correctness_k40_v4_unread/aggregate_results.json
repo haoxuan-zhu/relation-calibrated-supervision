@@ -1,0 +1,1907 @@
+{
+  "audit_sha256": "aa458dbcf88564ad6ff8bd2518a9b257fb30e1fb3a4aef743cb978aa26e1fa6d",
+  "coefficient_positive_seed_split_count": 3,
+  "coefficient_split_mean_r2_delta": {
+    "test": 0.0012055209447880966,
+    "validation": 0.030878461866648055
+  },
+  "coefficient_validation_bootstrap_ci_positive_seed_count": 1,
+  "condition_lock_sha256": {
+    "0": {
+      "coefficient_permuted_relation": "05137d119c7de490ce8ada50a0ef423d9d74abdb80d42ec99d4c65c2b877f1f4",
+      "correct_relation": "475a761c90e98aa4f8551072fb7bebd42359c73e76561e4a500e5e09ab99427c",
+      "point": "bb5693c2f7302198738596b297af5330735df7008f59ef20a0417a12aa734e5a",
+      "wrong_km_to_l_relation": "80aa1e65f443f4ec64fbe2c41f47f41dba575099cc92ac48a9fc3d9c54bdb38b",
+      "wrong_lm_to_k_relation": "112fcca48d2aaba0549e82ec18c2c18095fa7dc0d0b3cc6ef440fa18e3b0875b"
+    },
+    "3407": {
+      "coefficient_permuted_relation": "a8b344ff96aec389f43c85c2c7f0da981e72b14617ef769128312585e5c773af",
+      "correct_relation": "38cb0d6b003b05fbc85920f484a017cf065cd51f6918db52d60e3c8249291816",
+      "point": "b0f32ec78a6a3dfc2cf3bd6a4427d0cebc42a531d6b57f6be312ee53f5cf5c30",
+      "wrong_km_to_l_relation": "cbc00b41a8c783c549b585b25c37bfaaed8bf155a7fd41bd9d7f4fb3fc339a5f",
+      "wrong_lm_to_k_relation": "ac91b60b94ac3194ec4d40d942147af1861173b5bd9295a3f13016d83cdb28e3"
+    },
+    "42": {
+      "coefficient_permuted_relation": "6fcceaa5527da477e8a26a290dd2784102315131c0c215cc0a6bd60db368d942",
+      "correct_relation": "3274a5802b687265349d78dc109698728f3df144e3f1f589d8ff4c5202b1e874",
+      "point": "5b1740ec5bdc67f26a032044f5735e19eacc1a785b917de9e9d8a64c46e740cf",
+      "wrong_km_to_l_relation": "787ea5bb8aef927cfdd2ec02664b1f31d064037bbe762070624229e200ff21e2",
+      "wrong_lm_to_k_relation": "20cf61695523e9469b8295e9a2e628002d11cbb8cca0bf19564c9680aff62de4"
+    }
+  },
+  "config_sha256": "3dadb63d68564ab7e7f85ac16a30e182de3f3f9fa15b83b5288c1ab18bba7a14",
+  "deltas": {
+    "0": {
+      "test": {
+        "correct_minus_coefficient_permuted_relation": {
+          "relation3_nrmse_advantage": 0.06160302935296297,
+          "relation3_pearson": 0.01595362823379598,
+          "relation3_r2": 0.04680134975968486,
+          "true_relation_nrmse_advantage": 0.2569120389704072
+        },
+        "correct_minus_point": {
+          "relation3_nrmse_advantage": 0.36965749151787636,
+          "relation3_pearson": 0.226281602109482,
+          "relation3_r2": 0.4981873940571348,
+          "true_relation_nrmse_advantage": 0.7411901148281055
+        },
+        "correct_minus_point_free2_pearson": 0.027254405317444608,
+        "correct_minus_wrong_km_to_l_relation": {
+          "relation3_nrmse_advantage": 0.04991517228905945,
+          "relation3_pearson": 0.02326188478565694,
+          "relation3_r2": 0.048273122970061255,
+          "true_relation_nrmse_advantage": 0.47744382779604566
+        },
+        "correct_minus_wrong_lm_to_k_relation": {
+          "relation3_nrmse_advantage": 0.6387893707207268,
+          "relation3_pearson": 0.40475933110856405,
+          "relation3_r2": 0.8897259621396159,
+          "true_relation_nrmse_advantage": 1.7983870223095475
+        }
+      },
+      "validation": {
+        "correct_minus_coefficient_permuted_relation": {
+          "relation3_nrmse_advantage": 0.08734639490326979,
+          "relation3_pearson": 0.028403178048782896,
+          "relation3_r2": 0.09287824480629242,
+          "true_relation_nrmse_advantage": 0.26990773714195604
+        },
+        "correct_minus_point": {
+          "relation3_nrmse_advantage": 0.4864729785331552,
+          "relation3_pearson": 0.3296772641741991,
+          "relation3_r2": 0.8445003176760733,
+          "true_relation_nrmse_advantage": 1.0156804562422013
+        },
+        "correct_minus_point_free2_pearson": 0.049931781861307534,
+        "correct_minus_wrong_km_to_l_relation": {
+          "relation3_nrmse_advantage": 0.04348711654401993,
+          "relation3_pearson": 0.024486403202459983,
+          "relation3_r2": 0.05738605624203147,
+          "true_relation_nrmse_advantage": 0.5429751874025254
+        },
+        "correct_minus_wrong_lm_to_k_relation": {
+          "relation3_nrmse_advantage": 0.6972585804649714,
+          "relation3_pearson": 0.4471962843696739,
+          "relation3_r2": 1.0850320450179907,
+          "true_relation_nrmse_advantage": 2.1974904091697574
+        }
+      }
+    },
+    "3407": {
+      "test": {
+        "correct_minus_coefficient_permuted_relation": {
+          "relation3_nrmse_advantage": 0.018306739122178173,
+          "relation3_pearson": 0.0037779459621405387,
+          "relation3_r2": -0.010704287039941307,
+          "true_relation_nrmse_advantage": 0.2772895436486367
+        },
+        "correct_minus_point": {
+          "relation3_nrmse_advantage": 0.05182453820505317,
+          "relation3_pearson": 0.022883407104121067,
+          "relation3_r2": 0.06465209052764198,
+          "true_relation_nrmse_advantage": 0.17426238748593473
+        },
+        "correct_minus_point_free2_pearson": 0.042142292922831226,
+        "correct_minus_wrong_km_to_l_relation": {
+          "relation3_nrmse_advantage": 0.04430219334402319,
+          "relation3_pearson": 0.018047833570605132,
+          "relation3_r2": 0.039066199964062354,
+          "true_relation_nrmse_advantage": 0.5034765753233666
+        },
+        "correct_minus_wrong_lm_to_k_relation": {
+          "relation3_nrmse_advantage": 0.6239434637299901,
+          "relation3_pearson": 0.4185656591302304,
+          "relation3_r2": 0.8893650935666342,
+          "true_relation_nrmse_advantage": 1.8458681831941635
+        }
+      },
+      "validation": {
+        "correct_minus_coefficient_permuted_relation": {
+          "relation3_nrmse_advantage": 0.03935394048940488,
+          "relation3_pearson": 0.006140239319450291,
+          "relation3_r2": 0.016881982260593786,
+          "true_relation_nrmse_advantage": 0.2900407746480075
+        },
+        "correct_minus_point": {
+          "relation3_nrmse_advantage": 0.08419913726313488,
+          "relation3_pearson": 0.028504999362882977,
+          "relation3_r2": 0.12973132111765395,
+          "true_relation_nrmse_advantage": 0.19699973522846703
+        },
+        "correct_minus_point_free2_pearson": 0.05262562520551106,
+        "correct_minus_wrong_km_to_l_relation": {
+          "relation3_nrmse_advantage": 0.05215572027461146,
+          "relation3_pearson": 0.018430664596961965,
+          "relation3_r2": 0.07731327264866616,
+          "true_relation_nrmse_advantage": 0.552266384840156
+        },
+        "correct_minus_wrong_lm_to_k_relation": {
+          "relation3_nrmse_advantage": 0.6873783535186531,
+          "relation3_pearson": 0.45185784625207664,
+          "relation3_r2": 1.0777552053678652,
+          "true_relation_nrmse_advantage": 2.220436582376416
+        }
+      }
+    },
+    "42": {
+      "test": {
+        "correct_minus_coefficient_permuted_relation": {
+          "relation3_nrmse_advantage": 0.013174180772697941,
+          "relation3_pearson": -0.0023181755119842107,
+          "relation3_r2": -0.032480499885379266,
+          "true_relation_nrmse_advantage": 0.2832615138675574
+        },
+        "correct_minus_point": {
+          "relation3_nrmse_advantage": 0.3476890601194803,
+          "relation3_pearson": 0.22015205366053436,
+          "relation3_r2": 0.4941006022775707,
+          "true_relation_nrmse_advantage": 0.7757059523739125
+        },
+        "correct_minus_point_free2_pearson": 0.022813523643847033,
+        "correct_minus_wrong_km_to_l_relation": {
+          "relation3_nrmse_advantage": 0.004296101979220368,
+          "relation3_pearson": -0.00015457647914463024,
+          "relation3_r2": -0.03695556354575669,
+          "true_relation_nrmse_advantage": 0.4932385190567711
+        },
+        "correct_minus_wrong_lm_to_k_relation": {
+          "relation3_nrmse_advantage": 0.6416024247219295,
+          "relation3_pearson": 0.39562292527928095,
+          "relation3_r2": 0.9782414435819639,
+          "true_relation_nrmse_advantage": 2.0150852780339568
+        }
+      },
+      "validation": {
+        "correct_minus_coefficient_permuted_relation": {
+          "relation3_nrmse_advantage": 0.03173078885889802,
+          "relation3_pearson": 0.004647112841374201,
+          "relation3_r2": -0.017124841466942042,
+          "true_relation_nrmse_advantage": 0.29270427981994496
+        },
+        "correct_minus_point": {
+          "relation3_nrmse_advantage": 0.47646826826725697,
+          "relation3_pearson": 0.31610295431640123,
+          "relation3_r2": 0.8695957649035115,
+          "true_relation_nrmse_advantage": 1.066738730483548
+        },
+        "correct_minus_point_free2_pearson": 0.046005147686319026,
+        "correct_minus_wrong_km_to_l_relation": {
+          "relation3_nrmse_advantage": 0.004125470177220092,
+          "relation3_pearson": 0.0004386911428024831,
+          "relation3_r2": -0.036003158642551325,
+          "true_relation_nrmse_advantage": 0.5643293371505754
+        },
+        "correct_minus_wrong_lm_to_k_relation": {
+          "relation3_nrmse_advantage": 0.7148180883837525,
+          "relation3_pearson": 0.4243635084141176,
+          "relation3_r2": 1.1952334137504677,
+          "true_relation_nrmse_advantage": 2.3870168022312517
+        }
+      }
+    }
+  },
+  "fact_type": "unread_shard_external_replication",
+  "free2_consistent_degradation": false,
+  "machine_decision": "unread_shard_relation_regularization_only",
+  "metrics": {
+    "0": {
+      "coefficient_permuted_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9875694057064064,
+            0.9837457104206059,
+            0.9722213021280611,
+            0.4528444612242384,
+            0.9837773964303475
+          ],
+          "direct_normalized_rmse": [
+            0.2522631933852037,
+            0.1887288494546462,
+            0.256166137087764,
+            1.0843925759575233,
+            0.2477536523981071
+          ],
+          "direct_r2": [
+            0.9363632812630993,
+            0.9643814213835255,
+            0.9343789102095329,
+            -0.17590725879179314,
+            0.9386181277233979
+          ],
+          "direct_signed_pearson": [
+            0.9875694057064064,
+            0.9837457104206059,
+            0.9722213021280611,
+            0.4528444612242384,
+            0.9837773964303475
+          ],
+          "fitted_correct_relation_coefficient": 8.779687345289553,
+          "free2_mean_direct_r2": 0.9503723513233124,
+          "hungarian_mcc": 0.8760316551819318,
+          "linear_block_r2": 0.41573666650216157,
+          "mean_direct_abs_correlation_all5": 0.8760316551819317,
+          "mean_direct_abs_correlation_free2": 0.9856575580635061,
+          "mean_direct_abs_correlation_relation3": 0.8029477199275491,
+          "mean_direct_r2": 0.7195668963575524,
+          "prediction_std": [
+            0.29902349631093794,
+            0.08674847030939725,
+            0.10833923870773862,
+            1.5358320579268119,
+            0.0888469954403092
+          ],
+          "relation3_mean_direct_r2": 0.5656965930470459,
+          "relation3_mean_normalized_rmse": 0.5294374551477982,
+          "relation3_mean_signed_pearson": 0.8029477199275491,
+          "true_relation_normalized_rmse": 0.29158489497479306
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9862881209927913,
+            0.9832394195453518,
+            0.9524645651020462,
+            0.34995796195552903,
+            0.9827366904286
+          ],
+          "direct_normalized_rmse": [
+            0.293798079948351,
+            0.1906371740330349,
+            0.3243812335599477,
+            1.2818982442250688,
+            0.2588984030365025
+          ],
+          "direct_r2": [
+            0.9136826882186624,
+            0.9636574678766984,
+            0.8947768153141267,
+            -0.6432631085473144,
+            0.9329716169051487
+          ],
+          "direct_signed_pearson": [
+            0.9862881209927913,
+            0.9832394195453518,
+            0.9524645651020462,
+            0.34995796195552903,
+            0.9827366904286
+          ],
+          "fitted_correct_relation_coefficient": 8.755925063371437,
+          "free2_mean_direct_r2": 0.9386700780476804,
+          "hungarian_mcc": 0.8509373516048637,
+          "linear_block_r2": 0.3683518807756666,
+          "mean_direct_abs_correlation_all5": 0.8509373516048637,
+          "mean_direct_abs_correlation_free2": 0.9847637702690715,
+          "mean_direct_abs_correlation_relation3": 0.7617197391620585,
+          "mean_direct_r2": 0.6123650959534643,
+          "prediction_std": [
+            0.3182283043577471,
+            0.08779198697403678,
+            0.1052415241438184,
+            1.6991933736093696,
+            0.09133006443788774
+          ],
+          "relation3_mean_direct_r2": 0.394828441223987,
+          "relation3_mean_normalized_rmse": 0.6217259602738396,
+          "relation3_mean_signed_pearson": 0.7617197391620585,
+          "true_relation_normalized_rmse": 0.30404221131876663
+        }
+      },
+      "correct_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9878785542251064,
+            0.9746340119573287,
+            0.9852480778250249,
+            0.4862931823868736,
+            0.9851627842721369
+          ],
+          "direct_normalized_rmse": [
+            0.26247226338453306,
+            0.2256718106990388,
+            0.1821688213686296,
+            1.0485552076186908,
+            0.17277924839718506
+          ],
+          "direct_r2": [
+            0.9311083109538003,
+            0.9490722338558172,
+            0.9668145205211643,
+            -0.09946802342427574,
+            0.9701473313233038
+          ],
+          "direct_signed_pearson": [
+            0.9878785542251064,
+            0.9746340119573287,
+            0.9852480778250249,
+            0.4862931823868736,
+            0.9851627842721369
+          ],
+          "fitted_correct_relation_coefficient": 9.726742918721142,
+          "free2_mean_direct_r2": 0.9400902724048088,
+          "hungarian_mcc": 0.8838433221332942,
+          "linear_block_r2": 0.5158259840100683,
+          "mean_direct_abs_correlation_all5": 0.8838433221332942,
+          "mean_direct_abs_correlation_free2": 0.9812562830912175,
+          "mean_direct_abs_correlation_relation3": 0.8189013481613451,
+          "mean_direct_r2": 0.743534874645962,
+          "prediction_std": [
+            0.3047745452379366,
+            0.0826453361826683,
+            0.10288142798486616,
+            1.506900215253322,
+            0.08373793617542456
+          ],
+          "relation3_mean_direct_r2": 0.6124979428067308,
+          "relation3_mean_normalized_rmse": 0.4678344257948352,
+          "relation3_mean_signed_pearson": 0.8189013481613451,
+          "true_relation_normalized_rmse": 0.034672856004385876
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9869659329814771,
+            0.9727542907289128,
+            0.9793293902616769,
+            0.40664470122056806,
+            0.9843946601502793
+          ],
+          "direct_normalized_rmse": [
+            0.2965323535584903,
+            0.23248652086109994,
+            0.21839572251529377,
+            1.2073601754282894,
+            0.1773827981681263
+          ],
+          "direct_r2": [
+            0.9120685632930625,
+            0.9459500176179013,
+            0.9523033083870228,
+            -0.4577185932102301,
+            0.9685353429140457
+          ],
+          "direct_signed_pearson": [
+            0.9869659329814771,
+            0.9727542907289128,
+            0.9793293902616769,
+            0.40664470122056806,
+            0.9843946601502793
+          ],
+          "fitted_correct_relation_coefficient": 9.737028434303458,
+          "free2_mean_direct_r2": 0.9290092904554819,
+          "hungarian_mcc": 0.8660177950685828,
+          "linear_block_r2": 0.444448837409365,
+          "mean_direct_abs_correlation_all5": 0.8660177950685828,
+          "mean_direct_abs_correlation_free2": 0.979860111855195,
+          "mean_direct_abs_correlation_relation3": 0.7901229172108414,
+          "mean_direct_r2": 0.6642277278003604,
+          "prediction_std": [
+            0.32274722398813427,
+            0.08429346946638437,
+            0.1025310866609986,
+            1.588286278169294,
+            0.08476627161390962
+          ],
+          "relation3_mean_direct_r2": 0.48770668603027945,
+          "relation3_mean_normalized_rmse": 0.5343795653705699,
+          "relation3_mean_signed_pearson": 0.7901229172108414,
+          "true_relation_normalized_rmse": 0.03413447417681058
+        }
+      },
+      "point": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9245688805336747,
+            0.983434875013871,
+            0.3849815674611254,
+            0.4123777641362648,
+            0.9804999065581991
+          ],
+          "direct_normalized_rmse": [
+            0.5254068693653198,
+            0.2159305752346433,
+            1.1047678830580223,
+            1.1759426741178916,
+            0.23176519476222074
+          ],
+          "direct_r2": [
+            0.7239476216237339,
+            0.953373986678836,
+            -0.2205120754365042,
+            -0.38284117281153773,
+            0.9462848944968298
+          ],
+          "direct_signed_pearson": [
+            0.9245688805336747,
+            0.983434875013871,
+            0.3849815674611254,
+            0.4123777641362648,
+            0.9804999065581991
+          ],
+          "fitted_correct_relation_coefficient": 10.031729891767853,
+          "free2_mean_direct_r2": 0.838660804151285,
+          "hungarian_mcc": 0.737172598740627,
+          "linear_block_r2": 0.3998613535788339,
+          "mean_direct_abs_correlation_all5": 0.737172598740627,
+          "mean_direct_abs_correlation_free2": 0.9540018777737729,
+          "mean_direct_abs_correlation_relation3": 0.5926197460518631,
+          "mean_direct_r2": 0.4040506509102716,
+          "prediction_std": [
+            0.32292094617120337,
+            0.08900850555261886,
+            0.10234970599556639,
+            1.566784939778396,
+            0.08362529470957386
+          ],
+          "relation3_mean_direct_r2": 0.11431054874959597,
+          "relation3_mean_normalized_rmse": 0.8374919173127116,
+          "relation3_mean_signed_pearson": 0.5926197460518631,
+          "true_relation_normalized_rmse": 0.7758629708324913
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.8783539609749528,
+            0.981502699012822,
+            0.10458511448489463,
+            0.2978386231055742,
+            0.978913221519458
+          ],
+          "direct_normalized_rmse": [
+            0.6750919898651456,
+            0.21910987562203682,
+            1.4676010512442028,
+            1.3651863148979446,
+            0.22977026556902808
+          ],
+          "direct_r2": [
+            0.5442508052199182,
+            0.9519908624048956,
+            -1.1538528456130899,
+            -0.86373367438463,
+            0.9472056250603383
+          ],
+          "direct_signed_pearson": [
+            0.8783539609749528,
+            0.981502699012822,
+            0.10458511448489463,
+            0.2978386231055742,
+            0.978913221519458
+          ],
+          "fitted_correct_relation_coefficient": 9.740705423181977,
+          "free2_mean_direct_r2": 0.7481208338124069,
+          "hungarian_mcc": 0.651077621757847,
+          "linear_block_r2": 0.3285154579202765,
+          "mean_direct_abs_correlation_all5": 0.6482387238195404,
+          "mean_direct_abs_correlation_free2": 0.9299283299938874,
+          "mean_direct_abs_correlation_relation3": 0.46044565303664226,
+          "mean_direct_r2": 0.08517215453748646,
+          "prediction_std": [
+            0.34043717342040286,
+            0.09060231056175118,
+            0.12037934490226151,
+            1.7186680880639855,
+            0.0857692791436935
+          ],
+          "relation3_mean_direct_r2": -0.35679363164579386,
+          "relation3_mean_normalized_rmse": 1.020852543903725,
+          "relation3_mean_signed_pearson": 0.46044565303664226,
+          "true_relation_normalized_rmse": 1.0498149304190119
+        }
+      },
+      "wrong_km_to_l_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9840648861328933,
+            0.9736788453505812,
+            0.980415147195071,
+            0.4351275742579835,
+            0.97137566867401
+          ],
+          "direct_normalized_rmse": [
+            0.3137729527599101,
+            0.23201348380579695,
+            0.21795711191889566,
+            1.0967835226862075,
+            0.23850815964658076
+          ],
+          "direct_r2": [
+            0.9015465341163272,
+            0.9461697433322972,
+            0.952494697363974,
+            -0.20293409563596665,
+            0.9431138577820011
+          ],
+          "direct_signed_pearson": [
+            0.9840648861328933,
+            0.9736788453505812,
+            0.980415147195071,
+            0.4351275742579835,
+            0.97137566867401
+          ],
+          "fitted_correct_relation_coefficient": 9.9831928849748,
+          "free2_mean_direct_r2": 0.9238581387243122,
+          "hungarian_mcc": 0.8711315107706555,
+          "linear_block_r2": 0.5184095973864622,
+          "mean_direct_abs_correlation_all5": 0.8689324243221078,
+          "mean_direct_abs_correlation_free2": 0.9788718657417372,
+          "mean_direct_abs_correlation_relation3": 0.7956394633756881,
+          "mean_direct_r2": 0.7080781473917266,
+          "prediction_std": [
+            0.31794848258490077,
+            0.08206618150166217,
+            0.1004474875701325,
+            1.5242323490075331,
+            0.08274121265471678
+          ],
+          "relation3_mean_direct_r2": 0.5642248198366695,
+          "relation3_mean_normalized_rmse": 0.5177495980838946,
+          "relation3_mean_signed_pearson": 0.7956394633756881,
+          "true_relation_normalized_rmse": 0.5121166838004315
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9834516519410215,
+            0.971024687400685,
+            0.9808984890015213,
+            0.3497551234628021,
+            0.9662559295608206
+          ],
+          "direct_normalized_rmse": [
+            0.34784324521430887,
+            0.2515212135436727,
+            0.21195700576435178,
+            1.2640180858483028,
+            0.25762495413111486
+          ],
+          "direct_r2": [
+            0.8790050767587783,
+            0.9367370791375182,
+            0.9550742277074106,
+            -0.5977417213516076,
+            0.933629383008941
+          ],
+          "direct_signed_pearson": [
+            0.9834516519410215,
+            0.971024687400685,
+            0.9808984890015213,
+            0.3497551234628021,
+            0.9662559295608206
+          ],
+          "fitted_correct_relation_coefficient": 10.073601712932394,
+          "free2_mean_direct_r2": 0.9078710779481483,
+          "hungarian_mcc": 0.8519517477888355,
+          "linear_block_r2": 0.4377605151072058,
+          "mean_direct_abs_correlation_all5": 0.8502771762733701,
+          "mean_direct_abs_correlation_free2": 0.9772381696708532,
+          "mean_direct_abs_correlation_relation3": 0.7656365140083814,
+          "mean_direct_r2": 0.621340809052208,
+          "prediction_std": [
+            0.33859945144541276,
+            0.08377578018118588,
+            0.10217587273051094,
+            1.6526539856860456,
+            0.0820815365024756
+          ],
+          "relation3_mean_direct_r2": 0.430320629788248,
+          "relation3_mean_normalized_rmse": 0.5778666819145898,
+          "relation3_mean_signed_pearson": 0.7656365140083814,
+          "true_relation_normalized_rmse": 0.577109661579336
+        }
+      },
+      "wrong_lm_to_k_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9335774605179987,
+            0.6542465004704704,
+            0.08021036356811549,
+            0.4885058722631276,
+            0.6737098153271001
+          ],
+          "direct_normalized_rmse": [
+            0.4735831809678924,
+            0.8771913489113926,
+            1.396727688927784,
+            1.0872599053624752,
+            0.835883795256427
+          ],
+          "direct_r2": [
+            0.7757189707043325,
+            0.2305353373950113,
+            -0.9508482370175482,
+            -0.18213410180881873,
+            0.3012982808277114
+          ],
+          "direct_signed_pearson": [
+            0.9335774605179987,
+            0.6542465004704704,
+            0.08021036356811549,
+            0.4885058722631276,
+            0.6737098153271001
+          ],
+          "fitted_correct_relation_coefficient": 7.843545104307408,
+          "free2_mean_direct_r2": 0.5031271540496719,
+          "hungarian_mcc": 0.6135732585989851,
+          "linear_block_r2": 0.358822705951478,
+          "mean_direct_abs_correlation_all5": 0.5660500024293624,
+          "mean_direct_abs_correlation_free2": 0.7939119804942345,
+          "mean_direct_abs_correlation_relation3": 0.41414201705278103,
+          "mean_direct_r2": 0.03491405002013766,
+          "prediction_std": [
+            0.3177523174381385,
+            0.08372658151234329,
+            0.10844021571515028,
+            1.5975251465928566,
+            0.08086047469902793
+          ],
+          "relation3_mean_direct_r2": -0.27722801933288516,
+          "relation3_mean_normalized_rmse": 1.106623796515562,
+          "relation3_mean_signed_pearson": 0.41414201705278103,
+          "true_relation_normalized_rmse": 1.8330598783139334
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9245351959205025,
+            0.4862239299927318,
+            0.03852832790390752,
+            0.3846289940445132,
+            0.6826792323828966
+          ],
+          "direct_normalized_rmse": [
+            0.5198511709035336,
+            1.1150016903118234,
+            1.5816977587663055,
+            1.225968770439001,
+            0.8872479083013174
+          ],
+          "direct_r2": [
+            0.7297547601102251,
+            -0.2432287693982227,
+            -1.5017678000863541,
+            -0.5029994260917163,
+            0.21279114921493714
+          ],
+          "direct_signed_pearson": [
+            0.9245351959205025,
+            0.4862239299927318,
+            -0.03852832790390752,
+            0.3846289940445132,
+            0.6826792323828966
+          ],
+          "fitted_correct_relation_coefficient": 7.517084955148176,
+          "free2_mean_direct_r2": 0.2432629953560012,
+          "hungarian_mcc": 0.5734246064357528,
+          "linear_block_r2": 0.2611932083023688,
+          "mean_direct_abs_correlation_all5": 0.5033191360489103,
+          "mean_direct_abs_correlation_free2": 0.7053795629566171,
+          "mean_direct_abs_correlation_relation3": 0.3686121847771058,
+          "mean_direct_r2": -0.2610900172502261,
+          "prediction_std": [
+            0.338200342921917,
+            0.08764074949803159,
+            0.12292944352374253,
+            1.6594297423865545,
+            0.09679061942183373
+          ],
+          "relation3_mean_direct_r2": -0.5973253589877111,
+          "relation3_mean_normalized_rmse": 1.2316381458355412,
+          "relation3_mean_signed_pearson": 0.3429266328411675,
+          "true_relation_normalized_rmse": 2.231624883346568
+        }
+      }
+    },
+    "3407": {
+      "coefficient_permuted_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9862371442480261,
+            0.9824792772019205,
+            0.9815001723005223,
+            0.4604177953039717,
+            0.9808122950024324
+          ],
+          "direct_normalized_rmse": [
+            0.2641830784751419,
+            0.18705595250514204,
+            0.21988290074611722,
+            1.0876785343316484,
+            0.25732577826350383
+          ],
+          "direct_r2": [
+            0.930207301047397,
+            0.9650100706323941,
+            0.9516515099594731,
+            -0.18304459404584317,
+            0.933783443841082
+          ],
+          "direct_signed_pearson": [
+            0.9862371442480261,
+            0.9824792772019205,
+            0.9815001723005223,
+            0.4604177953039717,
+            0.9808122950024324
+          ],
+          "fitted_correct_relation_coefficient": 8.719243367956107,
+          "free2_mean_direct_r2": 0.9476086858398955,
+          "hungarian_mcc": 0.8782893368113746,
+          "linear_block_r2": 0.40831624227955243,
+          "mean_direct_abs_correlation_all5": 0.8782893368113746,
+          "mean_direct_abs_correlation_free2": 0.9843582107249733,
+          "mean_direct_abs_correlation_relation3": 0.8075767542023088,
+          "mean_direct_r2": 0.7195215462869007,
+          "prediction_std": [
+            0.3021704976849846,
+            0.08100494408534692,
+            0.10615015261990267,
+            1.5623753380636491,
+            0.08418328555667674
+          ],
+          "relation3_mean_direct_r2": 0.5674634532515707,
+          "relation3_mean_normalized_rmse": 0.5216290711137564,
+          "relation3_mean_signed_pearson": 0.8075767542023088,
+          "true_relation_normalized_rmse": 0.30654853670091375
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9852109836348361,
+            0.9822854918173971,
+            0.9727499997258137,
+            0.378840317412096,
+            0.9798780811456199
+          ],
+          "direct_normalized_rmse": [
+            0.30530974628819485,
+            0.18824623592457732,
+            0.26187822449383547,
+            1.254168673687422,
+            0.2703119281069312
+          ],
+          "direct_r2": [
+            0.9067859588214381,
+            0.9645633546602284,
+            0.9314197955359563,
+            -0.5729390620588675,
+            0.9269314615231132
+          ],
+          "direct_signed_pearson": [
+            0.9852109836348361,
+            0.9822854918173971,
+            0.9727499997258137,
+            0.378840317412096,
+            0.9798780811456199
+          ],
+          "fitted_correct_relation_coefficient": 8.695111207563482,
+          "free2_mean_direct_r2": 0.9356746567408332,
+          "hungarian_mcc": 0.8597929747471525,
+          "linear_block_r2": 0.3524130321659128,
+          "mean_direct_abs_correlation_all5": 0.8597929747471525,
+          "mean_direct_abs_correlation_free2": 0.9837482377261166,
+          "mean_direct_abs_correlation_relation3": 0.7771561327611765,
+          "mean_direct_r2": 0.6313523016963736,
+          "prediction_std": [
+            0.3221931296864686,
+            0.08246419995527686,
+            0.10466428278455528,
+            1.6943331817055156,
+            0.08658777174231537
+          ],
+          "relation3_mean_direct_r2": 0.42847073166673405,
+          "relation3_mean_normalized_rmse": 0.5954529420960629,
+          "relation3_mean_signed_pearson": 0.7771561327611765,
+          "true_relation_normalized_rmse": 0.32051371463479233
+        }
+      },
+      "correct_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9861273657049097,
+            0.9736684927515437,
+            0.9895680426465285,
+            0.4672645035129782,
+            0.9772315543338413
+          ],
+          "direct_normalized_rmse": [
+            0.23513316566868792,
+            0.24642867989405778,
+            0.16251972759478936,
+            1.1184160947598247,
+            0.2290311736201207
+          ],
+          "direct_r2": [
+            0.9447123944026213,
+            0.939272905725672,
+            0.9735873381425154,
+            -0.25085456101781745,
+            0.9475447215101901
+          ],
+          "direct_signed_pearson": [
+            0.9861273657049097,
+            0.9736684927515437,
+            0.9895680426465285,
+            0.4672645035129782,
+            0.9772315543338413
+          ],
+          "fitted_correct_relation_coefficient": 9.764543721665522,
+          "free2_mean_direct_r2": 0.9419926500641467,
+          "hungarian_mcc": 0.8787719917899602,
+          "linear_block_r2": 0.47112776159487557,
+          "mean_direct_abs_correlation_all5": 0.8787719917899602,
+          "mean_direct_abs_correlation_free2": 0.9798979292282266,
+          "mean_direct_abs_correlation_relation3": 0.8113547001644493,
+          "mean_direct_r2": 0.7108525597526363,
+          "prediction_std": [
+            0.2944694731925528,
+            0.0820902204987259,
+            0.10497055734244887,
+            1.6539369142418383,
+            0.08348586920459393
+          ],
+          "relation3_mean_direct_r2": 0.5567591662116294,
+          "relation3_mean_normalized_rmse": 0.5033223319915783,
+          "relation3_mean_signed_pearson": 0.8113547001644493,
+          "true_relation_normalized_rmse": 0.02925899305227703
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9846636088138274,
+            0.9730338658962667,
+            0.9865538048846028,
+            0.386799311271562,
+            0.9765360000857156
+          ],
+          "direct_normalized_rmse": [
+            0.26525002610988396,
+            0.23790204538267284,
+            0.19018168046016223,
+            1.2564358268630076,
+            0.22167949749680432
+          ],
+          "direct_r2": [
+            0.9296424236487059,
+            0.9434026168027406,
+            0.9638309284173487,
+            -0.5786309870249295,
+            0.9508582003895644
+          ],
+          "direct_signed_pearson": [
+            0.9846636088138274,
+            0.9730338658962667,
+            0.9865538048846028,
+            0.386799311271562,
+            0.9765360000857156
+          ],
+          "fitted_correct_relation_coefficient": 9.770665803029129,
+          "free2_mean_direct_r2": 0.9365225202257232,
+          "hungarian_mcc": 0.861517318190395,
+          "linear_block_r2": 0.44771069102575123,
+          "mean_direct_abs_correlation_all5": 0.861517318190395,
+          "mean_direct_abs_correlation_free2": 0.9788487373550471,
+          "mean_direct_abs_correlation_relation3": 0.7832963720806267,
+          "mean_direct_r2": 0.6418206364466859,
+          "prediction_std": [
+            0.3120516517577128,
+            0.08387179946968853,
+            0.10497179849615768,
+            1.7060186958143242,
+            0.08493804964902167
+          ],
+          "relation3_mean_direct_r2": 0.44535271392732784,
+          "relation3_mean_normalized_rmse": 0.556099001606658,
+          "relation3_mean_signed_pearson": 0.7832963720806267,
+          "true_relation_normalized_rmse": 0.030472939986784867
+        }
+      },
+      "point": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9197255258642726,
+            0.9557857467465181,
+            0.9898941931253332,
+            0.4335647811453054,
+            0.9419549049103461
+          ],
+          "direct_normalized_rmse": [
+            0.5150169345966835,
+            0.29764828358884304,
+            0.14842819847702227,
+            1.177424165562021,
+            0.3395882465508514
+          ],
+          "direct_r2": [
+            0.7347575570786355,
+            0.9114054992766156,
+            0.9779690698968657,
+            -0.38632766564942167,
+            0.8846798228045181
+          ],
+          "direct_signed_pearson": [
+            0.9197255258642726,
+            0.9557857467465181,
+            0.9898941931253332,
+            0.4335647811453054,
+            0.9419549049103461
+          ],
+          "fitted_correct_relation_coefficient": 9.707014654760465,
+          "free2_mean_direct_r2": 0.8230815281776256,
+          "hungarian_mcc": 0.8481850303583551,
+          "linear_block_r2": 0.3608150650955523,
+          "mean_direct_abs_correlation_all5": 0.8481850303583551,
+          "mean_direct_abs_correlation_free2": 0.9377556363053954,
+          "mean_direct_abs_correlation_relation3": 0.7884712930603283,
+          "mean_direct_r2": 0.6244968566814426,
+          "prediction_std": [
+            0.3155329025604851,
+            0.08350168369816752,
+            0.10460577890976053,
+            1.7086210615807844,
+            0.08253279019377348
+          ],
+          "relation3_mean_direct_r2": 0.49210707568398737,
+          "relation3_mean_normalized_rmse": 0.5551468701966314,
+          "relation3_mean_signed_pearson": 0.7884712930603283,
+          "true_relation_normalized_rmse": 0.20352138053821175
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9000459001896491,
+            0.9524003241094229,
+            0.9873641846691386,
+            0.3475659604277064,
+            0.9294439730563864
+          ],
+          "direct_normalized_rmse": [
+            0.64427768760664,
+            0.312106939556773,
+            0.16945513950874252,
+            1.3710230842175428,
+            0.38041619288309336
+          ],
+          "direct_r2": [
+            0.5849062612522409,
+            0.9025892582805048,
+            0.9712849556940726,
+            -0.8797042974573841,
+            0.8552835201923331
+          ],
+          "direct_signed_pearson": [
+            0.9000459001896491,
+            0.9524003241094229,
+            0.9873641846691386,
+            0.3475659604277064,
+            0.9294439730563864
+          ],
+          "fitted_correct_relation_coefficient": 9.699851571238321,
+          "free2_mean_direct_r2": 0.7437477597663729,
+          "hungarian_mcc": 0.8233640684904607,
+          "linear_block_r2": 0.28614000382693927,
+          "mean_direct_abs_correlation_all5": 0.8233640684904607,
+          "mean_direct_abs_correlation_free2": 0.926223112149536,
+          "mean_direct_abs_correlation_relation3": 0.7547913727177438,
+          "mean_direct_r2": 0.4868719395923534,
+          "prediction_std": [
+            0.3602876483005049,
+            0.08461482116492303,
+            0.1047742437760884,
+            1.8127135647739925,
+            0.08204965459832608
+          ],
+          "relation3_mean_direct_r2": 0.3156213928096739,
+          "relation3_mean_normalized_rmse": 0.6402981388697929,
+          "relation3_mean_signed_pearson": 0.7547913727177438,
+          "true_relation_normalized_rmse": 0.2274726752152519
+        }
+      },
+      "wrong_km_to_l_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9875391056952293,
+            0.9773142387421823,
+            0.9668216152890095,
+            0.43505730106839735,
+            0.9780416834241258
+          ],
+          "direct_normalized_rmse": [
+            0.2776618262975437,
+            0.21867872337934804,
+            0.25552819443925945,
+            1.1515279294922058,
+            0.2358174520753388
+          ],
+          "direct_r2": [
+            0.9229039102171127,
+            0.9521796159411786,
+            0.934705341846612,
+            -0.32601657240060655,
+            0.9443901292966953
+          ],
+          "direct_signed_pearson": [
+            0.9875391056952293,
+            0.9773142387421823,
+            0.9668216152890095,
+            0.43505730106839735,
+            0.9780416834241258
+          ],
+          "fitted_correct_relation_coefficient": 10.20987095690512,
+          "free2_mean_direct_r2": 0.9375417630791456,
+          "hungarian_mcc": 0.8710036779579197,
+          "linear_block_r2": 0.5669465149023833,
+          "mean_direct_abs_correlation_all5": 0.8689547888437887,
+          "mean_direct_abs_correlation_free2": 0.9824266722187058,
+          "mean_direct_abs_correlation_relation3": 0.7933068665938442,
+          "mean_direct_r2": 0.6856324849801985,
+          "prediction_std": [
+            0.3107501816622361,
+            0.08485306660198014,
+            0.1057043601731769,
+            1.6289997560742049,
+            0.08597473233853967
+          ],
+          "relation3_mean_direct_r2": 0.517692966247567,
+          "relation3_mean_normalized_rmse": 0.5476245253356015,
+          "relation3_mean_signed_pearson": 0.7933068665938442,
+          "true_relation_normalized_rmse": 0.5327355683756437
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9859017226230652,
+            0.9770374297168313,
+            0.9678290698152012,
+            0.3519606993613283,
+            0.9748073532744647
+          ],
+          "direct_normalized_rmse": [
+            0.3126765319433226,
+            0.2164094684895565,
+            0.2532109817450839,
+            1.332071461949345,
+            0.23948172194937958
+          ],
+          "direct_r2": [
+            0.9022333863718964,
+            0.9531669419480677,
+            0.9358841987236908,
+            -0.7744143797398657,
+            0.94264850485216
+          ],
+          "direct_signed_pearson": [
+            0.9859017226230652,
+            0.9770374297168313,
+            0.9678290698152012,
+            0.3519606993613283,
+            0.9748073532744647
+          ],
+          "fitted_correct_relation_coefficient": 10.292379529527352,
+          "free2_mean_direct_r2": 0.927700164159982,
+          "hungarian_mcc": 0.8532283601805496,
+          "linear_block_r2": 0.4708133023102291,
+          "mean_direct_abs_correlation_all5": 0.8515072549581781,
+          "mean_direct_abs_correlation_free2": 0.9814695761699482,
+          "mean_direct_abs_correlation_relation3": 0.7648657074836648,
+          "mean_direct_r2": 0.5919037304311899,
+          "prediction_std": [
+            0.328773441719757,
+            0.0864165522615633,
+            0.1082384934847686,
+            1.726413165178792,
+            0.08582633189647253
+          ],
+          "relation3_mean_direct_r2": 0.36803944127866167,
+          "relation3_mean_normalized_rmse": 0.6082547218812695,
+          "relation3_mean_signed_pearson": 0.7648657074836648,
+          "true_relation_normalized_rmse": 0.5827393248269409
+        }
+      },
+      "wrong_lm_to_k_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9147416022949472,
+            0.6322026402379728,
+            0.008497457374601728,
+            0.5277416000474189,
+            0.642128065680636
+          ],
+          "direct_normalized_rmse": [
+            0.5629659994507725,
+            0.9124662617857555,
+            1.4743580336038564,
+            1.003336846472323,
+            0.9041025070885259
+          ],
+          "direct_r2": [
+            0.6830692834623929,
+            0.16740532110272888,
+            -1.1737316112522307,
+            -0.00668482748902588,
+            0.18259865667624198
+          ],
+          "direct_signed_pearson": [
+            0.9147416022949472,
+            0.6322026402379728,
+            0.008497457374601728,
+            0.5277416000474189,
+            0.642128065680636
+          ],
+          "fitted_correct_relation_coefficient": 7.765196828743036,
+          "free2_mean_direct_r2": 0.4252373022825609,
+          "hungarian_mcc": 0.6045951392777502,
+          "linear_block_r2": 0.3812393410227921,
+          "mean_direct_abs_correlation_all5": 0.5450622731271153,
+          "mean_direct_abs_correlation_free2": 0.7734721212664599,
+          "mean_direct_abs_correlation_relation3": 0.3927890410342189,
+          "mean_direct_r2": -0.02946863549997856,
+          "prediction_std": [
+            0.3321436955213413,
+            0.08494347744703265,
+            0.1095090555897213,
+            1.4881081307467092,
+            0.08217842702275667
+          ],
+          "relation3_mean_direct_r2": -0.3326059273550049,
+          "relation3_mean_normalized_rmse": 1.1272657957215684,
+          "relation3_mean_signed_pearson": 0.3927890410342189,
+          "true_relation_normalized_rmse": 1.8751271762464405
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9007572353144931,
+            0.4694002260516547,
+            0.09617351598164053,
+            0.4349784758497424,
+            0.6555106176175484
+          ],
+          "direct_normalized_rmse": [
+            0.612975663821915,
+            1.136187048715143,
+            1.6434350142071985,
+            1.1398065797800043,
+            0.9471904713887302
+          ],
+          "direct_r2": [
+            0.6242608355620827,
+            -0.2909210096680266,
+            -1.7008786459222156,
+            -0.2991590393097918,
+            0.10283021091039524
+          ],
+          "direct_signed_pearson": [
+            0.9007572353144931,
+            0.4694002260516547,
+            -0.09617351598164053,
+            0.4349784758497424,
+            0.6555106176175484
+          ],
+          "fitted_correct_relation_coefficient": 7.4387985693112855,
+          "free2_mean_direct_r2": 0.16666991294702804,
+          "hungarian_mcc": 0.5663489814032342,
+          "linear_block_r2": 0.28954449184124786,
+          "mean_direct_abs_correlation_all5": 0.5113640141630158,
+          "mean_direct_abs_correlation_free2": 0.6850787306830739,
+          "mean_direct_abs_correlation_relation3": 0.3955542031496438,
+          "mean_direct_r2": -0.31277352968551125,
+          "prediction_std": [
+            0.3487815760265154,
+            0.08797591472622213,
+            0.12391918284227803,
+            1.5808868764356243,
+            0.09767961093647694
+          ],
+          "relation3_mean_direct_r2": -0.6324024914405374,
+          "relation3_mean_normalized_rmse": 1.243477355125311,
+          "relation3_mean_signed_pearson": 0.3314385258285501,
+          "true_relation_normalized_rmse": 2.2509095223632007
+        }
+      }
+    },
+    "42": {
+      "coefficient_permuted_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9879120900539599,
+            0.9825541495309625,
+            0.977009225694059,
+            0.4580608581793974,
+            0.984261733401788
+          ],
+          "direct_normalized_rmse": [
+            0.22828908597398773,
+            0.18664633339009248,
+            0.23946424624026894,
+            1.0778987808866936,
+            0.24783223222741188
+          ],
+          "direct_r2": [
+            0.9478840932251613,
+            0.9651631462320345,
+            0.9426568747725799,
+            -0.1618657818370206,
+            0.9385791846691782
+          ],
+          "direct_signed_pearson": [
+            0.9879120900539599,
+            0.9825541495309625,
+            0.977009225694059,
+            0.4580608581793974,
+            0.984261733401788
+          ],
+          "fitted_correct_relation_coefficient": 8.655185647188622,
+          "free2_mean_direct_r2": 0.9565236197285979,
+          "hungarian_mcc": 0.8779596113720333,
+          "linear_block_r2": 0.427173908614648,
+          "mean_direct_abs_correlation_all5": 0.8779596113720334,
+          "mean_direct_abs_correlation_free2": 0.9852331197924612,
+          "mean_direct_abs_correlation_relation3": 0.8064439390917482,
+          "mean_direct_r2": 0.7264835034123867,
+          "prediction_std": [
+            0.29179356017472413,
+            0.08195478154009231,
+            0.10520074349029943,
+            1.5327366025357756,
+            0.0837605058100649
+          ],
+          "relation3_mean_direct_r2": 0.5731234258682458,
+          "relation3_mean_normalized_rmse": 0.5217317531181248,
+          "relation3_mean_signed_pearson": 0.8064439390917482,
+          "true_relation_normalized_rmse": 0.3241559863016993
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9870891008461808,
+            0.9821723441630487,
+            0.962897646239518,
+            0.3611543042975136,
+            0.9836780322612257
+          ],
+          "direct_normalized_rmse": [
+            0.2569032447436507,
+            0.18807111383574,
+            0.2965800641947455,
+            1.2567667827838014,
+            0.25767831721394346
+          ],
+          "direct_r2": [
+            0.9340007228401839,
+            0.9646292561405841,
+            0.9120402655222406,
+            -0.5794627463087472,
+            0.9336018848377903
+          ],
+          "direct_signed_pearson": [
+            0.9870891008461808,
+            0.9821723441630487,
+            0.962897646239518,
+            0.3611543042975136,
+            0.9836780322612257
+          ],
+          "fitted_correct_relation_coefficient": 8.642813978469656,
+          "free2_mean_direct_r2": 0.9493149894903841,
+          "hungarian_mcc": 0.8553982855614974,
+          "linear_block_r2": 0.33300730213891516,
+          "mean_direct_abs_correlation_all5": 0.8553982855614974,
+          "mean_direct_abs_correlation_free2": 0.9846307225046147,
+          "mean_direct_abs_correlation_relation3": 0.769243327599419,
+          "mean_direct_r2": 0.6329618766064105,
+          "prediction_std": [
+            0.3080407546524906,
+            0.08356750940267754,
+            0.10325609320510588,
+            1.673793521366504,
+            0.08583717434494809
+          ],
+          "relation3_mean_direct_r2": 0.4220598013504279,
+          "relation3_mean_normalized_rmse": 0.60367505473083,
+          "relation3_mean_signed_pearson": 0.769243327599419,
+          "true_relation_normalized_rmse": 0.33481046886023624
+        }
+      },
+      "correct_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9855566901076088,
+            0.9689854848172851,
+            0.9837886012700816,
+            0.44581418785379634,
+            0.9827745016154141
+          ],
+          "direct_normalized_rmse": [
+            0.3526070287087984,
+            0.25198706204787163,
+            0.19368680667688223,
+            1.1421564829055921,
+            0.18982942745380624
+          ],
+          "direct_r2": [
+            0.8756682833051527,
+            0.9365025205604821,
+            0.962485420919312,
+            -0.30452143144327226,
+            0.9639647884725601
+          ],
+          "direct_signed_pearson": [
+            0.9855566901076088,
+            0.9689854848172851,
+            0.9837886012700816,
+            0.44581418785379634,
+            0.9827745016154141
+          ],
+          "fitted_correct_relation_coefficient": 9.926916375757557,
+          "free2_mean_direct_r2": 0.9060854019328174,
+          "hungarian_mcc": 0.8733838931328373,
+          "linear_block_r2": 0.5262538931730674,
+          "mean_direct_abs_correlation_all5": 0.8733838931328372,
+          "mean_direct_abs_correlation_free2": 0.977271087462447,
+          "mean_direct_abs_correlation_relation3": 0.804125763579764,
+          "mean_direct_r2": 0.686819916362847,
+          "prediction_std": [
+            0.3313813969559197,
+            0.08345615186700563,
+            0.10546094383724205,
+            1.6588693456614025,
+            0.08434588877892414
+          ],
+          "relation3_mean_direct_r2": 0.5406429259828666,
+          "relation3_mean_normalized_rmse": 0.5085575723454269,
+          "relation3_mean_signed_pearson": 0.804125763579764,
+          "true_relation_normalized_rmse": 0.040894472434141876
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.985205325539657,
+            0.9667544246158692,
+            0.9779025806234654,
+            0.36182429715240694,
+            0.9819444435465076
+          ],
+          "direct_normalized_rmse": [
+            0.38102460918395753,
+            0.26743052830074976,
+            0.21451699074185274,
+            1.303922309055037,
+            0.1973934978189064
+          ],
+          "direct_r2": [
+            0.8548202471962125,
+            0.9284809125327819,
+            0.9539824606830598,
+            -0.7002133880514196,
+            0.9610358070188174
+          ],
+          "direct_signed_pearson": [
+            0.985205325539657,
+            0.9667544246158692,
+            0.9779025806234654,
+            0.36182429715240694,
+            0.9819444435465076
+          ],
+          "fitted_correct_relation_coefficient": 9.925481314806,
+          "free2_mean_direct_r2": 0.8916505798644971,
+          "hungarian_mcc": 0.8547262142955813,
+          "linear_block_r2": 0.4994532858115106,
+          "mean_direct_abs_correlation_all5": 0.8547262142955813,
+          "mean_direct_abs_correlation_free2": 0.9759798750777631,
+          "mean_direct_abs_correlation_relation3": 0.7738904404407932,
+          "mean_direct_r2": 0.5996212078758903,
+          "prediction_std": [
+            0.35073367019328044,
+            0.08534920126682935,
+            0.10471390268469351,
+            1.7465789582856388,
+            0.08537038954446413
+          ],
+          "relation3_mean_direct_r2": 0.4049349598834859,
+          "relation3_mean_normalized_rmse": 0.571944265871932,
+          "relation3_mean_signed_pearson": 0.7738904404407932,
+          "true_relation_normalized_rmse": 0.042106189040291314
+        }
+      },
+      "point": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9258107716484273,
+            0.9831043559887725,
+            0.36518727518831523,
+            0.4037621409339879,
+            0.9829717136353858
+          ],
+          "direct_normalized_rmse": [
+            0.5564123742918086,
+            0.18746186327231654,
+            1.1829980824691717,
+            1.1932449560213494,
+            0.19249685890420032
+          ],
+          "direct_r2": [
+            0.6904052697349525,
+            0.9648580498184713,
+            -0.3994844631257368,
+            -0.42383352507039196,
+            0.9629449593120164
+          ],
+          "direct_signed_pearson": [
+            0.9258107716484273,
+            0.9831043559887725,
+            0.36518727518831523,
+            0.4037621409339879,
+            0.9829717136353858
+          ],
+          "fitted_correct_relation_coefficient": 9.809297755345565,
+          "free2_mean_direct_r2": 0.8276316597767119,
+          "hungarian_mcc": 0.7321672514789779,
+          "linear_block_r2": 0.43944544406308284,
+          "mean_direct_abs_correlation_all5": 0.7321672514789779,
+          "mean_direct_abs_correlation_free2": 0.9544575638185999,
+          "mean_direct_abs_correlation_relation3": 0.5839737099192296,
+          "mean_direct_r2": 0.3589780581338623,
+          "prediction_std": [
+            0.3245388497418291,
+            0.08528410863189273,
+            0.11169595614342616,
+            1.6136983388483992,
+            0.08387242007922747
+          ],
+          "relation3_mean_direct_r2": 0.046542323705295874,
+          "relation3_mean_normalized_rmse": 0.8562466324649072,
+          "relation3_mean_signed_pearson": 0.5839737099192296,
+          "true_relation_normalized_rmse": 0.8166004248080544
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.8788305153950391,
+            0.9811189393878489,
+            0.09382248171230717,
+            0.29868122331406916,
+            0.9808587533467996
+          ],
+          "direct_normalized_rmse": [
+            0.703708062554582,
+            0.1979407101750019,
+            1.561375591610116,
+            1.384290373669614,
+            0.1995716371378369
+          ],
+          "direct_r2": [
+            0.5047949626956767,
+            0.9608194752554159,
+            -1.4378937380758403,
+            -0.9162598386343601,
+            0.9601711616501236
+          ],
+          "direct_signed_pearson": [
+            0.8788305153950391,
+            0.9811189393878489,
+            0.09382248171230717,
+            0.29868122331406916,
+            0.9808587533467996
+          ],
+          "fitted_correct_relation_coefficient": 9.43635087148137,
+          "free2_mean_direct_r2": 0.7328072189755463,
+          "hungarian_mcc": 0.6626069346938764,
+          "linear_block_r2": 0.36813956047702123,
+          "mean_direct_abs_correlation_all5": 0.6466623826312128,
+          "mean_direct_abs_correlation_free2": 0.929974727391444,
+          "mean_direct_abs_correlation_relation3": 0.457787486124392,
+          "mean_direct_r2": 0.014326404578203177,
+          "prediction_std": [
+            0.3382714024173937,
+            0.08714153293195559,
+            0.13049891202628167,
+            1.7737933509852684,
+            0.0858200245434244
+          ],
+          "relation3_mean_direct_r2": -0.46466080502002566,
+          "relation3_mean_normalized_rmse": 1.048412534139189,
+          "relation3_mean_signed_pearson": 0.457787486124392,
+          "true_relation_normalized_rmse": 1.1088449195238395
+        }
+      },
+      "wrong_km_to_l_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9854624805180715,
+            0.9750184567095999,
+            0.9780253268922077,
+            0.4640065043634248,
+            0.9708091889210934
+          ],
+          "direct_normalized_rmse": [
+            0.3013216799479108,
+            0.2359422846000233,
+            0.210579336081887,
+            1.0769637204422704,
+            0.2510179664497843
+          ],
+          "direct_r2": [
+            0.9092052451933688,
+            0.9443312383377216,
+            0.9556563432153117,
+            -0.15985085514885689,
+            0.936989980519415
+          ],
+          "direct_signed_pearson": [
+            0.9854624805180715,
+            0.9750184567095999,
+            0.9780253268922077,
+            0.4640065043634248,
+            0.9708091889210934
+          ],
+          "fitted_correct_relation_coefficient": 9.838910313955477,
+          "free2_mean_direct_r2": 0.9267682417655452,
+          "hungarian_mcc": 0.8769976930869954,
+          "linear_block_r2": 0.5507793139561142,
+          "mean_direct_abs_correlation_all5": 0.8746643914808795,
+          "mean_direct_abs_correlation_free2": 0.9802404686138357,
+          "mean_direct_abs_correlation_relation3": 0.8042803400589086,
+          "mean_direct_r2": 0.717266390423392,
+          "prediction_std": [
+            0.3138701222920301,
+            0.08676621439778327,
+            0.10927778973852809,
+            1.545211678123728,
+            0.08434809640223938
+          ],
+          "relation3_mean_direct_r2": 0.5775984895286232,
+          "relation3_mean_normalized_rmse": 0.5128536743246472,
+          "relation3_mean_signed_pearson": 0.8042803400589086,
+          "true_relation_normalized_rmse": 0.534132991490913
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9844304988285375,
+            0.9733331486306082,
+            0.9789171047786737,
+            0.37593652512144093,
+            0.9655016179938576
+          ],
+          "direct_normalized_rmse": [
+            0.31929753064399147,
+            0.2398799453363156,
+            0.21068605576443075,
+            1.2493524298155168,
+            0.26817072256750885
+          ],
+          "direct_r2": [
+            0.8980490869246494,
+            0.9424576118254463,
+            0.9556113859064271,
+            -0.5608814938859359,
+            0.9280844635576202
+          ],
+          "direct_signed_pearson": [
+            0.9844304988285375,
+            0.9733331486306082,
+            0.9789171047786737,
+            0.37593652512144093,
+            0.9655016179938576
+          ],
+          "fitted_correct_relation_coefficient": 9.896685700032295,
+          "free2_mean_direct_r2": 0.9202533493750478,
+          "hungarian_mcc": 0.8573125859556601,
+          "linear_block_r2": 0.45714534933409035,
+          "mean_direct_abs_correlation_all5": 0.8556237790706236,
+          "mean_direct_abs_correlation_free2": 0.9788818237295729,
+          "mean_direct_abs_correlation_relation3": 0.7734517492979908,
+          "mean_direct_r2": 0.6326642108656413,
+          "prediction_std": [
+            0.3328063990791632,
+            0.08879075450925442,
+            0.11172302192160785,
+            1.664468124821481,
+            0.08331531941530482
+          ],
+          "relation3_mean_direct_r2": 0.4409381185260372,
+          "relation3_mean_normalized_rmse": 0.5760697360491521,
+          "relation3_mean_signed_pearson": 0.7734517492979908,
+          "true_relation_normalized_rmse": 0.6064355261908667
+        }
+      },
+      "wrong_lm_to_k_relation": {
+        "test": {
+          "direct_abs_correlation": [
+            0.9649648245716184,
+            0.6674065513557876,
+            0.7568339061117629,
+            0.507861774463882,
+            0.03918716567419568
+          ],
+          "direct_normalized_rmse": [
+            0.3649314964190106,
+            0.9224156980345803,
+            0.8022662227307648,
+            1.0389346740694894,
+            1.6092790944018152
+          ],
+          "direct_r2": [
+            0.8668250029213816,
+            0.14914928001937777,
+            0.35636890786531095,
+            -0.079385256983876,
+            -1.5897792036787268
+          ],
+          "direct_signed_pearson": [
+            0.9649648245716184,
+            0.6674065513557876,
+            0.7568339061117629,
+            0.507861774463882,
+            -0.03918716567419568
+          ],
+          "fitted_correct_relation_coefficient": 8.426232967295398,
+          "free2_mean_direct_r2": 0.5079871414703797,
+          "hungarian_mcc": 0.5983532124696707,
+          "linear_block_r2": 0.3767933413547421,
+          "mean_direct_abs_correlation_all5": 0.5872508444354494,
+          "mean_direct_abs_correlation_free2": 0.816185687963703,
+          "mean_direct_abs_correlation_relation3": 0.43462761541661354,
+          "mean_direct_r2": -0.05936425397130649,
+          "prediction_std": [
+            0.3111036282222145,
+            0.09017636823198975,
+            0.11930072441139886,
+            1.5586587209442342,
+            0.09447533778896841
+          ],
+          "relation3_mean_direct_r2": -0.4375985175990973,
+          "relation3_mean_normalized_rmse": 1.1501599970673564,
+          "relation3_mean_signed_pearson": 0.408502838300483,
+          "true_relation_normalized_rmse": 2.0559797504680986
+        },
+        "validation": {
+          "direct_abs_correlation": [
+            0.9580425070403009,
+            0.547544632094772,
+            0.7661739433754267,
+            0.4080197015315386,
+            0.12561284882693818
+          ],
+          "direct_normalized_rmse": [
+            0.3943039988851528,
+            1.1053813586518135,
+            0.8817861993444445,
+            1.2085239068316516,
+            1.7699769565909573
+          ],
+          "direct_r2": [
+            0.8445243564631775,
+            -0.22186794805492904,
+            0.22245309864567964,
+            -0.4605300333836384,
+            -2.132818426862987
+          ],
+          "direct_signed_pearson": [
+            0.9580425070403009,
+            0.547544632094772,
+            0.7661739433754267,
+            0.4080197015315386,
+            -0.12561284882693818
+          ],
+          "fitted_correct_relation_coefficient": 8.00963210530201,
+          "free2_mean_direct_r2": 0.3113282042041242,
+          "hungarian_mcc": 0.5647341803515221,
+          "linear_block_r2": 0.2837351452051746,
+          "mean_direct_abs_correlation_all5": 0.5610787265737953,
+          "mean_direct_abs_correlation_free2": 0.7527935695675365,
+          "mean_direct_abs_correlation_relation3": 0.43326883124463444,
+          "mean_direct_r2": -0.34964779063853946,
+          "prediction_std": [
+            0.3266014118332003,
+            0.09121261672395038,
+            0.1387687430742833,
+            1.6065553474339442,
+            0.10775440158163833
+          ],
+          "relation3_mean_direct_r2": -0.7902984538669818,
+          "relation3_mean_normalized_rmse": 1.2867623542556845,
+          "relation3_mean_signed_pearson": 0.3495269320266757,
+          "true_relation_normalized_rmse": 2.429122991271543
+        }
+      }
+    }
+  },
+  "point_positive_seed_split_count": 6,
+  "primary_replication_supported": false,
+  "protocol_version": "causalverse_spring_correctness_k40_v4_unread_shards",
+  "scope": "all_fifteen_locks_before_single_validation_test_readout",
+  "soft_effects": {
+    "coefficient_correctness_pearson": {
+      "max": 0.028403178048782896,
+      "mean": 0.009433988148926617,
+      "min": -0.0023181755119842107,
+      "population_sd": 0.01005155869161854,
+      "target": 0.01,
+      "target_met": false
+    },
+    "coefficient_correctness_r2": {
+      "max": 0.09287824480629242,
+      "mean": 0.016041991405718076,
+      "min": -0.032480499885379266,
+      "population_sd": 0.04285729794370231,
+      "target": 0.02,
+      "target_met": false
+    }
+  },
+  "strong_replication_pending_independent_state_disjoint_audit": false,
+  "test_read_after_all_condition_locks": true,
+  "topology_r2_all_seed_splits_positive": false,
+  "true_relation_nrmse_means_better": true,
+  "true_relation_nrmse_seed_means": {
+    "test": {
+      "coefficient_permuted_relation": 0.3074298059924687,
+      "correct_relation": 0.0349421071636016,
+      "point": 0.5986615920595858
+    },
+    "validation": {
+      "coefficient_permuted_relation": 0.31978879827126505,
+      "correct_relation": 0.03557120106796225,
+      "point": 0.7953775083860344
+    }
+  },
+  "valid": true,
+  "validation_paired_bootstrap": {
+    "0": {
+      "coefficient_permuted_relation": {
+        "bootstrap_mean": 0.09378582530840063,
+        "ci95_percentile": [
+          0.035598844031253886,
+          0.16023483830112956
+        ],
+        "point": 0.09287824480629242,
+        "positive_fraction": 0.9993,
+        "repetitions": 10000,
+        "seed": 20261003
+      },
+      "point": {
+        "bootstrap_mean": 0.8462090835416397,
+        "ci95_percentile": [
+          0.5423062579529981,
+          1.163070842012216
+        ],
+        "point": 0.8445003176760733,
+        "positive_fraction": 1.0,
+        "repetitions": 10000,
+        "seed": 20261002
+      },
+      "wrong_km_to_l_relation": {
+        "bootstrap_mean": 0.057598818801909986,
+        "ci95_percentile": [
+          0.039066029889174396,
+          0.0768159348528237
+        ],
+        "point": 0.05738605624203147,
+        "positive_fraction": 1.0,
+        "repetitions": 10000,
+        "seed": 20261005
+      },
+      "wrong_lm_to_k_relation": {
+        "bootstrap_mean": 1.0909068627538985,
+        "ci95_percentile": [
+          0.9655853979389205,
+          1.2270354216593828
+        ],
+        "point": 1.0850320450179907,
+        "positive_fraction": 1.0,
+        "repetitions": 10000,
+        "seed": 20261004
+      }
+    },
+    "3407": {
+      "coefficient_permuted_relation": {
+        "bootstrap_mean": 0.017342225501627315,
+        "ci95_percentile": [
+          -0.024764533439939715,
+          0.061494645053227256
+        ],
+        "point": 0.016881982260593786,
+        "positive_fraction": 0.7872,
+        "repetitions": 10000,
+        "seed": 20260803
+      },
+      "point": {
+        "bootstrap_mean": 0.13040161639707712,
+        "ci95_percentile": [
+          0.059990463078833406,
+          0.210778615910796
+        ],
+        "point": 0.12973132111765395,
+        "positive_fraction": 0.9999,
+        "repetitions": 10000,
+        "seed": 20260802
+      },
+      "wrong_km_to_l_relation": {
+        "bootstrap_mean": 0.0772567786860846,
+        "ci95_percentile": [
+          0.046141320575527306,
+          0.10976233899387122
+        ],
+        "point": 0.07731327264866616,
+        "positive_fraction": 1.0,
+        "repetitions": 10000,
+        "seed": 20260805
+      },
+      "wrong_lm_to_k_relation": {
+        "bootstrap_mean": 1.0835965342770393,
+        "ci95_percentile": [
+          0.9644291058758097,
+          1.2168587058694678
+        ],
+        "point": 1.0777552053678652,
+        "positive_fraction": 1.0,
+        "repetitions": 10000,
+        "seed": 20260804
+      }
+    },
+    "42": {
+      "coefficient_permuted_relation": {
+        "bootstrap_mean": -0.01716682532428632,
+        "ci95_percentile": [
+          -0.06522136058110625,
+          0.03249826322429862
+        ],
+        "point": -0.017124841466942042,
+        "positive_fraction": 0.2385,
+        "repetitions": 10000,
+        "seed": 20260903
+      },
+      "point": {
+        "bootstrap_mean": 0.8726353198638622,
+        "ci95_percentile": [
+          0.5367777578706588,
+          1.2206574747559484
+        ],
+        "point": 0.8695957649035115,
+        "positive_fraction": 1.0,
+        "repetitions": 10000,
+        "seed": 20260902
+      },
+      "wrong_km_to_l_relation": {
+        "bootstrap_mean": -0.0359123760918859,
+        "ci95_percentile": [
+          -0.05439337380221397,
+          -0.018794947956763185
+        ],
+        "point": -0.036003158642551325,
+        "positive_fraction": 0.0,
+        "repetitions": 10000,
+        "seed": 20260905
+      },
+      "wrong_lm_to_k_relation": {
+        "bootstrap_mean": 1.2000323659183096,
+        "ci95_percentile": [
+          1.0531136779132229,
+          1.365047531679058
+        ],
+        "point": 1.1952334137504677,
+        "positive_fraction": 1.0,
+        "repetitions": 10000,
+        "seed": 20260904
+      }
+    }
+  },
+  "validity": {
+    "all_condition_locks_present_before_readout": true,
+    "all_training_histories_finite": true,
+    "audit_pass": true,
+    "config_hash_shared": true,
+    "correct_prediction_not_collapsed_all_seeds": true,
+    "feature_hash_shared": true,
+    "initial_state_shared_within_seed": true,
+    "label_subset_shared": true,
+    "mapping_matches_audit_all_seeds": true,
+    "no_semantic_or_test_read_during_training": true,
+    "source_manifest_shared": true,
+    "train_split_shared": true
+  }
+}

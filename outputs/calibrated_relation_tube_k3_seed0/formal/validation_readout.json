@@ -1,0 +1,194 @@
+{
+  "ccrl_validation": {
+    "center_only_correct": {
+      "classifier": 1.0536323391596476,
+      "graph_regularizer": 0.00016919490008149296,
+      "mean_regularizer": 0.004224343314766884,
+      "total": 1.0580258445739745
+    },
+    "tube_correct": {
+      "classifier": 0.10242798399925232,
+      "graph_regularizer": 0.0005927715101279318,
+      "mean_regularizer": 0.0037212686662872634,
+      "total": 0.10674202005068462
+    },
+    "tube_permuted_matched": {
+      "classifier": 0.09553740180532137,
+      "graph_regularizer": 0.000905162189155817,
+      "mean_regularizer": 0.03729147403438886,
+      "total": 0.13373403561115266
+    },
+    "unbounded_correct": {
+      "classifier": 0.003759422342137744,
+      "graph_regularizer": 9.547429363010451e-05,
+      "mean_regularizer": 0.025536731844147047,
+      "total": 0.029391628988087178
+    }
+  },
+  "center_comparator_checks": {
+    "correlation_matches_locked_direct_center": true,
+    "r2_matches_locked_direct_center": true
+  },
+  "config_sha256": "951b2fe5f25adbe5983cc7c646e4ca480e1e582daa661554f1a623027954ce08",
+  "decision": {
+    "deltas": {
+      "tube_minus_center_ccrl_total": -0.95128382452329,
+      "tube_minus_center_correlation": -0.11644808239616866,
+      "tube_minus_center_r2": -0.45151472091674805,
+      "tube_minus_permuted_correlation": 0.6447388070367223,
+      "tube_minus_permuted_r2": 0.6594494134187698,
+      "tube_minus_projected_physical_correlation": 0.0002457134788915738,
+      "tube_minus_projected_physical_r2": -0.12660610675811768,
+      "tube_minus_unbounded_correlation": 0.40096973699049887,
+      "tube_minus_unbounded_r2": 11.785175323486328
+    },
+    "mechanism_checks": {
+      "ccrl_not_worse_than_center": true,
+      "correlation_above_permuted": true,
+      "correlation_above_unbounded": true,
+      "r2_above_permuted": true,
+      "r2_above_unbounded": true,
+      "tube_actually_active": true
+    },
+    "paper_competitive_checks": {
+      "correlation_above_projected_physical": true,
+      "r2_above_projected_physical": false
+    },
+    "test_evaluated": false,
+    "verdict": "tube_structure_supported_not_paper_competitive"
+  },
+  "graph_parameter_metrics": {
+    "center_only_correct": {
+      "edge_auroc": 0.62,
+      "fixed_threshold_shd": 7
+    },
+    "tube_correct": {
+      "edge_auroc": 0.66,
+      "fixed_threshold_shd": 8
+    },
+    "tube_permuted_matched": {
+      "edge_auroc": 0.6466666666666666,
+      "fixed_threshold_shd": 7
+    },
+    "unbounded_correct": {
+      "edge_auroc": 0.6333333333333333,
+      "fixed_threshold_shd": 6
+    }
+  },
+  "matched_lock_checks": {
+    "geometry": true,
+    "initial_state": true,
+    "source": true
+  },
+  "mode": "four_condition_joint_validation_only_readout",
+  "preflight_lock_sha256": "496656194643f811de9ce040cb8b815227eca7ef47a73fbdea5b548b3e71f7de",
+  "protocol_version": "calibrated_relation_tube_multiseed_k3_v1",
+  "representation_audits": {
+    "center_only_correct": {
+      "boundary_active_fraction": 0.998,
+      "center_l2_mean": 1.6987457275390625,
+      "finite": true,
+      "projected_residual_l2_mean": 0.0,
+      "raw_mahalanobis_mean": 61.865638732910156,
+      "raw_mahalanobis_p95": 103.10297660827636,
+      "raw_residual_l2_mean": 0.8774893879890442
+    },
+    "tube_correct": {
+      "boundary_active_fraction": 0.929,
+      "center_l2_mean": 1.6987457275390625,
+      "finite": true,
+      "projected_residual_l2_mean": 1.3312711715698242,
+      "raw_mahalanobis_mean": 256.35015869140625,
+      "raw_mahalanobis_p95": 858.8869750976561,
+      "raw_residual_l2_mean": 5.046928405761719
+    },
+    "tube_permuted_matched": {
+      "boundary_active_fraction": 1.0,
+      "center_l2_mean": 0.5010377168655396,
+      "finite": true,
+      "projected_residual_l2_mean": 0.8092989921569824,
+      "raw_mahalanobis_mean": 932.5072631835938,
+      "raw_mahalanobis_p95": 1245.664678955078,
+      "raw_residual_l2_mean": 6.490762710571289
+    },
+    "unbounded_correct": {
+      "boundary_active_fraction": 1.0,
+      "center_l2_mean": 1.6987457275390625,
+      "finite": true,
+      "projected_residual_l2_mean": 6.272854804992676,
+      "raw_mahalanobis_mean": 340.25909423828125,
+      "raw_mahalanobis_p95": 778.2452026367187,
+      "raw_residual_l2_mean": 6.272854804992676
+    }
+  },
+  "semantic_validation": {
+    "center_only_correct": {
+      "direct_abs_correlation": [
+        0.9579375647801874,
+        0.9649161896798648,
+        0.9638371257185261
+      ],
+      "mean_direct_abs_correlation": 0.9622302933928594,
+      "mean_r2": 0.9232125282287598,
+      "mse": 0.10000040382146835,
+      "r2": [
+        0.9160586595535278,
+        0.9283984899520874,
+        0.9251804947853088
+      ]
+    },
+    "tube_correct": {
+      "direct_abs_correlation": [
+        0.8446379454429009,
+        0.8622479796168493,
+        0.8304607079303217
+      ],
+      "mean_direct_abs_correlation": 0.8457822109966907,
+      "mean_r2": 0.4716978073120117,
+      "mse": 0.6482750773429871,
+      "r2": [
+        0.23479855060577393,
+        0.6443856954574585,
+        0.5359091758728027
+      ]
+    },
+    "tube_permuted_matched": {
+      "direct_abs_correlation": [
+        0.08831196943926033,
+        0.14219312373238593,
+        0.3726251187082591
+      ],
+      "mean_direct_abs_correlation": 0.20104340395996845,
+      "mean_r2": -0.18775160610675812,
+      "mse": 1.5206800699234009,
+      "r2": [
+        -0.4264296293258667,
+        -0.023572206497192383,
+        -0.11325299739837646
+      ]
+    },
+    "unbounded_correct": {
+      "direct_abs_correlation": [
+        0.2834426570189918,
+        0.5221798586194777,
+        0.5288149063801059
+      ],
+      "mean_direct_abs_correlation": 0.44481247400619184,
+      "mean_r2": -11.313477516174316,
+      "mse": 15.21678638458252,
+      "r2": [
+        -16.209157943725586,
+        -7.49674129486084,
+        -10.234535217285156
+      ]
+    }
+  },
+  "semantic_validation_evaluated": true,
+  "test_evaluated": false,
+  "training_locks": {
+    "center_only_correct": "e109751d20a23b5d50af35edc132ae45c4fa7130d82057d349c6ed88b9980de1",
+    "tube_correct": "507a5d523162498a1495da9368bab5fc1c6848c8eb0f79b10f61f88526a2b936",
+    "tube_permuted_matched": "f36b6dc4303c4451326a66d4a1ab4284b66e00a6d34666bd2f7c69fdc327dab4",
+    "unbounded_correct": "1487f5e9e3e76b366c380f606922b3bbfdf516655dd12fb6b7e9a817998d3a55"
+  }
+}

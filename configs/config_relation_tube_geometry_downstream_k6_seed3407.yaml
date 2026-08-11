@@ -1,0 +1,18 @@
+protocol_version: relation_tube_geometry_downstream_audit_k6_v1
+preregistration: PROTOCOLS.md
+seed: 3407
+upstream:
+  geometry_protocol: relation_tube_geometry_ablation_k4_v1
+  geometry_config_path: ./config_relation_tube_geometry_ablation_k4_seed3407.yaml
+  geometry_config_sha256: f008d07c3daf4fb7ec80ae7ab029531e509c54ea3f760d60885795fe182c3b1c
+  geometry_readout_path: outputs/relation_tube_geometry_ablation_k4_seed3407/formal/geometry_validation_readout.json
+  geometry_readout_sha256: 048509bed8a66590b1ce56358a8b761be68dced903211f753e175439876e2bf0
+  full_validation_readout_path: outputs/calibrated_relation_tube_k0_seed3407/formal/validation_readout.json
+  full_validation_readout_sha256: b6f9237efeca50ee6c999cb4736c0b29772a796dfcc37c0baa47818c75c762ef
+audit:
+  split: validation_only_rows_8000_8999
+  reproduction_atol: 0.000005
+  metrics: [signed_direct_rgb_correlation, rgb_hungarian_mcc, full_latent_hungarian_mcc, coordinatewise_affine_rgb, raw_rgb, full_affine_rgb, edge_auroc, fixed_threshold_shd, ccrl_validation]
+  test_evaluated: false
+runtime:
+  output_path: outputs/relation_tube_geometry_downstream_k6_seed3407/downstream_validation_readout.json

@@ -1,0 +1,1804 @@
+{
+  "architecture": {
+    "full_dimension": 6983,
+    "ridge_alpha": 0.1,
+    "state_dimension": 23,
+    "visual_representation": {
+      "block_scale": 3.1622776601683795,
+      "dino_view_blocks": 9,
+      "feature_dimension": 6960,
+      "motion_block_dimension": 48,
+      "name": "equal_weight_multiview_v1"
+    }
+  },
+  "benchmark_metrics": true,
+  "budgets": {
+    "160": {
+      "comparisons": {
+        "conic_minus_center": {
+          "ci95_high": 0.023050252694884067,
+          "ci95_low": -0.005100789416821343,
+          "observed": 0.012321123095660191
+        },
+        "conic_minus_deranged": {
+          "ci95_high": 0.023866825849573944,
+          "ci95_low": -0.0062288844931068,
+          "observed": 0.011949682172405607
+        },
+        "conic_minus_gated": {
+          "ci95_high": 0.000773241232284821,
+          "ci95_low": 1.614546139577927e-05,
+          "observed": 0.0002055169046124572
+        },
+        "full_conic_minus_state_conic": {
+          "ci95_high": 0.010899251151699213,
+          "ci95_low": -0.009952348307202163,
+          "observed": 0.0031537385570621357
+        },
+        "full_conic_minus_visual_conic": {
+          "ci95_high": 0.009222928859364078,
+          "ci95_low": -0.0033431895722128417,
+          "observed": 0.003571082152798888
+        },
+        "gated_minus_unbounded": {
+          "ci95_high": 0.21561115716913978,
+          "ci95_low": -0.008579612954822279,
+          "observed": 0.04877603513029516
+        },
+        "propagation_minus_deranged": {
+          "ci95_high": 0.3025102213602472,
+          "ci95_low": 0.15555416058704058,
+          "observed": 0.20267874745572217
+        },
+        "propagation_minus_point": {
+          "ci95_high": 0.23206701311023728,
+          "ci95_low": 0.028788911477459322,
+          "observed": 0.08878276902609972
+        },
+        "relation_minus_permuted": {
+          "ci95_high": 0.10603399975848579,
+          "ci95_low": 0.005674557045908692,
+          "observed": 0.06999289541434628
+        },
+        "state_conic_minus_center": {
+          "ci95_high": 0.01698825802224499,
+          "ci95_low": -0.00045567522057606555,
+          "observed": 0.009167384538598056
+        },
+        "tube_minus_center": {
+          "ci95_high": 0.028790021617458743,
+          "ci95_low": -0.21118414660470153,
+          "observed": -0.036660428939247425
+        },
+        "tube_minus_unbounded": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        },
+        "visual_conic_minus_center": {
+          "ci95_high": 0.01891028170359569,
+          "ci95_low": -0.00528832466826349,
+          "observed": 0.008750040942861304
+        }
+      },
+      "conditions": {
+        "center_only": {
+          "coordinate_normalized_rmse": [
+            0.7779043330945157,
+            0.884832063962777,
+            0.839566117095613
+          ],
+          "coordinate_r2": [
+            0.3948648485527768,
+            0.21707221858337233,
+            0.2951287350249955
+          ],
+          "impulse_magnitude_mae": 3.2100979842913926,
+          "mean_coordinate_r2": 0.3023552673870482,
+          "mean_normalized_rmse": 0.8341008380509685,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.9248678804683
+        },
+        "center_propagation": {
+          "coordinate_normalized_rmse": [
+            0.9087179646994316,
+            0.948494894037942,
+            0.9907018416259259
+          ],
+          "coordinate_r2": [
+            0.1742316606325226,
+            0.10035743598395319,
+            0.018509860998998873
+          ],
+          "impulse_magnitude_mae": 3.6509046595051178,
+          "mean_coordinate_r2": 0.09769965253849155,
+          "mean_normalized_rmse": 0.9493049001210997,
+          "mean_vector_cosine": 0.6213854028995787,
+          "mse": 23.062484947498916
+        },
+        "cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7737894256540996,
+            0.8652893305016397,
+            0.8417215262887114
+          ],
+          "coordinate_r2": [
+            0.4012499247458987,
+            0.2512743745200243,
+            0.2915048721822021
+          ],
+          "impulse_magnitude_mae": 3.1484943391328173,
+          "mean_coordinate_r2": 0.3146763904827084,
+          "mean_normalized_rmse": 0.8269334274814836,
+          "mean_vector_cosine": 0.7693012863969458,
+          "mse": 17.584967514003942
+        },
+        "cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7740802769484706,
+            0.8652820055087886,
+            0.8418278654498078
+          ],
+          "coordinate_r2": [
+            0.400799724839379,
+            0.25128705094268877,
+            0.29132584495222014
+          ],
+          "impulse_magnitude_mae": 3.1484943391328173,
+          "mean_coordinate_r2": 0.31447087357809594,
+          "mean_normalized_rmse": 0.8270633826356889,
+          "mean_vector_cosine": 0.7593794641387683,
+          "mse": 17.590068423802034
+        },
+        "deranged_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7780094521274518,
+            0.8848893121914445,
+            0.838744342835638
+          ],
+          "coordinate_r2": [
+            0.39470129240034235,
+            0.21697090516935236,
+            0.2965079273612137
+          ],
+          "impulse_magnitude_mae": 3.189566380766665,
+          "mean_coordinate_r2": 0.3027267083103028,
+          "mean_normalized_rmse": 0.8338810357181782,
+          "mean_vector_cosine": 0.7764283007103592,
+          "mse": 17.916184922517026
+        },
+        "deranged_propagation": {
+          "coordinate_normalized_rmse": [
+            1.0500877639652983,
+            1.038983908784693,
+            1.0643145258843987
+          ],
+          "coordinate_r2": [
+            -0.1026843120296399,
+            -0.07948756271351942,
+            -0.13276541000853248
+          ],
+          "impulse_magnitude_mae": 3.8551118939546716,
+          "mean_coordinate_r2": -0.1049790949172306,
+          "mean_normalized_rmse": 1.05112873287813,
+          "mean_vector_cosine": 0.006716239735096947,
+          "mse": 28.256382965736503
+        },
+        "permuted_relation": {
+          "coordinate_normalized_rmse": [
+            0.8146026441632516,
+            0.9164659720352928,
+            0.8941059994796696
+          ],
+          "coordinate_r2": [
+            0.33642253212223905,
+            0.16009012210140605,
+            0.2005744616944607
+          ],
+          "impulse_magnitude_mae": 3.252684890101679,
+          "mean_coordinate_r2": 0.23236237197270193,
+          "mean_normalized_rmse": 0.8750582052260713,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 19.69546482598792
+        },
+        "point_full": {
+          "coordinate_normalized_rmse": [
+            0.8319603506766909,
+            0.8837482060592299,
+            0.9123012499238115
+          ],
+          "coordinate_r2": [
+            0.30784197490191767,
+            0.21898910828709295,
+            0.16770642938745106
+          ],
+          "impulse_magnitude_mae": 3.617782938179782,
+          "mean_coordinate_r2": 0.23151250419215388,
+          "mean_normalized_rmse": 0.8760032688865774,
+          "mean_vector_cosine": 0.6008481241194299,
+          "mse": 19.655600784527216
+        },
+        "point_visual": {
+          "coordinate_normalized_rmse": [
+            0.9570348505645055,
+            1.006794812089138,
+            1.021615314400776
+          ],
+          "coordinate_r2": [
+            0.08408429480497448,
+            -0.013635793649602324,
+            -0.04369785061819664
+          ],
+          "impulse_magnitude_mae": 3.9210697063996465,
+          "mean_coordinate_r2": 0.008916883512391838,
+          "mean_normalized_rmse": 0.9951483256848066,
+          "mean_vector_cosine": 0.30274583877974076,
+          "mse": 25.36731831628816
+        },
+        "relation_tube": {
+          "coordinate_normalized_rmse": [
+            0.8252984775325627,
+            0.8646652883417365,
+            0.879858992552746
+          ],
+          "coordinate_r2": [
+            0.3188824229824341,
+            0.25235393913690163,
+            0.2258481532240667
+          ],
+          "impulse_magnitude_mae": 3.5746861216822814,
+          "mean_coordinate_r2": 0.2656948384478008,
+          "mean_normalized_rmse": 0.8566075861423483,
+          "mean_vector_cosine": 0.5994549082371854,
+          "mse": 18.79189372772622
+        },
+        "state_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7806602381755433,
+            0.8697386314155531,
+            0.8363948527927261
+          ],
+          "coordinate_r2": [
+            0.3905695925317041,
+            0.24355471302340082,
+            0.30044365022183395
+          ],
+          "impulse_magnitude_mae": 3.135366911965195,
+          "mean_coordinate_r2": 0.31152265192564627,
+          "mean_normalized_rmse": 0.8289312407946076,
+          "mean_vector_cosine": 0.8062938856641509,
+          "mse": 17.67474952312158
+        },
+        "state_cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7806977919355355,
+            0.8697506206679048,
+            0.8364029584509131
+          ],
+          "coordinate_r2": [
+            0.3905109576669794,
+            0.24353385784779447,
+            0.30043009109456
+          ],
+          "impulse_magnitude_mae": 3.135366911965195,
+          "mean_coordinate_r2": 0.3114916355364446,
+          "mean_normalized_rmse": 0.8289504570181178,
+          "mean_vector_cosine": 0.7987253065377823,
+          "mse": 17.67554339421646
+        },
+        "state_only": {
+          "coordinate_normalized_rmse": [
+            0.8119540144311654,
+            0.8737172008828952,
+            0.8340115762536403
+          ],
+          "coordinate_r2": [
+            0.34073067844911487,
+            0.23661825288135863,
+            0.3044246906749182
+          ],
+          "impulse_magnitude_mae": 3.2844235816527174,
+          "mean_coordinate_r2": 0.2939245406684639,
+          "mean_normalized_rmse": 0.8398942638559003,
+          "mean_vector_cosine": 0.7367516898942349,
+          "mse": 18.12654969878875
+        },
+        "unbounded_residual": {
+          "coordinate_normalized_rmse": [
+            0.8252984775325627,
+            0.8646652883417365,
+            0.879858992552746
+          ],
+          "coordinate_r2": [
+            0.3188824229824341,
+            0.25235393913690163,
+            0.2258481532240667
+          ],
+          "impulse_magnitude_mae": 3.5746861216822814,
+          "mean_coordinate_r2": 0.2656948384478008,
+          "mean_normalized_rmse": 0.8566075861423483,
+          "mean_vector_cosine": 0.5994549082371854,
+          "mse": 18.79189372772622
+        },
+        "visual_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.773287743592507,
+            0.8756921602067141,
+            0.837778837863776
+          ],
+          "coordinate_r2": [
+            0.4020260656096093,
+            0.2331632405524986,
+            0.2981266188276207
+          ],
+          "impulse_magnitude_mae": 3.163783069854184,
+          "mean_coordinate_r2": 0.3111053083299095,
+          "mean_normalized_rmse": 0.8289195805543322,
+          "mean_vector_cosine": 0.7503941804678139,
+          "mse": 17.69246666015419
+        },
+        "visual_cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7737752427405035,
+            0.8758660525106703,
+            0.8379376415010225
+          ],
+          "coordinate_r2": [
+            0.401271873721875,
+            0.23285865805937578,
+            0.29786050895570404
+          ],
+          "impulse_magnitude_mae": 3.163783069854184,
+          "mean_coordinate_r2": 0.3106636802456516,
+          "mean_normalized_rmse": 0.8291929789173986,
+          "mean_vector_cosine": 0.7285790432491668,
+          "mse": 17.70374344918595
+        }
+      },
+      "conic_angle_radius_degrees": 51.40736817926333,
+      "conic_boundary_rate_by_input": {
+        "full": {
+          "direction": 0.033707865168539325,
+          "radial": 0.0
+        },
+        "state": {
+          "direction": 0.016853932584269662,
+          "radial": 0.0
+        },
+        "visual": {
+          "direction": 0.06741573033707865,
+          "radial": 0.0
+        }
+      },
+      "conic_informative_labels": 138,
+      "conic_log_radius": 2.95136932979051,
+      "cross_fitted_beta": 0.2121409102050003,
+      "cross_fitted_beta_by_input": {
+        "full": 0.2121409102050003,
+        "state": 0.18500494179300778,
+        "visual": 0.20619191497647227
+      },
+      "deranged_cross_fitted_beta": 0.07417282229604202,
+      "gain": 1.575829941312645,
+      "isotropic_boundary_rate": 0.0,
+      "isotropic_radius": 11.942959628324813,
+      "labels": 160,
+      "permuted_gain": 1.0,
+      "subgroups": {
+        "material_label_pair": {
+          "0-0": {
+            "events": 48,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.776176275939164,
+                0.9106381614385792,
+                0.7963765308536424
+              ],
+              "coordinate_r2": [
+                0.39755038866921055,
+                0.17073813893176415,
+                0.3657844211055177
+              ],
+              "impulse_magnitude_mae": 4.476008415531159,
+              "mean_coordinate_r2": 0.3113576495688308,
+              "mean_normalized_rmse": 0.8277303227437952,
+              "mean_vector_cosine": 0.7929342040010924,
+              "mse": 37.30529984391732
+            }
+          },
+          "0-1": {
+            "events": 98,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.8250504684853878,
+                0.8039810463577173,
+                0.929475992786189
+              ],
+              "coordinate_r2": [
+                0.3192917244520421,
+                0.3536144770975499,
+                0.13607437883412854
+              ],
+              "impulse_magnitude_mae": 2.4848768506977135,
+              "mean_coordinate_r2": 0.2696601934612402,
+              "mean_normalized_rmse": 0.8528358358764313,
+              "mean_vector_cosine": 0.7487340747851273,
+              "mse": 6.853487601702942
+            }
+          },
+          "1-1": {
+            "events": 32,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.7794370486435424,
+                0.788081894948328,
+                0.9402415233137009
+              ],
+              "coordinate_r2": [
+                0.3924778872018442,
+                0.37892692685465246,
+                0.11594587783673116
+              ],
+              "impulse_magnitude_mae": 3.189551782867808,
+              "mean_coordinate_r2": 0.29578356396440925,
+              "mean_normalized_rmse": 0.8359201556351904,
+              "mean_vector_cosine": 0.79683899555192,
+              "mse": 20.869626250555683
+            }
+          }
+        },
+        "shape_label_pair": {}
+      }
+    },
+    "20": {
+      "comparisons": {
+        "conic_minus_center": {
+          "ci95_high": 0.011207369852513825,
+          "ci95_low": 0.0015874202402734981,
+          "observed": 0.0068642544714414555
+        },
+        "conic_minus_deranged": {
+          "ci95_high": 0.011182540515645429,
+          "ci95_low": 0.0012793858006770423,
+          "observed": 0.0068642544714414555
+        },
+        "conic_minus_gated": {
+          "ci95_high": 0.000578603429818749,
+          "ci95_low": 7.539385776207663e-06,
+          "observed": 0.00018918100009013283
+        },
+        "full_conic_minus_state_conic": {
+          "ci95_high": 0.011344483308566003,
+          "ci95_low": -0.002978484426055382,
+          "observed": 0.004715001386782214
+        },
+        "full_conic_minus_visual_conic": {
+          "ci95_high": 0.011144921556758858,
+          "ci95_low": 0.0015522388800616668,
+          "observed": 0.0068642544714414555
+        },
+        "gated_minus_unbounded": {
+          "ci95_high": 0.1017009745067675,
+          "ci95_low": -0.007010465254977096,
+          "observed": 0.017561814600064007
+        },
+        "propagation_minus_deranged": {
+          "ci95_high": 0.2521347478264927,
+          "ci95_low": 0.08470204836185444,
+          "observed": 0.12839539172122705
+        },
+        "propagation_minus_point": {
+          "ci95_high": 0.22895915722529406,
+          "ci95_low": 0.0670611643047941,
+          "observed": 0.11059179726674857
+        },
+        "relation_minus_permuted": {
+          "ci95_high": 0.08546909365061942,
+          "ci95_low": 0.01597131914451492,
+          "observed": 0.058884017930326105
+        },
+        "state_conic_minus_center": {
+          "ci95_high": 0.013376213274562357,
+          "ci95_low": -0.008621473191749655,
+          "observed": 0.0021492530846592417
+        },
+        "tube_minus_center": {
+          "ci95_high": 0.016173117636578384,
+          "ci95_low": -0.09639875111000205,
+          "observed": -0.010886741128712685
+        },
+        "tube_minus_unbounded": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        },
+        "visual_conic_minus_center": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        }
+      },
+      "conditions": {
+        "center_only": {
+          "coordinate_normalized_rmse": [
+            0.7809609064391795,
+            0.8909750493712411,
+            0.850014325939584
+          ],
+          "coordinate_r2": [
+            0.3901000626136951,
+            0.20616346139791464,
+            0.2774756456974744
+          ],
+          "impulse_magnitude_mae": 3.1922927502867022,
+          "mean_coordinate_r2": 0.29124638990302804,
+          "mean_normalized_rmse": 0.8406500939166682,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 18.206172921147804
+        },
+        "center_propagation": {
+          "coordinate_normalized_rmse": [
+            0.911634347530516,
+            0.9503979066385233,
+            0.9928248817860467
+          ],
+          "coordinate_r2": [
+            0.16892281640261042,
+            0.09674381905711293,
+            0.014298754106522038
+          ],
+          "impulse_magnitude_mae": 3.6388241876631424,
+          "mean_coordinate_r2": 0.09332179652208179,
+          "mean_normalized_rmse": 0.951619045318362,
+          "mean_vector_cosine": 0.6213854028995784,
+          "mse": 23.17403488817413
+        },
+        "cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7817229482694519,
+            0.8830231164715399,
+            0.8454865314139526
+          ],
+          "coordinate_r2": [
+            0.38890923214891593,
+            0.22027017577688923,
+            0.28515252519760326
+          ],
+          "impulse_magnitude_mae": 3.132426102587712,
+          "mean_coordinate_r2": 0.2981106443744695,
+          "mean_normalized_rmse": 0.8367441987183147,
+          "mean_vector_cosine": 0.7555144850932156,
+          "mse": 18.025077245724766
+        },
+        "cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7818336797752642,
+            0.8831324810066143,
+            0.8456055392658172
+          ],
+          "coordinate_r2": [
+            0.38873609716906965,
+            0.22007702099110216,
+            0.2849512719629663
+          ],
+          "impulse_magnitude_mae": 3.1327473514425406,
+          "mean_coordinate_r2": 0.29792146337437936,
+          "mean_normalized_rmse": 0.836857233349232,
+          "mean_vector_cosine": 0.7282170934198331,
+          "mse": 18.029918264421806
+        },
+        "deranged_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7809609064391795,
+            0.8909750493712411,
+            0.850014325939584
+          ],
+          "coordinate_r2": [
+            0.3901000626136951,
+            0.20616346139791464,
+            0.2774756456974744
+          ],
+          "impulse_magnitude_mae": 3.1922927502867022,
+          "mean_coordinate_r2": 0.29124638990302804,
+          "mean_normalized_rmse": 0.8406500939166682,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 18.206172921147804
+        },
+        "deranged_propagation": {
+          "coordinate_normalized_rmse": [
+            0.991240070603356,
+            0.9828795404858061,
+            1.075458840180367
+          ],
+          "coordinate_r2": [
+            0.01744312243025392,
+            0.03394780889441096,
+            -0.15661171692210063
+          ],
+          "impulse_magnitude_mae": 3.811831736162235,
+          "mean_coordinate_r2": -0.03507359519914525,
+          "mean_normalized_rmse": 1.0165261504231762,
+          "mean_vector_cosine": -0.032556237008020045,
+          "mse": 26.390174859717295
+        },
+        "permuted_relation": {
+          "coordinate_normalized_rmse": [
+            0.8146026441632516,
+            0.9164659720352928,
+            0.8941059994796696
+          ],
+          "coordinate_r2": [
+            0.33642253212223905,
+            0.16009012210140605,
+            0.2005744616944607
+          ],
+          "impulse_magnitude_mae": 3.252684890101679,
+          "mean_coordinate_r2": 0.23236237197270193,
+          "mean_normalized_rmse": 0.8750582052260713,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 19.69546482598792
+        },
+        "point_full": {
+          "coordinate_normalized_rmse": [
+            0.946706115323305,
+            0.9398919147214472,
+            0.9557918471288156
+          ],
+          "coordinate_r2": [
+            0.10374753120945723,
+            0.11660318864125174,
+            0.08646194496208659
+          ],
+          "impulse_magnitude_mae": 3.5285064969876228,
+          "mean_coordinate_r2": 0.10227088827093185,
+          "mean_normalized_rmse": 0.9474632923911893,
+          "mean_vector_cosine": 0.3870004517288609,
+          "mse": 22.964694952330998
+        },
+        "point_visual": {
+          "coordinate_normalized_rmse": [
+            0.99617336725104,
+            1.0410522980450094,
+            0.9877543912071106
+          ],
+          "coordinate_r2": [
+            0.007638622379724458,
+            -0.08378988726479486,
+            0.02434126265107006
+          ],
+          "impulse_magnitude_mae": 3.7876819999283633,
+          "mean_coordinate_r2": -0.01727000074466678,
+          "mean_normalized_rmse": 1.0083266855010533,
+          "mean_vector_cosine": 0.13222323715425452,
+          "mse": 26.114827157484434
+        },
+        "relation_tube": {
+          "coordinate_normalized_rmse": [
+            0.8106922480924622,
+            0.8843693358147796,
+            0.8482865143513535
+          ],
+          "coordinate_r2": [
+            0.34277807888278966,
+            0.2178908778705254,
+            0.2804099895696309
+          ],
+          "impulse_magnitude_mae": 3.30763980044607,
+          "mean_coordinate_r2": 0.28035964877431535,
+          "mean_normalized_rmse": 0.8477826994195318,
+          "mean_vector_cosine": 0.5135135513166109,
+          "mse": 18.47321764480577
+        },
+        "state_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7880300301005082,
+            0.8825903024830832,
+            0.8484433396871884
+          ],
+          "coordinate_r2": [
+            0.37900867165979224,
+            0.22103435796281956,
+            0.28014389934045003
+          ],
+          "impulse_magnitude_mae": 3.132090277788155,
+          "mean_coordinate_r2": 0.2933956429876873,
+          "mean_normalized_rmse": 0.8396878907569265,
+          "mean_vector_cosine": 0.7236570221537655,
+          "mse": 18.14132399015558
+        },
+        "state_cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7883336087307526,
+            0.8829823049913746,
+            0.8491100104059065
+          ],
+          "coordinate_r2": [
+            0.37853012134554864,
+            0.2203422490721192,
+            0.2790121902284811
+          ],
+          "impulse_magnitude_mae": 3.133768899063905,
+          "mean_coordinate_r2": 0.29262818688204967,
+          "mean_normalized_rmse": 0.8401419747093445,
+          "mean_vector_cosine": 0.6620523690517307,
+          "mse": 18.160748753277208
+        },
+        "state_only": {
+          "coordinate_normalized_rmse": [
+            1.103563886135937,
+            1.2069528434674455,
+            1.1171194646806193
+          ],
+          "coordinate_r2": [
+            -0.21785325078345097,
+            -0.4567351663541517,
+            -0.24795589836831367
+          ],
+          "impulse_magnitude_mae": 4.627266340681298,
+          "mean_coordinate_r2": -0.30751477183530546,
+          "mean_normalized_rmse": 1.1425453980946674,
+          "mean_vector_cosine": 0.13051083747155362,
+          "mse": 33.61894929223814
+        },
+        "unbounded_residual": {
+          "coordinate_normalized_rmse": [
+            0.8106922480924622,
+            0.8843693358147796,
+            0.8482865143513535
+          ],
+          "coordinate_r2": [
+            0.34277807888278966,
+            0.2178908778705254,
+            0.2804099895696309
+          ],
+          "impulse_magnitude_mae": 3.30763980044607,
+          "mean_coordinate_r2": 0.28035964877431535,
+          "mean_normalized_rmse": 0.8477826994195318,
+          "mean_vector_cosine": 0.5135135513166109,
+          "mse": 18.47321764480577
+        },
+        "visual_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7809609064391795,
+            0.8909750493712411,
+            0.850014325939584
+          ],
+          "coordinate_r2": [
+            0.3901000626136951,
+            0.20616346139791464,
+            0.2774756456974744
+          ],
+          "impulse_magnitude_mae": 3.1922927502867022,
+          "mean_coordinate_r2": 0.29124638990302804,
+          "mean_normalized_rmse": 0.8406500939166682,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 18.206172921147804
+        },
+        "visual_cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7809609064391795,
+            0.8909750493712411,
+            0.850014325939584
+          ],
+          "coordinate_r2": [
+            0.3901000626136951,
+            0.20616346139791464,
+            0.2774756456974744
+          ],
+          "impulse_magnitude_mae": 3.1922927502867022,
+          "mean_coordinate_r2": 0.29124638990302804,
+          "mean_normalized_rmse": 0.8406500939166682,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 18.206172921147804
+        }
+      },
+      "conic_angle_radius_degrees": 48.89390323477003,
+      "conic_boundary_rate_by_input": {
+        "full": {
+          "direction": 0.056179775280898875,
+          "radial": 0.011235955056179775
+        },
+        "state": {
+          "direction": 0.11235955056179775,
+          "radial": 0.011235955056179775
+        },
+        "visual": {
+          "direction": 0.0,
+          "radial": 0.0
+        }
+      },
+      "conic_informative_labels": 18,
+      "conic_log_radius": 2.077499170852215,
+      "cross_fitted_beta": 0.18612859823300937,
+      "cross_fitted_beta_by_input": {
+        "full": 0.18612859823300937,
+        "state": 0.20225746791977967,
+        "visual": 0.0
+      },
+      "deranged_cross_fitted_beta": 0.0,
+      "gain": 1.4397674297011729,
+      "isotropic_boundary_rate": 0.0,
+      "isotropic_radius": 13.001614197203569,
+      "labels": 20,
+      "permuted_gain": 1.0,
+      "subgroups": {
+        "material_label_pair": {
+          "0-0": {
+            "events": 48,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.7800394139396157,
+                0.9217485680058184,
+                0.8103800596502397
+              ],
+              "coordinate_r2": [
+                0.3915385127007407,
+                0.15037957737922314,
+                0.34328415892127406
+              ],
+              "impulse_magnitude_mae": 4.4037837467624605,
+              "mean_coordinate_r2": 0.29506741633374595,
+              "mean_normalized_rmse": 0.837389347198558,
+              "mean_vector_cosine": 0.7651672283590906,
+              "mse": 38.212656679441366
+            }
+          },
+          "0-1": {
+            "events": 98,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.8159606236187227,
+                0.8163608576363008,
+                0.9017355804541841
+              ],
+              "coordinate_r2": [
+                0.3342082607037452,
+                0.3335549501193231,
+                0.18687294294295553
+              ],
+              "impulse_magnitude_mae": 2.4378300514288367,
+              "mean_coordinate_r2": 0.284878717922008,
+              "mean_normalized_rmse": 0.8446856872364026,
+              "mean_vector_cosine": 0.7539716009298488,
+              "mse": 6.713381977791869
+            }
+          },
+          "1-1": {
+            "events": 32,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.8074802643583976,
+                0.8321739098642814,
+                0.9524539359420627
+              ],
+              "coordinate_r2": [
+                0.3479756226716926,
+                0.30748658374119486,
+                0.09283149990847295
+              ],
+              "impulse_magnitude_mae": 3.352590042999643,
+              "mean_coordinate_r2": 0.24943123544045345,
+              "mean_normalized_rmse": 0.8640360367215806,
+              "mean_vector_cosine": 0.7457604529447139,
+              "mse": 22.385774853194363
+            }
+          }
+        },
+        "shape_label_pair": {}
+      }
+    },
+    "40": {
+      "comparisons": {
+        "conic_minus_center": {
+          "ci95_high": 0.01139091933045561,
+          "ci95_low": -0.0028140212831547547,
+          "observed": 0.0045895504680255605
+        },
+        "conic_minus_deranged": {
+          "ci95_high": 0.01139180625161065,
+          "ci95_low": -0.002780323160098372,
+          "observed": 0.0045895504680255605
+        },
+        "conic_minus_gated": {
+          "ci95_high": 0.0004357840552731507,
+          "ci95_low": 1.976125481133323e-05,
+          "observed": 0.00012238362893790544
+        },
+        "full_conic_minus_state_conic": {
+          "ci95_high": 0.0242670300229563,
+          "ci95_low": -0.007918294003107547,
+          "observed": 0.006881965133128332
+        },
+        "full_conic_minus_visual_conic": {
+          "ci95_high": 0.011541676419613074,
+          "ci95_low": -0.0029853233754026263,
+          "observed": 0.0045895504680255605
+        },
+        "gated_minus_unbounded": {
+          "ci95_high": 0.14859324864232606,
+          "ci95_low": 0.00539179636788236,
+          "observed": 0.04234103397047406
+        },
+        "propagation_minus_deranged": {
+          "ci95_high": 0.2581225258238005,
+          "ci95_low": 0.11477907748706154,
+          "observed": 0.15699682552217595
+        },
+        "propagation_minus_point": {
+          "ci95_high": 0.24290327264853462,
+          "ci95_low": 0.07203171156429256,
+          "observed": 0.1190415149947494
+        },
+        "relation_minus_permuted": {
+          "ci95_high": 0.10199296055944984,
+          "ci95_low": 0.00822993697042692,
+          "observed": 0.06798842804700861
+        },
+        "state_conic_minus_center": {
+          "ci95_high": 0.0175723573191093,
+          "ci95_low": -0.02418824155651975,
+          "observed": -0.002292414665102771
+        },
+        "tube_minus_center": {
+          "ci95_high": 0.0036765797452618,
+          "ci95_low": -0.15259572859245005,
+          "observed": -0.03787386713138641
+        },
+        "tube_minus_unbounded": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        },
+        "visual_conic_minus_center": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        }
+      },
+      "conditions": {
+        "center_only": {
+          "coordinate_normalized_rmse": [
+            0.778239140910366,
+            0.8860226758521232,
+            0.8415790262190517
+          ],
+          "coordinate_r2": [
+            0.39434383955509555,
+            0.2149638178758433,
+            0.2917447426281927
+          ],
+          "impulse_magnitude_mae": 3.205003820846469,
+          "mean_coordinate_r2": 0.30035080001971054,
+          "mean_normalized_rmse": 0.8352802809938469,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.975647562179915
+        },
+        "center_propagation": {
+          "coordinate_normalized_rmse": [
+            0.9092319921377119,
+            0.948840163260052,
+            0.9910994728868538
+          ],
+          "coordinate_r2": [
+            0.173297184473288,
+            0.09970234458463789,
+            0.017721834843400064
+          ],
+          "impulse_magnitude_mae": 3.648249437088672,
+          "mean_coordinate_r2": 0.09690712130044199,
+          "mean_normalized_rmse": 0.9497238760948726,
+          "mean_vector_cosine": 0.6213854028995782,
+          "mse": 23.082668220900864
+        },
+        "cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7779843260218288,
+            0.8790232901367326,
+            0.840974073558957
+          ],
+          "coordinate_r2": [
+            0.3947403884643609,
+            0.22731805539719352,
+            0.29276260760165385
+          ],
+          "impulse_magnitude_mae": 3.142156507517727,
+          "mean_coordinate_r2": 0.3049403504877361,
+          "mean_normalized_rmse": 0.8326605632391728,
+          "mean_vector_cosine": 0.733150504801044,
+          "mse": 17.85040520926257
+        },
+        "cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.778071847492808,
+            0.8791057302381544,
+            0.8410252164026802
+          ],
+          "coordinate_r2": [
+            0.39460420013912867,
+            0.2271731150624413,
+            0.29267658537482466
+          ],
+          "impulse_magnitude_mae": 3.142156507517727,
+          "mean_coordinate_r2": 0.3048179668587982,
+          "mean_normalized_rmse": 0.8327342647112143,
+          "mean_vector_cosine": 0.7121145181209839,
+          "mse": 17.85357256972727
+        },
+        "deranged_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.778239140910366,
+            0.8860226758521232,
+            0.8415790262190517
+          ],
+          "coordinate_r2": [
+            0.39434383955509555,
+            0.2149638178758433,
+            0.2917447426281927
+          ],
+          "impulse_magnitude_mae": 3.205003820846469,
+          "mean_coordinate_r2": 0.30035080001971054,
+          "mean_normalized_rmse": 0.8352802809938469,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.975647562179915
+        },
+        "deranged_propagation": {
+          "coordinate_normalized_rmse": [
+            1.035775866730495,
+            1.0117087312424147,
+            1.0410969742016143
+          ],
+          "coordinate_r2": [
+            -0.07283164610130832,
+            -0.023554556872136256,
+            -0.08388290969175727
+          ],
+          "impulse_magnitude_mae": 3.7699435397531538,
+          "mean_coordinate_r2": -0.06008970422173395,
+          "mean_normalized_rmse": 1.0295271907248413,
+          "mean_vector_cosine": -0.029406345038506965,
+          "mse": 27.100213658318008
+        },
+        "permuted_relation": {
+          "coordinate_normalized_rmse": [
+            0.8146026441632516,
+            0.9164659720352928,
+            0.8941059994796696
+          ],
+          "coordinate_r2": [
+            0.33642253212223905,
+            0.16009012210140605,
+            0.2005744616944607
+          ],
+          "impulse_magnitude_mae": 3.252684890101679,
+          "mean_coordinate_r2": 0.23236237197270193,
+          "mean_normalized_rmse": 0.8750582052260713,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 19.69546482598792
+        },
+        "point_full": {
+          "coordinate_normalized_rmse": [
+            0.9096139269090395,
+            0.9409460234621424,
+            0.9490022785768548
+          ],
+          "coordinate_r2": [
+            0.1726025039731166,
+            0.11462058093078142,
+            0.09939467525593759
+          ],
+          "impulse_magnitude_mae": 3.4482910899634787,
+          "mean_coordinate_r2": 0.1288725867199452,
+          "mean_normalized_rmse": 0.9331874096493454,
+          "mean_vector_cosine": 0.49617429507548066,
+          "mse": 22.300113750821325
+        },
+        "point_visual": {
+          "coordinate_normalized_rmse": [
+            0.9989738351549637,
+            1.0312978975644254,
+            1.0024365836490114
+          ],
+          "coordinate_r2": [
+            0.002051276675783198,
+            -0.06357535352080368,
+            -0.004879104237901721
+          ],
+          "impulse_magnitude_mae": 3.729000107452828,
+          "mean_coordinate_r2": -0.022134393694307402,
+          "mean_normalized_rmse": 1.0109027721228,
+          "mean_vector_cosine": 0.18751940716707538,
+          "mse": 26.208593638219366
+        },
+        "relation_tube": {
+          "coordinate_normalized_rmse": [
+            0.8111603637388738,
+            0.9035814532360334,
+            0.8591441223694095
+          ],
+          "coordinate_r2": [
+            0.34201886429901784,
+            0.18354055736785768,
+            0.2618713769980969
+          ],
+          "impulse_magnitude_mae": 3.2582841087063956,
+          "mean_coordinate_r2": 0.26247693288832413,
+          "mean_normalized_rmse": 0.857961979781439,
+          "mean_vector_cosine": 0.4763920968565836,
+          "mse": 18.943765541940568
+        },
+        "state_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7842731524847739,
+            0.8764133961981307,
+            0.8500823637696697
+          ],
+          "coordinate_r2": [
+            0.3849156222915946,
+            0.23189955896445813,
+            0.27735997480777064
+          ],
+          "impulse_magnitude_mae": 3.0825525265487754,
+          "mean_coordinate_r2": 0.29805838535460777,
+          "mean_normalized_rmse": 0.8369229708175249,
+          "mean_vector_cosine": 0.6546044127023243,
+          "mse": 18.013702351473743
+        },
+        "state_cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7849299842469187,
+            0.8775801846923075,
+            0.8505725639428444
+          ],
+          "coordinate_r2": [
+            0.38388491983013207,
+            0.22985301943541558,
+            0.2765263134676955
+          ],
+          "impulse_magnitude_mae": 3.0825525265487754,
+          "mean_coordinate_r2": 0.29675475091108106,
+          "mean_normalized_rmse": 0.8376942442940236,
+          "mean_vector_cosine": 0.614230011362679,
+          "mse": 18.04787570196399
+        },
+        "state_only": {
+          "coordinate_normalized_rmse": [
+            0.8657416502243858,
+            1.136439561551621,
+            0.9346874103392011
+          ],
+          "coordinate_r2": [
+            0.2504913950667572,
+            -0.2914948770596406,
+            0.12635944495339757
+          ],
+          "impulse_magnitude_mae": 3.882690637285327,
+          "mean_coordinate_r2": 0.028451987653504724,
+          "mean_normalized_rmse": 0.9789562073717359,
+          "mean_vector_cosine": 0.3812349248528102,
+          "mse": 25.16993583681866
+        },
+        "unbounded_residual": {
+          "coordinate_normalized_rmse": [
+            0.8111603637388738,
+            0.9035814532360334,
+            0.8591441223694095
+          ],
+          "coordinate_r2": [
+            0.34201886429901784,
+            0.18354055736785768,
+            0.2618713769980969
+          ],
+          "impulse_magnitude_mae": 3.2582841087063956,
+          "mean_coordinate_r2": 0.26247693288832413,
+          "mean_normalized_rmse": 0.857961979781439,
+          "mean_vector_cosine": 0.4763920968565836,
+          "mse": 18.943765541940568
+        },
+        "visual_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.778239140910366,
+            0.8860226758521232,
+            0.8415790262190517
+          ],
+          "coordinate_r2": [
+            0.39434383955509555,
+            0.2149638178758433,
+            0.2917447426281927
+          ],
+          "impulse_magnitude_mae": 3.205003820846469,
+          "mean_coordinate_r2": 0.30035080001971054,
+          "mean_normalized_rmse": 0.8352802809938469,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.975647562179915
+        },
+        "visual_cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.778239140910366,
+            0.8860226758521232,
+            0.8415790262190517
+          ],
+          "coordinate_r2": [
+            0.39434383955509555,
+            0.2149638178758433,
+            0.2917447426281927
+          ],
+          "impulse_magnitude_mae": 3.205003820846469,
+          "mean_coordinate_r2": 0.30035080001971054,
+          "mean_normalized_rmse": 0.8352802809938469,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.975647562179915
+        }
+      },
+      "conic_angle_radius_degrees": 66.4319953508757,
+      "conic_boundary_rate_by_input": {
+        "full": {
+          "direction": 0.0449438202247191,
+          "radial": 0.0
+        },
+        "state": {
+          "direction": 0.09550561797752809,
+          "radial": 0.0
+        },
+        "visual": {
+          "direction": 0.0,
+          "radial": 0.0
+        }
+      },
+      "conic_informative_labels": 35,
+      "conic_log_radius": 5.686904776429088,
+      "cross_fitted_beta": 0.16844622550462163,
+      "cross_fitted_beta_by_input": {
+        "full": 0.16844622550462163,
+        "state": 0.34630511479242504,
+        "visual": 0.0
+      },
+      "deranged_cross_fitted_beta": 0.0,
+      "gain": 1.5479245634063101,
+      "isotropic_boundary_rate": 0.0,
+      "isotropic_radius": 11.457114132308723,
+      "labels": 40,
+      "permuted_gain": 1.0,
+      "subgroups": {
+        "material_label_pair": {
+          "0-0": {
+            "events": 48,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.7714674238199166,
+                0.9227536604259745,
+                0.8021198279657782
+              ],
+              "coordinate_r2": [
+                0.404838013984661,
+                0.14852568217046536,
+                0.3566037815841505
+              ],
+              "impulse_magnitude_mae": 4.444550566055002,
+              "mean_coordinate_r2": 0.30332249257975896,
+              "mean_normalized_rmse": 0.8321136374038898,
+              "mean_vector_cosine": 0.7977748759228399,
+              "mse": 37.81222859156613
+            }
+          },
+          "0-1": {
+            "events": 98,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.8342646022080874,
+                0.8132137713505699,
+                0.908672727836573
+              ],
+              "coordinate_r2": [
+                0.30400257350258164,
+                0.33868336208578276,
+                0.17431387368604134
+              ],
+              "impulse_magnitude_mae": 2.454886554241454,
+              "mean_coordinate_r2": 0.27233326975813527,
+              "mean_normalized_rmse": 0.8520503671317434,
+              "mean_vector_cosine": 0.7149866573501332,
+              "mse": 6.829661575576257
+            }
+          },
+          "1-1": {
+            "events": 32,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.79514753971217,
+                0.8114217549837854,
+                0.9449366777984346
+              ],
+              "coordinate_r2": [
+                0.36774039008968296,
+                0.34159473553903374,
+                0.10709467495125724
+              ],
+              "impulse_magnitude_mae": 3.2933296516203954,
+              "mean_coordinate_r2": 0.2721432668599913,
+              "mean_normalized_rmse": 0.8505019908314634,
+              "mean_vector_cosine": 0.6918407309367642,
+              "mse": 21.65869751397156
+            }
+          }
+        },
+        "shape_label_pair": {}
+      }
+    },
+    "80": {
+      "comparisons": {
+        "conic_minus_center": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        },
+        "conic_minus_deranged": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        },
+        "conic_minus_gated": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        },
+        "full_conic_minus_state_conic": {
+          "ci95_high": -8.10248331640258e-05,
+          "ci95_low": -0.0005030174402348722,
+          "observed": -0.00029728729567757295
+        },
+        "full_conic_minus_visual_conic": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        },
+        "gated_minus_unbounded": {
+          "ci95_high": 0.24485287983606321,
+          "ci95_low": -0.0008228356267209606,
+          "observed": 0.062038471804840956
+        },
+        "propagation_minus_deranged": {
+          "ci95_high": 0.27962321327871137,
+          "ci95_low": 0.1268903971144846,
+          "observed": 0.1716143194001601
+        },
+        "propagation_minus_point": {
+          "ci95_high": 0.2378470987973691,
+          "ci95_low": 0.08441762006734004,
+          "observed": 0.13091253898266203
+        },
+        "relation_minus_permuted": {
+          "ci95_high": 0.13235188618309635,
+          "ci95_low": -0.023453303205870562,
+          "observed": 0.08025671324381795
+        },
+        "state_conic_minus_center": {
+          "ci95_high": 0.0005172316267111485,
+          "ci95_low": 8.578244983864641e-05,
+          "observed": 0.00029728729567757295
+        },
+        "tube_minus_center": {
+          "ci95_high": -0.0017287793647220917,
+          "ci95_low": -0.24652782819393196,
+          "observed": -0.062038471804840956
+        },
+        "tube_minus_unbounded": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        },
+        "visual_conic_minus_center": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "observed": 0.0
+        }
+      },
+      "conditions": {
+        "center_only": {
+          "coordinate_normalized_rmse": [
+            0.7799604552871905,
+            0.8773280981922653,
+            0.8271032829465627
+          ],
+          "coordinate_r2": [
+            0.3916616881881986,
+            0.23029540812234295,
+            0.31590015933901816
+          ],
+          "impulse_magnitude_mae": 3.2594953483532634,
+          "mean_coordinate_r2": 0.3126190852165199,
+          "mean_normalized_rmse": 0.8281306121420062,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.664479889813364
+        },
+        "center_propagation": {
+          "coordinate_normalized_rmse": [
+            0.9063055149783403,
+            0.9466970027168422,
+            0.9884162317598162
+          ],
+          "coordinate_r2": [
+            0.17861031351984535,
+            0.10376478504694742,
+            0.023033352793725093
+          ],
+          "impulse_magnitude_mae": 3.693066538090632,
+          "mean_coordinate_r2": 0.10180281712017263,
+          "mean_normalized_rmse": 0.9471395831516661,
+          "mean_vector_cosine": 0.6213854028995791,
+          "mse": 22.958177107432537
+        },
+        "cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7799604552871905,
+            0.8773280981922653,
+            0.8271032829465627
+          ],
+          "coordinate_r2": [
+            0.3916616881881986,
+            0.23029540812234295,
+            0.31590015933901816
+          ],
+          "impulse_magnitude_mae": 3.2594953483532634,
+          "mean_coordinate_r2": 0.3126190852165199,
+          "mean_normalized_rmse": 0.8281306121420062,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.664479889813364
+        },
+        "cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7799604552871905,
+            0.8773280981922653,
+            0.8271032829465627
+          ],
+          "coordinate_r2": [
+            0.3916616881881986,
+            0.23029540812234295,
+            0.31590015933901816
+          ],
+          "impulse_magnitude_mae": 3.2594953483532634,
+          "mean_coordinate_r2": 0.3126190852165199,
+          "mean_normalized_rmse": 0.8281306121420062,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.664479889813364
+        },
+        "deranged_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7799604552871905,
+            0.8773280981922653,
+            0.8271032829465627
+          ],
+          "coordinate_r2": [
+            0.3916616881881986,
+            0.23029540812234295,
+            0.31590015933901816
+          ],
+          "impulse_magnitude_mae": 3.2594953483532634,
+          "mean_coordinate_r2": 0.3126190852165199,
+          "mean_normalized_rmse": 0.8281306121420062,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.664479889813364
+        },
+        "deranged_propagation": {
+          "coordinate_normalized_rmse": [
+            1.0313992268734706,
+            1.0451918630769543,
+            1.0262670758640242
+          ],
+          "coordinate_r2": [
+            -0.06378436519519282,
+            -0.09242603064227439,
+            -0.053224111002495134
+          ],
+          "impulse_magnitude_mae": 3.701640549034617,
+          "mean_coordinate_r2": -0.06981150227998745,
+          "mean_normalized_rmse": 1.034286055271483,
+          "mean_vector_cosine": 0.06359900677589532,
+          "mse": 27.41400984251339
+        },
+        "permuted_relation": {
+          "coordinate_normalized_rmse": [
+            0.8146026441632516,
+            0.9164659720352928,
+            0.8941059994796696
+          ],
+          "coordinate_r2": [
+            0.33642253212223905,
+            0.16009012210140605,
+            0.2005744616944607
+          ],
+          "impulse_magnitude_mae": 3.252684890101679,
+          "mean_coordinate_r2": 0.23236237197270193,
+          "mean_normalized_rmse": 0.8750582052260713,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 19.69546482598792
+        },
+        "point_full": {
+          "coordinate_normalized_rmse": [
+            0.906386791040749,
+            0.9378043192601505,
+            0.8942626291896904
+          ],
+          "coordinate_r2": [
+            0.17846298502685354,
+            0.12052305877700598,
+            0.20029435003474227
+          ],
+          "impulse_magnitude_mae": 3.808689958200318,
+          "mean_coordinate_r2": 0.1664267979462006,
+          "mean_normalized_rmse": 0.91281791316353,
+          "mean_vector_cosine": 0.5365582921274675,
+          "mse": 21.392152499041703
+        },
+        "point_visual": {
+          "coordinate_normalized_rmse": [
+            1.0014669523229376,
+            1.0178269303715552,
+            1.0239245327673776
+          ],
+          "coordinate_r2": [
+            -0.00293605659499252,
+            -0.035971660189582755,
+            -0.0484214488028929
+          ],
+          "impulse_magnitude_mae": 3.9251512345690993,
+          "mean_coordinate_r2": -0.02910972186248939,
+          "mean_normalized_rmse": 1.0144061384872902,
+          "mean_vector_cosine": 0.23891999784533785,
+          "mse": 26.34340679853261
+        },
+        "relation_tube": {
+          "coordinate_normalized_rmse": [
+            0.8517477480531253,
+            0.9101602742927479,
+            0.833301991207715
+          ],
+          "coordinate_r2": [
+            0.2745257736864297,
+            0.17160827509934984,
+            0.3056077914492572
+          ],
+          "impulse_magnitude_mae": 3.840292980233286,
+          "mean_coordinate_r2": 0.2505806134116789,
+          "mean_normalized_rmse": 0.8650700045178628,
+          "mean_vector_cosine": 0.5442568024468684,
+          "mse": 19.27334641039937
+        },
+        "state_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7799717268778339,
+            0.8770169213055399,
+            0.8268834908730309
+          ],
+          "coordinate_r2": [
+            0.39164410527120974,
+            0.23084131974375244,
+            0.3162636925216302
+          ],
+          "impulse_magnitude_mae": 3.257232762593217,
+          "mean_coordinate_r2": 0.31291637251219745,
+          "mean_normalized_rmse": 0.8279573796854681,
+          "mean_vector_cosine": 0.8028578585931875,
+          "mse": 17.65670210342978
+        },
+        "state_cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7799717268778339,
+            0.8770169213055399,
+            0.8268834908730309
+          ],
+          "coordinate_r2": [
+            0.39164410527120974,
+            0.23084131974375244,
+            0.3162636925216302
+          ],
+          "impulse_magnitude_mae": 3.257232762593217,
+          "mean_coordinate_r2": 0.31291637251219745,
+          "mean_normalized_rmse": 0.8279573796854681,
+          "mean_vector_cosine": 0.8028578585931875,
+          "mse": 17.65670210342978
+        },
+        "state_only": {
+          "coordinate_normalized_rmse": [
+            0.8958953488298946,
+            0.8751766516171131,
+            0.8165137706174798
+          ],
+          "coordinate_r2": [
+            0.1973715239449616,
+            0.23406582846425816,
+            0.3333052623920255
+          ],
+          "impulse_magnitude_mae": 3.659609782395915,
+          "mean_coordinate_r2": 0.25491420493374845,
+          "mean_normalized_rmse": 0.8625285903548292,
+          "mean_vector_cosine": 0.5925802089306295,
+          "mse": 19.12694053194309
+        },
+        "unbounded_residual": {
+          "coordinate_normalized_rmse": [
+            0.8517477480531253,
+            0.9101602742927479,
+            0.833301991207715
+          ],
+          "coordinate_r2": [
+            0.2745257736864297,
+            0.17160827509934984,
+            0.3056077914492572
+          ],
+          "impulse_magnitude_mae": 3.840292980233286,
+          "mean_coordinate_r2": 0.2505806134116789,
+          "mean_normalized_rmse": 0.8650700045178628,
+          "mean_vector_cosine": 0.5442568024468684,
+          "mse": 19.27334641039937
+        },
+        "visual_cross_fitted_conic_tube": {
+          "coordinate_normalized_rmse": [
+            0.7799604552871905,
+            0.8773280981922653,
+            0.8271032829465627
+          ],
+          "coordinate_r2": [
+            0.3916616881881986,
+            0.23029540812234295,
+            0.31590015933901816
+          ],
+          "impulse_magnitude_mae": 3.2594953483532634,
+          "mean_coordinate_r2": 0.3126190852165199,
+          "mean_normalized_rmse": 0.8281306121420062,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.664479889813364
+        },
+        "visual_cross_fitted_residual": {
+          "coordinate_normalized_rmse": [
+            0.7799604552871905,
+            0.8773280981922653,
+            0.8271032829465627
+          ],
+          "coordinate_r2": [
+            0.3916616881881986,
+            0.23029540812234295,
+            0.31590015933901816
+          ],
+          "impulse_magnitude_mae": 3.2594953483532634,
+          "mean_coordinate_r2": 0.3126190852165199,
+          "mean_normalized_rmse": 0.8281306121420062,
+          "mean_vector_cosine": 0.8727871375681808,
+          "mse": 17.664479889813364
+        }
+      },
+      "conic_angle_radius_degrees": 63.49731944629402,
+      "conic_boundary_rate_by_input": {
+        "full": {
+          "direction": 0.0,
+          "radial": 0.0
+        },
+        "state": {
+          "direction": 0.0,
+          "radial": 0.0
+        },
+        "visual": {
+          "direction": 0.0,
+          "radial": 0.0
+        }
+      },
+      "conic_informative_labels": 67,
+      "conic_log_radius": 2.8321845655683897,
+      "cross_fitted_beta": 0.0,
+      "cross_fitted_beta_by_input": {
+        "full": 0.0,
+        "state": 0.0037978565015577446,
+        "visual": 0.0
+      },
+      "deranged_cross_fitted_beta": 0.0,
+      "gain": 1.7768576905515745,
+      "isotropic_boundary_rate": 0.0,
+      "isotropic_radius": 11.779603398840322,
+      "labels": 80,
+      "permuted_gain": 1.0,
+      "subgroups": {
+        "material_label_pair": {
+          "0-0": {
+            "events": 48,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.7701564626966787,
+                0.9204265971327938,
+                0.7728653652796194
+              ],
+              "coordinate_r2": [
+                0.4068590229665394,
+                0.1528148792905456,
+                0.4026791271512007
+              ],
+              "impulse_magnitude_mae": 4.585743071971031,
+              "mean_coordinate_r2": 0.3207843431360952,
+              "mean_normalized_rmse": 0.821149475036364,
+              "mean_vector_cosine": 0.88446247677709,
+              "mse": 36.87156286448693
+            }
+          },
+          "0-1": {
+            "events": 98,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.8899528486478196,
+                0.8146682719325904,
+                0.9243009971706891
+              ],
+              "coordinate_r2": [
+                0.2079839271836309,
+                0.33631560670636673,
+                0.14566766662926967
+              ],
+              "impulse_magnitude_mae": 2.602106094138503,
+              "mean_coordinate_r2": 0.22998906683975576,
+              "mean_normalized_rmse": 0.8763073725836997,
+              "mean_vector_cosine": 0.8630730489691468,
+              "mse": 7.223764807347673
+            }
+          },
+          "1-1": {
+            "events": 32,
+            "metrics": {
+              "coordinate_normalized_rmse": [
+                0.7597743662980837,
+                0.8088739527293538,
+                0.9400831636749732
+              ],
+              "coordinate_r2": [
+                0.4227429123163454,
+                0.3457229285959913,
+                0.11624364537485365
+              ],
+              "impulse_magnitude_mae": 3.283378353959314,
+              "mean_coordinate_r2": 0.29490316209573014,
+              "mean_normalized_rmse": 0.8362438275674702,
+              "mean_vector_cosine": 0.8846125196129065,
+              "mse": 20.828545367854165
+            }
+          }
+        },
+        "shape_label_pair": {}
+      }
+    }
+  },
+  "config": {
+    "path": "data/movi_b_128/formal_v4/configs_v2/formal_validation_v3.yaml",
+    "sha256": "fc774b11a3f406a3807321faf7e3e0f40e2d0ad6f567e97ab7fe1f8811cc364b"
+  },
+  "counts": {
+    "train": 1442,
+    "validation": 178
+  },
+  "decision": "formal_validation_completed",
+  "evaluation_split": "validation",
+  "heldout_target_evaluated": false,
+  "implementation_sha256": {
+    "scripts/audit_movi_collision_center_propagation_v1.py": "c7c7b0abff14d6182ca157679647522508b8efaeef34879e02360234355ba6df",
+    "scripts/audit_movi_collision_conic_relation_tube_v1.py": "1dab78ab5ca9b52d8065276c991d3cec9c2700df2acd538bed935d5c69bafcb7",
+    "scripts/audit_movi_collision_cross_fitted_residual_gate_v1.py": "f10d5803b52d2697ead464a226453291c656dcabe0ba57ce33f035e66eb1dc34",
+    "scripts/audit_movi_collision_frame_alignment_v1.py": "2a0c424b386c933a1a3f989821d502352516e3514c9aafa4aab6c929b1f0ab4a",
+    "scripts/audit_movi_collision_metadata_v1.py": "4245f58efbfb147452f3fafc610e1a1e911cc0e3366efe20234ca1764d7761a7",
+    "scripts/audit_movi_collision_physics_budget_v1.py": "44130096e2fec6a83f0fc7c472f4ed15f41f2cf82ed01260de61738220606041",
+    "scripts/audit_movi_collision_physics_budget_v2.py": "e7948b3ddda55560f1e56777e496228be01dc4fa857b99c899c7521e82e3b433",
+    "scripts/audit_movi_collision_physics_proxy_v1.py": "8e3b423449a9ccf564f4892eeed5924472970e4759fb77969a67c102865296ee",
+    "scripts/audit_movi_collision_projected_point_tube_v1.py": "27906b93bac7ffdc42d530215630aaad50d643bcf8abf551b2c118fb8527328e",
+    "scripts/audit_movi_collision_relation_tube_pilot_v1.py": "749059ff461826aea2f09004589bf874377aac12a1db36bedc73a6e65371ca6b",
+    "scripts/audit_movi_collision_state_headroom_v1.py": "f6142ee2b02709f9878e17e5f0c062ce1a4977a62b38ad8a3e174e1217be5dc9",
+    "scripts/audit_movi_collision_visual_residual_v1.py": "355416d9b7c1d3ca93bd01747dfa825882527a42ec7cad3adb9332bfdd4a980b",
+    "scripts/evaluate_movi_collision_formal_relation_v1.py": "1f894a315574f83a756939f9f11b9762657b846d0f14b29c15570f46e4200e2f",
+    "scripts/prepare_movi_collision_formal_evaluation_config_v1.py": "cc7ab0261c2a53edbd3d1f8b361c0db89758ba175d3bc43e05f13e612aa257aa",
+    "src/relation_tube/__init__.py": "ec472803d12b4b50bc5b0f1f52b03f889a45f203c48da5aeca2a6258b0e03e3e",
+    "src/relation_tube/calibration.py": "849ff2d3c9248bdad79bd2758f5f55e1ab1105e42ea40f3586ed113699808e09",
+    "src/relation_tube/movi.py": "37a8506c23801535752f8a502c48b6e6b2321ad85df685838abdc0d09a732b8b",
+    "src/relation_tube/projection.py": "8f9126702dc6573b4a21a831679c31a65a1b2467a649873881405497401e92f8"
+  },
+  "input_sha256": {
+    "evaluation_feature_npz": "4eeaae2a75695dff2ed0e94ac168cbf70d23e5130fcf8ac74d470211e84c81ca",
+    "evaluation_npz": "8086dcca27262227ddcd4dea90ace1906bf437ad0e63edb2846e208fe10a2be5",
+    "train_feature_npz": "d402f3589ca06a8562e50ec8eeb81dee36395d2fcc3dd8a4e9eb092507658a0a",
+    "train_npz": "3823e2bd4e6c718681e32d8d55bd2ba15a970f1e65e14c24fdf97e4bdbb2f864"
+  },
+  "protocol_version": "movi_collision_formal_relation_validation_v1",
+  "status": "completed_formal_validation_relation_evaluation"
+}

@@ -1,0 +1,2136 @@
+{
+  "comparison": {
+    "direction_counts": {
+      "coordinatewise_affine": {
+        "bounded_minus_unbounded_correlation": 3,
+        "bounded_minus_unbounded_r2": 3
+      },
+      "full_affine": {
+        "bounded_minus_unbounded_correlation": 3,
+        "bounded_minus_unbounded_r2": 3
+      },
+      "raw": {
+        "bounded_minus_unbounded_correlation": 3,
+        "bounded_minus_unbounded_r2": 3
+      }
+    },
+    "geometry_selection_reopened": false,
+    "paired": {
+      "0": {
+        "coordinatewise_affine": {
+          "bounded_minus_unbounded_correlation": 0.4044699162086193,
+          "bounded_minus_unbounded_r2": 0.5097977930600132
+        },
+        "full_affine": {
+          "bounded_minus_unbounded_correlation": 0.3955030353426995,
+          "bounded_minus_unbounded_r2": 0.5555827765773009
+        },
+        "raw": {
+          "bounded_minus_unbounded_correlation": 0.40446991620861966,
+          "bounded_minus_unbounded_r2": 11.522224307060242
+        }
+      },
+      "3407": {
+        "coordinatewise_affine": {
+          "bounded_minus_unbounded_correlation": 0.474386054662074,
+          "bounded_minus_unbounded_r2": 0.5440381498560432
+        },
+        "full_affine": {
+          "bounded_minus_unbounded_correlation": 0.5042658000968974,
+          "bounded_minus_unbounded_r2": 0.6652812593180795
+        },
+        "raw": {
+          "bounded_minus_unbounded_correlation": 0.4743860546620743,
+          "bounded_minus_unbounded_r2": 8.343743592500687
+        }
+      },
+      "42": {
+        "coordinatewise_affine": {
+          "bounded_minus_unbounded_correlation": 0.7905461245800276,
+          "bounded_minus_unbounded_r2": 0.7648318688163425
+        },
+        "full_affine": {
+          "bounded_minus_unbounded_correlation": 0.7520349860391633,
+          "bounded_minus_unbounded_r2": 0.8215554841057782
+        },
+        "raw": {
+          "bounded_minus_unbounded_correlation": 0.7905461245800275,
+          "bounded_minus_unbounded_r2": 0.6494927108287811
+        }
+      }
+    },
+    "performance_threshold_used": false
+  },
+  "config_path": "./configs/config_bounded_unbounded_heldout_k45_v2.yaml",
+  "config_sha256": "13e9f0e160911bd79d122145b055a3daccb28d70d3232110f2a8b8a62484ec5f",
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "numpy": "1.26.4",
+    "python": "3.10.8",
+    "torch": "2.5.1+cu121"
+  },
+  "failed_predecessor_preserved": true,
+  "mode": "version_aware_post_lock_k80_bounded_unbounded_heldout_readout",
+  "protocol_version": "bounded_unbounded_heldout_k45_v2",
+  "runs": {
+    "0": {
+      "tube_correct": {
+        "provenance": {
+          "checkpoint_sha256": "497562a53e0e401da2932e634d34516c50660bd841451167e6f7c74cee1caa5d",
+          "lock_checks": {
+            "condition": true,
+            "config": true,
+            "formal": true,
+            "preflight": true,
+            "source": true,
+            "status": true,
+            "test_unread_at_lock": true,
+            "validity": true
+          },
+          "preflight_checks": {
+            "config": true,
+            "payload": true,
+            "protocol": true,
+            "status": true,
+            "test_unread": true,
+            "validity": true
+          },
+          "source_resolution": {
+            "audit_physics_functional_anchor.py": {
+              "sha256": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2",
+              "source": "current_tree"
+            },
+            "raw_ridge_propagation.py": {
+              "sha256": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+              "source": "current_tree"
+            },
+            "run_calibrated_relation_tube_k0.py": {
+              "sha256": "1a4b1b8bdf5655043578165b03cccf43756ca08120da884f880d3e6cf1bdc615",
+              "source": "current_tree"
+            },
+            "run_clamped_anchor_diagnostic.py": {
+              "sha256": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+              "source": "current_tree"
+            },
+            "run_conditioned_film_diagnostic.py": {
+              "sha256": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_from_scratch.py": {
+              "sha256": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_k80_closed.py": {
+              "sha256": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+              "source": "current_tree"
+            },
+            "run_diagnostic.py": {
+              "sha256": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+              "source": "current_tree"
+            },
+            "run_dynamic_residual_propagation_k0.py": {
+              "sha256": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+              "source": "current_tree"
+            },
+            "run_physics_functional_anchor_training.py": {
+              "sha256": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+              "source": "current_tree"
+            },
+            "run_supervised_continuation_diagnostic.py": {
+              "sha256": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757",
+              "source": "current_tree"
+            }
+          },
+          "training_lock_sha256": "507a5d523162498a1495da9368bab5fc1c6848c8eb0f79b10f61f88526a2b936"
+        },
+        "semantic": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.8434592969405452,
+              0.8586837250522872,
+              0.836289075815449
+            ],
+            "mean_direct_abs_correlation": 0.8461440326027604,
+            "mean_r2": 0.7092556237209747,
+            "mse": 0.37238956445905774,
+            "r2": [
+              0.7097963683553634,
+              0.7218056918531366,
+              0.6961648109544245
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8888748790116562,
+              0.9131762587562495,
+              0.9004562663252249
+            ],
+            "mean_direct_abs_correlation": 0.9008358013643768,
+            "mean_r2": 0.8074225772124454,
+            "mse": 0.2435005224565267,
+            "r2": [
+              0.7882809280281264,
+              0.8297551087273681,
+              0.8042316948818414
+            ]
+          },
+          "full_latent_absolute_correlation_matrix": [
+            [
+              0.8434589582575168,
+              0.6587081877803805,
+              0.549792060708075,
+              0.34958855324043364,
+              0.6679734107472168
+            ],
+            [
+              0.7016446680845317,
+              0.8586833990569326,
+              0.5357310896214492,
+              0.08627902533041759,
+              0.7533362479707754
+            ],
+            [
+              0.5977534417424127,
+              0.5667943597384754,
+              0.8362890408215572,
+              0.13276741085039068,
+              0.7845509572586273
+            ],
+            [
+              0.5907866922896119,
+              0.040620754427059695,
+              0.008001084751275062,
+              0.9999999122021315,
+              0.021103334654641526
+            ],
+            [
+              0.39057960595637414,
+              0.7480962952918757,
+              0.7641061111004865,
+              0.021103334938636798,
+              0.9999998654663974
+            ]
+          ],
+          "full_latent_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "full_latent_hungarian_mcc": 0.9076862351609071,
+          "mean_signed_direct_rgb_correlation": 0.8461440326027607,
+          "raw": {
+            "direct_abs_correlation": [
+              0.8434592969405453,
+              0.8586837250522875,
+              0.8362890758154493
+            ],
+            "mean_direct_abs_correlation": 0.8461440326027607,
+            "mean_r2": 0.47383391857147217,
+            "mse": 0.6427196264266968,
+            "r2": [
+              0.27465200424194336,
+              0.621436357498169,
+              0.5254133939743042
+            ]
+          },
+          "rgb_absolute_correlation_matrix": [
+            [
+              0.8434592485427856,
+              0.658708393573761,
+              0.5497922301292419
+            ],
+            [
+              0.7016443610191345,
+              0.8586829900741577,
+              0.5357309579849243
+            ],
+            [
+              0.5977532267570496,
+              0.5667945146560669,
+              0.8362888693809509
+            ]
+          ],
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8461437225341797,
+          "signed_direct_rgb_correlation": [
+            0.8434592969405453,
+            0.8586837250522875,
+            0.8362890758154493
+          ]
+        },
+        "subset": {
+          "budget": 80,
+          "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "subset_rows": [
+            6807,
+            4968,
+            7614,
+            3154,
+            1759,
+            1579,
+            5799,
+            2535,
+            7825,
+            1490,
+            1889,
+            1623,
+            1056,
+            5732,
+            5061,
+            5139,
+            7332,
+            4907,
+            3261,
+            2436,
+            1448,
+            6785,
+            4542,
+            163,
+            2128,
+            703,
+            7817,
+            6327,
+            4970,
+            6454,
+            3353,
+            570,
+            6191,
+            4181,
+            3628,
+            3042,
+            174,
+            1997,
+            2725,
+            6588,
+            1988,
+            1242,
+            7752,
+            4531,
+            4780,
+            3168,
+            1689,
+            1079,
+            4393,
+            6810,
+            7092,
+            2833,
+            7958,
+            3397,
+            878,
+            7129,
+            370,
+            5821,
+            4626,
+            7018,
+            4992,
+            4682,
+            724,
+            4082,
+            7774,
+            4544,
+            2214,
+            2232,
+            2856,
+            97,
+            3681,
+            707,
+            608,
+            2963,
+            3242,
+            4119,
+            6797,
+            3710,
+            3368,
+            2981
+          ],
+          "subset_seed": 20260731,
+          "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "unique_rows": 80
+        },
+        "validation_reproduction": {
+          "archived_readout_sha256": "045cd7d6282971b01d6ceb67ac4214539fef01e1077d98304026881348267d0d",
+          "atol": 5e-06,
+          "expected": {
+            "direct_abs_correlation": [
+              0.8446379454429009,
+              0.8622479796168493,
+              0.8304607079303217
+            ],
+            "mean_direct_abs_correlation": 0.8457822109966907,
+            "mean_r2": 0.4716978073120117,
+            "mse": 0.6482750773429871,
+            "r2": [
+              0.23479855060577393,
+              0.6443856954574585,
+              0.5359091758728027
+            ]
+          },
+          "observed": {
+            "direct_abs_correlation": [
+              0.8446379454429009,
+              0.8622479796168493,
+              0.8304607079303217
+            ],
+            "mean_direct_abs_correlation": 0.8457822109966907,
+            "mean_r2": 0.4716978073120117,
+            "mse": 0.6482750773429871,
+            "r2": [
+              0.23479855060577393,
+              0.6443856954574585,
+              0.5359091758728027
+            ]
+          },
+          "reproduced": true
+        }
+      },
+      "unbounded_correct": {
+        "provenance": {
+          "checkpoint_sha256": "d38e004aa65c644ab0202925685e11cba9f8e1c66b22380652e44201562e4a0d",
+          "lock_checks": {
+            "condition": true,
+            "config": true,
+            "formal": true,
+            "preflight": true,
+            "source": true,
+            "status": true,
+            "test_unread_at_lock": true,
+            "validity": true
+          },
+          "preflight_checks": {
+            "config": true,
+            "payload": true,
+            "protocol": true,
+            "status": true,
+            "test_unread": true,
+            "validity": true
+          },
+          "source_resolution": {
+            "audit_physics_functional_anchor.py": {
+              "sha256": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2",
+              "source": "current_tree"
+            },
+            "raw_ridge_propagation.py": {
+              "sha256": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+              "source": "current_tree"
+            },
+            "run_calibrated_relation_tube_k0.py": {
+              "sha256": "1a4b1b8bdf5655043578165b03cccf43756ca08120da884f880d3e6cf1bdc615",
+              "source": "current_tree"
+            },
+            "run_clamped_anchor_diagnostic.py": {
+              "sha256": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+              "source": "current_tree"
+            },
+            "run_conditioned_film_diagnostic.py": {
+              "sha256": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_from_scratch.py": {
+              "sha256": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_k80_closed.py": {
+              "sha256": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+              "source": "current_tree"
+            },
+            "run_diagnostic.py": {
+              "sha256": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+              "source": "current_tree"
+            },
+            "run_dynamic_residual_propagation_k0.py": {
+              "sha256": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+              "source": "current_tree"
+            },
+            "run_physics_functional_anchor_training.py": {
+              "sha256": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+              "source": "current_tree"
+            },
+            "run_supervised_continuation_diagnostic.py": {
+              "sha256": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757",
+              "source": "current_tree"
+            }
+          },
+          "training_lock_sha256": "1487f5e9e3e76b366c380f606922b3bbfdf516655dd12fb6b7e9a817998d3a55"
+        },
+        "semantic": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.2912858352590383,
+              0.5280333514935771,
+              0.505703162429808
+            ],
+            "mean_direct_abs_correlation": 0.4416741163941411,
+            "mean_r2": 0.1994578306609616,
+            "mse": 1.007761727709279,
+            "r2": [
+              0.07226209021557806,
+              0.27467382817428043,
+              0.2514375735930263
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.33644692265406756,
+              0.617966081859485,
+              0.5615852935514795
+            ],
+            "mean_direct_abs_correlation": 0.5053327660216773,
+            "mean_r2": 0.2518398006351444,
+            "mse": 0.930776317758491,
+            "r2": [
+              0.0694362213707953,
+              0.3800442857298182,
+              0.3060388948048196
+            ]
+          },
+          "full_latent_absolute_correlation_matrix": [
+            [
+              0.2912857174784307,
+              0.48933756157101715,
+              0.45404497281685696,
+              0.09446805250726013,
+              0.4677408196268513
+            ],
+            [
+              0.26208439932143934,
+              0.528033149332618,
+              0.44069904333015225,
+              0.11597174531099848,
+              0.45753428628901666
+            ],
+            [
+              0.24799813825144387,
+              0.4639882563410863,
+              0.5057031418414694,
+              0.10103470532473953,
+              0.46022794955382884
+            ],
+            [
+              0.5907866922896119,
+              0.040620754427059695,
+              0.008001084751275062,
+              0.9999999122021315,
+              0.021103334654641526
+            ],
+            [
+              0.39057960595637414,
+              0.7480962952918757,
+              0.7641061111004865,
+              0.021103334938636798,
+              0.9999998654663974
+            ]
+          ],
+          "full_latent_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "full_latent_hungarian_mcc": 0.6650043572642094,
+          "mean_signed_direct_rgb_correlation": 0.44167411639414106,
+          "raw": {
+            "direct_abs_correlation": [
+              0.29128583525903823,
+              0.5280333514935769,
+              0.505703162429808
+            ],
+            "mean_direct_abs_correlation": 0.44167411639414106,
+            "mean_r2": -11.04839038848877,
+            "mse": 14.757612228393555,
+            "r2": [
+              -15.394765853881836,
+              -7.9124755859375,
+              -9.837932586669922
+            ]
+          },
+          "rgb_absolute_correlation_matrix": [
+            [
+              0.29128560423851013,
+              0.489337295293808,
+              0.4540448784828186
+            ],
+            [
+              0.26208436489105225,
+              0.5280333161354065,
+              0.4406993091106415
+            ],
+            [
+              0.24799810349941254,
+              0.4639877676963806,
+              0.505703330039978
+            ]
+          ],
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.4416740834712982,
+          "signed_direct_rgb_correlation": [
+            0.29128583525903823,
+            0.5280333514935769,
+            0.505703162429808
+          ]
+        },
+        "subset": {
+          "budget": 80,
+          "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "subset_rows": [
+            6807,
+            4968,
+            7614,
+            3154,
+            1759,
+            1579,
+            5799,
+            2535,
+            7825,
+            1490,
+            1889,
+            1623,
+            1056,
+            5732,
+            5061,
+            5139,
+            7332,
+            4907,
+            3261,
+            2436,
+            1448,
+            6785,
+            4542,
+            163,
+            2128,
+            703,
+            7817,
+            6327,
+            4970,
+            6454,
+            3353,
+            570,
+            6191,
+            4181,
+            3628,
+            3042,
+            174,
+            1997,
+            2725,
+            6588,
+            1988,
+            1242,
+            7752,
+            4531,
+            4780,
+            3168,
+            1689,
+            1079,
+            4393,
+            6810,
+            7092,
+            2833,
+            7958,
+            3397,
+            878,
+            7129,
+            370,
+            5821,
+            4626,
+            7018,
+            4992,
+            4682,
+            724,
+            4082,
+            7774,
+            4544,
+            2214,
+            2232,
+            2856,
+            97,
+            3681,
+            707,
+            608,
+            2963,
+            3242,
+            4119,
+            6797,
+            3710,
+            3368,
+            2981
+          ],
+          "subset_seed": 20260731,
+          "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "unique_rows": 80
+        },
+        "validation_reproduction": {
+          "archived_readout_sha256": "045cd7d6282971b01d6ceb67ac4214539fef01e1077d98304026881348267d0d",
+          "atol": 5e-06,
+          "expected": {
+            "direct_abs_correlation": [
+              0.2834426570189918,
+              0.5221798586194777,
+              0.5288149063801059
+            ],
+            "mean_direct_abs_correlation": 0.44481247400619184,
+            "mean_r2": -11.313477516174316,
+            "mse": 15.21678638458252,
+            "r2": [
+              -16.209157943725586,
+              -7.49674129486084,
+              -10.234535217285156
+            ]
+          },
+          "observed": {
+            "direct_abs_correlation": [
+              0.2834426570189918,
+              0.5221798586194777,
+              0.5288149063801059
+            ],
+            "mean_direct_abs_correlation": 0.44481247400619184,
+            "mean_r2": -11.313477516174316,
+            "mse": 15.21678638458252,
+            "r2": [
+              -16.209157943725586,
+              -7.49674129486084,
+              -10.234535217285156
+            ]
+          },
+          "reproduced": true
+        }
+      }
+    },
+    "3407": {
+      "tube_correct": {
+        "provenance": {
+          "checkpoint_sha256": "4508d449b7d88014fba6f56433da62d4d91864a7a73cd8e3e6588839825180bb",
+          "lock_checks": {
+            "condition": true,
+            "config": true,
+            "formal": true,
+            "preflight": true,
+            "source": true,
+            "status": true,
+            "test_unread_at_lock": true,
+            "validity": true
+          },
+          "preflight_checks": {
+            "config": true,
+            "payload": true,
+            "protocol": true,
+            "status": true,
+            "test_unread": true,
+            "validity": true
+          },
+          "source_resolution": {
+            "audit_physics_functional_anchor.py": {
+              "sha256": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2",
+              "source": "current_tree"
+            },
+            "raw_ridge_propagation.py": {
+              "sha256": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+              "source": "current_tree"
+            },
+            "run_calibrated_relation_tube_k0.py": {
+              "path": "outputs/bounded_unbounded_heldout_k45_v2/source_snapshots/097a1319a65f488eaa94eaf75781429852e63afa/run_calibrated_relation_tube_k0.py",
+              "sha256": "1229789aa71789a7fac640b5843b123e136c6a19281392d53950661fabde8d28",
+              "source": "registered_snapshot"
+            },
+            "run_clamped_anchor_diagnostic.py": {
+              "sha256": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+              "source": "current_tree"
+            },
+            "run_conditioned_film_diagnostic.py": {
+              "sha256": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_from_scratch.py": {
+              "sha256": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_k80_closed.py": {
+              "sha256": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+              "source": "current_tree"
+            },
+            "run_diagnostic.py": {
+              "sha256": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+              "source": "current_tree"
+            },
+            "run_dynamic_residual_propagation_k0.py": {
+              "sha256": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+              "source": "current_tree"
+            },
+            "run_physics_functional_anchor_training.py": {
+              "sha256": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+              "source": "current_tree"
+            },
+            "run_supervised_continuation_diagnostic.py": {
+              "sha256": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757",
+              "source": "current_tree"
+            }
+          },
+          "training_lock_sha256": "48bd449f5ce71d2a284d9aacaf1095c46239e2f8bc89c6175b9db2c0ba81a0dd"
+        },
+        "semantic": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.8139686035783095,
+              0.864689740592225,
+              0.8415537078459998
+            ],
+            "mean_direct_abs_correlation": 0.8400706840055113,
+            "mean_r2": 0.6982249727010825,
+            "mse": 0.38030573725769123,
+            "r2": [
+              0.6572631714932117,
+              0.7329864945974243,
+              0.7044252520126117
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8781184909929767,
+              0.9003977012749259,
+              0.8838710527713601
+            ],
+            "mean_direct_abs_correlation": 0.8874624150130876,
+            "mean_r2": 0.7848599945297265,
+            "mse": 0.27299527125933604,
+            "r2": [
+              0.7697298534380503,
+              0.8060500430612186,
+              0.7788000870899109
+            ]
+          },
+          "full_latent_absolute_correlation_matrix": [
+            [
+              0.8139682766946198,
+              0.6865954420307201,
+              0.5524858153057877,
+              0.28545008184370313,
+              0.7030834346211333
+            ],
+            [
+              0.6510589181657478,
+              0.8646894122540072,
+              0.5304421826789281,
+              0.008435483700373565,
+              0.7573052970011483
+            ],
+            [
+              0.5368403639411973,
+              0.5599203079718142,
+              0.8415536729196653,
+              0.05238319471515278,
+              0.7890602776964529
+            ],
+            [
+              0.5907866922896119,
+              0.040620754427059695,
+              0.008001084751275062,
+              0.9999999122021315,
+              0.021103334654641526
+            ],
+            [
+              0.39057960595637414,
+              0.7480962952918757,
+              0.7641061111004865,
+              0.021103334938636798,
+              0.9999998654663974
+            ]
+          ],
+          "full_latent_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "full_latent_hungarian_mcc": 0.9040422279073642,
+          "mean_signed_direct_rgb_correlation": 0.8400706840055113,
+          "raw": {
+            "direct_abs_correlation": [
+              0.8139686035783094,
+              0.8646897405922256,
+              0.8415537078459993
+            ],
+            "mean_direct_abs_correlation": 0.8400706840055113,
+            "mean_r2": 0.45214250683784485,
+            "mse": 0.6539366245269775,
+            "r2": [
+              0.13794749975204468,
+              0.6505506634712219,
+              0.5679293870925903
+            ]
+          },
+          "rgb_absolute_correlation_matrix": [
+            [
+              0.8139689564704895,
+              0.6865959763526917,
+              0.5524860620498657
+            ],
+            [
+              0.6510589718818665,
+              0.8646896481513977,
+              0.5304420590400696
+            ],
+            [
+              0.536840558052063,
+              0.5599201917648315,
+              0.8415535092353821
+            ]
+          ],
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8400707244873047,
+          "signed_direct_rgb_correlation": [
+            0.8139686035783094,
+            0.8646897405922256,
+            0.8415537078459993
+          ]
+        },
+        "subset": {
+          "budget": 80,
+          "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "subset_rows": [
+            6807,
+            4968,
+            7614,
+            3154,
+            1759,
+            1579,
+            5799,
+            2535,
+            7825,
+            1490,
+            1889,
+            1623,
+            1056,
+            5732,
+            5061,
+            5139,
+            7332,
+            4907,
+            3261,
+            2436,
+            1448,
+            6785,
+            4542,
+            163,
+            2128,
+            703,
+            7817,
+            6327,
+            4970,
+            6454,
+            3353,
+            570,
+            6191,
+            4181,
+            3628,
+            3042,
+            174,
+            1997,
+            2725,
+            6588,
+            1988,
+            1242,
+            7752,
+            4531,
+            4780,
+            3168,
+            1689,
+            1079,
+            4393,
+            6810,
+            7092,
+            2833,
+            7958,
+            3397,
+            878,
+            7129,
+            370,
+            5821,
+            4626,
+            7018,
+            4992,
+            4682,
+            724,
+            4082,
+            7774,
+            4544,
+            2214,
+            2232,
+            2856,
+            97,
+            3681,
+            707,
+            608,
+            2963,
+            3242,
+            4119,
+            6797,
+            3710,
+            3368,
+            2981
+          ],
+          "subset_seed": 20260731,
+          "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "unique_rows": 80
+        },
+        "validation_reproduction": {
+          "archived_readout_sha256": "b6f9237efeca50ee6c999cb4736c0b29772a796dfcc37c0baa47818c75c762ef",
+          "atol": 5e-06,
+          "expected": {
+            "direct_abs_correlation": [
+              0.8235908443964557,
+              0.870174632589223,
+              0.8394458851048902
+            ],
+            "mean_direct_abs_correlation": 0.844403787363523,
+            "mean_r2": 0.46119895577430725,
+            "mse": 0.6437779664993286,
+            "r2": [
+              0.12334561347961426,
+              0.6783405542373657,
+              0.5819107294082642
+            ]
+          },
+          "observed": {
+            "direct_abs_correlation": [
+              0.8235908443964557,
+              0.870174632589223,
+              0.8394458851048902
+            ],
+            "mean_direct_abs_correlation": 0.844403787363523,
+            "mean_r2": 0.46119895577430725,
+            "mse": 0.6437779664993286,
+            "r2": [
+              0.12334561347961426,
+              0.6783405542373657,
+              0.5819107294082642
+            ]
+          },
+          "reproduced": true
+        }
+      },
+      "unbounded_correct": {
+        "provenance": {
+          "checkpoint_sha256": "d1b2bbdd2ba9ccd6db49bc37a264b7abeb54f8c2bcb2e0f4539ace86d5a829c3",
+          "lock_checks": {
+            "condition": true,
+            "config": true,
+            "formal": true,
+            "preflight": true,
+            "source": true,
+            "status": true,
+            "test_unread_at_lock": true,
+            "validity": true
+          },
+          "preflight_checks": {
+            "config": true,
+            "payload": true,
+            "protocol": true,
+            "status": true,
+            "test_unread": true,
+            "validity": true
+          },
+          "source_resolution": {
+            "audit_physics_functional_anchor.py": {
+              "sha256": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2",
+              "source": "current_tree"
+            },
+            "raw_ridge_propagation.py": {
+              "sha256": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+              "source": "current_tree"
+            },
+            "run_calibrated_relation_tube_k0.py": {
+              "path": "outputs/bounded_unbounded_heldout_k45_v2/source_snapshots/097a1319a65f488eaa94eaf75781429852e63afa/run_calibrated_relation_tube_k0.py",
+              "sha256": "1229789aa71789a7fac640b5843b123e136c6a19281392d53950661fabde8d28",
+              "source": "registered_snapshot"
+            },
+            "run_clamped_anchor_diagnostic.py": {
+              "sha256": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+              "source": "current_tree"
+            },
+            "run_conditioned_film_diagnostic.py": {
+              "sha256": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_from_scratch.py": {
+              "sha256": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_k80_closed.py": {
+              "sha256": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+              "source": "current_tree"
+            },
+            "run_diagnostic.py": {
+              "sha256": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+              "source": "current_tree"
+            },
+            "run_dynamic_residual_propagation_k0.py": {
+              "sha256": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+              "source": "current_tree"
+            },
+            "run_physics_functional_anchor_training.py": {
+              "sha256": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+              "source": "current_tree"
+            },
+            "run_supervised_continuation_diagnostic.py": {
+              "sha256": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757",
+              "source": "current_tree"
+            }
+          },
+          "training_lock_sha256": "296170eda4e20aef8766ddbf41b79a52e03228b19de18ccd1835dd02a6f968fe"
+        },
+        "semantic": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.030422012438481735,
+              0.5993220557189477,
+              0.4673098198728825
+            ],
+            "mean_direct_abs_correlation": 0.3656846293434373,
+            "mean_r2": 0.15418682284503935,
+            "mse": 1.0534702496371786,
+            "r2": [
+              -0.03993780418978865,
+              0.30245451172721527,
+              0.2000437609976914
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.011893191029736664,
+              0.6150455316347906,
+              0.5226511220840434
+            ],
+            "mean_direct_abs_correlation": 0.3831966149161902,
+            "mean_r2": 0.11957873521164704,
+            "mse": 1.0710601892067615,
+            "r2": [
+              -0.2606789977844235,
+              0.3488834976333195,
+              0.27053170578604513
+            ]
+          },
+          "full_latent_absolute_correlation_matrix": [
+            [
+              0.030421998409822498,
+              0.6011013535281667,
+              0.44314440258794485,
+              0.4020507401753043,
+              0.530578320595344
+            ],
+            [
+              0.019199623310063158,
+              0.5993218260533146,
+              0.4221628688978119,
+              0.40321230405806824,
+              0.49411477726812303
+            ],
+            [
+              0.001999148381009354,
+              0.6042377480257843,
+              0.4673098012566102,
+              0.4275066244158465,
+              0.5184714156954425
+            ],
+            [
+              0.5907866922896119,
+              0.040620754427059695,
+              0.008001084751275062,
+              0.9999999122021315,
+              0.021103334654641526
+            ],
+            [
+              0.39057960595637414,
+              0.7480962952918757,
+              0.7641061111004865,
+              0.021103334938636798,
+              0.9999998654663974
+            ]
+          ],
+          "full_latent_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "full_latent_hungarian_mcc": 0.6194106806776553,
+          "mean_signed_direct_rgb_correlation": 0.36568462934343704,
+          "raw": {
+            "direct_abs_correlation": [
+              0.03042201243848172,
+              0.5993220557189473,
+              0.46730981987288217
+            ],
+            "mean_direct_abs_correlation": 0.36568462934343704,
+            "mean_r2": -7.891601085662842,
+            "mse": 10.143562316894531,
+            "r2": [
+              -16.434640884399414,
+              -3.597568988800049,
+              -3.6425929069519043
+            ]
+          },
+          "rgb_absolute_correlation_matrix": [
+            [
+              0.03042200393974781,
+              0.6011009216308594,
+              0.44314444065093994
+            ],
+            [
+              0.019199620932340622,
+              0.5993222594261169,
+              0.4221626818180084
+            ],
+            [
+              0.0019991518929600716,
+              0.6042380928993225,
+              0.46730977296829224
+            ]
+          ],
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.3656846582889557,
+          "signed_direct_rgb_correlation": [
+            0.03042201243848172,
+            0.5993220557189473,
+            0.46730981987288217
+          ]
+        },
+        "subset": {
+          "budget": 80,
+          "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "subset_rows": [
+            6807,
+            4968,
+            7614,
+            3154,
+            1759,
+            1579,
+            5799,
+            2535,
+            7825,
+            1490,
+            1889,
+            1623,
+            1056,
+            5732,
+            5061,
+            5139,
+            7332,
+            4907,
+            3261,
+            2436,
+            1448,
+            6785,
+            4542,
+            163,
+            2128,
+            703,
+            7817,
+            6327,
+            4970,
+            6454,
+            3353,
+            570,
+            6191,
+            4181,
+            3628,
+            3042,
+            174,
+            1997,
+            2725,
+            6588,
+            1988,
+            1242,
+            7752,
+            4531,
+            4780,
+            3168,
+            1689,
+            1079,
+            4393,
+            6810,
+            7092,
+            2833,
+            7958,
+            3397,
+            878,
+            7129,
+            370,
+            5821,
+            4626,
+            7018,
+            4992,
+            4682,
+            724,
+            4082,
+            7774,
+            4544,
+            2214,
+            2232,
+            2856,
+            97,
+            3681,
+            707,
+            608,
+            2963,
+            3242,
+            4119,
+            6797,
+            3710,
+            3368,
+            2981
+          ],
+          "subset_seed": 20260731,
+          "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "unique_rows": 80
+        },
+        "validation_reproduction": {
+          "archived_readout_sha256": "b6f9237efeca50ee6c999cb4736c0b29772a796dfcc37c0baa47818c75c762ef",
+          "atol": 5e-06,
+          "expected": {
+            "direct_abs_correlation": [
+              0.023611107519023813,
+              0.5830061604336549,
+              0.4902375056523824
+            ],
+            "mean_direct_abs_correlation": 0.3656182578683537,
+            "mean_r2": -7.932353496551514,
+            "mse": 10.148697853088379,
+            "r2": [
+              -16.691219329833984,
+              -3.43814754486084,
+              -3.667692184448242
+            ]
+          },
+          "observed": {
+            "direct_abs_correlation": [
+              0.023611107519023813,
+              0.5830061604336549,
+              0.4902375056523824
+            ],
+            "mean_direct_abs_correlation": 0.3656182578683537,
+            "mean_r2": -7.932353496551514,
+            "mse": 10.148697853088379,
+            "r2": [
+              -16.691219329833984,
+              -3.43814754486084,
+              -3.667692184448242
+            ]
+          },
+          "reproduced": true
+        }
+      }
+    },
+    "42": {
+      "tube_correct": {
+        "provenance": {
+          "checkpoint_sha256": "ef64c28441e0ec9db6e60db1888e7330cac636626cfc433e6d93d1f0b99f371a",
+          "lock_checks": {
+            "condition": true,
+            "config": true,
+            "formal": true,
+            "preflight": true,
+            "source": true,
+            "status": true,
+            "test_unread_at_lock": true,
+            "validity": true
+          },
+          "preflight_checks": {
+            "config": true,
+            "payload": true,
+            "protocol": true,
+            "status": true,
+            "test_unread": true,
+            "validity": true
+          },
+          "source_resolution": {
+            "audit_physics_functional_anchor.py": {
+              "sha256": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2",
+              "source": "current_tree"
+            },
+            "raw_ridge_propagation.py": {
+              "sha256": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+              "source": "current_tree"
+            },
+            "run_calibrated_relation_tube_k0.py": {
+              "sha256": "1a4b1b8bdf5655043578165b03cccf43756ca08120da884f880d3e6cf1bdc615",
+              "source": "current_tree"
+            },
+            "run_clamped_anchor_diagnostic.py": {
+              "sha256": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+              "source": "current_tree"
+            },
+            "run_conditioned_film_diagnostic.py": {
+              "sha256": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_from_scratch.py": {
+              "sha256": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_k80_closed.py": {
+              "sha256": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+              "source": "current_tree"
+            },
+            "run_diagnostic.py": {
+              "sha256": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+              "source": "current_tree"
+            },
+            "run_dynamic_residual_propagation_k0.py": {
+              "sha256": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+              "source": "current_tree"
+            },
+            "run_physics_functional_anchor_training.py": {
+              "sha256": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+              "source": "current_tree"
+            },
+            "run_supervised_continuation_diagnostic.py": {
+              "sha256": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757",
+              "source": "current_tree"
+            }
+          },
+          "training_lock_sha256": "5fff0a3c8f14e87fd5d6312584ecf7f00ff49053f4c14f3fd35ad167eac3418d"
+        },
+        "semantic": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.8396090937827181,
+              0.8629136611495859,
+              0.8395057238618401
+            ],
+            "mean_direct_abs_correlation": 0.8473428262647147,
+            "mean_r2": 0.7126789152218252,
+            "mse": 0.36655585424429643,
+            "r2": [
+              0.7043909416310421,
+              0.7317685368965168,
+              0.7018772671379168
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8872453433072253,
+              0.9081826011483265,
+              0.8924717930999287
+            ],
+            "mean_direct_abs_correlation": 0.8959665791851602,
+            "mean_r2": 0.8012143913058637,
+            "mse": 0.25192280571186215,
+            "r2": [
+              0.7858821855685982,
+              0.823386824106992,
+              0.7943741642420008
+            ]
+          },
+          "full_latent_absolute_correlation_matrix": [
+            [
+              0.8396087564520898,
+              0.6745495585270957,
+              0.5540905002298967,
+              0.3292149145904021,
+              0.6763740585987881
+            ],
+            [
+              0.6905908488428654,
+              0.8629133336311686,
+              0.5308406219933188,
+              0.05795300483568824,
+              0.7502312617712666
+            ],
+            [
+              0.580611010278628,
+              0.570064463382451,
+              0.8395056890733538,
+              0.09905924057408715,
+              0.7845574990159495
+            ],
+            [
+              0.5907866922896119,
+              0.040620754427059695,
+              0.008001084751275062,
+              0.9999999122021315,
+              0.021103334654641526
+            ],
+            [
+              0.39057960595637414,
+              0.7480962952918757,
+              0.7641061111004865,
+              0.021103334938636798,
+              0.9999998654663974
+            ]
+          ],
+          "full_latent_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "full_latent_hungarian_mcc": 0.9084055113650281,
+          "mean_signed_direct_rgb_correlation": 0.8473428262647147,
+          "raw": {
+            "direct_abs_correlation": [
+              0.8396090937827191,
+              0.8629136611495851,
+              0.8395057238618396
+            ],
+            "mean_direct_abs_correlation": 0.8473428262647147,
+            "mean_r2": 0.483968585729599,
+            "mse": 0.6254605054855347,
+            "r2": [
+              0.2532307505607605,
+              0.6406087875366211,
+              0.558066189289093
+            ]
+          },
+          "rgb_absolute_correlation_matrix": [
+            [
+              0.8396090269088745,
+              0.6745492219924927,
+              0.5540902614593506
+            ],
+            [
+              0.6905906796455383,
+              0.862913191318512,
+              0.5308403968811035
+            ],
+            [
+              0.5806108713150024,
+              0.5700640082359314,
+              0.8395060300827026
+            ]
+          ],
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.8473427891731262,
+          "signed_direct_rgb_correlation": [
+            0.8396090937827191,
+            0.8629136611495851,
+            0.8395057238618396
+          ]
+        },
+        "subset": {
+          "budget": 80,
+          "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "subset_rows": [
+            6807,
+            4968,
+            7614,
+            3154,
+            1759,
+            1579,
+            5799,
+            2535,
+            7825,
+            1490,
+            1889,
+            1623,
+            1056,
+            5732,
+            5061,
+            5139,
+            7332,
+            4907,
+            3261,
+            2436,
+            1448,
+            6785,
+            4542,
+            163,
+            2128,
+            703,
+            7817,
+            6327,
+            4970,
+            6454,
+            3353,
+            570,
+            6191,
+            4181,
+            3628,
+            3042,
+            174,
+            1997,
+            2725,
+            6588,
+            1988,
+            1242,
+            7752,
+            4531,
+            4780,
+            3168,
+            1689,
+            1079,
+            4393,
+            6810,
+            7092,
+            2833,
+            7958,
+            3397,
+            878,
+            7129,
+            370,
+            5821,
+            4626,
+            7018,
+            4992,
+            4682,
+            724,
+            4082,
+            7774,
+            4544,
+            2214,
+            2232,
+            2856,
+            97,
+            3681,
+            707,
+            608,
+            2963,
+            3242,
+            4119,
+            6797,
+            3710,
+            3368,
+            2981
+          ],
+          "subset_seed": 20260731,
+          "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "unique_rows": 80
+        },
+        "validation_reproduction": {
+          "archived_readout_sha256": "90ea0a611c644fdd6ed83ea355b883ca6b4205b8c4f13addff216ddd581060f2",
+          "atol": 5e-06,
+          "expected": {
+            "direct_abs_correlation": [
+              0.843698070136605,
+              0.8657305120087612,
+              0.8334796775019597
+            ],
+            "mean_direct_abs_correlation": 0.8476360865491085,
+            "mean_r2": 0.48396405577659607,
+            "mse": 0.6292661428451538,
+            "r2": [
+              0.22941583395004272,
+              0.660328209400177,
+              0.5621480941772461
+            ]
+          },
+          "observed": {
+            "direct_abs_correlation": [
+              0.843698070136605,
+              0.8657305120087612,
+              0.8334796775019597
+            ],
+            "mean_direct_abs_correlation": 0.8476360865491085,
+            "mean_r2": 0.48396405577659607,
+            "mse": 0.6292661428451538,
+            "r2": [
+              0.22941583395004272,
+              0.660328209400177,
+              0.5621480941772461
+            ]
+          },
+          "reproduced": true
+        }
+      },
+      "unbounded_correct": {
+        "provenance": {
+          "checkpoint_sha256": "8c05df94b1baa5fa8ce2f7c86663fddcdbf6471e14330ee1331fd4f8227c294e",
+          "lock_checks": {
+            "condition": true,
+            "config": true,
+            "formal": true,
+            "preflight": true,
+            "source": true,
+            "status": true,
+            "test_unread_at_lock": true,
+            "validity": true
+          },
+          "preflight_checks": {
+            "config": true,
+            "payload": true,
+            "protocol": true,
+            "status": true,
+            "test_unread": true,
+            "validity": true
+          },
+          "source_resolution": {
+            "audit_physics_functional_anchor.py": {
+              "sha256": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2",
+              "source": "current_tree"
+            },
+            "raw_ridge_propagation.py": {
+              "sha256": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+              "source": "current_tree"
+            },
+            "run_calibrated_relation_tube_k0.py": {
+              "sha256": "1a4b1b8bdf5655043578165b03cccf43756ca08120da884f880d3e6cf1bdc615",
+              "source": "current_tree"
+            },
+            "run_clamped_anchor_diagnostic.py": {
+              "sha256": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+              "source": "current_tree"
+            },
+            "run_conditioned_film_diagnostic.py": {
+              "sha256": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_from_scratch.py": {
+              "sha256": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+              "source": "current_tree"
+            },
+            "run_conflict_projected_physics_k80_closed.py": {
+              "sha256": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+              "source": "current_tree"
+            },
+            "run_diagnostic.py": {
+              "sha256": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+              "source": "current_tree"
+            },
+            "run_dynamic_residual_propagation_k0.py": {
+              "sha256": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+              "source": "current_tree"
+            },
+            "run_physics_functional_anchor_training.py": {
+              "sha256": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+              "source": "current_tree"
+            },
+            "run_supervised_continuation_diagnostic.py": {
+              "sha256": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757",
+              "source": "current_tree"
+            }
+          },
+          "training_lock_sha256": "cafcdf495b0c357f9460e0c0447405960168442825aedf0b8fbdd604e309c2ec"
+        },
+        "semantic": {
+          "coordinatewise_affine": {
+            "direct_abs_correlation": [
+              0.02807394554243759,
+              0.11658447979507422,
+              0.025731679716549643
+            ],
+            "mean_direct_abs_correlation": 0.056796701684687145,
+            "mean_r2": -0.05215295359451725,
+            "mse": 1.3440380283643512,
+            "r2": [
+              -0.0993715583768402,
+              -0.04155167752816724,
+              -0.015535624878544319
+            ]
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.00843284577164181,
+              0.2521892809667335,
+              0.17117265269961524
+            ],
+            "mean_direct_abs_correlation": 0.14393159314599685,
+            "mean_r2": -0.02034109279991451,
+            "mse": 1.2965519501666418,
+            "r2": [
+              -0.10092892494284644,
+              0.03446376885949076,
+              0.005441877683612151
+            ]
+          },
+          "full_latent_absolute_correlation_matrix": [
+            [
+              0.02807393358872125,
+              0.23197937737479635,
+              0.012021101311653843,
+              0.09895260479229592,
+              0.14763444752128738
+            ],
+            [
+              0.023413483143991106,
+              0.11658443447407878,
+              0.05393536643954687,
+              0.2802733759024099,
+              0.2064044295942591
+            ],
+            [
+              0.056414968560155286,
+              0.08634640671199326,
+              0.02573168081156721,
+              0.14124117688167678,
+              0.13737462928726538
+            ],
+            [
+              0.5907866922896119,
+              0.040620754427059695,
+              0.008001084751275062,
+              0.9999999122021315,
+              0.021103334654641526
+            ],
+            [
+              0.39057960595637414,
+              0.7480962952918757,
+              0.7641061111004865,
+              0.021103334938636798,
+              0.9999998654663974
+            ]
+          ],
+          "full_latent_hungarian_assignment": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "full_latent_hungarian_mcc": 0.4684658980086055,
+          "mean_signed_direct_rgb_correlation": -0.03964224854032073,
+          "raw": {
+            "direct_abs_correlation": [
+              0.02807394554243759,
+              0.11658447979507425,
+              0.025731679716549626
+            ],
+            "mean_direct_abs_correlation": 0.05679670168468715,
+            "mean_r2": -0.16552412509918213,
+            "mse": 1.4853661060333252,
+            "r2": [
+              -0.23427331447601318,
+              -0.1286149024963379,
+              -0.1336841583251953
+            ]
+          },
+          "rgb_absolute_correlation_matrix": [
+            [
+              0.028073936700820923,
+              0.23197945952415466,
+              0.01202111504971981
+            ],
+            [
+              0.02341349795460701,
+              0.11658450216054916,
+              0.053935397416353226
+            ],
+            [
+              0.05641498044133186,
+              0.08634652942419052,
+              0.025731706991791725
+            ]
+          ],
+          "rgb_hungarian_assignment": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "rgb_hungarian_mcc": 0.11410995572805405,
+          "signed_direct_rgb_correlation": [
+            -0.02807394554243759,
+            -0.11658447979507425,
+            0.025731679716549626
+          ]
+        },
+        "subset": {
+          "budget": 80,
+          "expected_subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "subset_rows": [
+            6807,
+            4968,
+            7614,
+            3154,
+            1759,
+            1579,
+            5799,
+            2535,
+            7825,
+            1490,
+            1889,
+            1623,
+            1056,
+            5732,
+            5061,
+            5139,
+            7332,
+            4907,
+            3261,
+            2436,
+            1448,
+            6785,
+            4542,
+            163,
+            2128,
+            703,
+            7817,
+            6327,
+            4970,
+            6454,
+            3353,
+            570,
+            6191,
+            4181,
+            3628,
+            3042,
+            174,
+            1997,
+            2725,
+            6588,
+            1988,
+            1242,
+            7752,
+            4531,
+            4780,
+            3168,
+            1689,
+            1079,
+            4393,
+            6810,
+            7092,
+            2833,
+            7958,
+            3397,
+            878,
+            7129,
+            370,
+            5821,
+            4626,
+            7018,
+            4992,
+            4682,
+            724,
+            4082,
+            7774,
+            4544,
+            2214,
+            2232,
+            2856,
+            97,
+            3681,
+            707,
+            608,
+            2963,
+            3242,
+            4119,
+            6797,
+            3710,
+            3368,
+            2981
+          ],
+          "subset_seed": 20260731,
+          "subset_sha256": "4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84",
+          "unique_rows": 80
+        },
+        "validation_reproduction": {
+          "archived_readout_sha256": "90ea0a611c644fdd6ed83ea355b883ca6b4205b8c4f13addff216ddd581060f2",
+          "atol": 5e-06,
+          "expected": {
+            "direct_abs_correlation": [
+              0.05647135069288346,
+              0.06295175052979442,
+              0.03753620737495413
+            ],
+            "mean_direct_abs_correlation": 0.052319769532544004,
+            "mean_r2": -0.21614961326122284,
+            "mse": 1.5913984775543213,
+            "r2": [
+              -0.2954963445663452,
+              -0.16286838054656982,
+              -0.19008409976959229
+            ]
+          },
+          "observed": {
+            "direct_abs_correlation": [
+              0.05647135069288346,
+              0.06295175052979442,
+              0.03753620737495413
+            ],
+            "mean_direct_abs_correlation": 0.052319769532544004,
+            "mean_r2": -0.21614961326122284,
+            "mse": 1.5913984775543213,
+            "r2": [
+              -0.2954963445663452,
+              -0.16286838054656982,
+              -0.19008409976959229
+            ]
+          },
+          "reproduced": true
+        }
+      }
+    }
+  },
+  "selection_performed": false,
+  "source_files_sha256": {
+    "audit_bounded_unbounded_heldout_k45.py": "2edb2cb7f367067eaf331baef637f3901f7c317b76d42acbd2763546dc4cfda8",
+    "audit_bounded_unbounded_heldout_k45_v2.py": "976320993d893869e65dcf924b99fb66d28293b8f7f39b8cbdf0e2de16d235a5",
+    "run_calibrated_relation_tube_k0.py": "1a4b1b8bdf5655043578165b03cccf43756ca08120da884f880d3e6cf1bdc615",
+    "run_conflict_projected_physics_k80_closed.py": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+    "run_diagnostic.py": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+    "run_dynamic_residual_propagation_k0.py": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+    "run_supervised_continuation_diagnostic.py": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757"
+  },
+  "test_evaluated": true,
+  "test_rows": [
+    9000,
+    10000
+  ],
+  "training_performed": false
+}

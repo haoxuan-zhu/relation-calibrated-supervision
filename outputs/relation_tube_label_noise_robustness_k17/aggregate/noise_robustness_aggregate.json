@@ -1,0 +1,1010 @@
+{
+  "clean_reference": {
+    "path": ".\\outputs\\isotropic_tube_vs_raw_propagation_k12\\paired_validation_audit.json",
+    "sha256": "6ffe0ec967be85c8bfae0bbf7880c1d52041393b0c343a782723759241ff7ffd",
+    "test_evaluated": false
+  },
+  "decision": {
+    "method_selection_reopened": false,
+    "test_evaluated": false,
+    "verdict": "no_stable_paired_noise_advantage"
+  },
+  "entries": {
+    "sigma_0p01": {
+      "0": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                0.03361482420243739,
+                0.057221121307097826
+              ],
+              "observed_delta": 0.04543235651494448,
+              "positive_fraction": 1.0
+            },
+            "mean_r2": {
+              "ci95": [
+                0.053938416651351774,
+                0.09863087042940659
+              ],
+              "observed_delta": 0.07611713882517557,
+              "positive_fraction": 1.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026081317
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5674193741825839,
+            "raw_r2": 0.4897883252981715
+          },
+          "raw_representation": {
+            "raw_correlation": 0.8008532296231249,
+            "raw_r2": 0.5171975493431091
+          },
+          "tube": {
+            "raw_correlation": 0.8850242683244266,
+            "raw_r2": 0.702673614025116
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08417103870130171,
+            "raw_r2": 0.18547606468200684
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": 0.020632002256685156,
+          "raw_propagation_raw_r2": 0.04830801486968994,
+          "tube_raw_correlation": -0.018106679929672076,
+          "tube_raw_r2": -0.06105107069015503
+        },
+        "deltas": {
+          "full_affine_r2": 0.09596728273827526,
+          "raw_correlation": 0.04543235651494448,
+          "raw_r2": 0.07611697912216187
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p01\\seed0\\paired_validation_readout.json",
+        "input_sha256": "ce6ba602bca0547a1025bd71a80350554fdaed742c8936124614ff2e603c427a",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.009932125601731012
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.7102551703653885,
+          "raw_correlation": 0.82148523187981,
+          "raw_r2": 0.5655055642127991
+        },
+        "tube": {
+          "full_affine_r2": 0.8062224531036638,
+          "raw_correlation": 0.8669175883947545,
+          "raw_r2": 0.6416225433349609
+        }
+      },
+      "3407": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                0.1022780256171846,
+                0.12554282570903813
+              ],
+              "observed_delta": 0.1131150878993834,
+              "positive_fraction": 1.0
+            },
+            "mean_r2": {
+              "ci95": [
+                0.2905568492592147,
+                0.3668703188566354
+              ],
+              "observed_delta": 0.32551009260668773,
+              "positive_fraction": 1.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026084724
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6445088275742034,
+            "raw_r2": 0.6320687685370109
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7531228675267062,
+            "raw_r2": 0.32908961176872253
+          },
+          "tube": {
+            "raw_correlation": 0.8794920020797083,
+            "raw_r2": 0.6873424649238586
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.12636913455300214,
+            "raw_r2": 0.3582528531551361
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": 0.019001708866514644,
+          "raw_propagation_raw_r2": 0.0443650484085083,
+          "tube_raw_correlation": 0.00574766221289591,
+          "tube_raw_r2": 0.011622071266174316
+        },
+        "deltas": {
+          "full_affine_r2": 0.20664832306490988,
+          "raw_correlation": 0.1131150878993834,
+          "raw_r2": 0.3255098760128021
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p01\\seed3407\\paired_validation_readout.json",
+        "input_sha256": "1411c448f6ebefb7236f1b387e51a2b4544ca6c3211797914ec670dd6726cd39",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.010437465149274416
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.6316757169407814,
+          "raw_correlation": 0.7721245763932209,
+          "raw_r2": 0.37345466017723083
+        },
+        "tube": {
+          "full_affine_r2": 0.8383240400056913,
+          "raw_correlation": 0.8852396642926043,
+          "raw_r2": 0.698964536190033
+        }
+      },
+      "42": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                0.07516624061785415,
+                0.0960197968274272
+              ],
+              "observed_delta": 0.08571190963073205,
+              "positive_fraction": 1.0
+            },
+            "mean_r2": {
+              "ci95": [
+                0.18620583057878978,
+                0.24661901611658277
+              ],
+              "observed_delta": 0.21605927713148976,
+              "positive_fraction": 1.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026081359
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5604044082064891,
+            "raw_r2": 0.5424624418584149
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7947983412584904,
+            "raw_r2": 0.46095356345176697
+          },
+          "tube": {
+            "raw_correlation": 0.8813219654351294,
+            "raw_r2": 0.6968868374824524
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08652362417663906,
+            "raw_r2": 0.23593327403068542
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": -0.004869892486638938,
+          "raw_propagation_raw_r2": 0.0029003918170928955,
+          "tube_raw_correlation": -0.005681607032545943,
+          "tube_raw_r2": -0.016973793506622314
+        },
+        "deltas": {
+          "full_affine_r2": 0.17406797578487232,
+          "raw_correlation": 0.08571190963073205,
+          "raw_r2": 0.21605908870697021
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p01\\seed42\\paired_validation_readout.json",
+        "input_sha256": "e7059cced1ab38f62edcfc2c9c5684012a1e42f09df0884159afce5fc6d5a9d5",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.009896266243935973
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.6566138176776534,
+          "raw_correlation": 0.7899284487718514,
+          "raw_r2": 0.46385395526885986
+        },
+        "tube": {
+          "full_affine_r2": 0.8306817934625257,
+          "raw_correlation": 0.8756403584025835,
+          "raw_r2": 0.6799130439758301
+        }
+      }
+    },
+    "sigma_0p025": {
+      "0": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                0.017648326386299946,
+                0.04634630739836234
+              ],
+              "observed_delta": 0.031890000680381614,
+              "positive_fraction": 1.0
+            },
+            "mean_r2": {
+              "ci95": [
+                -0.039476457516853844,
+                0.020203772890840424
+              ],
+              "observed_delta": -0.010018724603721996,
+              "positive_fraction": 0.238
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026082817
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5674193741825839,
+            "raw_r2": 0.4897883252981715
+          },
+          "raw_representation": {
+            "raw_correlation": 0.8008532296231249,
+            "raw_r2": 0.5171975493431091
+          },
+          "tube": {
+            "raw_correlation": 0.8850242683244266,
+            "raw_r2": 0.702673614025116
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08417103870130171,
+            "raw_r2": 0.18547606468200684
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": -0.014569398022955649,
+          "raw_propagation_raw_r2": -0.026392638683319092,
+          "tube_raw_correlation": -0.06685043604387575,
+          "tube_raw_r2": -0.22188720107078552
+        },
+        "deltas": {
+          "full_affine_r2": 0.07745202515496319,
+          "raw_correlation": 0.031890000680381614,
+          "raw_r2": -0.010018497705459595
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p025\\seed0\\paired_validation_readout.json",
+        "input_sha256": "765237b832474261ad8ed398189bcce217510c895b4b375e40ddffd1f8ee8883",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.02483031400432753
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.6534343838537321,
+          "raw_correlation": 0.7862838316001692,
+          "raw_r2": 0.49080491065979004
+        },
+        "tube": {
+          "full_affine_r2": 0.7308864090086953,
+          "raw_correlation": 0.8181738322805509,
+          "raw_r2": 0.48078641295433044
+        }
+      },
+      "3407": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                0.07114964369258626,
+                0.09365885178709485
+              ],
+              "observed_delta": 0.08220410377609566,
+              "positive_fraction": 1.0
+            },
+            "mean_r2": {
+              "ci95": [
+                0.20069207954500243,
+                0.2708114793479813
+              ],
+              "observed_delta": 0.23412403111646174,
+              "positive_fraction": 1.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026086224
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6445088275742034,
+            "raw_r2": 0.6320687685370109
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7531228675267062,
+            "raw_r2": 0.32908961176872253
+          },
+          "tube": {
+            "raw_correlation": 0.8794920020797083,
+            "raw_r2": 0.6873424649238586
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.12636913455300214,
+            "raw_r2": 0.3582528531551361
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": 0.02734843873653592,
+          "raw_propagation_raw_r2": 0.07427358627319336,
+          "tube_raw_correlation": -0.01681659204037056,
+          "tube_raw_r2": -0.04985553026199341
+        },
+        "deltas": {
+          "full_affine_r2": 0.1447524698324092,
+          "raw_correlation": 0.08220410377609566,
+          "raw_r2": 0.23412373661994934
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p025\\seed3407\\paired_validation_readout.json",
+        "input_sha256": "757f5ced9112553c3e7717136a1ffef6f05439dd7686971925a9f40e5034a426",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.02609366287318604
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.6540708905388862,
+          "raw_correlation": 0.7804713062632421,
+          "raw_r2": 0.4033631980419159
+        },
+        "tube": {
+          "full_affine_r2": 0.7988233603712954,
+          "raw_correlation": 0.8626754100393378,
+          "raw_r2": 0.6374869346618652
+        }
+      },
+      "42": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                0.020368233340921325,
+                0.04016532966806627
+              ],
+              "observed_delta": 0.03018921383224371,
+              "positive_fraction": 1.0
+            },
+            "mean_r2": {
+              "ci95": [
+                0.04848451957710107,
+                0.10641434390093372
+              ],
+              "observed_delta": 0.07582493560704257,
+              "positive_fraction": 1.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026082859
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5604044082064891,
+            "raw_r2": 0.5424624418584149
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7947983412584904,
+            "raw_r2": 0.46095356345176697
+          },
+          "tube": {
+            "raw_correlation": 0.8813219654351294,
+            "raw_r2": 0.6968868374824524
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08652362417663906,
+            "raw_r2": 0.23593327403068542
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": -0.013073349329705941,
+          "raw_propagation_raw_r2": -0.06005963683128357,
+          "tube_raw_correlation": -0.06940775967410129,
+          "tube_raw_r2": -0.22016772627830505
+        },
+        "deltas": {
+          "full_affine_r2": 0.08129809941028099,
+          "raw_correlation": 0.03018921383224371,
+          "raw_r2": 0.07582518458366394
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p025\\seed42\\paired_validation_readout.json",
+        "input_sha256": "b8c6f1ce02bb52afea16367df280250c8ecbdd98d559ecb9de7c7250040e92e0",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.02474066560983993
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.6312225251483673,
+          "raw_correlation": 0.7817249919287844,
+          "raw_r2": 0.4008939266204834
+        },
+        "tube": {
+          "full_affine_r2": 0.7125206245586483,
+          "raw_correlation": 0.8119142057610281,
+          "raw_r2": 0.47671911120414734
+        }
+      }
+    },
+    "sigma_0p05": {
+      "0": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                -0.08141776129663,
+                -0.045560306705880606
+              ],
+              "observed_delta": -0.06339630715834021,
+              "positive_fraction": 0.0
+            },
+            "mean_r2": {
+              "ci95": [
+                -0.48822911103313854,
+                -0.38558245023478893
+              ],
+              "observed_delta": -0.436816476149335,
+              "positive_fraction": 0.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026085317
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5674193741825839,
+            "raw_r2": 0.4897883252981715
+          },
+          "raw_representation": {
+            "raw_correlation": 0.8008532296231249,
+            "raw_r2": 0.5171975493431091
+          },
+          "tube": {
+            "raw_correlation": 0.8850242683244266,
+            "raw_r2": 0.702673614025116
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08417103870130171,
+            "raw_r2": 0.18547606468200684
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": -0.012770080579001752,
+          "raw_propagation_raw_r2": -0.07872575521469116,
+          "tube_raw_correlation": -0.16033742643864368,
+          "tube_raw_r2": -0.7010177969932556
+        },
+        "deltas": {
+          "full_affine_r2": -0.09095743601407635,
+          "raw_correlation": -0.06339630715834021,
+          "raw_r2": -0.4368159770965576
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p05\\seed0\\paired_validation_readout.json",
+        "input_sha256": "935b9275e7b8ae764613cc430af9174ccf04fbcad571db633dd4aaad5e805f16",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.049660628008655075
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.6660089354132502,
+          "raw_correlation": 0.7880831490441231,
+          "raw_r2": 0.43847179412841797
+        },
+        "tube": {
+          "full_affine_r2": 0.5750514993991739,
+          "raw_correlation": 0.7246868418857829,
+          "raw_r2": 0.0016558170318603516
+        }
+      },
+      "3407": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                0.01017979963473536,
+                0.03014716976549443
+              ],
+              "observed_delta": 0.02001439189314491,
+              "positive_fraction": 1.0
+            },
+            "mean_r2": {
+              "ci95": [
+                -0.07116183842955583,
+                -0.005353960495927546
+              ],
+              "observed_delta": -0.0376306950219239,
+              "positive_fraction": 0.011
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026088724
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6445088275742034,
+            "raw_r2": 0.6320687685370109
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7531228675267062,
+            "raw_r2": 0.32908961176872253
+          },
+          "tube": {
+            "raw_correlation": 0.8794920020797083,
+            "raw_r2": 0.6873424649238586
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.12636913455300214,
+            "raw_r2": 0.3582528531551361
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": 0.026508375880725965,
+          "raw_propagation_raw_r2": -0.029165804386138916,
+          "tube_raw_correlation": -0.07984636677913126,
+          "tube_raw_r2": -0.42504939436912537
+        },
+        "deltas": {
+          "full_affine_r2": 0.08100173801008059,
+          "raw_correlation": 0.02001439189314491,
+          "raw_r2": -0.03763073682785034
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p05\\seed3407\\paired_validation_readout.json",
+        "input_sha256": "237cb054b8eef8c72f324ad0e0c280a804f017fa6e596f1921d348faac8103e6",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.05218732574637208
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.6141420583196853,
+          "raw_correlation": 0.7796312434074322,
+          "raw_r2": 0.2999238073825836
+        },
+        "tube": {
+          "full_affine_r2": 0.6951437963297659,
+          "raw_correlation": 0.7996456353005771,
+          "raw_r2": 0.2622930705547333
+        }
+      },
+      "42": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                -0.05235730474740191,
+                -0.025173317034292854
+              ],
+              "observed_delta": -0.03887844866528534,
+              "positive_fraction": 0.0
+            },
+            "mean_r2": {
+              "ci95": [
+                -0.44117883328002805,
+                -0.3366376594791122
+              ],
+              "observed_delta": -0.38521043789138637,
+              "positive_fraction": 0.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026085359
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5604044082064891,
+            "raw_r2": 0.5424624418584149
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7947983412584904,
+            "raw_r2": 0.46095356345176697
+          },
+          "tube": {
+            "raw_correlation": 0.8813219654351294,
+            "raw_r2": 0.6968868374824524
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08652362417663906,
+            "raw_r2": 0.23593327403068542
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": 0.005427795696590576,
+          "raw_propagation_raw_r2": -0.05531772971153259,
+          "tube_raw_correlation": -0.11997427714533382,
+          "tube_raw_r2": -0.6764609813690186
+        },
+        "deltas": {
+          "full_affine_r2": 0.02911405625617869,
+          "raw_correlation": -0.03887844866528534,
+          "raw_r2": -0.38520997762680054
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p05\\seed42\\paired_validation_readout.json",
+        "input_sha256": "493abdbcb5bcf01aaff65ed4d176c685818a1ecd811df57d845b6e64b6db13be",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.04948133121967986
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.6320162912842181,
+          "raw_correlation": 0.8002261369550809,
+          "raw_r2": 0.4056358337402344
+        },
+        "tube": {
+          "full_affine_r2": 0.6611303475403968,
+          "raw_correlation": 0.7613476882897956,
+          "raw_r2": 0.020425856113433838
+        }
+      }
+    },
+    "sigma_0p10": {
+      "0": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                0.06789888018851603,
+                0.12286634577528104
+              ],
+              "observed_delta": 0.0958225630774967,
+              "positive_fraction": 1.0
+            },
+            "mean_r2": {
+              "ci95": [
+                -2.4603196989269325,
+                -2.0966436995305098
+              ],
+              "observed_delta": -2.267218421256421,
+              "positive_fraction": 0.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026090317
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5674193741825839,
+            "raw_r2": 0.4897883252981715
+          },
+          "raw_representation": {
+            "raw_correlation": 0.8008532296231249,
+            "raw_r2": 0.5171975493431091
+          },
+          "tube": {
+            "raw_correlation": 0.8850242683244266,
+            "raw_r2": 0.702673614025116
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08417103870130171,
+            "raw_r2": 0.18547606468200684
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": -0.21477991058343138,
+          "raw_propagation_raw_r2": -0.7283419817686081,
+          "tube_raw_correlation": -0.2031283862072364,
+          "tube_raw_r2": -3.1810373663902283
+        },
+        "deltas": {
+          "full_affine_r2": 0.024269015606156685,
+          "raw_correlation": 0.0958225630774967,
+          "raw_r2": -2.2672193199396133
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p10\\seed0\\paired_validation_readout.json",
+        "input_sha256": "509fde3d1478644a6ed5f055fa5cc43c08592baa4b11a009ebf7e5fdd680f854",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.09932125601731014
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.5747366935066115,
+          "raw_correlation": 0.5860733190396935,
+          "raw_r2": -0.21114443242549896
+        },
+        "tube": {
+          "full_affine_r2": 0.5990057091127682,
+          "raw_correlation": 0.6818958821171902,
+          "raw_r2": -2.4783637523651123
+        }
+      },
+      "3407": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                -0.07913217976485493,
+                -0.027536389519451077
+              ],
+              "observed_delta": -0.05196692049742058,
+              "positive_fraction": 0.0
+            },
+            "mean_r2": {
+              "ci95": [
+                -1.2288574950510989,
+                -0.9915167641755833
+              ],
+              "observed_delta": -1.1014062725401461,
+              "positive_fraction": 0.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026093724
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.6445088275742034,
+            "raw_r2": 0.6320687685370109
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7531228675267062,
+            "raw_r2": 0.32908961176872253
+          },
+          "tube": {
+            "raw_correlation": 0.8794920020797083,
+            "raw_r2": 0.6873424649238586
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.12636913455300214,
+            "raw_r2": 0.3582528531551361
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": -0.05677082310497239,
+          "raw_propagation_raw_r2": -0.43685512989759445,
+          "tube_raw_correlation": -0.2351068781553951,
+          "tube_raw_r2": -1.8965148329734802
+        },
+        "deltas": {
+          "full_affine_r2": 0.08546310940641194,
+          "raw_correlation": -0.05196692049742058,
+          "raw_r2": -1.1014068499207497
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p10\\seed3407\\paired_validation_readout.json",
+        "input_sha256": "05b6239a055c2a781d5f30f3510db71e352c319cb5526243b834895db7e95737",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.10437465149274418
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.47245062657281994,
+          "raw_correlation": 0.6963520444217338,
+          "raw_r2": -0.10776551812887192
+        },
+        "tube": {
+          "full_affine_r2": 0.5579137359792319,
+          "raw_correlation": 0.6443851239243132,
+          "raw_r2": -1.2091723680496216
+        }
+      },
+      "42": {
+        "bootstrap": {
+          "metrics": {
+            "mean_direct_abs_correlation": {
+              "ci95": [
+                -0.17091148005440238,
+                -0.10983244610060924
+              ],
+              "observed_delta": -0.1389898402041252,
+              "positive_fraction": 0.0
+            },
+            "mean_r2": {
+              "ci95": [
+                -2.25740019795612,
+                -1.911035427956731
+              ],
+              "observed_delta": -2.0686888332240274,
+              "positive_fraction": 0.0
+            }
+          },
+          "replicates": 2000,
+          "sampling_unit": "observational_validation_row",
+          "seed": 2026090359
+        },
+        "clean_reference": {
+          "analytic_center": {
+            "raw_correlation": 0.9491933155120801,
+            "raw_r2": 0.8958837186573602
+          },
+          "analytic_gap_fraction_closed": {
+            "raw_correlation": 0.5604044082064891,
+            "raw_r2": 0.5424624418584149
+          },
+          "raw_representation": {
+            "raw_correlation": 0.7947983412584904,
+            "raw_r2": 0.46095356345176697
+          },
+          "tube": {
+            "raw_correlation": 0.8813219654351294,
+            "raw_r2": 0.6968868374824524
+          },
+          "tube_minus_raw_representation": {
+            "raw_correlation": 0.08652362417663906,
+            "raw_r2": 0.23593327403068542
+          }
+        },
+        "degradation_from_clean": {
+          "raw_propagation_raw_correlation": -0.07504578704482001,
+          "raw_propagation_raw_r2": -0.22252140939235687,
+          "tube_raw_correlation": -0.30055925142558426,
+          "tube_raw_r2": -2.5271432995796204
+        },
+        "deltas": {
+          "full_affine_r2": -0.09947173724925362,
+          "raw_correlation": -0.1389898402041252,
+          "raw_r2": -2.068688616156578
+        },
+        "input_path": ".\\outputs\\relation_tube_label_noise_robustness_k17\\sigma_0p10\\seed42\\paired_validation_readout.json",
+        "input_sha256": "9082a39e84220c6c016e37a71be5f5d4ca21ea4408769292d5e1f7c3aadf1e62",
+        "noise": {
+          "clipped_total_count": 0,
+          "realized_rmse_unit_rgb": 0.09896266243935972
+        },
+        "raw_propagation": {
+          "full_affine_r2": 0.5783699761419122,
+          "raw_correlation": 0.7197525542136703,
+          "raw_r2": 0.2384321540594101
+        },
+        "tube": {
+          "full_affine_r2": 0.4788982388926586,
+          "raw_correlation": 0.5807627140095452,
+          "raw_r2": -1.830256462097168
+        }
+      }
+    }
+  },
+  "master_config_path": ".\\configs\\config_relation_tube_label_noise_robustness_k17.yaml",
+  "master_config_sha256": "1a788c8435d9f968f20263278db787d012ee1eb35b58db8edb5ed02e09c58c27",
+  "mode": "four_level_three_seed_paired_validation_aggregate",
+  "protocol_version": "relation_tube_label_noise_robustness_k17_v1",
+  "semantic_validation_evaluated": true,
+  "source_files_sha256": {
+    "audit_relation_tube_geometry_downstream_k6.py": "f1209618eb78bb6b929d1019d66ef4b64c14a5816cb1906506ab5a50e76cc137",
+    "raw_ridge_propagation.py": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+    "run_calibrated_relation_tube_k0.py": "1a4b1b8bdf5655043578165b03cccf43756ca08120da884f880d3e6cf1bdc615",
+    "run_clamped_anchor_diagnostic.py": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+    "run_conditioned_film_diagnostic.py": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+    "run_conflict_projected_physics_from_scratch.py": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+    "run_conflict_projected_physics_k80_closed.py": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+    "run_conflict_projected_physics_training.py": "038d6e407517dffa51df8277649c8c4f3017ed62db940de72aa36f87aa2c53e2",
+    "run_diagnostic.py": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+    "run_dynamic_residual_propagation_k0.py": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+    "run_isotropic_relation_tube_budget_k11.py": "344101cc3382d56968537d2bd335fa180cfda4b28d05324c505d8efe87858b89",
+    "run_physics_functional_anchor_training.py": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+    "run_relation_tube_label_noise_robustness_k17.py": "cefd8a783d2b5d8266b7156c3156e22ec1b8a658492954a3570d0f50e27f7a96",
+    "run_supervised_continuation_diagnostic.py": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757"
+  },
+  "summary": {
+    "sigma_0p01": {
+      "bootstrap_correlation_ci_lower_positive_count": 3,
+      "bootstrap_r2_ci_lower_positive_count": 3,
+      "raw_correlation_strict_positive_count": 3,
+      "raw_r2_strict_positive_count": 3,
+      "sigma_full_scale": 0.01,
+      "tube_minus_raw_correlation": {
+        "maximum": 0.1131150878993834,
+        "mean": 0.08141978468168665,
+        "minimum": 0.04543235651494448,
+        "population_std": 0.027797539271767587
+      },
+      "tube_minus_raw_r2": {
+        "maximum": 0.3255098760128021,
+        "mean": 0.20589531461397806,
+        "minimum": 0.07611697912216187,
+        "population_std": 0.1020675625349419
+      }
+    },
+    "sigma_0p025": {
+      "bootstrap_correlation_ci_lower_positive_count": 3,
+      "bootstrap_r2_ci_lower_positive_count": 2,
+      "raw_correlation_strict_positive_count": 3,
+      "raw_r2_strict_positive_count": 2,
+      "sigma_full_scale": 0.025,
+      "tube_minus_raw_correlation": {
+        "maximum": 0.08220410377609566,
+        "mean": 0.048094439429573664,
+        "minimum": 0.03018921383224371,
+        "population_std": 0.02412916727876583
+      },
+      "tube_minus_raw_r2": {
+        "maximum": 0.23412373661994934,
+        "mean": 0.0999768078327179,
+        "minimum": -0.010018497705459595,
+        "population_std": 0.10112313722890491
+      }
+    },
+    "sigma_0p05": {
+      "bootstrap_correlation_ci_lower_positive_count": 1,
+      "bootstrap_r2_ci_lower_positive_count": 0,
+      "raw_correlation_strict_positive_count": 1,
+      "raw_r2_strict_positive_count": 0,
+      "sigma_full_scale": 0.05,
+      "tube_minus_raw_correlation": {
+        "maximum": 0.02001439189314491,
+        "mean": -0.027420121310160212,
+        "minimum": -0.06339630715834021,
+        "population_std": 0.03500291538712418
+      },
+      "tube_minus_raw_r2": {
+        "maximum": -0.03763073682785034,
+        "mean": -0.2865522305170695,
+        "minimum": -0.4368159770965576,
+        "population_std": 0.17727046625739648
+      }
+    },
+    "sigma_0p10": {
+      "bootstrap_correlation_ci_lower_positive_count": 1,
+      "bootstrap_r2_ci_lower_positive_count": 0,
+      "raw_correlation_strict_positive_count": 1,
+      "raw_r2_strict_positive_count": 0,
+      "sigma_full_scale": 0.1,
+      "tube_minus_raw_correlation": {
+        "maximum": 0.0958225630774967,
+        "mean": -0.031711399208016355,
+        "minimum": -0.1389898402041252,
+        "population_std": 0.09692585066517563
+      },
+      "tube_minus_raw_r2": {
+        "maximum": -1.1014068499207497,
+        "mean": -1.812438262005647,
+        "minimum": -2.2672193199396133,
+        "population_std": 0.5092660482267458
+      }
+    }
+  },
+  "test_evaluated": false
+}

@@ -1,0 +1,375 @@
+{
+  "comparisons": {
+    "diagonal": {
+      "comparator_minus_full_shd": {
+        "maximum": -1.0,
+        "mean": -2.6666666666666665,
+        "minimum": -4.0,
+        "sample_std": 1.5275252316519465
+      },
+      "full_minus_comparator_coordinatewise_r2": {
+        "maximum": -0.05228935905343102,
+        "mean": -0.057887953902615884,
+        "minimum": -0.06420187229465069,
+        "sample_std": 0.0059883853215015334
+      },
+      "full_minus_comparator_edge_auroc": {
+        "maximum": 0.0,
+        "mean": -0.026666666666666655,
+        "minimum": -0.06666666666666665,
+        "sample_std": 0.03527668414752787
+      },
+      "full_minus_comparator_full_affine_r2": {
+        "maximum": -0.031238910238283957,
+        "mean": -0.038620576244151085,
+        "minimum": -0.04736990301090094,
+        "sample_std": 0.00815199999541211
+      },
+      "full_minus_comparator_rgb_mcc": {
+        "maximum": -0.030383944511413574,
+        "mean": -0.033318022886912026,
+        "minimum": -0.036808907985687256,
+        "sample_std": 0.003248471056782313
+      },
+      "outcome_counts": {
+        "comparator_graph_advantage": 2,
+        "full_graph_advantage": 0,
+        "mixed_graph_metrics": 1
+      },
+      "seeds": {
+        "0": {
+          "comparator_minus_full_shd": -3,
+          "full_minus_comparator_coordinatewise_r2": -0.05717263035976594,
+          "full_minus_comparator_edge_auroc": -0.013333333333333308,
+          "full_minus_comparator_full_affine_r2": -0.031238910238283957,
+          "full_minus_comparator_rgb_mcc": -0.032761216163635254,
+          "outcome": "comparator_graph_advantage"
+        },
+        "3407": {
+          "comparator_minus_full_shd": -1,
+          "full_minus_comparator_coordinatewise_r2": -0.06420187229465069,
+          "full_minus_comparator_edge_auroc": -0.06666666666666665,
+          "full_minus_comparator_full_affine_r2": -0.04736990301090094,
+          "full_minus_comparator_rgb_mcc": -0.036808907985687256,
+          "outcome": "comparator_graph_advantage"
+        },
+        "42": {
+          "comparator_minus_full_shd": -4,
+          "full_minus_comparator_coordinatewise_r2": -0.05228935905343102,
+          "full_minus_comparator_edge_auroc": 0.0,
+          "full_minus_comparator_full_affine_r2": -0.03725291548326837,
+          "full_minus_comparator_rgb_mcc": -0.030383944511413574,
+          "outcome": "mixed_graph_metrics"
+        }
+      }
+    },
+    "isotropic": {
+      "comparator_minus_full_shd": {
+        "maximum": -1.0,
+        "mean": -2.0,
+        "minimum": -4.0,
+        "sample_std": 1.7320508075688772
+      },
+      "full_minus_comparator_coordinatewise_r2": {
+        "maximum": -0.05946981463545775,
+        "mean": -0.06500353896065296,
+        "minimum": -0.0714061635505503,
+        "sample_std": 0.00601542576283735
+      },
+      "full_minus_comparator_edge_auroc": {
+        "maximum": -0.013333333333333308,
+        "mean": -0.04444444444444443,
+        "minimum": -0.07999999999999996,
+        "sample_std": 0.03355481971231443
+      },
+      "full_minus_comparator_full_affine_r2": {
+        "maximum": -0.024090298089094908,
+        "mean": -0.032535552694479684,
+        "minimum": -0.04262749149214051,
+        "sample_std": 0.009377662898467734
+      },
+      "full_minus_comparator_rgb_mcc": {
+        "maximum": -0.033686161041259766,
+        "mean": -0.03600539763768514,
+        "minimum": -0.039241790771484375,
+        "sample_std": 0.002889141310212188
+      },
+      "outcome_counts": {
+        "comparator_graph_advantage": 3,
+        "full_graph_advantage": 0,
+        "mixed_graph_metrics": 0
+      },
+      "seeds": {
+        "0": {
+          "comparator_minus_full_shd": -1,
+          "full_minus_comparator_coordinatewise_r2": -0.0714061635505503,
+          "full_minus_comparator_edge_auroc": -0.013333333333333308,
+          "full_minus_comparator_full_affine_r2": -0.024090298089094908,
+          "full_minus_comparator_rgb_mcc": -0.039241790771484375,
+          "outcome": "comparator_graph_advantage"
+        },
+        "3407": {
+          "comparator_minus_full_shd": -1,
+          "full_minus_comparator_coordinatewise_r2": -0.06413463869595082,
+          "full_minus_comparator_edge_auroc": -0.07999999999999996,
+          "full_minus_comparator_full_affine_r2": -0.04262749149214051,
+          "full_minus_comparator_rgb_mcc": -0.03508824110031128,
+          "outcome": "comparator_graph_advantage"
+        },
+        "42": {
+          "comparator_minus_full_shd": -4,
+          "full_minus_comparator_coordinatewise_r2": -0.05946981463545775,
+          "full_minus_comparator_edge_auroc": -0.040000000000000036,
+          "full_minus_comparator_full_affine_r2": -0.030888868502203626,
+          "full_minus_comparator_rgb_mcc": -0.033686161041259766,
+          "outcome": "comparator_graph_advantage"
+        }
+      }
+    },
+    "rotated": {
+      "comparator_minus_full_shd": {
+        "maximum": 0.0,
+        "mean": -0.6666666666666666,
+        "minimum": -2.0,
+        "sample_std": 1.1547005383792517
+      },
+      "full_minus_comparator_coordinatewise_r2": {
+        "maximum": 0.08531062546466073,
+        "mean": 0.07770335831413748,
+        "minimum": 0.07134299735252148,
+        "sample_std": 0.007066805505510045
+      },
+      "full_minus_comparator_edge_auroc": {
+        "maximum": 0.06666666666666665,
+        "mean": 0.031111111111111128,
+        "minimum": -0.013333333333333308,
+        "sample_std": 0.04073400617738523
+      },
+      "full_minus_comparator_full_affine_r2": {
+        "maximum": 0.07208962298579247,
+        "mean": 0.054291646830573304,
+        "minimum": 0.024373679257774783,
+        "sample_std": 0.02606479360047736
+      },
+      "full_minus_comparator_rgb_mcc": {
+        "maximum": 0.05764615535736084,
+        "mean": 0.051718294620513916,
+        "minimum": 0.04649341106414795,
+        "sample_std": 0.0056095061284088
+      },
+      "outcome_counts": {
+        "comparator_graph_advantage": 1,
+        "full_graph_advantage": 1,
+        "mixed_graph_metrics": 1
+      },
+      "seeds": {
+        "0": {
+          "comparator_minus_full_shd": 0,
+          "full_minus_comparator_coordinatewise_r2": 0.07645645212523022,
+          "full_minus_comparator_edge_auroc": 0.06666666666666665,
+          "full_minus_comparator_full_affine_r2": 0.07208962298579247,
+          "full_minus_comparator_rgb_mcc": 0.05101531744003296,
+          "outcome": "full_graph_advantage"
+        },
+        "3407": {
+          "comparator_minus_full_shd": 0,
+          "full_minus_comparator_coordinatewise_r2": 0.08531062546466073,
+          "full_minus_comparator_edge_auroc": -0.013333333333333308,
+          "full_minus_comparator_full_affine_r2": 0.06641163824815266,
+          "full_minus_comparator_rgb_mcc": 0.05764615535736084,
+          "outcome": "comparator_graph_advantage"
+        },
+        "42": {
+          "comparator_minus_full_shd": -2,
+          "full_minus_comparator_coordinatewise_r2": 0.07134299735252148,
+          "full_minus_comparator_edge_auroc": 0.040000000000000036,
+          "full_minus_comparator_full_affine_r2": 0.024373679257774783,
+          "full_minus_comparator_rgb_mcc": 0.04649341106414795,
+          "outcome": "mixed_graph_metrics"
+        }
+      }
+    }
+  },
+  "config_path": ".\\configs\\config_relation_tube_geometry_downstream_k6_aggregate.yaml",
+  "config_sha256": "86184af29d319a27cbc1690cc1866aacd09af7239947566b72ad85c59ed207b3",
+  "decision": {
+    "both_generic_graph_advantage_supported": false,
+    "diagonal_graph_advantage_seed_count": 2,
+    "full_graph_rescue_supported": false,
+    "isotropic_graph_advantage_seed_count": 3,
+    "isotropic_strict_proxy_outcome_reversal_all_three_seeds": true,
+    "preregistered_verdict": "generic_geometry_graph_outcomes_mixed_three_seed",
+    "test_evaluated": false
+  },
+  "geometry_summary": {
+    "diagonal": {
+      "ccrl_total": {
+        "maximum": 0.24362648105621337,
+        "mean": 0.23001819917890762,
+        "minimum": 0.22025247025489808,
+        "sample_std": 0.012151543323140696
+      },
+      "coordinatewise_affine_r2": {
+        "maximum": 0.768385636021362,
+        "mean": 0.7656796352616332,
+        "minimum": 0.7639463767803195,
+        "sample_std": 0.00237411590017371
+      },
+      "edge_auroc": {
+        "maximum": 0.6733333333333333,
+        "mean": 0.6511111111111112,
+        "minimum": 0.62,
+        "sample_std": 0.027755546659548446
+      },
+      "fixed_threshold_shd": {
+        "maximum": 7.0,
+        "mean": 6.0,
+        "minimum": 5.0,
+        "sample_std": 1.0
+      },
+      "full_affine_r2": {
+        "maximum": 0.8403890303106172,
+        "mean": 0.8398076644132648,
+        "minimum": 0.8394253783252816,
+        "sample_std": 0.0005117429677915586
+      },
+      "rgb_hungarian_mcc": {
+        "maximum": 0.8812127113342285,
+        "mean": 0.8792590697606405,
+        "minimum": 0.8780205845832825,
+        "sample_std": 0.0017120177574511063
+      }
+    },
+    "full_anisotropic": {
+      "ccrl_total": {
+        "maximum": 0.11788221128781637,
+        "mean": 0.11030891610516443,
+        "minimum": 0.10630251697699229,
+        "sample_std": 0.006562346431013117
+      },
+      "coordinatewise_affine_r2": {
+        "maximum": 0.7124175339297869,
+        "mean": 0.7077916813590172,
+        "minimum": 0.7041837637267113,
+        "sample_std": 0.0042102121791511475
+      },
+      "edge_auroc": {
+        "maximum": 0.66,
+        "mean": 0.6244444444444445,
+        "minimum": 0.5933333333333334,
+        "sample_std": 0.033554819712314436
+      },
+      "fixed_threshold_shd": {
+        "maximum": 10.0,
+        "mean": 8.666666666666666,
+        "minimum": 8.0,
+        "sample_std": 1.1547005383792517
+      },
+      "full_affine_r2": {
+        "maximum": 0.8081864680869977,
+        "mean": 0.8011870881691138,
+        "minimum": 0.7922386815929948,
+        "sample_std": 0.008150582936235797
+      },
+      "rgb_hungarian_mcc": {
+        "maximum": 0.8476366400718689,
+        "mean": 0.8459410468737284,
+        "minimum": 0.8444038033485413,
+        "sample_std": 0.0016222251027885287
+      }
+    },
+    "isotropic": {
+      "ccrl_total": {
+        "maximum": 0.2308150074481964,
+        "mean": 0.21483024009068807,
+        "minimum": 0.205681560754776,
+        "sample_std": 0.013891422182484063
+      },
+      "coordinatewise_affine_r2": {
+        "maximum": 0.7781799099711039,
+        "mean": 0.7727952203196703,
+        "minimum": 0.7683184024226621,
+        "sample_std": 0.0049930457762628324
+      },
+      "edge_auroc": {
+        "maximum": 0.6733333333333333,
+        "mean": 0.668888888888889,
+        "minimum": 0.66,
+        "sample_std": 0.007698003589194996
+      },
+      "fixed_threshold_shd": {
+        "maximum": 7.0,
+        "mean": 6.666666666666667,
+        "minimum": 6.0,
+        "sample_std": 0.5773502691896258
+      },
+      "full_affine_r2": {
+        "maximum": 0.8348661730851353,
+        "mean": 0.8337226408635935,
+        "minimum": 0.8322767661760926,
+        "sample_std": 0.001320914554462626
+      },
+      "rgb_hungarian_mcc": {
+        "maximum": 0.8850244879722595,
+        "mean": 0.8819464445114136,
+        "minimum": 0.8794920444488525,
+        "sample_std": 0.0028184536808488147
+      }
+    },
+    "rotated": {
+      "ccrl_total": {
+        "maximum": 0.11552228224277496,
+        "mean": 0.0956128340098593,
+        "minimum": 0.06521911082665126,
+        "sample_std": 0.026740274485408284
+      },
+      "coordinatewise_affine_r2": {
+        "maximum": 0.6410745365772654,
+        "mean": 0.6300883230448798,
+        "minimum": 0.6188731382620506,
+        "sample_std": 0.011102470115377629
+      },
+      "edge_auroc": {
+        "maximum": 0.6066666666666667,
+        "mean": 0.5933333333333334,
+        "minimum": 0.58,
+        "sample_std": 0.013333333333333364
+      },
+      "fixed_threshold_shd": {
+        "maximum": 8.0,
+        "mean": 8.0,
+        "minimum": 8.0,
+        "sample_std": 0.0
+      },
+      "full_affine_r2": {
+        "maximum": 0.778762435569574,
+        "mean": 0.7468954413385406,
+        "minimum": 0.7258270433448422,
+        "sample_std": 0.028071269975177362
+      },
+      "rgb_hungarian_mcc": {
+        "maximum": 0.801143229007721,
+        "mean": 0.7942227522532145,
+        "minimum": 0.7867576479911804,
+        "sample_std": 0.007208238317184696
+      }
+    }
+  },
+  "inputs": {
+    "0": {
+      "path": ".\\outputs\\relation_tube_geometry_downstream_k6_seed0\\downstream_validation_readout.json",
+      "sha256": "6e925138ae5358ee6fec3c2fe465624fe3ed9bb60ac7c9616da2f126397c9551"
+    },
+    "3407": {
+      "path": ".\\outputs\\relation_tube_geometry_downstream_k6_seed3407\\downstream_validation_readout.json",
+      "sha256": "2e0fa9b12dd5f8f9f354602076b3f0337dc5690bde787f95edc4925f8f8e98e4"
+    },
+    "42": {
+      "path": ".\\outputs\\relation_tube_geometry_downstream_k6_seed42\\downstream_validation_readout.json",
+      "sha256": "c81a6f074e7a8bd42272957975d367da5d7ec9432d8d13b05369dd1402d99e98"
+    }
+  },
+  "mode": "three_seed_frozen_geometry_downstream_aggregate",
+  "protocol_version": "relation_tube_geometry_downstream_audit_k6_aggregate_v1",
+  "test_evaluated": false
+}

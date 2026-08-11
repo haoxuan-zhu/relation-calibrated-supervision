@@ -1,0 +1,29 @@
+protocol_version: relation_tube_sign_coupling_k10_v1
+preregistration: PROTOCOLS.md
+subsets:
+  20260811:
+    k8_config_path: ./config_relation_tube_calibration_subset_k8_20260811.yaml
+    k8_config_sha256: 20f42b6b465f06fdd32c1c2510302faf18512ed04942d71b23b1ce6b092e431e
+    k8_preflight_path: outputs/relation_tube_calibration_subset_k8_20260811/preflight/geometry_preflight.json
+    k8_preflight_sha256: 03115b8fb0494f84b6d097162a1b6ca3573352f4a003a918e31f1aae1c54e7de
+    k9_preflight_path: outputs/relation_tube_oas_shrinkage_k9_20260811/preflight/oas_preflight.json
+    k9_preflight_sha256: 35e407386656614f240c8a6d913b890b4793e42e4d1733953692091f360d9084
+  20260821:
+    k8_config_path: ./config_relation_tube_calibration_subset_k8_20260821.yaml
+    k8_config_sha256: 44e5c840ff9998ff36a979409341d2cc122272d990a9c4dec67e68ccfa216448
+    k8_preflight_path: outputs/relation_tube_calibration_subset_k8_20260821/preflight/geometry_preflight.json
+    k8_preflight_sha256: db698de45b137b3080486cfc1aa641d11512bf1f1a95316cd3d90422dc200a1b
+    k9_preflight_path: outputs/relation_tube_oas_shrinkage_k9_20260821/preflight/oas_preflight.json
+    k9_preflight_sha256: 275a934d64e31b5ffc75d43c1a2c813787e0f9feb2828df8a8ed275739e4fe78
+  20260831:
+    k8_config_path: ./config_relation_tube_calibration_subset_k8_20260831.yaml
+    k8_config_sha256: c75d567c9186091797b177e9ab3c59752e21ba484f6380e1f98d44fa56bfca47
+    k8_preflight_path: outputs/relation_tube_calibration_subset_k8_20260831/preflight/geometry_preflight.json
+    k8_preflight_sha256: 882b1a011ebe02136cb00e5a973e1fca8796c0d86597e898ec9b10d8a2a894b7
+    k9_preflight_path: outputs/relation_tube_oas_shrinkage_k9_20260831/preflight/oas_preflight.json
+    k9_preflight_sha256: 88db96d3ee3c1f099718b0b7e9cbf056a70453fe600d621a6804a7facf462abd
+audit:
+  sign_tolerance: 0.0000000001
+  axis_probe_score_multiple: 2.25
+  test_evaluated: false
+output_path: outputs/relation_tube_sign_coupling_k10/sign_coupling_audit.json

@@ -1,0 +1,84 @@
+protocol_version: causalverse_spring_correctness_k40_v3
+protocol_document: PROTOCOLS.md
+upstream_protocol: PROTOCOLS.md
+dataset:
+  source_id: causalverse_image
+  split: spring
+  parquet_revision: e2a509570fdbd1e341d22764e5058bac4425007b
+  root: data/causalverse_image/spring_parquet_confirmation_v2
+  shards: [0003.parquet, 0006.parquet, 0009.parquet, 0012.parquet]
+  latent_columns: [h, r, m, k, l]
+  id_column: id
+  view_column: view
+  required_views: [0, 1, 2, 3]
+split:
+  id_permutation_seed: 20260731
+  train_fraction: 0.70
+  validation_fraction: 0.15
+  test_fraction: 0.15
+labels:
+  count: 40
+  id_permutation_seed: 20260732
+  normalization: k40_train_ids_only
+backbone:
+  family: facebook/dinov2-with-registers-base
+  frozen: true
+  feature_dim: 768
+model:
+  hidden_dims: [512, 256]
+  output_dim: 5
+  normalization: layer_norm
+  activation: gelu
+conditions:
+  - point
+  - correct_relation
+  - coefficient_permuted_relation
+  - wrong_lm_to_k_relation
+  - wrong_km_to_l_relation
+relation:
+  correct_equation: l_times_k_equals_c_times_m
+  wrong_equations: [l_times_m_equals_c_times_k, k_times_m_equals_c_times_l]
+  fit: least_squares_through_origin
+  permutation: explicit_id_derangement_cycle_over_seeded_order
+  permutation_seed: 20260733
+  expected_correct_coefficient: 9.81
+  minimum_wrong_train_nrmse: 0.10
+  loss: smooth_l1
+training:
+  seeds: [3407, 42, 0]
+  epochs: 500
+  optimizer: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  full_batch_by_id: true
+  checkpoint_epoch: 500
+loss_weights:
+  view: 1.0
+  variance: 1.0
+  covariance: 0.04
+  point: 1.0
+  relation: 1.0
+  range: 0.001
+  range_zscore_limit: 6.0
+evaluation:
+  identity_metric: relation3_mean_direct_absolute_pearson
+  numerical_metric: relation3_mean_direct_r2
+  error_metric: relation3_normalized_rmse
+  relation_indices: [2, 3, 4]
+  free_indices: [0, 1]
+  bootstrap_repetitions: 5000
+  bootstrap_seed: 20260736
+  minimum_prediction_std_ratio: 0.05
+  required_positive_seed_count: 3
+  required_positive_bootstrap_seed_count: 2
+  soft_mean_correctness_r2_gain: 0.02
+  soft_mean_correctness_pearson_gain: 0.01
+reference_assets:
+  v2_upper_bound: outputs/causalverse_spring_cross_system_confirmation_k40_v2/upper_bound/upper_bound_results.json
+  v2_upper_bound_sha256: 6dca1735d2b22456789aaa0a5415219b54f0426b3dc28466cda9a198e9ea1d15
+runtime:
+  python: artifacts/envs/context_residual_ad/bin/python
+  cublas_workspace_config: ":4096:8"
+  feature_cache: outputs/causalverse_spring_cross_system_confirmation_k40_v2/features_dinov2_registers_base.npz
+  feature_cache_sha256: 0b32e791d55064af1308a24b6431ede3fa71cc23a0f2b4e35ea121ca51974812
+  output_root: outputs/causalverse_spring_correctness_k40_v3

@@ -1,0 +1,65 @@
+protocol_version: partial_anchor_crl_conflict_projected_physics_k80_closed_v18
+dataset:
+  root: data/causal_chamber/lt_crl_benchmark_v1
+  cache_path: outputs/stochastic_measurement_crl_oracle_v1/cache/real_images_uint8.npy
+  experiment_prefix: buchholz_1
+  domain_suffix: ""
+  environments: [obs, red, green, blue, pol_1, pol_2]
+  samples_per_environment: 10000
+  latent_columns: [red, green, blue, pol_1, pol_2]
+split: {train_end: 8000, validation_end: 9000, test_end: 10000}
+model:
+  latent_dim: 5
+  learned_indices: [0, 1, 2]
+  anchor_indices: [3, 4]
+  hidden_channels: 64
+  conv_layers: 2
+initialization:
+  mode: same_seed_random_no_warm
+  expected_state_dict_sha256: 9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56
+  provenance: copied_before_v18_from_seed42_v14_pretraining_base_initial_state_hash
+normalization:
+  rgb_statistics_source: k80_calibration_subset_rgb_full_train_known_angles_v17
+  rgb_statistics_budget: 80
+  subset_sha256: 4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84
+  angle_statistics_source: all_8000_known_sensor_anchors
+  purpose: replicate_closed_rgb_numeric_training_information
+implementation:
+  wrapper_sha256: 18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa
+  core: run_conflict_projected_physics_from_scratch.py
+training:
+  seed: 42
+  shuffle_seed: 20260730
+  epochs: 100
+  batch_size: 512
+  learning_rate: 0.0005
+  scheduler_factor: 0.3
+  scheduler_patience: 3
+  validation_interval: 10
+  targets: [0, 1, 2]
+  kappa: 0.1
+  eta: 0.0001
+  mu: 0.00001
+  conditions: [vanilla_correct_floor, projected_correct_floor, vanilla_permuted_floor, projected_permuted_floor]
+functional_anchor:
+  budget: 80
+  subset_seed: 20260731
+  permutation_seed: 910246
+  pinv_rcond: 0.000001
+  clip_predictions_to_unit_interval: true
+floor_schedule: {hold_weight: 1.0, hold_epochs: 20, decay_end_epoch: 80, nonzero_floor: 0.1}
+projection:
+  target_parameters: embedding_only
+  rule: project_ccrl_to_nonnegative_inner_product_with_physics
+  epsilon: 0.000000000001
+evaluation:
+  graph_threshold: 0.3
+  teacher_ceiling_rgb_correlation: 0.8972192492022203
+  minimum_projected_rgb_mcc: 0.75
+  minimum_gain_over_vanilla_correct: 0.05
+  minimum_gain_over_projected_permuted: 0.20
+  minimum_teacher_gap_fraction_closed: 0.30
+  minimum_post_lock_validation_direct_correlation: 0.75
+  minimum_final_projection_active_fraction: 0.50
+  minimum_oracle_anchor_r2: 0.999
+runtime: {device: cuda, num_threads: 8, output_dir: outputs/partial_anchor_crl_v18/real_seed42}

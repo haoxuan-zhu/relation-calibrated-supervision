@@ -1,0 +1,736 @@
+{
+  "adaptation_metric": "validation CCRL total; lower is better",
+  "config_sha256": "63a3d896f5759377ae3b0aa446f837308616eacd2c39708dbb0da7b4fa527f03",
+  "decision": {
+    "core_tier_tradeoff_seed_count": 2,
+    "exact_four_order_seed_count": 2,
+    "full_vs_rotated_tradeoff_seed_count": 2,
+    "generic_vs_full_tradeoff_seed_count": 3,
+    "per_seed": {
+      "0": {
+        "all_boundaries_active": true,
+        "core_tier_tradeoff": false,
+        "exact_four_order": false,
+        "full_rotated_checks": {
+          "full_ccrl_worse_than_rotated": false,
+          "full_semantic_above_rotated": true
+        },
+        "full_vs_rotated_tradeoff": false,
+        "generic_checks": {
+          "diagonal_ccrl_worse_than_full": true,
+          "diagonal_semantic_above_full": true,
+          "isotropic_ccrl_worse_than_full": true,
+          "isotropic_semantic_above_full": true
+        },
+        "generic_vs_full_tradeoff": true
+      },
+      "3407": {
+        "all_boundaries_active": true,
+        "core_tier_tradeoff": true,
+        "exact_four_order": true,
+        "full_rotated_checks": {
+          "full_ccrl_worse_than_rotated": true,
+          "full_semantic_above_rotated": true
+        },
+        "full_vs_rotated_tradeoff": true,
+        "generic_checks": {
+          "diagonal_ccrl_worse_than_full": true,
+          "diagonal_semantic_above_full": true,
+          "isotropic_ccrl_worse_than_full": true,
+          "isotropic_semantic_above_full": true
+        },
+        "generic_vs_full_tradeoff": true
+      },
+      "42": {
+        "all_boundaries_active": true,
+        "core_tier_tradeoff": true,
+        "exact_four_order": true,
+        "full_rotated_checks": {
+          "full_ccrl_worse_than_rotated": true,
+          "full_semantic_above_rotated": true
+        },
+        "full_vs_rotated_tradeoff": true,
+        "generic_checks": {
+          "diagonal_ccrl_worse_than_full": true,
+          "diagonal_semantic_above_full": true,
+          "isotropic_ccrl_worse_than_full": true,
+          "isotropic_semantic_above_full": true
+        },
+        "generic_vs_full_tradeoff": true
+      }
+    },
+    "test_evaluated": false,
+    "verdict": "generic_vs_full_tradeoff_supported_three_seed_orientation_control_mixed"
+  },
+  "protocol_version": "relation_tube_geometry_tradeoff_k5_aggregate_v1",
+  "seeds": {
+    "0": {
+      "machine_decision": {
+        "ccrl_total_order": [
+          "isotropic",
+          "diagonal",
+          "rotated",
+          "full_anisotropic"
+        ],
+        "checks": {
+          "all_boundaries_active": true,
+          "all_four_nondominated": false,
+          "ccrl_total_order_exact": false,
+          "full_affine_r2_order_exact": true
+        },
+        "full_affine_r2_order": [
+          "diagonal",
+          "isotropic",
+          "full_anisotropic",
+          "rotated"
+        ],
+        "nondominated_geometries": [
+          "full_anisotropic",
+          "diagonal"
+        ],
+        "seed_tradeoff_supported": false,
+        "test_evaluated": false,
+        "verdict": "geometry_tradeoff_not_confirmed_seed"
+      },
+      "path": ".\\outputs\\relation_tube_geometry_tradeoff_k5_seed0\\formal\\geometry_validation_readout.json",
+      "protocol_version": "relation_tube_geometry_tradeoff_k5_v1",
+      "runs": {
+        "diagonal": {
+          "ccrl_validation": {
+            "classifier": 0.22352069155375162,
+            "graph_regularizer": 0.000409365922678262,
+            "mean_regularizer": 0.0022455911866078775,
+            "total": 0.22617564622561137
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.9161169436130772,
+              0.9160933218730051,
+              0.9280192982449177
+            ],
+            "mean_direct_abs_correlation": 0.9200765212436667,
+            "mean_r2": 0.8394253783252816,
+            "mse": 0.2129144963900899,
+            "r2": [
+              0.8369544561987442,
+              0.8298907226980854,
+              0.851430956079015
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8450350288080111,
+              0.9000442454461213,
+              0.890551706368247
+            ],
+            "mean_direct_abs_correlation": 0.8785436602074598,
+            "mean_r2": 0.7049019932746887,
+            "mse": 0.3603810966014862,
+            "r2": [
+              0.545295000076294,
+              0.7818043828010559,
+              0.7876065969467163
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.972,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 0.9421548843383789,
+            "raw_mahalanobis_mean": 112.18090057373047,
+            "raw_mahalanobis_p95": 269.62355499267545,
+            "raw_residual_l2_mean": 3.0002567768096924
+          }
+        },
+        "full_anisotropic": {
+          "ccrl_validation": {
+            "classifier": 0.10242798399925232,
+            "graph_regularizer": 0.0005927715101279318,
+            "mean_regularizer": 0.0037212686662872634,
+            "total": 0.10674202005068462
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8900529988980255,
+              0.917602696427119,
+              0.8991831920613029
+            ],
+            "mean_direct_abs_correlation": 0.9022796291288158,
+            "mean_r2": 0.8081864680869977,
+            "mse": 0.248399388348124,
+            "r2": [
+              0.7904391205745099,
+              0.8349651004666601,
+              0.7991551832198234
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8446379454429009,
+              0.8622479796168493,
+              0.8304607079303217
+            ],
+            "mean_direct_abs_correlation": 0.8457822109966907,
+            "mean_r2": 0.4716978073120117,
+            "mse": 0.6482750773429871,
+            "r2": [
+              0.23479855060577393,
+              0.6443856954574585,
+              0.5359091758728027
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.929,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 1.3312711715698242,
+            "raw_mahalanobis_mean": 256.35015869140625,
+            "raw_mahalanobis_p95": 858.8869750976561,
+            "raw_residual_l2_mean": 5.046928405761719
+          }
+        },
+        "isotropic": {
+          "ccrl_validation": {
+            "classifier": 0.22797470808029174,
+            "graph_regularizer": 0.0004316124541219324,
+            "mean_regularizer": 0.0024086811523884536,
+            "total": 0.2308150074481964
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8932887940497815,
+              0.9130815767732338,
+              0.940072643400279
+            ],
+            "mean_direct_abs_correlation": 0.9154810047410981,
+            "mean_r2": 0.8322767661760926,
+            "mse": 0.21711065272695748,
+            "r2": [
+              0.7953417509193647,
+              0.8279697820791835,
+              0.8735187655297297
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8297843229410987,
+              0.8996032307932692,
+              0.9256852512389119
+            ],
+            "mean_direct_abs_correlation": 0.8850242683244266,
+            "mean_r2": 0.702673614025116,
+            "mse": 0.3537213206291199,
+            "r2": [
+              0.4784787893295288,
+              0.7870221138000488,
+              0.8425199389457703
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.966,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 0.9442868232727051,
+            "raw_mahalanobis_mean": 92.31515502929688,
+            "raw_mahalanobis_p95": 236.61195449829097,
+            "raw_residual_l2_mean": 2.791121006011963
+          }
+        },
+        "rotated": {
+          "ccrl_validation": {
+            "classifier": 0.10789897545178731,
+            "graph_regularizer": 0.0005323267541825771,
+            "mean_regularizer": 0.007090977889796098,
+            "total": 0.11552228224277496
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.849662092666887,
+              0.9193202539324021,
+              0.8090687564828017
+            ],
+            "mean_direct_abs_correlation": 0.8593503676940303,
+            "mean_r2": 0.7360968451012052,
+            "mse": 0.33573188710867613,
+            "r2": [
+              0.7203691553158277,
+              0.8433429709319888,
+              0.6445784090557989
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8168586656625115,
+              0.8925654583828715,
+              0.6748762077738809
+            ],
+            "mean_direct_abs_correlation": 0.7947667772730881,
+            "mean_r2": 0.0705251693725586,
+            "mse": 1.1443445682525635,
+            "r2": [
+              -0.30481064319610596,
+              0.39271485805511475,
+              0.12367129325866699
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.963,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 1.8036437034606934,
+            "raw_mahalanobis_mean": 825.40087890625,
+            "raw_mahalanobis_p95": 3042.505627441405,
+            "raw_residual_l2_mean": 8.605303764343262
+          }
+        }
+      },
+      "sha256": "7754e78235f9460f69cd21c8b93e9c72558fb02c18ea3d0d9480ef5544603931",
+      "test_evaluated": false
+    },
+    "3407": {
+      "machine_decision": {
+        "confirmation_unlocked": false,
+        "full_affine_r2_deltas": {
+          "full_minus_diagonal": -0.04736990301090094,
+          "full_minus_isotropic": -0.04262749149214051,
+          "full_minus_rotated": 0.06641163824815266
+        },
+        "full_best_full_affine_r2": false,
+        "full_best_raw_correlation": false,
+        "raw_correlation_deltas": {
+          "full_minus_diagonal": -0.0368086458179111,
+          "full_minus_isotropic": -0.035088214716185395,
+          "full_minus_rotated": 0.05764616794045763
+        },
+        "test_evaluated": false,
+        "verdict": "generic_isotropic_clipping_sufficient_stop_geometry_claim"
+      },
+      "path": ".\\outputs\\relation_tube_geometry_ablation_k4_seed3407\\formal\\geometry_validation_readout.json",
+      "protocol_version": "relation_tube_geometry_ablation_k4_v1",
+      "runs": {
+        "diagonal": {
+          "ccrl_validation": {
+            "classifier": 0.2419226713180542,
+            "graph_regularizer": 0.0004163512494415045,
+            "mean_regularizer": 0.0012874585855752229,
+            "total": 0.24362648105621337
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.9208941854862599,
+              0.9157171070589629,
+              0.923351904882684
+            ],
+            "mean_direct_abs_correlation": 0.919987732475969,
+            "mean_r2": 0.8396085846038958,
+            "mse": 0.21440073370741553,
+            "r2": [
+              0.8453019340684268,
+              0.8241140652538905,
+              0.84940975448937
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8467888845343706,
+              0.9000191340580221,
+              0.8968292809519097
+            ],
+            "mean_direct_abs_correlation": 0.881212433181434,
+            "mean_r2": 0.7036191821098328,
+            "mse": 0.3604520261287689,
+            "r2": [
+              0.5373358726501465,
+              0.7874610424041748,
+              0.7860605716705322
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.955,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 0.9383788108825684,
+            "raw_mahalanobis_mean": 83.63617706298828,
+            "raw_mahalanobis_p95": 207.82350311279282,
+            "raw_residual_l2_mean": 2.572129964828491
+          }
+        },
+        "full_anisotropic": {
+          "ccrl_validation": {
+            "classifier": 0.11553382825851441,
+            "graph_regularizer": 0.0005480900290422142,
+            "mean_regularizer": 0.0018002921709169943,
+            "total": 0.11788221128781637
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8832082609515179,
+              0.9066352854695431,
+              0.8866371241296558
+            ],
+            "mean_direct_abs_correlation": 0.8921602235169056,
+            "mean_r2": 0.7922386815929948,
+            "mse": 0.2706013499592165,
+            "r2": [
+              0.780000438373077,
+              0.8154539320563119,
+              0.7812616743495958
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8235908443964557,
+              0.870174632589223,
+              0.8394458851048902
+            ],
+            "mean_direct_abs_correlation": 0.844403787363523,
+            "mean_r2": 0.46119895577430725,
+            "mse": 0.6437779664993286,
+            "r2": [
+              0.12334561347961426,
+              0.6783405542373657,
+              0.5819107294082642
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.941,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 1.278997540473938,
+            "raw_mahalanobis_mean": 310.9863586425781,
+            "raw_mahalanobis_p95": 1001.2603393554682,
+            "raw_residual_l2_mean": 5.376654148101807
+          }
+        },
+        "isotropic": {
+          "ccrl_validation": {
+            "classifier": 0.2037314682006836,
+            "graph_regularizer": 0.00043447097414173186,
+            "mean_regularizer": 0.0015156210064888001,
+            "total": 0.205681560754776
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.903446906434506,
+              0.915746766827295,
+              0.9321639609546747
+            ],
+            "mean_direct_abs_correlation": 0.9171192114054918,
+            "mean_r2": 0.8348661730851353,
+            "mse": 0.21602229007665485,
+            "r2": [
+              0.8138991454488034,
+              0.8291090583683818,
+              0.8615903154382207
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8194059640211759,
+              0.9087533342355282,
+              0.9103167079824211
+            ],
+            "mean_direct_abs_correlation": 0.8794920020797083,
+            "mean_r2": 0.6873424649238586,
+            "mse": 0.3715272545814514,
+            "r2": [
+              0.46415698528289795,
+              0.7970620393753052,
+              0.800808310508728
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.968,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 0.9446162581443787,
+            "raw_mahalanobis_mean": 101.16210174560547,
+            "raw_mahalanobis_p95": 222.02825546264646,
+            "raw_residual_l2_mean": 2.9636220932006836
+          }
+        },
+        "rotated": {
+          "ccrl_validation": {
+            "classifier": 0.08852651222546895,
+            "graph_regularizer": 0.000530369346961379,
+            "mean_regularizer": 0.017040228610237438,
+            "total": 0.10609710896015168
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8405889507594733,
+              0.919284820793014,
+              0.7966548185324688
+            ],
+            "mean_direct_abs_correlation": 0.8521761966949853,
+            "mean_r2": 0.7258270433448422,
+            "mse": 0.34783552824341746,
+            "r2": [
+              0.7057632877928117,
+              0.8416533957406089,
+              0.6300644465011059
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.7917006844984805,
+              0.9032258447610965,
+              0.6653463290096189
+            ],
+            "mean_direct_abs_correlation": 0.7867576194230653,
+            "mean_r2": 0.06941100209951401,
+            "mse": 1.14383864402771,
+            "r2": [
+              -0.321028470993042,
+              0.39073026180267334,
+              0.13853120803833008
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.956,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 1.803758978843689,
+            "raw_mahalanobis_mean": 601.6077270507812,
+            "raw_mahalanobis_p95": 2327.4187011718745,
+            "raw_residual_l2_mean": 7.317371368408203
+          }
+        }
+      },
+      "sha256": "048509bed8a66590b1ce56358a8b761be68dced903211f753e175439876e2bf0",
+      "test_evaluated": false
+    },
+    "42": {
+      "machine_decision": {
+        "ccrl_total_order": [
+          "diagonal",
+          "isotropic",
+          "full_anisotropic",
+          "rotated"
+        ],
+        "checks": {
+          "all_boundaries_active": true,
+          "all_four_nondominated": true,
+          "ccrl_total_order_exact": true,
+          "full_affine_r2_order_exact": true
+        },
+        "full_affine_r2_order": [
+          "diagonal",
+          "isotropic",
+          "full_anisotropic",
+          "rotated"
+        ],
+        "nondominated_geometries": [
+          "full_anisotropic",
+          "diagonal",
+          "isotropic",
+          "rotated"
+        ],
+        "seed_tradeoff_supported": true,
+        "test_evaluated": false,
+        "verdict": "geometry_tradeoff_confirmed_seed"
+      },
+      "path": ".\\outputs\\relation_tube_geometry_tradeoff_k5_seed42\\formal\\geometry_validation_readout.json",
+      "protocol_version": "relation_tube_geometry_tradeoff_k5_v1",
+      "runs": {
+        "diagonal": {
+          "ccrl_validation": {
+            "classifier": 0.21740355968475342,
+            "graph_regularizer": 0.0003961780166719109,
+            "mean_regularizer": 0.002452730263893803,
+            "total": 0.22025247025489808
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.9137395924929387,
+              0.9188336251464545,
+              0.9270075407515423
+            ],
+            "mean_direct_abs_correlation": 0.9198602527969785,
+            "mean_r2": 0.8403890303106172,
+            "mse": 0.2100755110834422,
+            "r2": [
+              0.8325759057029902,
+              0.8389906742724124,
+              0.849600510956449
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8418191712766873,
+              0.903035728809984,
+              0.889206078262867
+            ],
+            "mean_direct_abs_correlation": 0.8780203261165127,
+            "mean_r2": 0.6992948055267334,
+            "mse": 0.36228254437446594,
+            "r2": [
+              0.5186834335327148,
+              0.801917552947998,
+              0.7772834300994873
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.991,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 0.945461094379425,
+            "raw_mahalanobis_mean": 152.83322143554688,
+            "raw_mahalanobis_p95": 372.1197341918945,
+            "raw_residual_l2_mean": 3.4805796146392822
+          }
+        },
+        "full_anisotropic": {
+          "ccrl_validation": {
+            "classifier": 0.10330182790756226,
+            "graph_regularizer": 0.0005675984430126846,
+            "mean_regularizer": 0.0024330879189074037,
+            "total": 0.10630251697699229
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8888415505198429,
+              0.9121626333914804,
+              0.8909466953336853
+            ],
+            "mean_direct_abs_correlation": 0.8973169597483363,
+            "mean_r2": 0.8031361148273488,
+            "mse": 0.2556401632470955,
+            "r2": [
+              0.7889580769766558,
+              0.8291764186919,
+              0.7912738488134909
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.843698070136605,
+              0.8657305120087612,
+              0.8334796775019597
+            ],
+            "mean_direct_abs_correlation": 0.8476360865491085,
+            "mean_r2": 0.48396405577659607,
+            "mse": 0.6292661428451538,
+            "r2": [
+              0.22941583395004272,
+              0.660328209400177,
+              0.5621480941772461
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.904,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 1.2996679544448853,
+            "raw_mahalanobis_mean": 188.39662170410156,
+            "raw_mahalanobis_p95": 513.9868347167968,
+            "raw_residual_l2_mean": 4.282398223876953
+          }
+        },
+        "isotropic": {
+          "ccrl_validation": {
+            "classifier": 0.20536418557167052,
+            "graph_regularizer": 0.00041905720718204975,
+            "mean_regularizer": 0.0022109127870450418,
+            "total": 0.2079941520690918
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.9016262403987887,
+              0.9163470929629789,
+              0.9337888911321796
+            ],
+            "mean_direct_abs_correlation": 0.9172540748313157,
+            "mean_r2": 0.8340249833295524,
+            "mse": 0.21659374984339802,
+            "r2": [
+              0.8111933290754277,
+              0.8310521982265326,
+              0.8598294226866973
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.8203631825682131,
+              0.9064792311760947,
+              0.9171234825610807
+            ],
+            "mean_direct_abs_correlation": 0.8813219654351294,
+            "mean_r2": 0.6968868374824524,
+            "mse": 0.35751309990882874,
+            "r2": [
+              0.46059370040893555,
+              0.8027248978614807,
+              0.8273419141769409
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.978,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 0.9481012225151062,
+            "raw_mahalanobis_mean": 104.9679183959961,
+            "raw_mahalanobis_p95": 282.4643157958984,
+            "raw_residual_l2_mean": 2.963355541229248
+          }
+        },
+        "rotated": {
+          "ccrl_validation": {
+            "classifier": 0.06106440891822179,
+            "graph_regularizer": 0.00048555174726061523,
+            "mean_regularizer": 0.003669150477896134,
+            "total": 0.06521911082665126
+          },
+          "full_affine": {
+            "direct_abs_correlation": [
+              0.8508769168564609,
+              0.9311460300764204,
+              0.867894273495811
+            ],
+            "mean_direct_abs_correlation": 0.8833057401428975,
+            "mean_r2": 0.778762435569574,
+            "mse": 0.27599992269030166,
+            "r2": [
+              0.7228977627312282,
+              0.8648676182732866,
+              0.7485219257042073
+            ]
+          },
+          "raw": {
+            "direct_abs_correlation": [
+              0.7747219003859451,
+              0.9150391643283855,
+              0.71366691711923
+            ],
+            "mean_direct_abs_correlation": 0.801142660611187,
+            "mean_r2": -0.08143196254968643,
+            "mse": 1.3562283515930176,
+            "r2": [
+              -0.3094441890716553,
+              0.33025604486465454,
+              -0.26510775089263916
+            ]
+          },
+          "representation_audit": {
+            "boundary_active_fraction": 0.952,
+            "center_l2_mean": 1.6987457275390625,
+            "finite": true,
+            "projected_residual_l2_mean": 1.9705259799957275,
+            "raw_mahalanobis_mean": 891.5023803710938,
+            "raw_mahalanobis_p95": 3031.3258789062484,
+            "raw_residual_l2_mean": 9.75232219696045
+          }
+        }
+      },
+      "sha256": "cb893fa27652978231c616eac7e7e92c5c2ce5d9485b3bc354ce4c390424c8a3",
+      "test_evaluated": false
+    }
+  },
+  "semantic_metric": "validation full-affine mean R2; higher is better",
+  "source_files_sha256": {
+    "aggregate_relation_tube_geometry_tradeoff_k5.py": "52c821787e950102b56fa1b261d07a4882f605168fdcc3cc3aacf1b374f798ea",
+    "run_diagnostic.py": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+    "run_physics_functional_anchor_training.py": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e"
+  },
+  "test_evaluated": false
+}

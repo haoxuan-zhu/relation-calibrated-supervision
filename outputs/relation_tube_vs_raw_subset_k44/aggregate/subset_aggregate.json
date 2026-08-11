@@ -1,0 +1,122 @@
+{
+  "cells": [
+    {
+      "delta": {
+        "mean_direct_abs_correlation": 0.14079746788746328,
+        "mean_r2": 0.4717370867729187
+      },
+      "paired_bootstrap": {
+        "confidence": 0.95,
+        "mean_direct_abs_correlation": {
+          "lower": 0.12753789801985652,
+          "mean": 0.1407915913934607,
+          "upper": 0.1544289791749699
+        },
+        "mean_r2": {
+          "lower": 0.4272610865738143,
+          "mean": 0.47338435159736153,
+          "upper": 0.5223792417972434
+        },
+        "repetitions": 10000,
+        "seed": 2026081101
+      },
+      "readout_path": "outputs/relation_tube_vs_raw_subset_k44/subset20260811/formal/paired_validation_readout.json",
+      "readout_sha256": "687c37fda3edc5074accaa31fab6a7cd48287150984265a461a3c6356a3512d9",
+      "subset_seed": 20260811
+    },
+    {
+      "delta": {
+        "mean_direct_abs_correlation": 0.10856609260732064,
+        "mean_r2": 0.38553887605667114
+      },
+      "paired_bootstrap": {
+        "confidence": 0.95,
+        "mean_direct_abs_correlation": {
+          "lower": 0.0961646731054004,
+          "mean": 0.10863527673422686,
+          "upper": 0.12031513501039769
+        },
+        "mean_r2": {
+          "lower": 0.34134626588428585,
+          "mean": 0.38696350369795707,
+          "upper": 0.4337520413979414
+        },
+        "repetitions": 10000,
+        "seed": 2026081102
+      },
+      "readout_path": "outputs/relation_tube_vs_raw_subset_k44/subset20260821/formal/paired_validation_readout.json",
+      "readout_sha256": "44d59f72240d0f12b713254044137ab59860cf6b32c79c6543120edf3127f921",
+      "subset_seed": 20260821
+    },
+    {
+      "delta": {
+        "mean_direct_abs_correlation": 0.16603441543647424,
+        "mean_r2": 0.511115700006485
+      },
+      "paired_bootstrap": {
+        "confidence": 0.95,
+        "mean_direct_abs_correlation": {
+          "lower": 0.15084834463667154,
+          "mean": 0.16598715720711865,
+          "upper": 0.1812421517360134
+        },
+        "mean_r2": {
+          "lower": 0.4647048347995332,
+          "mean": 0.5124317468166367,
+          "upper": 0.5644679196811205
+        },
+        "repetitions": 10000,
+        "seed": 2026081103
+      },
+      "readout_path": "outputs/relation_tube_vs_raw_subset_k44/subset20260831/formal/paired_validation_readout.json",
+      "readout_sha256": "f2b135815ffb7a3c19e83c4f6c60ecf84e635bad31ca3bf51d42288a95c777f9",
+      "subset_seed": 20260831
+    }
+  ],
+  "config_sha256": "9e05467e55602eca71f1e36524239c797ca8482016d1eae6f77bbe7c304c64b7",
+  "decision": {
+    "all_three_subsets_both_primary_metrics_positive": true,
+    "bootstrap_lower_positive_counts": {
+      "mean_direct_abs_correlation": 3,
+      "mean_r2": 3
+    },
+    "both_primary_metric_means_positive": true,
+    "mean_deltas": {
+      "mean_direct_abs_correlation": 0.13846599197708606,
+      "mean_r2": 0.4561305542786916
+    },
+    "positive_counts": {
+      "mean_direct_abs_correlation": 3,
+      "mean_r2": 3
+    },
+    "verdict": "subset_stability_supported"
+  },
+  "mode": "three_subset_validation_only_aggregate",
+  "protocol_version": "relation_tube_vs_raw_subset_k44_v1",
+  "semantic_validation_evaluated": true,
+  "source_files_sha256": {
+    "audit_calibrated_relation_tube_gauge_k1.py": "83b95c0b111fd587b48d791bddef61dacb5676458c18ed3bfbfd62eab632f8c6",
+    "audit_physics_functional_anchor.py": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2",
+    "audit_relation_tube_geometry_downstream_k6.py": "f1209618eb78bb6b929d1019d66ef4b64c14a5816cb1906506ab5a50e76cc137",
+    "raw_ridge_propagation.py": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d",
+    "run_calibrated_relation_tube_k0.py": "1a4b1b8bdf5655043578165b03cccf43756ca08120da884f880d3e6cf1bdc615",
+    "run_clamped_anchor_diagnostic.py": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de",
+    "run_conditioned_film_diagnostic.py": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e",
+    "run_conflict_projected_physics_from_scratch.py": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df",
+    "run_conflict_projected_physics_k80_closed.py": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa",
+    "run_conflict_projected_physics_training.py": "038d6e407517dffa51df8277649c8c4f3017ed62db940de72aa36f87aa2c53e2",
+    "run_diagnostic.py": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac",
+    "run_dynamic_residual_propagation_k0.py": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1",
+    "run_empirical_function_control_k80.py": "47129c1fa316adc8121b712e54fba7ac45528083ed52ba0709e6acb6c21cf6e4",
+    "run_matched_point_control_k80.py": "15367bb35cd7c4893c71774313dde12051a570b4154a2c906ce7f569fd889633",
+    "run_physics_functional_anchor_training.py": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e",
+    "run_relation_budget_condition.py": "35b32aa4fb2a988bd34291b4cad6e158e6e124515f2206ad4b82f264ac3bd5a0",
+    "run_relation_tube_calibration_subset_k8.py": "512c38a3650afa4baa95578e98c40fcda2a2ec4e3e2b9f25fc4a5927b0a5515a",
+    "run_relation_tube_geometry_ablation_k4.py": "7fbdb468a2ca0d48990979bd3627cfa459a8ae37507554426c0273cfbcc45356",
+    "run_relation_tube_vs_raw_subset_k44.py": "b7a0a6ac92b29d264f849354fef98fb5f2c3d3981c35f10189b467a77c65bab1",
+    "run_raw_ridge_propagation_condition.py": "469703b79f643b33910b491a2b5ecbf0e969f68dd253aa52cc256b95ed5b5684",
+    "run_raw_ridge_propagation_subset_robustness.py": "17b9408c0e948fc92e526a4725ef12b214f283cf27694d57708503ba867f3a43",
+    "run_supervised_continuation_diagnostic.py": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757"
+  },
+  "test_evaluated": false
+}

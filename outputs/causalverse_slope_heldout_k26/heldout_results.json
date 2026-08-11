@@ -1,0 +1,824 @@
+{
+  "deltas_by_seed": {
+    "0": {
+      "correct_minus_all_coordinate_manifold_projection": {
+        "free3_correlation": 0.006954869888442183,
+        "relation4_correlation": 0.007967748619534532,
+        "relation4_r2": 0.020918168390077096
+      },
+      "correct_minus_coefficient_permuted_relation": {
+        "free3_correlation": 0.028904506019149512,
+        "relation4_correlation": 0.14027741422239626,
+        "relation4_r2": 0.2732571319409193
+      },
+      "correct_minus_point": {
+        "free3_correlation": 0.023168984157624806,
+        "relation4_correlation": 0.11310935035033765,
+        "relation4_r2": 0.2381641345634129
+      }
+    },
+    "3407": {
+      "correct_minus_all_coordinate_manifold_projection": {
+        "free3_correlation": 0.003683310497567538,
+        "relation4_correlation": 0.008037635575155577,
+        "relation4_r2": 0.018474070075190085
+      },
+      "correct_minus_coefficient_permuted_relation": {
+        "free3_correlation": 0.0768524483619174,
+        "relation4_correlation": 0.19020633439845347,
+        "relation4_r2": 0.3818120600897894
+      },
+      "correct_minus_point": {
+        "free3_correlation": 0.046035474549933175,
+        "relation4_correlation": 0.14614020307390396,
+        "relation4_r2": 0.3110740137754461
+      }
+    },
+    "42": {
+      "correct_minus_all_coordinate_manifold_projection": {
+        "free3_correlation": 0.0022137443818682767,
+        "relation4_correlation": 0.007643574385257645,
+        "relation4_r2": 0.016018450905459503
+      },
+      "correct_minus_coefficient_permuted_relation": {
+        "free3_correlation": 0.08280579795808607,
+        "relation4_correlation": 0.19504135267791833,
+        "relation4_r2": 0.40074368630484414
+      },
+      "correct_minus_point": {
+        "free3_correlation": 0.017919075973748977,
+        "relation4_correlation": 0.14221089815127586,
+        "relation4_r2": 0.29486935398709757
+      }
+    }
+  },
+  "evaluator_sha256": "89dfb64f38680a2beecb0ebe6f0e9344a15a3e43018775da317f5632d7108537",
+  "fact_type": "one_time_slope_heldout_confirmation",
+  "heldout_id_count": 353,
+  "heldout_ids_sha256": "797f4ce8ff4a1224d62eba06bf67ddb9eb2c8c27ac5ffcab15060351f20b3a53",
+  "machine_decision": "heldout_relation_content_and_projection_confirmed",
+  "metrics_by_seed": {
+    "0": {
+      "all_coordinate_manifold_projection": {
+        "direct_abs_correlation": [
+          0.9904523261699822,
+          0.9419923878184769,
+          0.989073267634563,
+          0.9904523261699808,
+          0.9904523261699825,
+          0.9379339064149385,
+          0.9673979589953634
+        ],
+        "direct_r2": [
+          0.9750724361817105,
+          0.882689651799048,
+          0.9676557134321873,
+          0.9750724361817106,
+          0.9750724361817106,
+          0.8472043646350774,
+          0.9326360627248589
+        ],
+        "hungarian_mcc": 0.9725363570533269,
+        "linear_block_r2": 0.9236817760809339,
+        "mean_direct_abs_correlation_all7": 0.9725363570533269,
+        "mean_direct_abs_correlation_free3": 0.9738393272076742,
+        "mean_direct_abs_correlation_relation4": 0.9715591294375663,
+        "mean_direct_r2_all7": 0.9364861573051861,
+        "mean_direct_r2_free3": 0.9418059338043152,
+        "mean_direct_r2_relation4": 0.9324963249308393,
+        "prediction_std": [
+          0.31315286382553814,
+          14.152782135533522,
+          2.854458970831586,
+          0.2818375774429843,
+          0.156576431912769,
+          0.3490276393419955,
+          0.23963793542074685
+        ]
+      },
+      "coefficient_permuted_relation": {
+        "direct_abs_correlation": [
+          0.9818347908064462,
+          0.9704605486342242,
+          0.9033737337902304,
+          0.8626897259285289,
+          0.6524773157935702,
+          0.9038081299900057,
+          0.9380226836267135
+        ],
+        "direct_r2": [
+          0.9470634687064665,
+          0.937593406481499,
+          0.7448399929714233,
+          0.6636784123723505,
+          0.38689539686577834,
+          0.7955826035771892,
+          0.8744730327046707
+        ],
+        "hungarian_mcc": 0.8875238469385314,
+        "linear_block_r2": 0.9763406874351137,
+        "mean_direct_abs_correlation_all7": 0.8875238469385314,
+        "mean_direct_abs_correlation_free3": 0.9518896910769669,
+        "mean_direct_abs_correlation_relation4": 0.8392494638347046,
+        "mean_direct_r2_all7": 0.764303759097054,
+        "mean_direct_r2_free3": 0.8764989560531297,
+        "mean_direct_r2_relation4": 0.6801573613799972,
+        "prediction_std": [
+          0.35202058119161866,
+          13.99199509413861,
+          3.4218261451571714,
+          0.33268968193982457,
+          0.11702055972736698,
+          0.332071559249139,
+          0.2650340530597912
+        ]
+      },
+      "correct_relation": {
+        "direct_abs_correlation": [
+          0.9907211075285074,
+          0.959981717040229,
+          0.9916797667196129,
+          0.9911287964861675,
+          0.9900570817305098,
+          0.9621701526169568,
+          0.9747514813947693
+        ],
+        "direct_r2": [
+          0.9749148506431152,
+          0.9156524372535161,
+          0.9793978852208691,
+          0.9754496661153467,
+          0.9739708631254244,
+          0.9161056080780555,
+          0.9481318359648393
+        ],
+        "hungarian_mcc": 0.9800700147881075,
+        "linear_block_r2": 0.9634597618708255,
+        "mean_direct_abs_correlation_all7": 0.9800700147881075,
+        "mean_direct_abs_correlation_free3": 0.9807941970961164,
+        "mean_direct_abs_correlation_relation4": 0.9795268780571008,
+        "mean_direct_r2_all7": 0.9548033066287381,
+        "mean_direct_r2_free3": 0.9566550577058335,
+        "mean_direct_r2_relation4": 0.9534144933209164,
+        "prediction_std": [
+          0.34605762304938137,
+          14.444479419050241,
+          3.1546171429754395,
+          0.309361898140123,
+          0.17184834287311404,
+          0.35779366940277313,
+          0.2638703927147682
+        ]
+      },
+      "free_variable_substitution": {
+        "direct_abs_correlation": [
+          0.9687931226330804,
+          0.9799328665941711,
+          0.9241496495882232,
+          0.9687931226330799,
+          0.9687931226330802,
+          0.5448532737446461,
+          0.8121181138522078
+        ],
+        "direct_r2": [
+          0.9076759059562423,
+          0.9601759195769961,
+          0.8405045331157646,
+          0.9076759059562429,
+          0.9076759059562429,
+          -21.298649677778524,
+          -2.8101382155401247
+        ],
+        "hungarian_mcc": 0.8810618959540698,
+        "linear_block_r2": 0.9770222358256406,
+        "mean_direct_abs_correlation_all7": 0.8810618959540698,
+        "mean_direct_abs_correlation_free3": 0.9576252129384916,
+        "mean_direct_abs_correlation_relation4": 0.8236394082157534,
+        "mean_direct_r2_all7": -2.7978685318224517,
+        "mean_direct_r2_free3": 0.902785452883001,
+        "mean_direct_r2_relation4": -5.573359020351541,
+        "prediction_std": [
+          0.358620591678028,
+          13.787807603436264,
+          3.1233711973770584,
+          0.32275853251022535,
+          0.17931029583901392,
+          2.067907622377916,
+          0.7004516778089587
+        ]
+      },
+      "point": {
+        "direct_abs_correlation": [
+          0.9687931226330804,
+          0.9799328665941711,
+          0.9241496495882232,
+          0.9271416603997805,
+          0.9642990910267736,
+          0.7901165157420125,
+          0.784112843658486
+        ],
+        "direct_r2": [
+          0.9076759059562423,
+          0.9601759195769961,
+          0.8405045331157646,
+          0.8247986810991124,
+          0.9081768159891216,
+          0.5896355759396819,
+          0.5383903620020987
+        ],
+        "hungarian_mcc": 0.9055065356632183,
+        "linear_block_r2": 0.980385102851985,
+        "mean_direct_abs_correlation_all7": 0.9055065356632183,
+        "mean_direct_abs_correlation_free3": 0.9576252129384916,
+        "mean_direct_abs_correlation_relation4": 0.8664175277067632,
+        "mean_direct_r2_all7": 0.7956225419541454,
+        "mean_direct_r2_free3": 0.902785452883001,
+        "mean_direct_r2_relation4": 0.7152503587575035,
+        "prediction_std": [
+          0.358620591678028,
+          13.787807603436264,
+          3.1233711973770584,
+          0.3061019829314215,
+          0.17599877516653853,
+          0.3461408604915012,
+          0.2779702154574264
+        ]
+      }
+    },
+    "3407": {
+      "all_coordinate_manifold_projection": {
+        "direct_abs_correlation": [
+          0.9923758793796597,
+          0.9383964451389731,
+          0.9910104362794528,
+          0.992375879379659,
+          0.9923758793796588,
+          0.9374336497123064,
+          0.9628563986749515
+        ],
+        "direct_r2": [
+          0.972436222698239,
+          0.8744538171999894,
+          0.9633783740296525,
+          0.9724362226982391,
+          0.9724362226982391,
+          0.8536442237251095,
+          0.9232438745656644
+        ],
+        "hungarian_mcc": 0.9724035097063801,
+        "linear_block_r2": 0.9242601282591201,
+        "mean_direct_abs_correlation_all7": 0.9724035097063801,
+        "mean_direct_abs_correlation_free3": 0.9739275869326952,
+        "mean_direct_abs_correlation_relation4": 0.971260451786644,
+        "mean_direct_r2_all7": 0.9331469939450191,
+        "mean_direct_r2_free3": 0.9367561379759604,
+        "mean_direct_r2_relation4": 0.9304401359218131,
+        "prediction_std": [
+          0.2905026806660119,
+          14.203716525410806,
+          2.653267672470744,
+          0.26145241259941077,
+          0.14525134033300593,
+          0.35434480543681995,
+          0.23850858147394374
+        ]
+      },
+      "coefficient_permuted_relation": {
+        "direct_abs_correlation": [
+          0.9152524390884124,
+          0.9645696041629584,
+          0.8224533039536652,
+          0.7609635597243938,
+          0.6081491987602653,
+          0.838620066462616,
+          0.9486341869061096
+        ],
+        "direct_r2": [
+          0.8180634642401508,
+          0.9300308125540456,
+          0.4619497333395759,
+          0.41651501921838974,
+          0.2987747877304924,
+          0.6588514271937183,
+          0.8942673494862549
+        ],
+        "hungarian_mcc": 0.8369489084369175,
+        "linear_block_r2": 0.980228020735086,
+        "mean_direct_abs_correlation_all7": 0.8369489084369173,
+        "mean_direct_abs_correlation_free3": 0.9007584490683453,
+        "mean_direct_abs_correlation_relation4": 0.7890917529633461,
+        "mean_direct_r2_all7": 0.6397789419660896,
+        "mean_direct_r2_free3": 0.7366813367112575,
+        "mean_direct_r2_relation4": 0.5671021459072138,
+        "prediction_std": [
+          0.3283229620014461,
+          13.777588971808438,
+          3.616846894053166,
+          0.3384312250325824,
+          0.14053377469963044,
+          0.3154830268200457,
+          0.25247093173180435
+        ]
+      },
+      "correct_relation": {
+        "direct_abs_correlation": [
+          0.9898433020232614,
+          0.9524874800423597,
+          0.990501910225167,
+          0.9901017340091235,
+          0.9898121164509882,
+          0.9631226294606875,
+          0.9741558695263988
+        ],
+        "direct_r2": [
+          0.9693318408006659,
+          0.9064440494329942,
+          0.971954683297225,
+          0.9694082242585124,
+          0.9674900248248657,
+          0.9143329142116879,
+          0.9444256606929465
+        ],
+        "hungarian_mcc": 0.9785750059625696,
+        "linear_block_r2": 0.9633650390066615,
+        "mean_direct_abs_correlation_all7": 0.9785750059625694,
+        "mean_direct_abs_correlation_free3": 0.9776108974302627,
+        "mean_direct_abs_correlation_relation4": 0.9792980873617996,
+        "mean_direct_r2_all7": 0.9490553425026996,
+        "mean_direct_r2_free3": 0.9492435245102951,
+        "mean_direct_r2_relation4": 0.9489142059970032,
+        "prediction_std": [
+          0.34242905830002945,
+          13.585842726406828,
+          3.2268310921376777,
+          0.3153521806565505,
+          0.17641542685860714,
+          0.34955683379819424,
+          0.26080158460606195
+        ]
+      },
+      "free_variable_substitution": {
+        "direct_abs_correlation": [
+          0.9857362224424262,
+          0.964444172468354,
+          0.8445458737302087,
+          0.9857362224424261,
+          0.9857362224424262,
+          0.3285921015781946,
+          0.6500800595723204
+        ],
+        "direct_r2": [
+          0.9632659383726934,
+          0.9204578119317476,
+          0.6948367969803007,
+          0.9632659383726936,
+          0.9632659383726935,
+          -23.223414017833402,
+          -12.192305493393368
+        ],
+        "hungarian_mcc": 0.8206958392394794,
+        "linear_block_r2": 0.9739677261313602,
+        "mean_direct_abs_correlation_all7": 0.8206958392394794,
+        "mean_direct_abs_correlation_free3": 0.9315754228803296,
+        "mean_direct_abs_correlation_relation4": 0.7375361515088419,
+        "mean_direct_r2_all7": -4.415803869599521,
+        "mean_direct_r2_free3": 0.8595201824282471,
+        "mean_direct_r2_relation4": -8.372296908620346,
+        "prediction_std": [
+          0.35049357484106747,
+          14.256974879422398,
+          2.96008497059504,
+          0.3154442173569603,
+          0.17524678742053365,
+          2.1206832097647013,
+          1.0290969586067265
+        ]
+      },
+      "point": {
+        "direct_abs_correlation": [
+          0.9857362224424262,
+          0.964444172468354,
+          0.8445458737302087,
+          0.8793854329469171,
+          0.9488191294310805,
+          0.7735723664978489,
+          0.7308546082757358
+        ],
+        "direct_r2": [
+          0.9632659383726934,
+          0.9204578119317476,
+          0.6948367969803007,
+          0.7350665081190886,
+          0.8835372289564325,
+          0.5485111658372279,
+          0.38424586597347976
+        ],
+        "hungarian_mcc": 0.8753368293989388,
+        "linear_block_r2": 0.9779335315173523,
+        "mean_direct_abs_correlation_all7": 0.8753368293989386,
+        "mean_direct_abs_correlation_free3": 0.9315754228803296,
+        "mean_direct_abs_correlation_relation4": 0.8331578842878956,
+        "mean_direct_r2_all7": 0.7328459023101386,
+        "mean_direct_r2_free3": 0.8595201824282471,
+        "mean_direct_r2_relation4": 0.6378401922215571,
+        "prediction_std": [
+          0.35049357484106747,
+          14.256974879422398,
+          2.96008497059504,
+          0.29671715747797783,
+          0.17159664622946708,
+          0.35490872955802066,
+          0.29189246023522725
+        ]
+      }
+    },
+    "42": {
+      "all_coordinate_manifold_projection": {
+        "direct_abs_correlation": [
+          0.9922833734301038,
+          0.938303790459467,
+          0.9906814347948772,
+          0.9922833734301035,
+          0.9922833734301035,
+          0.9227234634517881,
+          0.969548269980092
+        ],
+        "direct_r2": [
+          0.9772662480961286,
+          0.8643893263209821,
+          0.9682612930724807,
+          0.9772662480961286,
+          0.9772662480961286,
+          0.8249501084690979,
+          0.9278901670832904
+        ],
+        "hungarian_mcc": 0.9711581541395052,
+        "linear_block_r2": 0.9269360946087776,
+        "mean_direct_abs_correlation_all7": 0.971158154139505,
+        "mean_direct_abs_correlation_free3": 0.9737561995614827,
+        "mean_direct_abs_correlation_relation4": 0.9692096200730218,
+        "mean_direct_r2_all7": 0.9310413770334625,
+        "mean_direct_r2_free3": 0.9366389558298637,
+        "mean_direct_r2_relation4": 0.9268431929361614,
+        "prediction_std": [
+          0.3019537886245236,
+          13.250769021594087,
+          2.7440847276930325,
+          0.2717584097620711,
+          0.15097689431226174,
+          0.33988563619007384,
+          0.2330938825632111
+        ]
+      },
+      "coefficient_permuted_relation": {
+        "direct_abs_correlation": [
+          0.9159758111903005,
+          0.9440170753692351,
+          0.8194995513962591,
+          0.7847437185405275,
+          0.5926331888592667,
+          0.7965707360511018,
+          0.9532997236705482
+        ],
+        "direct_r2": [
+          0.7890249876798525,
+          0.890719640256039,
+          0.44582790323246846,
+          0.3837789382355732,
+          0.2581323833769419,
+          0.6194405139864793,
+          0.9071199945481124
+        ],
+        "hungarian_mcc": 0.8295342578681771,
+        "linear_block_r2": 0.9805388305565345,
+        "mean_direct_abs_correlation_all7": 0.829534257868177,
+        "mean_direct_abs_correlation_free3": 0.893164145985265,
+        "mean_direct_abs_correlation_relation4": 0.7818118417803611,
+        "mean_direct_r2_all7": 0.6134349087593524,
+        "mean_direct_r2_free3": 0.70852417705612,
+        "mean_direct_r2_relation4": 0.5421179575367767,
+        "prediction_std": [
+          0.33765103753876774,
+          13.494989154023651,
+          3.672681268718421,
+          0.3657012511491385,
+          0.14186683997394484,
+          0.32725969041881353,
+          0.2561873480704531
+        ]
+      },
+      "correct_relation": {
+        "direct_abs_correlation": [
+          0.9896267674539846,
+          0.9480225728935175,
+          0.9902604914825508,
+          0.9895730174089835,
+          0.9896484958570487,
+          0.957977432215865,
+          0.9702138323512205
+        ],
+        "direct_r2": [
+          0.9718186951358386,
+          0.8975582871403004,
+          0.9751326390458137,
+          0.9693320914994189,
+          0.9692007541121465,
+          0.8959179011359727,
+          0.9369958286189457
+        ],
+        "hungarian_mcc": 0.9764746585233102,
+        "linear_block_r2": 0.9565607128279313,
+        "mean_direct_abs_correlation_all7": 0.9764746585233102,
+        "mean_direct_abs_correlation_free3": 0.975969943943351,
+        "mean_direct_abs_correlation_relation4": 0.9768531944582795,
+        "mean_direct_r2_all7": 0.9451365995269194,
+        "mean_direct_r2_free3": 0.9481698737739842,
+        "mean_direct_r2_relation4": 0.9428616438416209,
+        "prediction_std": [
+          0.3483547837280525,
+          13.731924374858464,
+          3.1667899688851806,
+          0.3174532013137609,
+          0.17540022616236378,
+          0.349514903446773,
+          0.2694084528147052
+        ]
+      },
+      "free_variable_substitution": {
+        "direct_abs_correlation": [
+          0.9857293180120547,
+          0.9694975214449346,
+          0.9189257644518166,
+          0.9857293180120539,
+          0.985729318012054,
+          0.5840834201365831,
+          0.813647771980438
+        ],
+        "direct_r2": [
+          0.9673057877428719,
+          0.9374252691576543,
+          0.827915289054127,
+          0.967305787742872,
+          0.9673057877428721,
+          -14.266382341375886,
+          -2.6461332930748966
+        ],
+        "hungarian_mcc": 0.8919060617214194,
+        "linear_block_r2": 0.9713718901747771,
+        "mean_direct_abs_correlation_all7": 0.8919060617214194,
+        "mean_direct_abs_correlation_free3": 0.958050867969602,
+        "mean_direct_abs_correlation_relation4": 0.8422974570352821,
+        "mean_direct_r2_all7": -1.749322530430055,
+        "mean_direct_r2_free3": 0.9108821153182177,
+        "mean_direct_r2_relation4": -3.7444760147412595,
+        "prediction_std": [
+          0.34054827069408633,
+          13.37979529946799,
+          3.1646668583212065,
+          0.3064934436246775,
+          0.17027413534704308,
+          1.7978130357735178,
+          0.6817498148536107
+        ]
+      },
+      "point": {
+        "direct_abs_correlation": [
+          0.9857293180120547,
+          0.9694975214449346,
+          0.9189257644518166,
+          0.8902772095595973,
+          0.9803252289551897,
+          0.7129494596384188,
+          0.7550172870748084
+        ],
+        "direct_r2": [
+          0.9673057877428719,
+          0.9374252691576543,
+          0.827915289054127,
+          0.7657893903370276,
+          0.9525533794139421,
+          0.448628000563169,
+          0.4249983891039545
+        ],
+        "hungarian_mcc": 0.8875316841624029,
+        "linear_block_r2": 0.9823206146928235,
+        "mean_direct_abs_correlation_all7": 0.8875316841624029,
+        "mean_direct_abs_correlation_free3": 0.958050867969602,
+        "mean_direct_abs_correlation_relation4": 0.8346422963070036,
+        "mean_direct_r2_all7": 0.7606593579103924,
+        "mean_direct_r2_free3": 0.9108821153182177,
+        "mean_direct_r2_relation4": 0.6479922898545233,
+        "prediction_std": [
+          0.34054827069408633,
+          13.37979529946799,
+          3.1646668583212065,
+          0.2900026018803369,
+          0.17142961273570725,
+          0.342153569171199,
+          0.2842145610256136
+        ]
+      }
+    }
+  },
+  "paired_bootstrap": {
+    "0": {
+      "correct_minus_all_coordinate_manifold_projection": {
+        "relation4_correlation": {
+          "lower": 0.0037459825571714107,
+          "mean": 0.00786999928438541,
+          "positive_fraction": 1.0,
+          "upper": 0.011778934519027682
+        },
+        "relation4_r2": {
+          "lower": 0.011332053208574215,
+          "mean": 0.020835528011354243,
+          "positive_fraction": 1.0,
+          "upper": 0.03033427163989727
+        }
+      },
+      "correct_minus_coefficient_permuted_relation": {
+        "relation4_correlation": {
+          "lower": 0.11338186147865296,
+          "mean": 0.14007187957395292,
+          "positive_fraction": 1.0,
+          "upper": 0.16659121815628045
+        },
+        "relation4_r2": {
+          "lower": 0.2186016468339424,
+          "mean": 0.2740212854431782,
+          "positive_fraction": 1.0,
+          "upper": 0.3305489373512673
+        }
+      },
+      "correct_minus_point": {
+        "relation4_correlation": {
+          "lower": 0.08169149390544006,
+          "mean": 0.11317380110767027,
+          "positive_fraction": 1.0,
+          "upper": 0.14409770042254497
+        },
+        "relation4_r2": {
+          "lower": 0.1693541171732979,
+          "mean": 0.24115214287105993,
+          "positive_fraction": 1.0,
+          "upper": 0.32102140014677893
+        }
+      }
+    },
+    "3407": {
+      "correct_minus_all_coordinate_manifold_projection": {
+        "relation4_correlation": {
+          "lower": 0.003868372530067514,
+          "mean": 0.007872088893674915,
+          "positive_fraction": 1.0,
+          "upper": 0.011895943105644695
+        },
+        "relation4_r2": {
+          "lower": 0.008043249822343772,
+          "mean": 0.01811945838652312,
+          "positive_fraction": 1.0,
+          "upper": 0.028119962348694405
+        }
+      },
+      "correct_minus_coefficient_permuted_relation": {
+        "relation4_correlation": {
+          "lower": 0.16273158127287635,
+          "mean": 0.18950051894567282,
+          "positive_fraction": 1.0,
+          "upper": 0.21562519934083124
+        },
+        "relation4_r2": {
+          "lower": 0.3132435697226874,
+          "mean": 0.38162781421440695,
+          "positive_fraction": 1.0,
+          "upper": 0.44748778387043664
+        }
+      },
+      "correct_minus_point": {
+        "relation4_correlation": {
+          "lower": 0.1121643250487562,
+          "mean": 0.14584378554066832,
+          "positive_fraction": 1.0,
+          "upper": 0.1790443382513686
+        },
+        "relation4_r2": {
+          "lower": 0.22997872043707032,
+          "mean": 0.3144004802889156,
+          "positive_fraction": 1.0,
+          "upper": 0.41432864291440635
+        }
+      }
+    },
+    "42": {
+      "correct_minus_all_coordinate_manifold_projection": {
+        "relation4_correlation": {
+          "lower": 0.00342166345875696,
+          "mean": 0.007482364121276552,
+          "positive_fraction": 1.0,
+          "upper": 0.01136021973566518
+        },
+        "relation4_r2": {
+          "lower": 0.0058068044582207795,
+          "mean": 0.015603709902861251,
+          "positive_fraction": 0.9995,
+          "upper": 0.025231234318651867
+        }
+      },
+      "correct_minus_coefficient_permuted_relation": {
+        "relation4_correlation": {
+          "lower": 0.1675050055419061,
+          "mean": 0.19391558773182607,
+          "positive_fraction": 1.0,
+          "upper": 0.21944619313109184
+        },
+        "relation4_r2": {
+          "lower": 0.3278528044809325,
+          "mean": 0.400501333684568,
+          "positive_fraction": 1.0,
+          "upper": 0.4730826923820476
+        }
+      },
+      "correct_minus_point": {
+        "relation4_correlation": {
+          "lower": 0.10541926524221182,
+          "mean": 0.14182186032573443,
+          "positive_fraction": 1.0,
+          "upper": 0.1775551739283839
+        },
+        "relation4_r2": {
+          "lower": 0.21026098491806675,
+          "mean": 0.29738123213575746,
+          "positive_fraction": 1.0,
+          "upper": 0.39607092464550125
+        }
+      }
+    }
+  },
+  "projection_diagnostics": {
+    "0": {
+      "clipped_start_count": 121,
+      "max_nfev_observed": 27,
+      "mean_nfev": 7.977337110481586,
+      "mean_scaled_objective_after": 0.15073774567330225,
+      "mean_scaled_objective_before": 4.3992063698678745,
+      "row_count": 353,
+      "success_count": 353
+    },
+    "3407": {
+      "clipped_start_count": 88,
+      "max_nfev_observed": 27,
+      "mean_nfev": 8.192634560906516,
+      "mean_scaled_objective_after": 0.21204788834674979,
+      "mean_scaled_objective_before": 5.483787044523132,
+      "row_count": 353,
+      "success_count": 353
+    },
+    "42": {
+      "clipped_start_count": 72,
+      "max_nfev_observed": 27,
+      "mean_nfev": 8.01416430594901,
+      "mean_scaled_objective_after": 0.18545022304118247,
+      "mean_scaled_objective_before": 3.7170451711566477,
+      "row_count": 353,
+      "success_count": 353
+    }
+  },
+  "protocol_sha256": "3e2fc63a80d6e04e191aef7ca59838b4421730e90622d8533311a6cdbf42a085",
+  "protocol_version": "causalverse_slope_heldout_k26",
+  "seed_flags": {
+    "0": {
+      "correct_beats_permuted": true,
+      "correct_beats_point": true,
+      "correct_beats_projection": true,
+      "free_safe_vs_point": true
+    },
+    "3407": {
+      "correct_beats_permuted": true,
+      "correct_beats_point": true,
+      "correct_beats_projection": true,
+      "free_safe_vs_point": true
+    },
+    "42": {
+      "correct_beats_permuted": true,
+      "correct_beats_point": true,
+      "correct_beats_projection": true,
+      "free_safe_vs_point": true
+    }
+  },
+  "test_evaluated": true,
+  "test_read_event": "K26_single_locked_read",
+  "valid": true,
+  "validation_evaluated_in_k26": false,
+  "validity": {
+    "all_heldout_projections_converged": true,
+    "all_nine_checkpoint_locks_match": true,
+    "confirmation_result": true,
+    "confirmation_valid_and_test_unread": true,
+    "heldout_split_nonempty": true,
+    "incomplete_product_filter_contract_matches": true,
+    "manifold_valid_and_test_unread": true,
+    "manifold_validation_audit": true,
+    "parent_config": true,
+    "parent_contract_valid": true
+  }
+}

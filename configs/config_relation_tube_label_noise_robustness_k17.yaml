@@ -1,0 +1,72 @@
+protocol_version: relation_tube_label_noise_robustness_k17_v1
+preregistration: PROTOCOLS.md
+dataset:
+  root: data/causal_chamber/lt_crl_benchmark_v1
+  cache_path: outputs/stochastic_measurement_crl_oracle_v1/cache/real_images_uint8.npy
+  experiment_prefix: buchholz_1
+  domain_suffix: ""
+  environments: [obs, red, green, blue, pol_1, pol_2]
+  samples_per_environment: 10000
+  latent_columns: [red, green, blue, pol_1, pol_2]
+split: {train_end: 8000, validation_end: 9000, test_end: 10000}
+model: {latent_dim: 5, learned_indices: [0, 1, 2], anchor_indices: [3, 4], hidden_channels: 64, conv_layers: 2}
+initialization:
+  mode: same_seed_random_no_warm
+  expected_state_dict_sha256:
+    0: 6037afc85fa38492ba8b6854e7467d610016d6bfe4a06e96276c11a1c302a7b2
+    42: 9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56
+    3407: 4b599031478a138433ed0208cc4871be1895b15db07576b2e13b5b9f81572731
+calibration:
+  budget: 80
+  subset_seed: 20260731
+  subset_sha256: 4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84
+  raw_ridge_alpha: 0.1
+  clip_predictions_to_unit_interval: true
+  covariance_diagonal_ridge: 0.000001
+  coverage: 0.95
+  expected_score_order_index_one_based: 77
+  expected_empirical_coverage: 0.9625
+noise:
+  family: clipped_additive_gaussian_on_unit_rgb
+  sigma_full_scale: [0.01, 0.025, 0.05, 0.10]
+  model_seeds: [0, 42, 3407]
+  noise_seed_by_model_seed:
+    0: 2026080300
+    42: 2026080342
+    3407: 2026083407
+  nested_across_sigma: true
+  shared_between_conditions: true
+  clip_interval: [0.0, 1.0]
+conditions: [isotropic_tube, raw_propagation]
+training:
+  shuffle_seed: 20260730
+  epochs: 100
+  batch_size: 512
+  learning_rate: 0.0005
+  scheduler_factor: 0.3
+  scheduler_patience: 3
+  validation_interval: 10
+  targets: [0, 1, 2]
+  kappa: 0.1
+  eta: 0.0001
+  mu: 0.00001
+floor_schedule: {hold_weight: 1.0, hold_epochs: 20, decay_end_epoch: 80, nonzero_floor: 0.1}
+raw_ridge_anchor:
+  family: fixed_alpha_raw_ridge_[m,tau]_to_rgb
+  alpha: 0.1
+  clip_predictions_to_unit_interval: true
+evaluation:
+  full_affine_ridge: 0.001
+  graph_threshold: 0.3
+  bootstrap_replicates: 2000
+  bootstrap_seed: 2026080317
+clean_reference:
+  path: outputs/isotropic_tube_vs_raw_propagation_k12/paired_validation_audit.json
+  sha256: 6ffe0ec967be85c8bfae0bbf7880c1d52041393b0c343a782723759241ff7ffd
+  budget: 80
+implementation: {expected_parameter_count: 16902384}
+audit: {semantic_validation_evaluated_before_pair_lock: false, test_evaluated: false}
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/relation_tube_label_noise_robustness_k17

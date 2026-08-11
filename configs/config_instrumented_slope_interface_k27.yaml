@@ -1,0 +1,42 @@
+protocol_version: instrumented_slope_interface_k27
+protocol_document: PROTOCOLS.md
+source_contract:
+  parent_config: configs/config_causalverse_slope_relation_confirmation_k23.yaml
+  parent_config_sha256: a8fffaa82f7bd38bf57ca299046dd83dd1ec8666799c7557c5a399fd2fc8aff3
+dataset:
+  source_id: causalverse_image
+  split: slope
+  dataset_revision: dc6765d10ae80894034d643067ff212e33e500f7
+  latent_columns: [roughness, theta, v0, mu_1, mu_2, v1, l]
+  required_views: [0, 1, 2, 3]
+  incomplete_product_policy: drop_exact_ids_before_split
+  expected_incomplete_product_ids: [1176, 1764, 3529, 5882, 6470]
+split:
+  id_permutation_seed: 20260731
+  train_fraction: 0.70
+  validation_fraction: 0.15
+labels:
+  count: 40
+  id_permutation_seed: 20260732
+task:
+  name: instrumented_slope
+  observed_controls: [theta, v0]
+  hidden_visual_state: [roughness]
+  prediction_targets: [roughness, mu_1, mu_2, v1, l]
+  physical_center_roughness: k40_label_mean
+  view_aggregation: mean_over_four_frozen_features
+relation:
+  fit: least_squares_k40
+  expected_parameters: [0.9, 0.1, 0.5, 0.1, 9.81, 19.62]
+  correct_parameter_max_abs_tolerance: 0.005
+probe:
+  family: standardized_dual_ridge
+  ridge_alpha: 0.1
+  fit_ids: k40_labels_only
+  evaluation_ids: remaining_train_ids_only
+  residual_std_minimum: 1.0e-8
+runtime:
+  python: artifacts/envs/context_residual_ad/bin/python
+  feature_cache: outputs/causalverse_slope_relation_preflight_k22/features_dinov2_registers_base.npz
+  feature_cache_sha256: 3a5a1dfa876bdcb6db622f48cd8ce29167071c161064d5242d358c886dc7f88e
+  output: outputs/instrumented_slope_interface_k27/instrumented_slope_interface_audit.json

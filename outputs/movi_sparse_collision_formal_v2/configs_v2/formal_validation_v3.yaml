@@ -1,0 +1,92 @@
+protocol_version: movi_collision_formal_relation_validation_v1
+phase: validation
+data:
+  evaluation_split: validation
+  heldout_target_evaluated: false
+  train_npz_path: data/movi_b_128/formal_v4/splits_v2/train.npz
+  train_npz_sha256: 3823e2bd4e6c718681e32d8d55bd2ba15a970f1e65e14c24fdf97e4bdbb2f864
+  evaluation_npz_path: data/movi_b_128/formal_v4/splits_v2/validation.npz
+  evaluation_npz_sha256: 8086dcca27262227ddcd4dea90ace1906bf437ad0e63edb2846e208fe10a2be5
+  train_feature_npz_path: data/movi_b_128/formal_v4/features_v2/train_multiview_dinov2_v1.npz
+  train_feature_npz_sha256: d402f3589ca06a8562e50ec8eeb81dee36395d2fcc3dd8a4e9eb092507658a0a
+  evaluation_feature_npz_path: data/movi_b_128/formal_v4/features_v2/validation_multiview_dinov2_v1.npz
+  evaluation_feature_npz_sha256: 4eeaae2a75695dff2ed0e94ac168cbf70d23e5130fcf8ac74d470211e84c81ca
+  split_manifest_path: data/movi_b_128/formal_v4/split_manifest_v2.json
+  split_manifest_sha256: f608366168aef4378be80a79b36799b8b4c1220a101194ca076fd78b0c9d8118
+  preflight_path: data/movi_b_128/formal_v4/formal_preflight_v2.json
+  preflight_sha256: 79b1f5485c915ae10aad3e7969edc4e02450049649c8c1fcff7cc213de4c289c
+architecture:
+  visual_representation: equal_weight_multiview_v1
+  normalize_full_state_block: true
+  ridge_alpha: 0.1
+  fit_intercept: true
+probe:
+  budgets:
+  - 20
+  - 40
+  - 80
+  - 160
+  gain_bounds:
+  - 1.0
+  - 2.0
+  coverage: 0.95
+  propagation_derangement_seed_base: 20264110
+  residual_derangement_seed_base: 20264120
+  relation_derangement_seed_base: 20264130
+  bootstrap_seed_base: 20264200
+  bootstrap_replicates: 5000
+  subgroup_minimum_events: 20
+implementation:
+  files:
+  - path: scripts/prepare_movi_collision_formal_evaluation_config_v1.py
+    sha256: cc7ab0261c2a53edbd3d1f8b361c0db89758ba175d3bc43e05f13e612aa257aa
+  - path: scripts/evaluate_movi_collision_formal_relation_v1.py
+    sha256: 1f894a315574f83a756939f9f11b9762657b846d0f14b29c15570f46e4200e2f
+  - path: scripts/audit_movi_collision_conic_relation_tube_v1.py
+    sha256: 1dab78ab5ca9b52d8065276c991d3cec9c2700df2acd538bed935d5c69bafcb7
+  - path: scripts/audit_movi_collision_cross_fitted_residual_gate_v1.py
+    sha256: f10d5803b52d2697ead464a226453291c656dcabe0ba57ce33f035e66eb1dc34
+  - path: scripts/audit_movi_collision_projected_point_tube_v1.py
+    sha256: 27906b93bac7ffdc42d530215630aaad50d643bcf8abf551b2c118fb8527328e
+  - path: scripts/audit_movi_collision_center_propagation_v1.py
+    sha256: c7c7b0abff14d6182ca157679647522508b8efaeef34879e02360234355ba6df
+  - path: scripts/audit_movi_collision_physics_budget_v1.py
+    sha256: 44130096e2fec6a83f0fc7c472f4ed15f41f2cf82ed01260de61738220606041
+  - path: scripts/audit_movi_collision_physics_budget_v2.py
+    sha256: e7948b3ddda55560f1e56777e496228be01dc4fa857b99c899c7521e82e3b433
+  - path: scripts/audit_movi_collision_frame_alignment_v1.py
+    sha256: 2a0c424b386c933a1a3f989821d502352516e3514c9aafa4aab6c929b1f0ab4a
+  - path: scripts/audit_movi_collision_metadata_v1.py
+    sha256: 4245f58efbfb147452f3fafc610e1a1e911cc0e3366efe20234ca1764d7761a7
+  - path: scripts/audit_movi_collision_physics_proxy_v1.py
+    sha256: 8e3b423449a9ccf564f4892eeed5924472970e4759fb77969a67c102865296ee
+  - path: scripts/audit_movi_collision_relation_tube_pilot_v1.py
+    sha256: 749059ff461826aea2f09004589bf874377aac12a1db36bedc73a6e65371ca6b
+  - path: scripts/audit_movi_collision_state_headroom_v1.py
+    sha256: f6142ee2b02709f9878e17e5f0c062ce1a4977a62b38ad8a3e174e1217be5dc9
+  - path: scripts/audit_movi_collision_visual_residual_v1.py
+    sha256: 355416d9b7c1d3ca93bd01747dfa825882527a42ec7cad3adb9332bfdd4a980b
+  - path: src/relation_tube/__init__.py
+    sha256: ec472803d12b4b50bc5b0f1f52b03f889a45f203c48da5aeca2a6258b0e03e3e
+  - path: src/relation_tube/calibration.py
+    sha256: 849ff2d3c9248bdad79bd2758f5f55e1ab1105e42ea40f3586ed113699808e09
+  - path: src/relation_tube/movi.py
+    sha256: 37a8506c23801535752f8a502c48b6e6b2321ad85df685838abdc0d09a732b8b
+  - path: src/relation_tube/projection.py
+    sha256: 8f9126702dc6573b4a21a831679c31a65a1b2467a649873881405497401e92f8
+feature_manifests:
+  train:
+    manifest_path: data/movi_b_128/formal_v4/features_v2/train_multiview_dinov2_v1.json
+    manifest_sha256: a2c801334b707aa0468ab45734007e05251c6201491a4accbd4f66cb52a431f5
+    feature_path: data/movi_b_128/formal_v4/features_v2/train_multiview_dinov2_v1.npz
+    feature_sha256: d402f3589ca06a8562e50ec8eeb81dee36395d2fcc3dd8a4e9eb092507658a0a
+    events: 1442
+  validation:
+    manifest_path: data/movi_b_128/formal_v4/features_v2/validation_multiview_dinov2_v1.json
+    manifest_sha256: a3b20277125bf4e6f200a02380750b5648ba52e5cf6ccbbe11ab84245e585269
+    feature_path: data/movi_b_128/formal_v4/features_v2/validation_multiview_dinov2_v1.npz
+    feature_sha256: 4eeaae2a75695dff2ed0e94ac168cbf70d23e5130fcf8ac74d470211e84c81ca
+    events: 178
+output:
+  audit_json_path: data/movi_b_128/formal_v4/results_v3/formal_validation_v3.json
+config_materializer_protocol: movi_collision_formal_evaluation_config_v1

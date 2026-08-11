@@ -1,0 +1,1337 @@
+{
+  "config_path": "./config_relation_tube_sign_coupling_k10.yaml",
+  "config_sha256": "aebbbe141d28ba630a38211985f21b69f569239b75ba7137b498c1fc8ff00b2e",
+  "decision": {
+    "diagonal_and_isotropic_zero_axis_probe_coupling_all_subsets": true,
+    "downstream_causality_claimed": false,
+    "full_cross_axis_coupling_all_subsets": true,
+    "oas_cross_axis_coupling_all_subsets": true,
+    "structural_mechanism_supported": true,
+    "test_evaluated": false
+  },
+  "mode": "calibration_residual_sign_orbit_and_axis_probe_audit",
+  "protocol_version": "relation_tube_sign_coupling_k10_v1",
+  "subsets": {
+    "20260811": {
+      "audits": {
+        "diagonal": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.25
+              }
+            ],
+            "cross_axis_local_coupling": false,
+            "maximum_off_diagonal_frobenius_ratio": 0.0
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.0,
+            "projection_scale_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 1.0,
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0
+            },
+            "sign_count": 8,
+            "sign_invariant": true
+          }
+        },
+        "full_anisotropic": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.6083956001187115,
+                    0.2011029247399175
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.5621066183513641,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.2500000000000004
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.28731069050852825,
+                    0.0,
+                    0.13878610500919483
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.3205697196179457,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.2500000000000004
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.1776031621115921,
+                    0.2595449441189162,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.31643086832575473,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.2500000000000004
+              }
+            ],
+            "cross_axis_local_coupling": true,
+            "maximum_off_diagonal_frobenius_ratio": 0.5621066183513641
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.225,
+            "projection_scale_range": {
+              "maximum": 0.5806897172671542,
+              "mean": 0.05656598058517692,
+              "median": 0.0,
+              "p95": 0.3834042228070919
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.5359961985118741,
+              "mean": 0.03986373206681991,
+              "median": 0.0,
+              "p95": 0.2907370274036096
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 8.440949404845593,
+              "mean": 4.064732134792182,
+              "median": 3.921330181796101,
+              "p95": 7.87607862070174
+            },
+            "sign_count": 8,
+            "sign_invariant": false
+          }
+        },
+        "isotropic": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              }
+            ],
+            "cross_axis_local_coupling": false,
+            "maximum_off_diagonal_frobenius_ratio": 0.0
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.0,
+            "projection_scale_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 1.0,
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0
+            },
+            "sign_count": 8,
+            "sign_invariant": true
+          }
+        },
+        "oas": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.5580127141805098,
+                    0.21670497498196206
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.5360116557068246,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.27826070786543267,
+                    0.0,
+                    0.13816180723402893
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.3129649948535928,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.2500000000000004
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666665,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666665,
+                    0.0
+                  ],
+                  [
+                    0.18416599506475967,
+                    0.23546197168556426,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.30223565176578354,
+                "projection_scale": 0.6666666666666665,
+                "score_multiple": 2.2500000000000004
+              }
+            ],
+            "cross_axis_local_coupling": true,
+            "maximum_off_diagonal_frobenius_ratio": 0.5360116557068246
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.2,
+            "projection_scale_range": {
+              "maximum": 0.5754726717988913,
+              "mean": 0.05447801686222611,
+              "median": 0.0,
+              "p95": 0.3577881196838324
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.531180689548477,
+              "mean": 0.03849396140237469,
+              "median": 0.0,
+              "p95": 0.27240712517716215
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 7.192220431698352,
+              "mean": 3.6964271480845867,
+              "median": 3.6660467810156416,
+              "p95": 6.770880659880478
+            },
+            "sign_count": 8,
+            "sign_invariant": false
+          }
+        }
+      },
+      "checks": {
+        "k9_subset_matches_k8": true,
+        "subset_matches_k8": true,
+        "teacher_coefficients_match_k8": true,
+        "test_not_read": true
+      },
+      "inputs": {
+        "k8_config": {
+          "path": "./config_relation_tube_calibration_subset_k8_20260811.yaml",
+          "sha256": "20f42b6b465f06fdd32c1c2510302faf18512ed04942d71b23b1ce6b092e431e"
+        },
+        "k8_preflight": {
+          "path": "outputs/relation_tube_calibration_subset_k8_20260811/preflight/geometry_preflight.json",
+          "sha256": "03115b8fb0494f84b6d097162a1b6ca3573352f4a003a918e31f1aae1c54e7de"
+        },
+        "k9_preflight": {
+          "path": "outputs/relation_tube_oas_shrinkage_k9_20260811/preflight/oas_preflight.json",
+          "sha256": "35e407386656614f240c8a6d913b890b4793e42e4d1733953692091f360d9084"
+        }
+      }
+    },
+    "20260821": {
+      "audits": {
+        "diagonal": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.2499999999999996
+              }
+            ],
+            "cross_axis_local_coupling": false,
+            "maximum_off_diagonal_frobenius_ratio": 0.0
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.0,
+            "projection_scale_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 1.0,
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0
+            },
+            "sign_count": 8,
+            "sign_invariant": true
+          }
+        },
+        "full_anisotropic": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.8239819921586539,
+                    0.18979195934010673
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.6676677193945165,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.2479403289563403,
+                    0.0,
+                    0.24376785706280238
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.34601377596867205,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.2499999999999996
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.08215961605035205,
+                    0.35069338870565414,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.3568808059709357,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.2500000000000004
+              }
+            ],
+            "cross_axis_local_coupling": true,
+            "maximum_off_diagonal_frobenius_ratio": 0.6676677193945165
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.275,
+            "projection_scale_range": {
+              "maximum": 0.65213739018696,
+              "mean": 0.10648551332363745,
+              "median": 0.0,
+              "p95": 0.506108725873317
+            },
+            "radial_correction_l2_range": {
+              "maximum": 1.0982156525196878,
+              "mean": 0.09368959606931418,
+              "median": 0.0,
+              "p95": 0.5323357805615566
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 16.332504338226848,
+              "mean": 7.004941502563327,
+              "median": 6.100262188957359,
+              "p95": 14.423959949901816
+            },
+            "sign_count": 8,
+            "sign_invariant": false
+          }
+        },
+        "isotropic": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.25
+              }
+            ],
+            "cross_axis_local_coupling": false,
+            "maximum_off_diagonal_frobenius_ratio": 0.0
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.0,
+            "projection_scale_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 1.0,
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0
+            },
+            "sign_count": 8,
+            "sign_invariant": true
+          }
+        },
+        "oas": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.7496492197945287,
+                    0.23891594822793674
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.640725460933411,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.2503102175396118,
+                    0.0,
+                    0.22566596031832045
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.33660149535910033,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.10615532823779804,
+                    0.3002909382333067,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.3200529360220324,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              }
+            ],
+            "cross_axis_local_coupling": true,
+            "maximum_off_diagonal_frobenius_ratio": 0.640725460933411
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.2625,
+            "projection_scale_range": {
+              "maximum": 0.621977251052491,
+              "mean": 0.0912444300606798,
+              "median": 0.0,
+              "p95": 0.4630575245475604
+            },
+            "radial_correction_l2_range": {
+              "maximum": 1.0225396472237747,
+              "mean": 0.08334571780314382,
+              "median": 0.0,
+              "p95": 0.5003384813408194
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 12.857640869352705,
+              "mean": 5.957576204838498,
+              "median": 5.355031775093904,
+              "p95": 11.662490745979648
+            },
+            "sign_count": 8,
+            "sign_invariant": false
+          }
+        }
+      },
+      "checks": {
+        "k9_subset_matches_k8": true,
+        "subset_matches_k8": true,
+        "teacher_coefficients_match_k8": true,
+        "test_not_read": true
+      },
+      "inputs": {
+        "k8_config": {
+          "path": "./config_relation_tube_calibration_subset_k8_20260821.yaml",
+          "sha256": "44e5c840ff9998ff36a979409341d2cc122272d990a9c4dec67e68ccfa216448"
+        },
+        "k8_preflight": {
+          "path": "outputs/relation_tube_calibration_subset_k8_20260821/preflight/geometry_preflight.json",
+          "sha256": "db698de45b137b3080486cfc1aa641d11512bf1f1a95316cd3d90422dc200a1b"
+        },
+        "k9_preflight": {
+          "path": "outputs/relation_tube_oas_shrinkage_k9_20260821/preflight/oas_preflight.json",
+          "sha256": "275a934d64e31b5ffc75d43c1a2c813787e0f9feb2828df8a8ed275739e4fe78"
+        }
+      }
+    },
+    "20260831": {
+      "audits": {
+        "diagonal": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.2499999999999996
+              }
+            ],
+            "cross_axis_local_coupling": false,
+            "maximum_off_diagonal_frobenius_ratio": 0.0
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.0,
+            "projection_scale_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 1.0,
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0
+            },
+            "sign_count": 8,
+            "sign_invariant": true
+          }
+        },
+        "full_anisotropic": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.10725454781896529,
+                    0.5305790385673468
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.4979151321627011,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.11249829227380859,
+                    0.0,
+                    0.2166471577576
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.25065663151864237,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.2500000000000004
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.43409914189268994,
+                    0.1689902393455882,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.4429696089623516,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              }
+            ],
+            "cross_axis_local_coupling": true,
+            "maximum_off_diagonal_frobenius_ratio": 0.4979151321627011
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.175,
+            "projection_scale_range": {
+              "maximum": 0.6231557384564361,
+              "mean": 0.05308866745381565,
+              "median": 0.0,
+              "p95": 0.35576980484030263
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.8297166190296319,
+              "mean": 0.0460431400968867,
+              "median": 0.0,
+              "p95": 0.23654445234293636
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 10.663580294510092,
+              "mean": 4.724260376390754,
+              "median": 4.130059955178194,
+              "p95": 9.793521703839449
+            },
+            "sign_count": 8,
+            "sign_invariant": false
+          }
+        },
+        "isotropic": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.2499999999999996
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666667
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.2499999999999996
+              },
+              {
+                "active_row_cross_ratio": 0.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666667,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666667,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.0,
+                "projection_scale": 0.6666666666666667,
+                "score_multiple": 2.2499999999999996
+              }
+            ],
+            "cross_axis_local_coupling": false,
+            "maximum_off_diagonal_frobenius_ratio": 0.0
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.0,
+            "projection_scale_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "p95": 0.0
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 1.0,
+              "mean": 1.0,
+              "median": 1.0,
+              "p95": 1.0
+            },
+            "sign_count": 8,
+            "sign_invariant": true
+          }
+        },
+        "oas": {
+          "axis_probe": {
+            "axes": [
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 0,
+                "jacobian": [
+                  [
+                    0.0,
+                    0.11999853513775981,
+                    0.502034219257361
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.48022597340154494,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 1,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.1190118735170922,
+                    0.0,
+                    0.20190797418674813
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.6666666666666666
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.24124754901212447,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              },
+              {
+                "active_row_cross_ratio": 1.0,
+                "axis": 2,
+                "jacobian": [
+                  [
+                    0.6666666666666666,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.6666666666666666,
+                    0.0
+                  ],
+                  [
+                    0.4176814581220329,
+                    0.16937565979175837,
+                    0.0
+                  ]
+                ],
+                "off_diagonal_frobenius_ratio": 0.4313063046722406,
+                "projection_scale": 0.6666666666666666,
+                "score_multiple": 2.25
+              }
+            ],
+            "cross_axis_local_coupling": true,
+            "maximum_off_diagonal_frobenius_ratio": 0.48022597340154494
+          },
+          "sign_orbit": {
+            "boundary_decision_flip_fraction": 0.1625,
+            "projection_scale_range": {
+              "maximum": 0.5594198237059271,
+              "mean": 0.049603601803753575,
+              "median": 0.0,
+              "p95": 0.345115027945436
+            },
+            "radial_correction_l2_range": {
+              "maximum": 0.7448538079632614,
+              "mean": 0.04273180785327321,
+              "median": 0.0,
+              "p95": 0.22999682791800963
+            },
+            "sample_count": 80,
+            "score_sign_ratio": {
+              "maximum": 8.88871455696701,
+              "mean": 4.227845654787752,
+              "median": 3.811677318234728,
+              "p95": 8.304971019496575
+            },
+            "sign_count": 8,
+            "sign_invariant": false
+          }
+        }
+      },
+      "checks": {
+        "k9_subset_matches_k8": true,
+        "subset_matches_k8": true,
+        "teacher_coefficients_match_k8": true,
+        "test_not_read": true
+      },
+      "inputs": {
+        "k8_config": {
+          "path": "./config_relation_tube_calibration_subset_k8_20260831.yaml",
+          "sha256": "c75d567c9186091797b177e9ab3c59752e21ba484f6380e1f98d44fa56bfca47"
+        },
+        "k8_preflight": {
+          "path": "outputs/relation_tube_calibration_subset_k8_20260831/preflight/geometry_preflight.json",
+          "sha256": "882b1a011ebe02136cb00e5a973e1fca8796c0d86597e898ec9b10d8a2a894b7"
+        },
+        "k9_preflight": {
+          "path": "outputs/relation_tube_oas_shrinkage_k9_20260831/preflight/oas_preflight.json",
+          "sha256": "88db96d3ee3c1f099718b0b7e9cbf056a70453fe600d621a6804a7facf462abd"
+        }
+      }
+    }
+  },
+  "test_evaluated": false
+}

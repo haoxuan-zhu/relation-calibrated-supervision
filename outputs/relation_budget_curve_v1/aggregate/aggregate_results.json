@@ -1,0 +1,2474 @@
+{
+  "budget_summaries": {
+    "160": {
+      "deltas": {
+        "empirical_minus_point": {
+          "test": {
+            "mean": 0.18331788645850292,
+            "population_sd": 0.030317375065225267
+          },
+          "test_by_seed": {
+            "0": 0.19942114750544238,
+            "3407": 0.14085363348325097,
+            "42": 0.20967887838681543
+          },
+          "validation": {
+            "mean": 0.17816562775466915,
+            "population_sd": 0.03267644047034157
+          },
+          "validation_by_seed": {
+            "0": 0.1901975903888259,
+            "3407": 0.13350966003625575,
+            "42": 0.21078963283892582
+          }
+        },
+        "physical_minus_empirical": {
+          "test": {
+            "mean": -0.003628717528449177,
+            "population_sd": 0.02017216294669918
+          },
+          "test_by_seed": {
+            "0": -0.03210880359013879,
+            "3407": 0.012038826942443848,
+            "42": 0.009183824062347412
+          },
+          "validation": {
+            "mean": 0.006013843807609239,
+            "population_sd": 0.0170163532737121
+          },
+          "validation_by_seed": {
+            "0": -0.018033997136984503,
+            "3407": 0.017256465661387388,
+            "42": 0.018819062898424832
+          }
+        },
+        "physical_minus_point": {
+          "test": {
+            "mean": 0.17968916893005374,
+            "population_sd": 0.028318516395261548
+          },
+          "test_by_seed": {
+            "0": 0.16731234391530359,
+            "3407": 0.15289246042569482,
+            "42": 0.21886270244916284
+          },
+          "validation": {
+            "mean": 0.1841794715622784,
+            "population_sd": 0.03328987545080305
+          },
+          "validation_by_seed": {
+            "0": 0.17216359325184138,
+            "3407": 0.15076612569764314,
+            "42": 0.22960869573735065
+          }
+        }
+      },
+      "readout": {
+        "empirical": {
+          "test": {
+            "mean": 0.7416204081641303,
+            "population_sd": 0.0024134860792937502
+          },
+          "validation": {
+            "mean": 0.7494569205720844,
+            "population_sd": 0.002457591279543038
+          }
+        },
+        "physical": {
+          "test": {
+            "mean": 0.7379916906356812,
+            "population_sd": 0.018561576180177772
+          },
+          "validation": {
+            "mean": 0.7554707643796936,
+            "population_sd": 0.017250967130243135
+          }
+        },
+        "point": {
+          "test": {
+            "mean": 0.5583025217056274,
+            "population_sd": 0.028047801306307726
+          },
+          "validation": {
+            "mean": 0.5712912928174153,
+            "population_sd": 0.03030123098545702
+          }
+        }
+      },
+      "support": {
+        "empirical": true,
+        "physical": true
+      }
+    },
+    "20": {
+      "deltas": {
+        "empirical_minus_point": {
+          "test": {
+            "mean": 0.4217561162594292,
+            "population_sd": 0.02610269758413164
+          },
+          "test_by_seed": {
+            "0": 0.427111824353536,
+            "3407": 0.3874473671118418,
+            "42": 0.45070915731290984
+          },
+          "validation": {
+            "mean": 0.41141117250398507,
+            "population_sd": 0.024948127540583186
+          },
+          "validation_by_seed": {
+            "0": 0.41059623347782503,
+            "3407": 0.38127170260475174,
+            "42": 0.4423655814293783
+          }
+        },
+        "physical_minus_empirical": {
+          "test": {
+            "mean": 7.4108441670735674e-06,
+            "population_sd": 0.047458383411114205
+          },
+          "test_by_seed": {
+            "0": 0.0372329751650492,
+            "3407": -0.06697003046671546,
+            "42": 0.02975928783416748
+          },
+          "validation": {
+            "mean": -0.010241310673581102,
+            "population_sd": 0.05145367073552912
+          },
+          "validation_by_seed": {
+            "0": 0.032658508232579875,
+            "3407": -0.08259234488441436,
+            "42": 0.01920990463109118
+          }
+        },
+        "physical_minus_point": {
+          "test": {
+            "mean": 0.42176352710359627,
+            "population_sd": 0.07192200530333946
+          },
+          "test_by_seed": {
+            "0": 0.4643447995185852,
+            "3407": 0.32047733664512634,
+            "42": 0.4804684451470773
+          },
+          "validation": {
+            "mean": 0.401169861830404,
+            "population_sd": 0.07285666289794311
+          },
+          "validation_by_seed": {
+            "0": 0.4432547417104049,
+            "3407": 0.2986793577203374,
+            "42": 0.4615754860604695
+          }
+        }
+      },
+      "readout": {
+        "empirical": {
+          "test": {
+            "mean": 0.6651079720920987,
+            "population_sd": 0.039972425841941855
+          },
+          "validation": {
+            "mean": 0.6681547063895286,
+            "population_sd": 0.04209368635539624
+          }
+        },
+        "physical": {
+          "test": {
+            "mean": 0.6651153829362658,
+            "population_sd": 0.011778329311178098
+          },
+          "validation": {
+            "mean": 0.6579133957159474,
+            "population_sd": 0.011757054402614311
+          }
+        },
+        "point": {
+          "test": {
+            "mean": 0.24335185583266947,
+            "population_sd": 0.06275748032353891
+          },
+          "validation": {
+            "mean": 0.2567435338855435,
+            "population_sd": 0.06202875839774886
+          }
+        }
+      },
+      "support": {
+        "empirical": true,
+        "physical": true
+      }
+    },
+    "40": {
+      "deltas": {
+        "empirical_minus_point": {
+          "test": {
+            "mean": 0.24248687095112273,
+            "population_sd": 0.04543692657510322
+          },
+          "test_by_seed": {
+            "0": 0.30149771769841516,
+            "3407": 0.23500555753707886,
+            "42": 0.19095733761787415
+          },
+          "validation": {
+            "mean": 0.24238908329271439,
+            "population_sd": 0.04570899690247219
+          },
+          "validation_by_seed": {
+            "0": 0.3013949109108088,
+            "3407": 0.23574886458011451,
+            "42": 0.1900234743872199
+          }
+        },
+        "physical_minus_empirical": {
+          "test": {
+            "mean": -0.06172714630762736,
+            "population_sd": 0.022304279175460375
+          },
+          "test_by_seed": {
+            "0": -0.08555567264556885,
+            "3407": -0.06771183013916016,
+            "42": -0.031913936138153076
+          },
+          "validation": {
+            "mean": -0.08324229704240275,
+            "population_sd": 0.01695340702938872
+          },
+          "validation_by_seed": {
+            "0": -0.09908664681257928,
+            "3407": -0.09090358936222176,
+            "42": -0.05973665495240721
+          }
+        },
+        "physical_minus_point": {
+          "test": {
+            "mean": 0.18075972464349535,
+            "population_sd": 0.02510463066818278
+          },
+          "test_by_seed": {
+            "0": 0.2159420450528463,
+            "3407": 0.1672937273979187,
+            "42": 0.15904340147972107
+          },
+          "validation": {
+            "mean": 0.15914678625031164,
+            "population_sd": 0.03109310787735445
+          },
+          "validation_by_seed": {
+            "0": 0.2023082640982295,
+            "3407": 0.14484527521789275,
+            "42": 0.13028681943481268
+          }
+        }
+      },
+      "readout": {
+        "empirical": {
+          "test": {
+            "mean": 0.7214253611034818,
+            "population_sd": 0.028389184237346158
+          },
+          "validation": {
+            "mean": 0.738593097177091,
+            "population_sd": 0.025420345543719847
+          }
+        },
+        "physical": {
+          "test": {
+            "mean": 0.6596982147958544,
+            "population_sd": 0.01693212462850201
+          },
+          "validation": {
+            "mean": 0.6553508001346883,
+            "population_sd": 0.017624803770585246
+          }
+        },
+        "point": {
+          "test": {
+            "mean": 0.478938490152359,
+            "population_sd": 0.020755612020294877
+          },
+          "validation": {
+            "mean": 0.49620401388437657,
+            "population_sd": 0.0232526259499096
+          }
+        }
+      },
+      "support": {
+        "empirical": true,
+        "physical": true
+      }
+    },
+    "80": {
+      "deltas": {
+        "empirical_minus_point": {
+          "test": {
+            "mean": 0.1906745533148448,
+            "population_sd": 0.03296583031747
+          },
+          "test_by_seed": {
+            "0": 0.14594553907712304,
+            "3407": 0.20165462295214343,
+            "42": 0.22442349791526794
+          },
+          "validation": {
+            "mean": 0.1906190325690964,
+            "population_sd": 0.03995870835641664
+          },
+          "validation_by_seed": {
+            "0": 0.13918652533424114,
+            "3407": 0.19606041356245651,
+            "42": 0.23661015881059155
+          }
+        },
+        "physical_minus_empirical": {
+          "test": {
+            "mean": 0.03836325142118665,
+            "population_sd": 0.008629446730702612
+          },
+          "test_by_seed": {
+            "0": 0.04968901475270593,
+            "3407": 0.03663690884908033,
+            "42": 0.02876383066177368
+          },
+          "validation": {
+            "mean": 0.041252449117743804,
+            "population_sd": 0.016744692076091364
+          },
+          "validation_by_seed": {
+            "0": 0.06377693592318157,
+            "3407": 0.036319715150867515,
+            "42": 0.023660696279182325
+          }
+        },
+        "physical_minus_point": {
+          "test": {
+            "mean": 0.22903780473603144,
+            "population_sd": 0.024389944221935043
+          },
+          "test_by_seed": {
+            "0": 0.19563455382982897,
+            "3407": 0.23829153180122375,
+            "42": 0.2531873285770416
+          },
+          "validation": {
+            "mean": 0.23187148168684021,
+            "population_sd": 0.02339841003590078
+          },
+          "validation_by_seed": {
+            "0": 0.2029634612574227,
+            "3407": 0.23238012871332403,
+            "42": 0.2602708550897739
+          }
+        }
+      },
+      "readout": {
+        "empirical": {
+          "test": {
+            "mean": 0.7251439756817288,
+            "population_sd": 0.023469666299969678
+          },
+          "validation": {
+            "mean": 0.7344379475651334,
+            "population_sd": 0.030442636986406143
+          }
+        },
+        "physical": {
+          "test": {
+            "mean": 0.7635072271029154,
+            "population_sd": 0.014987996781700166
+          },
+          "validation": {
+            "mean": 0.7756903966828772,
+            "population_sd": 0.013726480308673867
+          }
+        },
+        "point": {
+          "test": {
+            "mean": 0.5344694223668839,
+            "population_sd": 0.00960500692854443
+          },
+          "validation": {
+            "mean": 0.5438189149960371,
+            "population_sd": 0.009861679528312583
+          }
+        }
+      },
+      "support": {
+        "empirical": true,
+        "physical": true
+      }
+    }
+  },
+  "config_path": ".\\config_relation_budget_curve_v1.yaml",
+  "config_sha256": "edb0957ede5920520e695faf66245fb3816e95e15d34e7a7fc1ba7ef4755214e",
+  "decision": {
+    "empirical_relation_generalization_supported": true,
+    "empirical_supported_new_budgets": [
+      20,
+      40,
+      160
+    ],
+    "k80_counted_as_new_budget": false,
+    "physical_budget_curve_supported": true,
+    "physical_supported_new_budgets": [
+      20,
+      40,
+      160
+    ],
+    "required_supported_new_budget_count": 2,
+    "verdict": "budget_curve_supported"
+  },
+  "entries": {
+    "160": {
+      "empirical": {
+        "0": {
+          "budget": 160,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.041502668708562854,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.54,
+            "fixed_threshold_shd": 8
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8594519075415438,
+              0.9099790725635041,
+              0.9281545708402473
+            ],
+            "direct_r2": [
+              0.7126073355690928,
+              0.825410169966893,
+              0.8555608087613449
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8991951836484319,
+            "mae": 0.0339922651746903,
+            "mean_direct_correlation": 0.8991951836484318,
+            "mean_direct_r2": 0.7978594380991103
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed0\\empirical\\diagnostic_results.json",
+          "result_sha256": "8617ffac5a6c11d4befbda243241031440a8e5097fd5a8a3a1b1f5b34002726d",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.6980751156806946,
+            0.7851580381393433,
+            0.7483667731285095,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7438664436340332,
+          "test_linear_readout_mean_r2": 0.8206197736954183,
+          "test_rgb_mean_direct_abs_correlation": 0.7438666423161825,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.6807933542140596,
+            0.797590920669931,
+            0.7701281305123947
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7495041351321284,
+          "validation_rgb_mean_r2": 0.3924972712993622
+        },
+        "3407": {
+          "budget": 160,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.19305473244190216,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5533333333333333,
+            "fixed_threshold_shd": 10
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8594519075415438,
+              0.9099790725635041,
+              0.9281545708402473
+            ],
+            "direct_r2": [
+              0.7126073355690928,
+              0.825410169966893,
+              0.8555608087613449
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8991951836484319,
+            "mae": 0.0339922651746903,
+            "mean_direct_correlation": 0.8991951836484318,
+            "mean_direct_r2": 0.7978594380991103
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed3407\\empirical\\diagnostic_results.json",
+          "result_sha256": "d406c2833bcc8d1fd7babf09dd9ec10cb04e6015aa24e0dac3f9d64f8c1ab6c2",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7276924252510071,
+            0.7864128351211548,
+            0.700709879398346,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7382720112800598,
+          "test_linear_readout_mean_r2": 0.8156676376778863,
+          "test_rgb_mean_direct_abs_correlation": 0.7382717132568359,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7404052857840092,
+            0.8036012546034649,
+            0.6952644657801148
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7464236687225295,
+          "validation_rgb_mean_r2": 0.3321494460105896
+        },
+        "42": {
+          "budget": 160,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.09047618216276168,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6333333333333333,
+            "fixed_threshold_shd": 7
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8594519075415438,
+              0.9099790725635041,
+              0.9281545708402473
+            ],
+            "direct_r2": [
+              0.7126073355690928,
+              0.825410169966893,
+              0.8555608087613449
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8991951836484319,
+            "mae": 0.0339922651746903,
+            "mean_direct_correlation": 0.8991951836484318,
+            "mean_direct_r2": 0.7978594380991103
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed42\\empirical\\diagnostic_results.json",
+          "result_sha256": "418b18b132ecfd0f4983724113a43acd213e0912b897bb035d554a03cebb77a2",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7447746396064758,
+            0.8000777363777161,
+            0.6833162307739258,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7427229285240173,
+          "test_linear_readout_mean_r2": 0.8124910981192175,
+          "test_rgb_mean_direct_abs_correlation": 0.7427228689193726,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7462203534482313,
+            0.8178643548820693,
+            0.6932441652544853
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7524429578615953,
+          "validation_rgb_mean_r2": 0.3579999506473541
+        }
+      },
+      "physical": {
+        "0": {
+          "budget": 160,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.10632674064238866,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.54,
+            "fixed_threshold_shd": 8
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 75.71295166015625,
+              "median": 1.9718449115753174,
+              "minimum": 1.9522298574447632,
+              "p95": 3.2664475440979004
+            },
+            "direct_correlation": [
+              0.8527102618921877,
+              0.8670735249106508,
+              0.8851250918888903
+            ],
+            "direct_r2": [
+              0.5445052265181474,
+              0.6528401084874739,
+              0.6799973271391084
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.86830295956391,
+            "mae": 0.03160703911558982,
+            "mean_direct_correlation": 0.8683029595639096,
+            "mean_direct_r2": 0.6257808873815766
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed0\\physical\\diagnostic_results.json",
+          "result_sha256": "63cf9c4ac3b118fe960d7e34d49dd3728fedb0d01bdac27a6d3e82553cf170a5",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.745830237865448,
+            0.7367729544639587,
+            0.6526703238487244,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7117574214935303,
+          "test_linear_readout_mean_r2": 0.789259243877558,
+          "test_rgb_mean_direct_abs_correlation": 0.7117578387260437,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7541918950292228,
+            0.7607803343757005,
+            0.6794381845805084
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7314701379951439,
+          "validation_rgb_mean_r2": 0.1632106900215149
+        },
+        "3407": {
+          "budget": 160,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.15422865688800813,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.58,
+            "fixed_threshold_shd": 10
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 75.71295166015625,
+              "median": 1.9718449115753174,
+              "minimum": 1.9522298574447632,
+              "p95": 3.2664475440979004
+            },
+            "direct_correlation": [
+              0.8527102618921877,
+              0.8670735249106508,
+              0.8851250918888903
+            ],
+            "direct_r2": [
+              0.5445052265181474,
+              0.6528401084874739,
+              0.6799973271391084
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.86830295956391,
+            "mae": 0.03160703911558982,
+            "mean_direct_correlation": 0.8683029595639096,
+            "mean_direct_r2": 0.6257808873815766
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed3407\\physical\\diagnostic_results.json",
+          "result_sha256": "041ae100339fe1fd1d058b501860e9e91966042f37bd68e3f0d3673e4e73ed9c",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7371973991394043,
+            0.798957109451294,
+            0.7147771120071411,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.750309944152832,
+          "test_linear_readout_mean_r2": 0.8046010419099632,
+          "test_rgb_mean_direct_abs_correlation": 0.7503105401992798,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7387924921500946,
+            0.8167816525394973,
+            0.7354662584621592
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7636801343839169,
+          "validation_rgb_mean_r2": 0.21742485463619232
+        },
+        "42": {
+          "budget": 160,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.136795636177063,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.62,
+            "fixed_threshold_shd": 8
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 75.71295166015625,
+              "median": 1.9718449115753174,
+              "minimum": 1.9522298574447632,
+              "p95": 3.2664475440979004
+            },
+            "direct_correlation": [
+              0.8527102618921877,
+              0.8670735249106508,
+              0.8851250918888903
+            ],
+            "direct_r2": [
+              0.5445052265181474,
+              0.6528401084874739,
+              0.6799973271391084
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.86830295956391,
+            "mae": 0.03160703911558982,
+            "mean_direct_correlation": 0.8683029595639096,
+            "mean_direct_r2": 0.6257808873815766
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed42\\physical\\diagnostic_results.json",
+          "result_sha256": "c4b6cff4cfa74945efe6741eb41b33be5b60849fe068e1df0f8b4ee62ce5aa4a",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7422019839286804,
+            0.8075729012489319,
+            0.7059451937675476,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.751906156539917,
+          "test_linear_readout_mean_r2": 0.8113324070113981,
+          "test_rgb_mean_direct_abs_correlation": 0.75190669298172,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7425524261725196,
+            0.8292647614807606,
+            0.7419688746267805
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7712620207600202,
+          "validation_rgb_mean_r2": 0.1868980973958969
+        }
+      },
+      "point": {
+        "0": {
+          "budget": 160,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.04143950301905473,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6066666666666667,
+            "fixed_threshold_shd": 7
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed0\\point\\diagnostic_results.json",
+          "result_sha256": "b75261115d6e4605b4b08498edbc571a7c6d10f14591cb776e16abdd2d7d3265",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.5139654874801636,
+            0.5030906796455383,
+            0.6162803173065186,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.5444453954696655,
+          "test_linear_readout_mean_r2": 0.7495217009380953,
+          "test_rgb_mean_direct_abs_correlation": 0.5444454948107401,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.5128733116054854,
+            0.527755107728528,
+            0.6372912148958942
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.5593065447433025,
+          "validation_rgb_mean_r2": -3.6986865997314453
+        },
+        "3407": {
+          "budget": 160,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.06655210091670354,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.7,
+            "fixed_threshold_shd": 5
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed3407\\point\\diagnostic_results.json",
+          "result_sha256": "810426e297fa568f1e3fa44bb33ec99bb65c92efb16f6f970fb58d47a528c706",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.49173054099082947,
+            0.6196184754371643,
+            0.6809052228927612,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.597417950630188,
+          "test_linear_readout_mean_r2": 0.7671935528174456,
+          "test_rgb_mean_direct_abs_correlation": 0.597418079773585,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.4769735049034762,
+            0.6454144426644668,
+            0.7163540784908782
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6129140086862738,
+          "validation_rgb_mean_r2": -5.034711837768555
+        },
+        "42": {
+          "budget": 160,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.033054630915323895,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.7933333333333333,
+            "fixed_threshold_shd": 4
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k160\\seed42\\point\\diagnostic_results.json",
+          "result_sha256": "8d97e65d1fd43bd01a25169b2603c998d74b4806050efeb56b8699575f7a430b",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.4761142432689667,
+            0.6242573857307434,
+            0.4987603425979614,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.5330438613891602,
+          "test_linear_readout_mean_r2": 0.746141134400221,
+          "test_rgb_mean_direct_abs_correlation": 0.5330439905325571,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.45293345163334037,
+            0.6374209066534267,
+            0.5346056167812417
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.5416533250226695,
+          "validation_rgb_mean_r2": -4.391687870025635
+        }
+      }
+    },
+    "20": {
+      "empirical": {
+        "0": {
+          "budget": 20,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.051059321304162346,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.54,
+            "fixed_threshold_shd": 8
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8463306370350748,
+              0.9070448702374665,
+              0.9197338523198774
+            ],
+            "direct_r2": [
+              0.7138555638148458,
+              0.8047955556636118,
+              0.8338186129289065
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8910364531974738,
+            "mae": 0.03896819209805467,
+            "mean_direct_correlation": 0.8910364531974729,
+            "mean_direct_r2": 0.7841565774691214
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed0\\empirical\\diagnostic_results.json",
+          "result_sha256": "29f67748b5fcab234bc80b47bcc1f9f0a9948c8616b1dd41c2c72612d4b7fb84",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.5901868939399719,
+            0.637546181678772,
+            0.6462792158126831,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6246709823608398,
+          "test_linear_readout_mean_r2": 0.7980504131270771,
+          "test_rgb_mean_direct_abs_correlation": 0.6246707638104757,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.5636566869168503,
+            0.6433162910745996,
+            0.6714458368977927
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6261396049630809,
+          "validation_rgb_mean_r2": 0.04335905984044075
+        },
+        "3407": {
+          "budget": 20,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.1516812348763148,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5266666666666666,
+            "fixed_threshold_shd": 10
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8463306370350748,
+              0.9070448702374665,
+              0.9197338523198774
+            ],
+            "direct_r2": [
+              0.7138555638148458,
+              0.8047955556636118,
+              0.8338186129289065
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8910364531974738,
+            "mae": 0.03896819209805467,
+            "mean_direct_correlation": 0.8910364531974729,
+            "mean_direct_r2": 0.7841565774691214
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed3407\\empirical\\diagnostic_results.json",
+          "result_sha256": "e0945b55d8c01c4adb436eac1d3f96c7cbfa306d919141d8cc511506ecf28657",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7388433814048767,
+            0.7264307737350464,
+            0.693335235118866,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7195371985435486,
+          "test_linear_readout_mean_r2": 0.7858209014619113,
+          "test_rgb_mean_direct_abs_correlation": 0.7195364634195963,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7567910274915947,
+            0.7409068606156843,
+            0.6793552775477999
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7256843885516929,
+          "validation_rgb_mean_r2": 0.11467037349939346
+        },
+        "42": {
+          "budget": 20,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.1112462930281957,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.54,
+            "fixed_threshold_shd": 9
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8463306370350748,
+              0.9070448702374665,
+              0.9197338523198774
+            ],
+            "direct_r2": [
+              0.7138555638148458,
+              0.8047955556636118,
+              0.8338186129289065
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8910364531974738,
+            "mae": 0.03896819209805467,
+            "mean_direct_correlation": 0.8910364531974729,
+            "mean_direct_r2": 0.7841565774691214
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed42\\empirical\\diagnostic_results.json",
+          "result_sha256": "578e2ddb8282e792f7c6a7ad22008e710265001e18eac72c870fb016d70a8958",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.6176177263259888,
+            0.7156599164009094,
+            0.6200724244117737,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6511169075965881,
+          "test_linear_readout_mean_r2": 0.780998538768963,
+          "test_rgb_mean_direct_abs_correlation": 0.651116689046224,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.6296495367013911,
+            0.7345306023043559,
+            0.5937402379556885
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6526401256538118,
+          "validation_rgb_mean_r2": 0.033704739063978195
+        }
+      },
+      "physical": {
+        "0": {
+          "budget": 20,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.14578869702418645,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5266666666666666,
+            "fixed_threshold_shd": 9
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 5852.5927734375,
+              "median": 2.3532443046569824,
+              "minimum": 2.302382707595825,
+              "p95": 10.26279354095459
+            },
+            "direct_correlation": [
+              0.7855652564266472,
+              0.6140931296506736,
+              0.6557774700771783
+            ],
+            "direct_r2": [
+              0.30387316905560957,
+              0.04193844577292327,
+              0.23417341541947756
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.6851452853848325,
+            "mae": 0.044926532701021565,
+            "mean_direct_correlation": 0.6851452853848331,
+            "mean_direct_r2": 0.19332834341600347
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed0\\physical\\diagnostic_results.json",
+          "result_sha256": "8755213fe29ba038e6015d4118fd487e4d97f0f681cbae65a35624fdcb2b7841",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7521181702613831,
+            0.7124794125556946,
+            0.5211136341094971,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6619040369987488,
+          "test_linear_readout_mean_r2": 0.803858653242095,
+          "test_rgb_mean_direct_abs_correlation": 0.6619037389755249,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7634350433522071,
+            0.7056622293219026,
+            0.5072970669128727
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6587981131956607,
+          "validation_rgb_mean_r2": -0.16327343881130219
+        },
+        "3407": {
+          "budget": 20,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.18077070534229278,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.62,
+            "fixed_threshold_shd": 9
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 5852.5927734375,
+              "median": 2.3532443046569824,
+              "minimum": 2.302382707595825,
+              "p95": 10.26279354095459
+            },
+            "direct_correlation": [
+              0.7855652564266472,
+              0.6140931296506736,
+              0.6557774700771783
+            ],
+            "direct_r2": [
+              0.30387316905560957,
+              0.04193844577292327,
+              0.23417341541947756
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.6851452853848325,
+            "mae": 0.044926532701021565,
+            "mean_direct_correlation": 0.6851452853848331,
+            "mean_direct_r2": 0.19332834341600347
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed3407\\physical\\diagnostic_results.json",
+          "result_sha256": "f4c964ea088834c4151386ac243c75dddb7a92070e00a9618b872f214aefe1da",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7211059927940369,
+            0.7388060092926025,
+            0.4977872967720032,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.65256667137146,
+          "test_linear_readout_mean_r2": 0.7880147423294893,
+          "test_rgb_mean_direct_abs_correlation": 0.6525664329528809,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7304407175318655,
+            0.7304322976678743,
+            0.46840311580209576
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6430920436672786,
+          "validation_rgb_mean_r2": -0.29797205328941345
+        },
+        "42": {
+          "budget": 20,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.16120553431908288,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5666666666666667,
+            "fixed_threshold_shd": 8
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 5852.5927734375,
+              "median": 2.3532443046569824,
+              "minimum": 2.302382707595825,
+              "p95": 10.26279354095459
+            },
+            "direct_correlation": [
+              0.7855652564266472,
+              0.6140931296506736,
+              0.6557774700771783
+            ],
+            "direct_r2": [
+              0.30387316905560957,
+              0.04193844577292327,
+              0.23417341541947756
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.6851452853848325,
+            "mae": 0.044926532701021565,
+            "mean_direct_correlation": 0.6851452853848331,
+            "mean_direct_r2": 0.19332834341600347
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed42\\physical\\diagnostic_results.json",
+          "result_sha256": "e843f436eb2c6447c9100ea25ed235665333ca625285953731121ae6b87b7430",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7220842242240906,
+            0.710527241230011,
+            0.6100164651870728,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6808767318725586,
+          "test_linear_readout_mean_r2": 0.787965516029535,
+          "test_rgb_mean_direct_abs_correlation": 0.6808759768803915,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.740203174646888,
+            0.6844603795304062,
+            0.5908865366774149
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.671850030284903,
+          "validation_rgb_mean_r2": -0.177959144115448
+        }
+      },
+      "point": {
+        "0": {
+          "budget": 20,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.0781679009795189,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6333333333333333,
+            "fixed_threshold_shd": 4
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed0\\point\\diagnostic_results.json",
+          "result_sha256": "b94698c5256a940a78e388fafd3571dd94972d021f2349ef306e2d62b5de16ee",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.4403098523616791,
+            0.037910908460617065,
+            0.11445605754852295,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.19755901396274567,
+          "test_linear_readout_mean_r2": 0.7444841862686254,
+          "test_rgb_mean_direct_abs_correlation": 0.1975589394569397,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.42320565939196936,
+            0.0584359652305542,
+            0.16498848983324382
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.2155433714852558,
+          "validation_rgb_mean_r2": -2.839740037918091
+        },
+        "3407": {
+          "budget": 20,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.018634571298956872,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.7266666666666667,
+            "fixed_threshold_shd": 5
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed3407\\point\\diagnostic_results.json",
+          "result_sha256": "eeec8fbe9ceb7d398ae1f3792f27a820f8843352b365807f61468ff20b3e3a60",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.466634064912796,
+            0.4755541682243347,
+            0.05407905578613281,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.35371866822242737,
+          "test_linear_readout_mean_r2": 0.7626511894010088,
+          "test_rgb_mean_direct_abs_correlation": 0.3320890963077545,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.4604090717745455,
+            0.5068745339812009,
+            0.06595445208507714
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.3444126859469412,
+          "validation_rgb_mean_r2": -5.7430901527404785
+        },
+        "42": {
+          "budget": 20,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.07764143898089727,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5666666666666667,
+            "fixed_threshold_shd": 6
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k20\\seed42\\point\\diagnostic_results.json",
+          "result_sha256": "2a96b8e80a97a4f1e7d4dea54ddb8d6a179ff74d3aab01e39ef559fd53360a44",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.3767234683036804,
+            0.013353532180190086,
+            0.21114559471607208,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.2926649749279022,
+          "test_linear_readout_mean_r2": 0.7396310562255928,
+          "test_rgb_mean_direct_abs_correlation": 0.2004075317333142,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.3456355822272372,
+            0.09052273701725619,
+            0.19466531342880705
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.2102745442244335,
+          "validation_rgb_mean_r2": -4.099395751953125
+        }
+      }
+    },
+    "40": {
+      "empirical": {
+        "0": {
+          "budget": 40,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.04204776257276535,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5666666666666667,
+            "fixed_threshold_shd": 10
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8452880289572366,
+              0.867419776078199,
+              0.90493010384691
+            ],
+            "direct_r2": [
+              0.6570248100946149,
+              0.7481187601640579,
+              0.8079956702680825
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8725459696274505,
+            "mae": 0.0362053681473614,
+            "mean_direct_correlation": 0.8725459696274486,
+            "mean_direct_r2": 0.7377130801755851
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed0\\empirical\\diagnostic_results.json",
+          "result_sha256": "3d02d0a340f08b089d0a4f44649f58b99e087a6f4f19fdb6327bb8f88d4b562e",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7627473473548889,
+            0.7790409326553345,
+            0.7425875067710876,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7614585757255554,
+          "test_linear_readout_mean_r2": 0.8166524058312454,
+          "test_rgb_mean_direct_abs_correlation": 0.7614585955937704,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7702943823796734,
+            0.7924726841984019,
+            0.7604643060554365
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.774410457544504,
+          "validation_rgb_mean_r2": 0.38803303241729736
+        },
+        "3407": {
+          "budget": 40,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.1499589783747991,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5266666666666666,
+            "fixed_threshold_shd": 10
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8452880289572366,
+              0.867419776078199,
+              0.90493010384691
+            ],
+            "direct_r2": [
+              0.6570248100946149,
+              0.7481187601640579,
+              0.8079956702680825
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8725459696274505,
+            "mae": 0.0362053681473614,
+            "mean_direct_correlation": 0.8725459696274486,
+            "mean_direct_r2": 0.7377130801755851
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed3407\\empirical\\diagnostic_results.json",
+          "result_sha256": "de82f6458ceba0a2b049fd001f2b90320a7872fd6700a2ee6febfa23f0f5ac3b",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7302403450012207,
+            0.7671554088592529,
+            0.6147243976593018,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7040402293205261,
+          "test_linear_readout_mean_r2": 0.7817978982292081,
+          "test_rgb_mean_direct_abs_correlation": 0.7040400505065918,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7439426518504921,
+            0.7887983263981478,
+            0.6373220331640717
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7233543371375705,
+          "validation_rgb_mean_r2": 0.14126808941364288
+        },
+        "42": {
+          "budget": 40,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.09678373664617539,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5933333333333334,
+            "fixed_threshold_shd": 7
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8452880289572366,
+              0.867419776078199,
+              0.90493010384691
+            ],
+            "direct_r2": [
+              0.6570248100946149,
+              0.7481187601640579,
+              0.8079956702680825
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8725459696274505,
+            "mae": 0.0362053681473614,
+            "mean_direct_correlation": 0.8725459696274486,
+            "mean_direct_r2": 0.7377130801755851
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed42\\empirical\\diagnostic_results.json",
+          "result_sha256": "4183af2421643a40e0bd1656a96bbebffa2f1f030b43c1a7b051fa3a5d58cae5",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7237595915794373,
+            0.7721708416938782,
+            0.6004018783569336,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6987772583961487,
+          "test_linear_readout_mean_r2": 0.8042864406720813,
+          "test_rgb_mean_direct_abs_correlation": 0.698777437210083,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7283740135698206,
+            0.7861378995952237,
+            0.6395315773825513
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7180144968491985,
+          "validation_rgb_mean_r2": 0.09797831624746323
+        }
+      },
+      "physical": {
+        "0": {
+          "budget": 40,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.13337518986066182,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.54,
+            "fixed_threshold_shd": 10
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 5261.21484375,
+              "median": 2.1242892742156982,
+              "minimum": 2.05594539642334,
+              "p95": 11.145524024963379
+            },
+            "direct_correlation": [
+              0.7463029490277762,
+              0.6500980288799817,
+              0.6741903240104846
+            ],
+            "direct_r2": [
+              0.09303280006730574,
+              0.15581473504978405,
+              0.24979855464525358
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.6901971006394136,
+            "mae": 0.04522916807920338,
+            "mean_direct_correlation": 0.6901971006394141,
+            "mean_direct_r2": 0.16621536325411446
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed0\\physical\\diagnostic_results.json",
+          "result_sha256": "7e2d33da642e66e3ae7129636ed8d484407f7858dd03a2fefd454298520610b0",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.6969913840293884,
+            0.7436509728431702,
+            0.5870664119720459,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6759029030799866,
+          "test_linear_readout_mean_r2": 0.8304917668238367,
+          "test_rgb_mean_direct_abs_correlation": 0.6759029229482015,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7018368164882175,
+            0.7347023392927798,
+            0.5894322764147769
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6753238107319247,
+          "validation_rgb_mean_r2": -0.018285969272255898
+        },
+        "3407": {
+          "budget": 40,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.10323234113057454,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5666666666666667,
+            "fixed_threshold_shd": 9
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 5261.21484375,
+              "median": 2.1242892742156982,
+              "minimum": 2.05594539642334,
+              "p95": 11.145524024963379
+            },
+            "direct_correlation": [
+              0.7463029490277762,
+              0.6500980288799817,
+              0.6741903240104846
+            ],
+            "direct_r2": [
+              0.09303280006730574,
+              0.15581473504978405,
+              0.24979855464525358
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.6901971006394136,
+            "mae": 0.04522916807920338,
+            "mean_direct_correlation": 0.6901971006394141,
+            "mean_direct_r2": 0.16621536325411446
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed3407\\physical\\diagnostic_results.json",
+          "result_sha256": "48d271a71f69ce6bd93483b1aebd1588e2b87fb288dbe355c0c74aa3686ddbe4",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.645563542842865,
+            0.680189847946167,
+            0.5832312703132629,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6363280415534973,
+          "test_linear_readout_mean_r2": 0.7983645350717679,
+          "test_rgb_mean_direct_abs_correlation": 0.6363282203674316,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.6490903921724201,
+            0.6722828088146335,
+            0.5759790423389926
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6324507477753487,
+          "validation_rgb_mean_r2": -0.3120436370372772
+        },
+        "42": {
+          "budget": 40,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.08761865383386612,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6066666666666667,
+            "fixed_threshold_shd": 8
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "condition_numbers": {
+              "maximum": 5261.21484375,
+              "median": 2.1242892742156982,
+              "minimum": 2.05594539642334,
+              "p95": 11.145524024963379
+            },
+            "direct_correlation": [
+              0.7463029490277762,
+              0.6500980288799817,
+              0.6741903240104846
+            ],
+            "direct_r2": [
+              0.09303280006730574,
+              0.15581473504978405,
+              0.24979855464525358
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.6901971006394136,
+            "mae": 0.04522916807920338,
+            "mean_direct_correlation": 0.6901971006394141,
+            "mean_direct_r2": 0.16621536325411446
+          },
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed42\\physical\\diagnostic_results.json",
+          "result_sha256": "c4d255063a7918f4ad76f30b9cbb71db15425105c500a6100f237c55f7633c8f",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.720440149307251,
+            0.7118819952011108,
+            0.568268358707428,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6668634414672852,
+          "test_linear_readout_mean_r2": 0.816323617352334,
+          "test_rgb_mean_direct_abs_correlation": 0.6668635010719299,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7147298834409002,
+            0.6905997212022362,
+            0.5695039210472375
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6582778418967913,
+          "validation_rgb_mean_r2": -0.14758475124835968
+        }
+      },
+      "point": {
+        "0": {
+          "budget": 40,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.02106418518225352,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6066666666666667,
+            "fixed_threshold_shd": 6
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed0\\point\\diagnostic_results.json",
+          "result_sha256": "56903f9b65f4af7f8b2ab4c656fe33d95ddcabcacf41ded93f1969a859a0ac9e",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.46981075406074524,
+            0.34774377942085266,
+            0.5623281002044678,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.4716995060443878,
+          "test_linear_readout_mean_r2": 0.7597419019287329,
+          "test_rgb_mean_direct_abs_correlation": 0.4599608778953552,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.47461155501445595,
+            0.3742478647286454,
+            0.5701872201579844
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.4730155466336952,
+          "validation_rgb_mean_r2": -5.0277628898620605
+        },
+        "3407": {
+          "budget": 40,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.029361680964628857,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.62,
+            "fixed_threshold_shd": 6
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed3407\\point\\diagnostic_results.json",
+          "result_sha256": "8824c7e90179648d7bb7891f8a703a3ab243138102e797601a4ce260973e30d7",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.4266055226325989,
+            0.4830590784549713,
+            0.49743887782096863,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.47499880194664,
+          "test_linear_readout_mean_r2": 0.7377859186101208,
+          "test_rgb_mean_direct_abs_correlation": 0.46903449296951294,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.43933011882326195,
+            0.48984280419518117,
+            0.5336434946539248
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.48760547255745595,
+          "validation_rgb_mean_r2": -5.806812763214111
+        },
+        "42": {
+          "budget": 40,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.021756365885337192,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.7266666666666667,
+            "fixed_threshold_shd": 4
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\relation_budget_curve_v1\\k40\\seed42\\point\\diagnostic_results.json",
+          "result_sha256": "822b3aad99f7812d2e7dc3706e0fd53bef8462cf07e55f079fd36b5c3d542831",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.40968480706214905,
+            0.5542303323745728,
+            0.5595451593399048,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.5078199505805969,
+          "test_linear_readout_mean_r2": 0.7394631737534739,
+          "test_rgb_mean_direct_abs_correlation": 0.5078200995922089,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.4264794648867017,
+            0.560199586094765,
+            0.597294016404469
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.5279910224619786,
+          "validation_rgb_mean_r2": -5.59373664855957
+        }
+      }
+    },
+    "80": {
+      "empirical": {
+        "0": {
+          "budget": 80,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.059981000383694964,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5133333333333333,
+            "fixed_threshold_shd": 8
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8544950512902917,
+              0.9044041195434589,
+              0.9263730187241732
+            ],
+            "direct_r2": [
+              0.7013510720809265,
+              0.8179440275346701,
+              0.8340700778839034
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8950907298526386,
+            "mae": 0.03646881168336936,
+            "mean_direct_correlation": 0.8950907298526413,
+            "mean_direct_r2": 0.7844550591665
+          },
+          "result_path": ".\\outputs\\empirical_function_control_k80_v1\\formal_seed0\\diagnostic_results.json",
+          "result_sha256": "2b096a49e0d7a68a6c786e516fba3f5cf759855570c3b165f6505a8f6883c6cb",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.6035783886909485,
+            0.7517403364181519,
+            0.723253607749939,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.6928575038909912,
+          "test_linear_readout_mean_r2": 0.8057942365766968,
+          "test_rgb_mean_direct_abs_correlation": 0.6928574442863464,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.5783181949821007,
+            0.7644216260822463,
+            0.7393781729676759
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.6940393313440077,
+          "validation_rgb_mean_r2": 0.06419012695550919
+        },
+        "3407": {
+          "budget": 80,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.08292155615488687,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.58,
+            "fixed_threshold_shd": 9
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8544950512902917,
+              0.9044041195434589,
+              0.9263730187241732
+            ],
+            "direct_r2": [
+              0.7013510720809265,
+              0.8179440275346701,
+              0.8340700778839034
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8950907298526386,
+            "mae": 0.03646881168336936,
+            "mean_direct_correlation": 0.8950907298526413,
+            "mean_direct_r2": 0.7844550591665
+          },
+          "result_path": ".\\outputs\\empirical_function_control_k80_v1\\formal_seed3407\\diagnostic_results.json",
+          "result_sha256": "299bbb001328c7aa7efe8b074026dee7729331e4865567ccc11c5db0d30b01bb",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.6718775629997253,
+            0.7606856226921082,
+            0.7713034152984619,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7346228957176208,
+          "test_linear_readout_mean_r2": 0.7908316148303519,
+          "test_rgb_mean_direct_abs_correlation": 0.7346222003300985,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.6861693898187636,
+            0.7813134761935187,
+            0.7577655374733965
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7417494678285595,
+          "validation_rgb_mean_r2": 0.3172810971736908
+        },
+        "42": {
+          "budget": 80,
+          "condition_kind": "empirical",
+          "final_ccrl_validation_total": 0.08233901254336039,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6466666666666666,
+            "fixed_threshold_shd": 7
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": {
+            "assignment": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "direct_correlation": [
+              0.8544950512902917,
+              0.9044041195434589,
+              0.9263730187241732
+            ],
+            "direct_r2": [
+              0.7013510720809265,
+              0.8179440275346701,
+              0.8340700778839034
+            ],
+            "finite": true,
+            "hungarian_mcc": 0.8950907298526386,
+            "mae": 0.03646881168336936,
+            "mean_direct_correlation": 0.8950907298526413,
+            "mean_direct_r2": 0.7844550591665
+          },
+          "result_path": ".\\outputs\\empirical_function_control_k80_v1\\formal_seed42\\diagnostic_results.json",
+          "result_sha256": "5e744543607faeff57b442a1fe1d2ee01d6c5ddde5beab135beb989e025a34a4",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7143439650535583,
+            0.7694447636604309,
+            0.7600681185722351,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7479525208473206,
+          "test_linear_readout_mean_r2": 0.7907401836316279,
+          "test_rgb_mean_direct_abs_correlation": 0.7479522824287415,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7413625318018068,
+            0.7988233387007598,
+            0.7623892600659323
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.767525043522833,
+          "validation_rgb_mean_r2": 0.3991972506046295
+        }
+      },
+      "physical": {
+        "0": {
+          "budget": 80,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.08678044156233469,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6066666666666667,
+            "fixed_threshold_shd": 9
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\conflict_projected_physics_k80_closed_v18_seed0\\formal\\diagnostic_results.json",
+          "result_sha256": "57e3454d350444b4c6715db84953b4e1b50c864c96af24f45cebac4d405166b7",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.6766754388809204,
+            0.822830319404602,
+            0.7281336188316345,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7425466179847717,
+          "test_linear_readout_mean_r2": 0.8319583209355665,
+          "test_rgb_mean_direct_abs_correlation": 0.7425464590390524,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.6877410736125469,
+            0.8429138851719649,
+            0.7427938430170563
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7578162672671893,
+          "validation_rgb_mean_r2": 0.15903450548648834
+        },
+        "3407": {
+          "budget": 80,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.14076620018482208,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.5533333333333333,
+            "fixed_threshold_shd": 9
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\conflict_projected_physics_k80_closed_v17_seed3407\\formal\\diagnostic_results.json",
+          "result_sha256": "fb973d64a53919b461a93d92ea4cff885e311544727a50a2c3350ca17e143454",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7250959873199463,
+            0.8350674510002136,
+            0.7536138892173767,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.771259069442749,
+          "test_linear_readout_mean_r2": 0.819513651414959,
+          "test_rgb_mean_direct_abs_correlation": 0.7712591091791788,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.7181464668088348,
+            0.8538671661413315,
+            0.7621939159881151
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7780691829794271,
+          "validation_rgb_mean_r2": 0.22075678408145905
+        },
+        "42": {
+          "budget": 80,
+          "condition_kind": "physical",
+          "final_ccrl_validation_total": 0.16601852639516196,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6066666666666667,
+            "fixed_threshold_shd": 7
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\conflict_projected_physics_k80_closed_v18_seed42\\formal\\diagnostic_results.json",
+          "result_sha256": "3994b655ab3e708dcc65173a497aaa085993290fec371fc647d1b410031d2661",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.7464532852172852,
+            0.8478988409042358,
+            0.7357962131500244,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.7767164707183838,
+          "test_linear_readout_mean_r2": 0.821814354845029,
+          "test_rgb_mean_direct_abs_correlation": 0.7767161130905151,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.746571224407144,
+            0.867802870436277,
+            0.7591831245626254
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.7911857398020153,
+          "validation_rgb_mean_r2": 0.27614501118659973
+        }
+      },
+      "point": {
+        "0": {
+          "budget": 80,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.02659049474199613,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.66,
+            "fixed_threshold_shd": 6
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\matched_point_control_k80_v1\\formal_seed0\\diagnostic_results.json",
+          "result_sha256": "9c5fb4a8c0163e895fee9a00d2f700a79c482738042dadba98c39b164c028b66",
+          "seed": 0,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.5354296565055847,
+            0.4887177050113678,
+            0.6165883541107178,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.5484228134155273,
+          "test_linear_readout_mean_r2": 0.7509153800871238,
+          "test_rgb_mean_direct_abs_correlation": 0.5469119052092234,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.5138000556896966,
+            0.5215011624531497,
+            0.6292571998864536
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.5548528060097666,
+          "validation_rgb_mean_r2": -3.246305227279663
+        },
+        "3407": {
+          "budget": 80,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.024401821777224542,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.6866666666666666,
+            "fixed_threshold_shd": 7
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\matched_point_control_k80_v1\\formal_seed3407\\diagnostic_results.json",
+          "result_sha256": "e60436715e78fbba9bf1b91c2d0ffaef9bc9a1d1fb6d6657509403f9fe10dfc2",
+          "seed": 3407,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.442289799451828,
+            0.5220912098884583,
+            0.6345217227935791,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.5400652289390564,
+          "test_linear_readout_mean_r2": 0.7433074177963637,
+          "test_rgb_mean_direct_abs_correlation": 0.5329675773779551,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.4193056100483198,
+            0.5434555830242338,
+            0.6743059697257556
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.545689054266103,
+          "validation_rgb_mean_r2": -4.645287036895752
+        },
+        "42": {
+          "budget": 80,
+          "condition_kind": "point",
+          "final_ccrl_validation_total": 0.02621089403827985,
+          "final_supervision_weight": 0.1,
+          "graph": {
+            "edge_auroc": 0.7666666666666667,
+            "fixed_threshold_shd": 4
+          },
+          "legacy_k80_contract_equivalence": {
+            "condition_definition": true,
+            "floor_schedule": true,
+            "initial_state": true,
+            "model": true,
+            "no_warm_start": true,
+            "normalization_budget": true,
+            "normalization_source": true,
+            "normalization_subset": true,
+            "split": true,
+            "training": true
+          },
+          "parameter_count": 16902384,
+          "post_lock_teacher_validation": null,
+          "result_path": ".\\outputs\\matched_point_control_k80_v1\\formal_seed42\\diagnostic_results.json",
+          "result_sha256": "467332f519144b6fc5b9ab808b9270e0b871f1df0929bd3665187adf5b2c7cf8",
+          "seed": 42,
+          "test_anchor_mean_direct_r2": 1.0,
+          "test_direct_abs_correlation": [
+            0.4744492471218109,
+            0.6248679757118225,
+            0.4712691307067871,
+            1.0,
+            1.0
+          ],
+          "test_hungarian_rgb_mcc": 0.5235289931297302,
+          "test_linear_readout_mean_r2": 0.7487571709075771,
+          "test_rgb_mean_direct_abs_correlation": 0.5235287845134735,
+          "valid": true,
+          "validation_rgb_direct_abs_correlation": [
+            0.4521610476482277,
+            0.6296101986276731,
+            0.5109734078608236
+          ],
+          "validation_rgb_mean_direct_abs_correlation": 0.5309148847122415,
+          "validation_rgb_mean_r2": -3.8983476161956787
+        }
+      }
+    }
+  },
+  "protocol_version": "relation_supervision_budget_curve_v1"
+}

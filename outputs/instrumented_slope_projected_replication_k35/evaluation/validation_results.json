@@ -1,0 +1,479 @@
+{
+  "aggregate_seed_ensemble": {
+    "delta_projected_minus_raw": {
+      "mean_abs_correlation": 0.005150197805367185,
+      "mean_r2": 0.011559926768262674
+    },
+    "metrics": {
+      "projected_only_curve": {
+        "coordinates": {
+          "l": {
+            "abs_correlation": 0.9580217510122889,
+            "normalized_rmse": 0.29878306111234576,
+            "r2": 0.9107286823923363
+          },
+          "mu_1": {
+            "abs_correlation": 0.9988875390924119,
+            "normalized_rmse": 0.04864282402933266,
+            "r2": 0.9976338756704514
+          },
+          "mu_2": {
+            "abs_correlation": 0.9988875390924125,
+            "normalized_rmse": 0.04864282402933254,
+            "r2": 0.9976338756704514
+          },
+          "roughness": {
+            "abs_correlation": 0.9988875390924123,
+            "normalized_rmse": 0.04864282402933281,
+            "r2": 0.9976338756704514
+          },
+          "v1": {
+            "abs_correlation": 0.9367065349587983,
+            "normalized_rmse": 0.3659575572229865,
+            "r2": 0.8660750663113845
+          }
+        },
+        "mean_abs_correlation": 0.9782781806496648,
+        "mean_normalized_rmse": 0.16213381808466604,
+        "mean_r2": 0.9539410751430151
+      },
+      "raw_baseline_curve": {
+        "coordinates": {
+          "l": {
+            "abs_correlation": 0.9476093430628837,
+            "normalized_rmse": 0.3476471061767378,
+            "r2": 0.87914148956694
+          },
+          "mu_1": {
+            "abs_correlation": 0.9986778116701375,
+            "normalized_rmse": 0.05297096586242,
+            "r2": 0.9971940767756023
+          },
+          "mu_2": {
+            "abs_correlation": 0.9986778116701419,
+            "normalized_rmse": 0.05297096586241997,
+            "r2": 0.9971940767756023
+          },
+          "roughness": {
+            "abs_correlation": 0.9986778116701417,
+            "normalized_rmse": 0.05297096586242005,
+            "r2": 0.9971940767756023
+          },
+          "v1": {
+            "abs_correlation": 0.9219971361481829,
+            "normalized_rmse": 0.3985197335389864,
+            "r2": 0.8411820219800152
+          }
+        },
+        "mean_abs_correlation": 0.9731279828442976,
+        "mean_normalized_rmse": 0.18101594746059685,
+        "mean_r2": 0.9423811483747524
+      }
+    },
+    "paired_bootstrap": {
+      "confidence": 0.95,
+      "mean_abs_correlation_difference": {
+        "lower": 0.003482257930423316,
+        "mean": 0.005131977988083044,
+        "upper": 0.006980504834249107
+      },
+      "mean_r2_difference": {
+        "lower": 0.006651866593948103,
+        "mean": 0.01143151149035583,
+        "upper": 0.016263593167415963
+      },
+      "repetitions": 1000,
+      "seed": 20260804
+    }
+  },
+  "config_sha256": "edb8d97f68fbbb52eb73e5909794aa6e4e35281191f1ccbdfaf73e68b760e1c8",
+  "decision_checks": {
+    "aggregate_ci": true,
+    "directional_seed_count": 3,
+    "external_evaluation_unlocked": true,
+    "replication_pass": true
+  },
+  "development_validation_used_for_design": true,
+  "external_evaluated": false,
+  "fact_type": "locked_projected_objective_new_seed_replication",
+  "machine_decision": "projected_objective_new_seed_replication_pass_external_unlocked",
+  "protocol_version": "instrumented_slope_projected_replication_k35",
+  "scope": "known_development_validation_new_initializations_external_and_test_sealed",
+  "seed_results": {
+    "123": {
+      "delta_projected_minus_raw": {
+        "mean_abs_correlation": 0.00865128112849578,
+        "mean_r2": 0.020061265810522144
+      },
+      "directional_both": true,
+      "metrics": {
+        "projected_only_curve": {
+          "coordinates": {
+            "l": {
+              "abs_correlation": 0.9580720744616145,
+              "normalized_rmse": 0.29903159727777123,
+              "r2": 0.9105801038295048
+            },
+            "mu_1": {
+              "abs_correlation": 0.9989380858404258,
+              "normalized_rmse": 0.04722894834430577,
+              "r2": 0.9977694264382909
+            },
+            "mu_2": {
+              "abs_correlation": 0.9989380858404284,
+              "normalized_rmse": 0.04722894834430567,
+              "r2": 0.9977694264382909
+            },
+            "roughness": {
+              "abs_correlation": 0.9989380858404282,
+              "normalized_rmse": 0.04722894834430589,
+              "r2": 0.9977694264382909
+            },
+            "v1": {
+              "abs_correlation": 0.9384960677522346,
+              "normalized_rmse": 0.3553204591055458,
+              "r2": 0.8737473713410242
+            }
+          },
+          "mean_abs_correlation": 0.9786764799470262,
+          "mean_normalized_rmse": 0.15920778028324686,
+          "mean_r2": 0.9555271508970803
+        },
+        "raw_baseline_curve": {
+          "coordinates": {
+            "l": {
+              "abs_correlation": 0.9411048397518288,
+              "normalized_rmse": 0.36933151094895694,
+              "r2": 0.8635942350201605
+            },
+            "mu_1": {
+              "abs_correlation": 0.9985427537249874,
+              "normalized_rmse": 0.055903466679186775,
+              "r2": 0.9968748024132491
+            },
+            "mu_2": {
+              "abs_correlation": 0.9985427537249885,
+              "normalized_rmse": 0.0559034666791868,
+              "r2": 0.996874802413249
+            },
+            "roughness": {
+              "abs_correlation": 0.9985427537249885,
+              "normalized_rmse": 0.05590346667918672,
+              "r2": 0.9968748024132491
+            },
+            "v1": {
+              "abs_correlation": 0.9133928931658585,
+              "normalized_rmse": 0.4205819977449309,
+              "r2": 0.823110783172883
+            }
+          },
+          "mean_abs_correlation": 0.9700251988185304,
+          "mean_normalized_rmse": 0.19152478174628965,
+          "mean_r2": 0.9354658850865581
+        }
+      },
+      "paired_bootstrap": {
+        "confidence": 0.95,
+        "mean_abs_correlation_difference": {
+          "lower": 0.006446169217974943,
+          "mean": 0.008678333342135445,
+          "upper": 0.011133580839795756
+        },
+        "mean_r2_difference": {
+          "lower": 0.014380586002930162,
+          "mean": 0.020058196517479913,
+          "upper": 0.026109947558862083
+        },
+        "repetitions": 1000,
+        "seed": 20260804
+      },
+      "projection_audits": {
+        "projected_only_curve": {
+          "exact_curve": {
+            "max_function_evaluations": 49,
+            "mean_function_evaluations": 17.326704545454547,
+            "roughness_lower": 0.0,
+            "roughness_upper": 1.0,
+            "row_count": 352,
+            "success_count": 352
+          },
+          "raw_model": {
+            "boundary_active_fraction": 0.07883522659540176,
+            "mean_projection_scale": 1.0
+          }
+        },
+        "raw_baseline_curve": {
+          "exact_curve": {
+            "max_function_evaluations": 49,
+            "mean_function_evaluations": 14.747159090909092,
+            "roughness_lower": 0.0,
+            "roughness_upper": 1.0,
+            "row_count": 352,
+            "success_count": 352
+          },
+          "raw_model": {
+            "boundary_active_fraction": 0.011363636702299118,
+            "mean_projection_scale": 1.0
+          }
+        }
+      }
+    },
+    "2026": {
+      "delta_projected_minus_raw": {
+        "mean_abs_correlation": 0.0032891507837982115,
+        "mean_r2": 0.008043842778548638
+      },
+      "directional_both": true,
+      "metrics": {
+        "projected_only_curve": {
+          "coordinates": {
+            "l": {
+              "abs_correlation": 0.9594655933020194,
+              "normalized_rmse": 0.28376866442135473,
+              "r2": 0.9194753450925206
+            },
+            "mu_1": {
+              "abs_correlation": 0.9988822921867319,
+              "normalized_rmse": 0.04751573204516668,
+              "r2": 0.9977422552082119
+            },
+            "mu_2": {
+              "abs_correlation": 0.9988822921867371,
+              "normalized_rmse": 0.04751573204516665,
+              "r2": 0.9977422552082119
+            },
+            "roughness": {
+              "abs_correlation": 0.9988822921867366,
+              "normalized_rmse": 0.04751573204516673,
+              "r2": 0.9977422552082119
+            },
+            "v1": {
+              "abs_correlation": 0.9389628993437307,
+              "normalized_rmse": 0.35747803660464733,
+              "r2": 0.8722094533452864
+            }
+          },
+          "mean_abs_correlation": 0.9790150738411911,
+          "mean_normalized_rmse": 0.15675877943230043,
+          "mean_r2": 0.9569823128124885
+        },
+        "raw_baseline_curve": {
+          "coordinates": {
+            "l": {
+              "abs_correlation": 0.9532119205827299,
+              "normalized_rmse": 0.3216481261567322,
+              "r2": 0.8965424829398628
+            },
+            "mu_1": {
+              "abs_correlation": 0.9988328999568747,
+              "normalized_rmse": 0.05047553394541233,
+              "r2": 0.9974522204729255
+            },
+            "mu_2": {
+              "abs_correlation": 0.9988328999568764,
+              "normalized_rmse": 0.050475533945412404,
+              "r2": 0.9974522204729255
+            },
+            "roughness": {
+              "abs_correlation": 0.9988328999568764,
+              "normalized_rmse": 0.05047553394541223,
+              "r2": 0.9974522204729256
+            },
+            "v1": {
+              "abs_correlation": 0.9289189948336068,
+              "normalized_rmse": 0.3797456967352498,
+              "r2": 0.8557932058110598
+            }
+          },
+          "mean_abs_correlation": 0.9757259230573929,
+          "mean_normalized_rmse": 0.17056408494564382,
+          "mean_r2": 0.9489384700339398
+        }
+      },
+      "paired_bootstrap": {
+        "confidence": 0.95,
+        "mean_abs_correlation_difference": {
+          "lower": 0.0012216815008168431,
+          "mean": 0.003266702249669093,
+          "upper": 0.005452971914931171
+        },
+        "mean_r2_difference": {
+          "lower": 0.0016157236322735915,
+          "mean": 0.007901194497064024,
+          "upper": 0.013900980034138338
+        },
+        "repetitions": 1000,
+        "seed": 20260804
+      },
+      "projection_audits": {
+        "projected_only_curve": {
+          "exact_curve": {
+            "max_function_evaluations": 49,
+            "mean_function_evaluations": 17.857954545454547,
+            "roughness_lower": 0.0,
+            "roughness_upper": 1.0,
+            "row_count": 352,
+            "success_count": 352
+          },
+          "raw_model": {
+            "boundary_active_fraction": 0.109375,
+            "mean_projection_scale": 1.0
+          }
+        },
+        "raw_baseline_curve": {
+          "exact_curve": {
+            "max_function_evaluations": 49,
+            "mean_function_evaluations": 14.727272727272727,
+            "roughness_lower": 0.0,
+            "roughness_upper": 1.0,
+            "row_count": 352,
+            "success_count": 352
+          },
+          "raw_model": {
+            "boundary_active_fraction": 0.016335228458046913,
+            "mean_projection_scale": 1.0
+          }
+        }
+      }
+    },
+    "31415": {
+      "delta_projected_minus_raw": {
+        "mean_abs_correlation": 0.003991447457529662,
+        "mean_r2": 0.012258014007615281
+      },
+      "directional_both": true,
+      "metrics": {
+        "projected_only_curve": {
+          "coordinates": {
+            "l": {
+              "abs_correlation": 0.9519603255440149,
+              "normalized_rmse": 0.3386565568225709,
+              "r2": 0.8853117365210809
+            },
+            "mu_1": {
+              "abs_correlation": 0.9987423023466906,
+              "normalized_rmse": 0.05484015783313586,
+              "r2": 0.9969925570888367
+            },
+            "mu_2": {
+              "abs_correlation": 0.9987423023466913,
+              "normalized_rmse": 0.054840157833135644,
+              "r2": 0.9969925570888367
+            },
+            "roughness": {
+              "abs_correlation": 0.9987423023466909,
+              "normalized_rmse": 0.054840157833136116,
+              "r2": 0.9969925570888367
+            },
+            "v1": {
+              "abs_correlation": 0.92750081406452,
+              "normalized_rmse": 0.4125823407422905,
+              "r2": 0.8297758121076125
+            }
+          },
+          "mean_abs_correlation": 0.9751376093297216,
+          "mean_normalized_rmse": 0.18315187421285378,
+          "mean_r2": 0.9412130439790406
+        },
+        "raw_baseline_curve": {
+          "coordinates": {
+            "l": {
+              "abs_correlation": 0.9422802670510734,
+              "normalized_rmse": 0.3857794716744183,
+              "r2": 0.8511741992346067
+            },
+            "mu_1": {
+              "abs_correlation": 0.9985826036528268,
+              "normalized_rmse": 0.05884738652145204,
+              "r2": 0.9965369850995949
+            },
+            "mu_2": {
+              "abs_correlation": 0.9985826036528286,
+              "normalized_rmse": 0.05884738652145182,
+              "r2": 0.9965369850995949
+            },
+            "roughness": {
+              "abs_correlation": 0.9985826036528281,
+              "normalized_rmse": 0.05884738652145228,
+              "r2": 0.9965369850995948
+            },
+            "v1": {
+              "abs_correlation": 0.9177027313514028,
+              "normalized_rmse": 0.44273017140947696,
+              "r2": 0.8039899953237352
+            }
+          },
+          "mean_abs_correlation": 0.9711461618721919,
+          "mean_normalized_rmse": 0.20101036052965027,
+          "mean_r2": 0.9289550299714253
+        }
+      },
+      "paired_bootstrap": {
+        "confidence": 0.95,
+        "mean_abs_correlation_difference": {
+          "lower": 0.0027042053465336398,
+          "mean": 0.0039452884018978,
+          "upper": 0.005241275554367555
+        },
+        "mean_r2_difference": {
+          "lower": 0.007949814315945172,
+          "mean": 0.012130993399212265,
+          "upper": 0.016219120525338755
+        },
+        "repetitions": 1000,
+        "seed": 20260804
+      },
+      "projection_audits": {
+        "projected_only_curve": {
+          "exact_curve": {
+            "max_function_evaluations": 49,
+            "mean_function_evaluations": 17.423295454545453,
+            "roughness_lower": 0.0,
+            "roughness_upper": 1.0,
+            "row_count": 352,
+            "success_count": 352
+          },
+          "raw_model": {
+            "boundary_active_fraction": 0.13352273404598236,
+            "mean_projection_scale": 1.0
+          }
+        },
+        "raw_baseline_curve": {
+          "exact_curve": {
+            "max_function_evaluations": 49,
+            "mean_function_evaluations": 15.269886363636363,
+            "roughness_lower": 0.0,
+            "roughness_upper": 1.0,
+            "row_count": 352,
+            "success_count": 352
+          },
+          "raw_model": {
+            "boundary_active_fraction": 0.0063920458778738976,
+            "mean_projection_scale": 1.0
+          }
+        }
+      }
+    }
+  },
+  "source_files_sha256": {
+    "k27": "e94fdd16af1befeeea6434a507f0ddcaeb13eafc8348e9a83c1caee1271a1cce",
+    "k29": "0219624cf152eec39f4cb6fef215ee3917536e4b3f9b6bafcede3d8bc2c3251f",
+    "k30": "5fa124138bc425e2cb2c7511d9ab7c876b126b59c54b4927f1bd5bfb2e62e83a",
+    "k34": "1848996cfcabe8ea32d922955b4341b8aa383e7cc217c512e7cc7dee8715721e",
+    "k35": "99e69ab058db67602e086eb41f7d7d405bd971ae037600630858f3a49843ddcd",
+    "preflight": "511632ca3d23a185cca43fde2bb0b1239a7909295849bb232aac0d6a4e6643d6",
+    "slope": "7b4b39e5f0cb2208d0489c0a23a4f45543b3467fa47b35e13f5f042beb94621a"
+  },
+  "test_evaluated": false,
+  "test_ids_sha256": "797f4ce8ff4a1224d62eba06bf67ddb9eb2c8c27ac5ffcab15060351f20b3a53",
+  "valid": true,
+  "validation_count": 352,
+  "validation_ids_sha256": "2911609c397a051d8965e99e5443d61b3b210c345c472d6cb71de4e0702ec375",
+  "validity": {
+    "all_metrics_finite": true,
+    "all_six_training_locks_loaded": true,
+    "preflight_valid": true,
+    "test_ids_not_evaluated": true,
+    "validation_ids_exact": true
+  }
+}

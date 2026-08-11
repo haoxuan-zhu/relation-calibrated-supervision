@@ -1,0 +1,15 @@
+protocol_version: relation_tube_geometry_tradeoff_k5_aggregate_v1
+preregistration: PROTOCOLS.md
+seeds: [0, 42, 3407]
+inputs:
+  0:
+    path: outputs/relation_tube_geometry_tradeoff_k5_seed0/formal/geometry_validation_readout.json
+    sha256: 7754e78235f9460f69cd21c8b93e9c72558fb02c18ea3d0d9480ef5544603931
+  42:
+    path: outputs/relation_tube_geometry_tradeoff_k5_seed42/formal/geometry_validation_readout.json
+    sha256: cb893fa27652978231c616eac7e7e92c5c2ce5d9485b3bc354ce4c390424c8a3
+  3407:
+    path: outputs/relation_tube_geometry_ablation_k4_seed3407/formal/geometry_validation_readout.json
+    sha256: 048509bed8a66590b1ce56358a8b761be68dced903211f753e175439876e2bf0
+runtime:
+  output_root: outputs/relation_tube_geometry_tradeoff_k5_aggregate

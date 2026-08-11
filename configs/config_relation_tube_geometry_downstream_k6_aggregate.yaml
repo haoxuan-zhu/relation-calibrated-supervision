@@ -1,0 +1,14 @@
+protocol_version: relation_tube_geometry_downstream_audit_k6_aggregate_v1
+preregistration: PROTOCOLS.md
+inputs:
+  0:
+    path: outputs/relation_tube_geometry_downstream_k6_seed0/downstream_validation_readout.json
+    sha256: 6e925138ae5358ee6fec3c2fe465624fe3ed9bb60ac7c9616da2f126397c9551
+  42:
+    path: outputs/relation_tube_geometry_downstream_k6_seed42/downstream_validation_readout.json
+    sha256: c81a6f074e7a8bd42272957975d367da5d7ec9432d8d13b05369dd1402d99e98
+  3407:
+    path: outputs/relation_tube_geometry_downstream_k6_seed3407/downstream_validation_readout.json
+    sha256: 2e0fa9b12dd5f8f9f354602076b3f0337dc5690bde787f95edc4925f8f8e98e4
+output_path: outputs/relation_tube_geometry_downstream_k6_aggregate/aggregate_results.json
+test_evaluated: false

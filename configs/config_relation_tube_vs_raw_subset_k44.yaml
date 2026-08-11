@@ -1,0 +1,46 @@
+protocol_version: relation_tube_vs_raw_subset_k44_v1
+preregistration: PROTOCOLS.md
+scope:
+  dataset: light_tunnel
+  budget: 80
+  model_seed: 3407
+  raw_ridge_alpha: 0.1
+  subset_seeds: [20260811, 20260821, 20260831]
+  test_evaluated: false
+subsets:
+  20260811:
+    raw_registry: configs/config_raw_ridge_propagation_subset_20260811_v1.yaml
+    raw_registry_sha256: 11f3992533e256bdcc8765731805d9dfe8a9e648107848051175edbbc10f48d1
+    tube_config: configs/config_relation_tube_calibration_subset_k8_20260811.yaml
+    tube_config_sha256: 20f42b6b465f06fdd32c1c2510302faf18512ed04942d71b23b1ce6b092e431e
+    tube_artifact_root: outputs/relation_tube_calibration_subset_k8_20260811
+    locked_tube_readout: outputs/relation_tube_calibration_subset_k8_20260811/formal/subset_validation_readout.json
+    locked_tube_readout_sha256: 6cd7555cad95d840b99c8a4238eeeaa8627fc0c441495d535d2d6368eabb198a
+  20260821:
+    raw_registry: configs/config_raw_ridge_propagation_subset_20260821_v1.yaml
+    raw_registry_sha256: bcc8542e4dacb1395b0336948e743045a77a2b54276d13daffc664ec5b073012
+    tube_config: configs/config_relation_tube_calibration_subset_k8_20260821.yaml
+    tube_config_sha256: 44e5c840ff9998ff36a979409341d2cc122272d990a9c4dec67e68ccfa216448
+    tube_artifact_root: outputs/relation_tube_calibration_subset_k8_20260821
+    locked_tube_readout: outputs/relation_tube_calibration_subset_k8_20260821/formal/subset_validation_readout.json
+    locked_tube_readout_sha256: 0bdbdc734db913efd80bc3a811b173de8bd012ed1eb5a3856fd7dedafe5f4bdf
+  20260831:
+    raw_registry: configs/config_raw_ridge_propagation_subset_20260831_v1.yaml
+    raw_registry_sha256: b5274c11e776e1a84f0c7a7148e62fb127d5cff7c3e3ac5703c41bda85d28294
+    tube_config: configs/config_relation_tube_calibration_subset_k8_20260831.yaml
+    tube_config_sha256: c75d567c9186091797b177e9ab3c59752e21ba484f6380e1f98d44fa56bfca47
+    tube_artifact_root: outputs/relation_tube_calibration_subset_k8_20260831
+    locked_tube_readout: outputs/relation_tube_calibration_subset_k8_20260831/formal/subset_validation_readout.json
+    locked_tube_readout_sha256: 177c55311c8dc93cf869668bea1f10f20b17c305c3cc878139bbf004bc08d472
+bootstrap:
+  repetitions: 10000
+  confidence: 0.95
+  seed: 2026081101
+implementation:
+  entrypoint: scripts/run_relation_tube_vs_raw_subset_k44.py
+  entrypoint_sha256: b7a0a6ac92b29d264f849354fef98fb5f2c3d3981c35f10189b467a77c65bab1
+  expected_parameter_count: 16902384
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/relation_tube_vs_raw_subset_k44

@@ -1,0 +1,13 @@
+protocol_version: relation_tube_calibration_subset_k8_aggregate_v1
+inputs:
+  20260811:
+    path: outputs/relation_tube_calibration_subset_k8_20260811/formal/subset_validation_readout.json
+    sha256: 6cd7555cad95d840b99c8a4238eeeaa8627fc0c441495d535d2d6368eabb198a
+  20260821:
+    path: outputs/relation_tube_calibration_subset_k8_20260821/formal/subset_validation_readout.json
+    sha256: 0bdbdc734db913efd80bc3a811b173de8bd012ed1eb5a3856fd7dedafe5f4bdf
+  20260831:
+    path: outputs/relation_tube_calibration_subset_k8_20260831/formal/subset_validation_readout.json
+    sha256: 177c55311c8dc93cf869668bea1f10f20b17c305c3cc878139bbf004bc08d472
+output_path: outputs/relation_tube_calibration_subset_k8_aggregate_v1/calibration_subset_aggregate.json
+test_evaluated: false

@@ -1,0 +1,1284 @@
+{
+  "schema_version": 1,
+  "release_kind": "double_anonymized_review_repository",
+  "source_git_history_included": false,
+  "title_page_included": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "64bbc55ada5115440fa76c3b12f123b943d6ea0e2f4d0e8b9d54d00b9986d66e"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "c274df97c94733e99bd0bbe0e665ebace754d8422f6e58a67bf0895d6b0b7e60"
+    },
+    {
+      "path": "COMMANDS.md",
+      "sha256": "954082f9a282ee3e456a45e2aaf50fff52bc2b3ece47eb3a2660a304f43e12af"
+    },
+    {
+      "path": "DATASETS.md",
+      "sha256": "c17e6c6b87f21bc628ae98f5de15c2d358c64cf9b0bf1b13799ea3f7b27dace0"
+    },
+    {
+      "path": "PROTOCOLS.md",
+      "sha256": "7dcb69ea73748961d570399fd9e9669b23d53a3bf4867be38f1628a5c535bf91"
+    },
+    {
+      "path": "README.md",
+      "sha256": "45d713b986db17de816ee5de08431aa186377417f493ff412d389fddcdad80c0"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "sha256": "1bfca01f5742560c2240d60bc7a98bf657f7819b8b213d9ba3e72b3aec88134f"
+    },
+    {
+      "path": "analysis/build_tables.py",
+      "sha256": "0609fe22a6b19e7a83eaac4f1e0e77d68410fcbe55be98a04db7fa9a6f0a555e"
+    },
+    {
+      "path": "analysis/generated/axis_separable_crossed_rows.tex",
+      "sha256": "b4079ff01c2a0c05b38d56e293a34b342c566873e71b526ecea1bca48af3097d"
+    },
+    {
+      "path": "analysis/generated/bounded_control_rows.tex",
+      "sha256": "71960d7707252ff6c76f2e6fdc48c5930c13a4eef26c52a80770fef4cd195859"
+    },
+    {
+      "path": "analysis/generated/bounded_unbounded_heldout_rows.tex",
+      "sha256": "2c9a7b68531892f7a2de8081ba188cc7ed89394b33fa63d4f3c4777d3e4996f2"
+    },
+    {
+      "path": "analysis/generated/budget_main_rows.tex",
+      "sha256": "be8a61b6cd4ef639a38ede61c2b83594f2aefb47b382de1cfa1dd176d7174228"
+    },
+    {
+      "path": "analysis/generated/budget_r2_rows.tex",
+      "sha256": "c3949bd88d97b2094ba9cbe751fd12f7c19dcf3552358d239af2e6c438e4c8c6"
+    },
+    {
+      "path": "analysis/generated/budget_summary_rows.tex",
+      "sha256": "45fe85287befa3fa4e92fcc2e252462976512e2f0f42b900c93998bd8470ad9b"
+    },
+    {
+      "path": "analysis/generated/condition_metrics.csv",
+      "sha256": "224a1556254db8b891209111424fd82301a855d154c29fc4a9a965131c3709bd"
+    },
+    {
+      "path": "analysis/generated/condition_metrics.md",
+      "sha256": "599ecea142fc4585c89f85b558b9cd15b3ec494e8c884ce6b2cbfa8e70a7b3f2"
+    },
+    {
+      "path": "analysis/generated/condition_metrics_diagnostic_rows.tex",
+      "sha256": "e98ca96e71f26d2f934efd29f8ab655f4df5fc5a71bfc190cafda18672e66aa8"
+    },
+    {
+      "path": "analysis/generated/condition_metrics_primary_rows.tex",
+      "sha256": "caf002ece0a9dea3c054839655e65f284377b4032ec971df74dee53711f2fdd5"
+    },
+    {
+      "path": "analysis/generated/cross_axis_coupling_rows.tex",
+      "sha256": "b0ad75a1f48fdcb6ac851cae817b0d13b15a0829dbf8d168de67ec3df28f0b2b"
+    },
+    {
+      "path": "analysis/generated/half_radius_instance_rows.tex",
+      "sha256": "6a94349fd6403581ef8b99b430b15d8bcac98a9abf7c68841a755cbe6449b915"
+    },
+    {
+      "path": "analysis/generated/instrumented_slope_decoder_rows.tex",
+      "sha256": "27f9321be3358504c248a6c135a54b740dace02924c1b49f68fd4f75753e195d"
+    },
+    {
+      "path": "analysis/generated/instrumented_slope_projected_training_rows.tex",
+      "sha256": "73a97c2ed24f91ba116011470c6db2d370731667bc0e4e5901d9bfcd6415b781"
+    },
+    {
+      "path": "analysis/generated/isotropic_geometry_rows.tex",
+      "sha256": "4a71fecbe7582f903616d913efa8fe38fb920f2273fef05caa0652dce50bd784"
+    },
+    {
+      "path": "analysis/generated/isotropic_graph_seed_rows.tex",
+      "sha256": "3c66965913a53756b983e5c78f885fa742ced4a662903085ba0c9f202689f196"
+    },
+    {
+      "path": "analysis/generated/isotropic_heldout_pair_rows.tex",
+      "sha256": "271f20ff486c5a5bd557c4ae7f88a9fcf286867d214d2978155f046f7e03371e"
+    },
+    {
+      "path": "analysis/generated/isotropic_heldout_rows.tex",
+      "sha256": "d17ff740eb5a90461989f54aac0c6c35540d231b93b2b0007cd6ff1f194ab995"
+    },
+    {
+      "path": "analysis/generated/isotropic_subset_rows.tex",
+      "sha256": "65d8c2aa1bc37eac9b1d197c88f6d1f65129ea8d14689e6f9e8decaa4f90852d"
+    },
+    {
+      "path": "analysis/generated/isotropic_validation_gain_rows.tex",
+      "sha256": "914c11986f0bae4e3d71af09deb1acd5dffd850f3b8b113bb033ce62c89be072"
+    },
+    {
+      "path": "analysis/generated/k80_direct_vs_affine_rows.tex",
+      "sha256": "24c842e025891863d2be676ca189a2be0205de53bbc22468b34b42b572789894"
+    },
+    {
+      "path": "analysis/generated/label_noise_robustness_rows.tex",
+      "sha256": "f51770d84728dfdffaa4770d1af9cc9eb71cab35b07b5b8e70b3b770d953785c"
+    },
+    {
+      "path": "analysis/generated/movi_heldout_relation_rows.tex",
+      "sha256": "314d64b685c45845da4f853eadcbd4811ebf513db7109e54655e59ea39b19433"
+    },
+    {
+      "path": "analysis/generated/oas_vs_isotropic_rows.tex",
+      "sha256": "22685221e14519b082bcd058ae708eeb30aa3da6f190ed36d66d5858225a39b3"
+    },
+    {
+      "path": "analysis/generated/radius_scale_rows.tex",
+      "sha256": "d2e0349c51a7bdd3621d1b9b3ac7cfae7ed80bc2b3688681b4e3f095d0d056cf"
+    },
+    {
+      "path": "analysis/generated/relation_budget_curve.pdf",
+      "sha256": "d2f0f4b44765f712748f557cefccd0cd3d9af518c38fbed4189c05da423c5f86"
+    },
+    {
+      "path": "analysis/generated/relation_budget_curve.png",
+      "sha256": "ce1a385654eb92cbc6062325ea69bdd94c2e840a108be6b666899ebe320c152e"
+    },
+    {
+      "path": "analysis/generated/relation_budget_curve.svg",
+      "sha256": "da8b78165cce63e1da6f7a12c23497c73b07265b875dfd67825257eefbd35f1f"
+    },
+    {
+      "path": "analysis/generated/semantic_content_rows.tex",
+      "sha256": "f63ef43abb1a6872f1ed422c3c8427624e46ae909fbe484d155251bd9397aeac"
+    },
+    {
+      "path": "analysis/generated/slope_heldout_summary_rows.tex",
+      "sha256": "17b76a0899c652ec391805584b3ba40302f1f152ae296585994ff5f90e9957c6"
+    },
+    {
+      "path": "analysis/generated/slope_projection_parity_rows.tex",
+      "sha256": "43951edfb5f3f5c4b42381cefd127d5f2d257c71e6e57b359f7ff9e6dbe2a80c"
+    },
+    {
+      "path": "analysis/generated/spring_free2_rounded_rows.tex",
+      "sha256": "a6583d0a0f75da85cbc6041682cc82c527a3fedf0fab54d8271c3ace97f87d10"
+    },
+    {
+      "path": "analysis/generated/spring_free2_rows.tex",
+      "sha256": "6c9c45b2519eb63f3e1b5d93ce60bb9dd3f8659717e2e564784ece46cba2be57"
+    },
+    {
+      "path": "analysis/generated/spring_full_rows.tex",
+      "sha256": "c8d9545820100ba24bd5d247d3b9937dcd0a929235bc1431ade78e14c9ea7029"
+    },
+    {
+      "path": "analysis/generated/spring_main_rounded_rows.tex",
+      "sha256": "333f9e7e1cc5b9e7957f8e52c6ab161c943147af8e492eba591596e7737e2d93"
+    },
+    {
+      "path": "analysis/generated/spring_main_rows.tex",
+      "sha256": "a2e2873b5c3ba957981e78c62f5911a3350ed87d79781aaa3a98e626c1e67ed1"
+    },
+    {
+      "path": "analysis/generated/spring_summary_compact_rows.tex",
+      "sha256": "980a943a7e80be3766be76bf3b03273c3fd6990ecedaf21e8de61e12261df4a3"
+    },
+    {
+      "path": "analysis/generated/spring_summary_rows.tex",
+      "sha256": "362d9b8e0cce0c1e0bd8cb6272954c55c66e008c6999bc0d1b8ada84ed1e4d6f"
+    },
+    {
+      "path": "analysis/generated/spring_unread_replication.csv",
+      "sha256": "e14acf54271de274c9c78358be0f1df398d9f7b51b7d64de1d533b2384cc4e99"
+    },
+    {
+      "path": "analysis/generated/spring_unread_replication.md",
+      "sha256": "26dd5f540d276a5d6ccc14b7743944f167d42fe55c42e1e0de589f36ddd59575"
+    },
+    {
+      "path": "analysis/generated/teacher_budget.md",
+      "sha256": "4b5e96a65e9c1e099b5c4437e174ce83e0ef10e4455de2686fc4db2beefb42d9"
+    },
+    {
+      "path": "analysis/generated/teacher_budget_rows.tex",
+      "sha256": "c3739ddc8a72d0d54ddcebe4c285920df323e0b7c6f0b9d9b8225f0154360d46"
+    },
+    {
+      "path": "analysis/generated/tube_condition_metrics.csv",
+      "sha256": "7347f6ba67a7d1c591341b34ab2f11821db406e469812c866028a4a1ef2da4b1"
+    },
+    {
+      "path": "analysis/generated/tube_seed_rows.tex",
+      "sha256": "d63581a87873bf434efef27ab8560b35727e266f41842587c69f19fd1921e58a"
+    },
+    {
+      "path": "analysis/generated/tube_summary_rows.tex",
+      "sha256": "3754e14767b5bc2b5c5159a9a8cd9c0a461a3414576adea14368653eb11d17e5"
+    },
+    {
+      "path": "analysis/generated/welding_heldout_rows.tex",
+      "sha256": "d8b8be008fff27409b105a417a2cf077b6a3f36669cc3267cff6a5f1387b7b26"
+    },
+    {
+      "path": "analysis/generated/welding_heldout_seed_rows.tex",
+      "sha256": "a4801149d0b0a3532fa573d1f42705fe1faf78d4ba77fe2c462e3cf113ea185d"
+    },
+    {
+      "path": "analysis/plot_budget_curve.py",
+      "sha256": "a6e70b0994a2e7bc58af359157383b9ea05c890c100dc7f1e8f2dc9c89e0a6c2"
+    },
+    {
+      "path": "configs/config_anchor_preserving_raw_ridge_v1.yaml",
+      "sha256": "fe227728f40f47ed56f54b4e775e7c06e4cebf12e1ad2edcaa60ee46b2d42178"
+    },
+    {
+      "path": "configs/config_bounded_unbounded_heldout_k45.yaml",
+      "sha256": "5ad12a376248932cbe0d5dda34798dfc7775d0a7a9b0a8f79d9ba11c1cd99098"
+    },
+    {
+      "path": "configs/config_bounded_unbounded_heldout_k45_v2.yaml",
+      "sha256": "13e9f0e160911bd79d122145b055a3daccb28d70d3232110f2a8b8a62484ec5f"
+    },
+    {
+      "path": "configs/config_calibrated_relation_tube_k0_seed3407.yaml",
+      "sha256": "7e22d6782467b4f676669d302f63a24edbdf8ee3d8886fd147fb3ffe9c8f6a81"
+    },
+    {
+      "path": "configs/config_calibrated_relation_tube_k3_seed0.yaml",
+      "sha256": "951b2fe5f25adbe5983cc7c646e4ca480e1e582daa661554f1a623027954ce08"
+    },
+    {
+      "path": "configs/config_calibrated_relation_tube_k3_seed42.yaml",
+      "sha256": "96ae2615b5f999b4f23137f2050efb171c06733e64f736d2eaa453c9beaa5594"
+    },
+    {
+      "path": "configs/config_calibrated_relation_tube_multiseed_aggregate_k3.yaml",
+      "sha256": "b8734259cdb22f1da71e9d694e76cc9e6dbbd643db77368f40b67616919d7f46"
+    },
+    {
+      "path": "configs/config_causalverse_slope_heldout_k26.yaml",
+      "sha256": "3e2fc63a80d6e04e191aef7ca59838b4421730e90622d8533311a6cdbf42a085"
+    },
+    {
+      "path": "configs/config_causalverse_slope_projection_parity_k32.yaml",
+      "sha256": "972d2d4b208d5b570251cc43ec1ff669e0c3bcc807d947a8f5b3b4730593ec2d"
+    },
+    {
+      "path": "configs/config_causalverse_slope_relation_confirmation_k23.yaml",
+      "sha256": "a8fffaa82f7bd38bf57ca299046dd83dd1ec8666799c7557c5a399fd2fc8aff3"
+    },
+    {
+      "path": "configs/config_causalverse_slope_relation_preflight_k22.yaml",
+      "sha256": "38e01fd9f24e094f4ade324c0924d9ea7ca752a0286e8f3b18a340e3930267ae"
+    },
+    {
+      "path": "configs/config_causalverse_spring_correctness_k40_v3.yaml",
+      "sha256": "a7cec12f1dd9888e18db52ea86c9a5f9f29f6cb9b96426298b97ad6b2028c6a0"
+    },
+    {
+      "path": "configs/config_causalverse_spring_correctness_k40_v4.yaml",
+      "sha256": "3dadb63d68564ab7e7f85ac16a30e182de3f3f9fa15b83b5288c1ab18bba7a14"
+    },
+    {
+      "path": "configs/config_conflict_projected_physics_k80_closed_seed0_v18.yaml",
+      "sha256": "d18beaa4f8455ecef925b11ed0123dc722b52a516f5eee955749822c6e7a7781"
+    },
+    {
+      "path": "configs/config_conflict_projected_physics_k80_closed_seed3407_v17.yaml",
+      "sha256": "39355c5d4e5b85a6d7be7fdb6050b2112d39a22a08aa52817de887ba183af225"
+    },
+    {
+      "path": "configs/config_conflict_projected_physics_k80_closed_seed42_v18.yaml",
+      "sha256": "be5af2032eaaa803565cb69cbd8fb501887c53531d1691b80eea9df1edaec8cf"
+    },
+    {
+      "path": "configs/config_empirical_function_control_k80_seed0_v1.yaml",
+      "sha256": "6a73eaa51258824de0c7902c75b8035456a9035b71a5adcdd8652e971f708fa0"
+    },
+    {
+      "path": "configs/config_empirical_function_control_k80_seed3407_v1.yaml",
+      "sha256": "9fa3b5feaf9eb18efd46a158b9c5e786312b8cb3663b52264e8a0123bab66156"
+    },
+    {
+      "path": "configs/config_empirical_function_control_k80_seed42_v1.yaml",
+      "sha256": "5d8438b33a20f97317eed0fe21e34e0faf0175f82b238bb7e2679ccb65045c5c"
+    },
+    {
+      "path": "configs/config_instrumented_slope_external_k31.yaml",
+      "sha256": "9b82091f4cb2de1fa22c1ea85da6548408cc55db6c9bcfb2983658d384aed366"
+    },
+    {
+      "path": "configs/config_instrumented_slope_geometry_k28.yaml",
+      "sha256": "8884bc6221370e063180b6321c7ae4de0ba5a143eb94cd4ed71b6959ddc8980b"
+    },
+    {
+      "path": "configs/config_instrumented_slope_interface_k27.yaml",
+      "sha256": "6d516c50d0516c9cf0a10bfb420bb8c0053877f9d8524c1c60a9a632dde452e7"
+    },
+    {
+      "path": "configs/config_instrumented_slope_neural_tube_k30.yaml",
+      "sha256": "feca94c56d84cf9c38b2852ce89cb0e8d5d69e7460dfb1acb4b016354dd16751"
+    },
+    {
+      "path": "configs/config_instrumented_slope_projected_external_k36.yaml",
+      "sha256": "1c002d6efa555bf63fbb8b2e07ac1bd45295c4b102913e60117b88947598ba02"
+    },
+    {
+      "path": "configs/config_instrumented_slope_projected_replication_k35.yaml",
+      "sha256": "edb8d97f68fbbb52eb73e5909794aa6e4e35281191f1ccbdfaf73e68b760e1c8"
+    },
+    {
+      "path": "configs/config_instrumented_slope_projected_training_k34.yaml",
+      "sha256": "b0f967671a60f215a993818e95d606bdb259f3c42871ec93a80ace869b3aaf2c"
+    },
+    {
+      "path": "configs/config_instrumented_slope_relation_decoder_k33.yaml",
+      "sha256": "aa4ffa422eb17eefd977879043114e6c924821b0a224078253f7a4f379027b14"
+    },
+    {
+      "path": "configs/config_instrumented_slope_validation_k29.yaml",
+      "sha256": "b4980922781b2947bceecf621ef3cf6efd06dc2cfaf1633ea7441a88d22511ee"
+    },
+    {
+      "path": "configs/config_isotropic_relation_tube_budget_k11.yaml",
+      "sha256": "50c3801d6070a71ca92e8d5671b34966669a067488a387714c0a6403197b7d5f"
+    },
+    {
+      "path": "configs/config_isotropic_relation_tube_heldout_k13.yaml",
+      "sha256": "ea0e36ec13ec22041f95ba42c01a7cd6469e3c16bd2b86be920f24c7ed8a0117"
+    },
+    {
+      "path": "configs/config_matched_point_control_k80_seed0_v1.yaml",
+      "sha256": "9f6c7777c4c5f177194dbcf22316ece85061883a9829fc4db182986668aa7620"
+    },
+    {
+      "path": "configs/config_matched_point_control_k80_seed3407_v1.yaml",
+      "sha256": "c3ef8f58f3c134bfdf536e5e19cf86b783b98a9ecee76d9491bf9a0fd584c899"
+    },
+    {
+      "path": "configs/config_matched_point_control_k80_seed42_v1.yaml",
+      "sha256": "38aeb75881ebfd25918bae5dfbfd12b2f2eef82b75386da37af4e0d25fc87cd1"
+    },
+    {
+      "path": "configs/config_raw_ridge_propagation_subset_20260811_v1.yaml",
+      "sha256": "11f3992533e256bdcc8765731805d9dfe8a9e648107848051175edbbc10f48d1"
+    },
+    {
+      "path": "configs/config_raw_ridge_propagation_subset_20260821_v1.yaml",
+      "sha256": "bcc8542e4dacb1395b0336948e743045a77a2b54276d13daffc664ec5b073012"
+    },
+    {
+      "path": "configs/config_raw_ridge_propagation_subset_20260831_v1.yaml",
+      "sha256": "b5274c11e776e1a84f0c7a7148e62fb127d5cff7c3e3ac5703c41bda85d28294"
+    },
+    {
+      "path": "configs/config_raw_ridge_propagation_v1a.yaml",
+      "sha256": "12022010923d08c199a009b8b3db72739f6f1bad62c3731b31a766b4e568f3f4"
+    },
+    {
+      "path": "configs/config_relation_budget_curve_v1.yaml",
+      "sha256": "edb0957ede5920520e695faf66245fb3816e95e15d34e7a7fc1ba7ef4755214e"
+    },
+    {
+      "path": "configs/config_relation_tube_calibration_subset_k8_20260811.yaml",
+      "sha256": "20f42b6b465f06fdd32c1c2510302faf18512ed04942d71b23b1ce6b092e431e"
+    },
+    {
+      "path": "configs/config_relation_tube_calibration_subset_k8_20260821.yaml",
+      "sha256": "44e5c840ff9998ff36a979409341d2cc122272d990a9c4dec67e68ccfa216448"
+    },
+    {
+      "path": "configs/config_relation_tube_calibration_subset_k8_20260831.yaml",
+      "sha256": "c75d567c9186091797b177e9ab3c59752e21ba484f6380e1f98d44fa56bfca47"
+    },
+    {
+      "path": "configs/config_relation_tube_calibration_subset_k8_aggregate.yaml",
+      "sha256": "7b47997e756ef7f686b4f4b80a4b3111e3f886d4318b5079bc9ecec7c3302f12"
+    },
+    {
+      "path": "configs/config_relation_tube_generic_geometry_baseline_k7.yaml",
+      "sha256": "40aac4627c1b72e1b99e624eeb207b90ab2c1a9dea6630954d5d431467b7a102"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_ablation_k4_seed3407.yaml",
+      "sha256": "f008d07c3daf4fb7ec80ae7ab029531e509c54ea3f760d60885795fe182c3b1c"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_crossed_k18_aggregate.yaml",
+      "sha256": "a0f2fb24c502ae3e5f67c2b4d15624c80aadd63d29dabcb4c997e8fc5c3e0256"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_crossed_k18_s20260811_seed0.yaml",
+      "sha256": "70979e320aa7de7a5d15ad3288655a03a29567b79d85a6931595d41648538a7f"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_crossed_k18_s20260811_seed42.yaml",
+      "sha256": "ed32e16dfd08a651ca85d5667912c8af3958b8b743cc9c7cfc6a4011be6de7bb"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_crossed_k18_s20260821_seed0.yaml",
+      "sha256": "92ce3ef1aff379ecc3b009814cd5d798b8ad6ed6639b153e5c838d555a2d9f02"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_crossed_k18_s20260821_seed42.yaml",
+      "sha256": "4360b8524297ae3e9ca6665b5f3a53ae006dab0391892ed97bbf3d663ff1f735"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_crossed_k18_s20260831_seed0.yaml",
+      "sha256": "58ba295c7a0ba05e49e4109cec2fbe9ca8fcbfd94460af536356a0ec07046339"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_crossed_k18_s20260831_seed42.yaml",
+      "sha256": "c92d14db37f27a17e036998473e0147e4bb5ed1fe1c4394f03fa03c2ad527d75"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_downstream_k6_aggregate.yaml",
+      "sha256": "86184af29d319a27cbc1690cc1866aacd09af7239947566b72ad85c59ed207b3"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_downstream_k6_seed0.yaml",
+      "sha256": "b8f2dedd4eee0b9c212b5384e131c1ceb8301d34b0ccdf72dbe775ab20cb0424"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_downstream_k6_seed3407.yaml",
+      "sha256": "b1693aa316ae4080082f64503c02a8fbcc0c1273703f7678baa5883a92b4c4e6"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_downstream_k6_seed42.yaml",
+      "sha256": "bb819bbc52f58a3d81d6c02f7288614a3085e765037751b5afb4edc244474f61"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_tradeoff_k5_aggregate.yaml",
+      "sha256": "b03759ed14431078caee135fb1a51e29ebccb2f35066146417cae3ade260176e"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_tradeoff_k5_seed0.yaml",
+      "sha256": "b30b17a2904acffca099fd9b3dbad03a4cb5ff08cde286115159deeb6938e635"
+    },
+    {
+      "path": "configs/config_relation_tube_geometry_tradeoff_k5_seed42.yaml",
+      "sha256": "6e1c9a8699241405b9aabb242ae7d2cd3ae967133a57302602d84cbf29ce2511"
+    },
+    {
+      "path": "configs/config_relation_tube_half_radius_instance_information_audit_k16.yaml",
+      "sha256": "8c1dba9a1828e9f20014da7c4dfc693650f9502882bbed49eae0fa9e5b3896f5"
+    },
+    {
+      "path": "configs/config_relation_tube_instance_information_audit_k14.yaml",
+      "sha256": "5bff4c242adcfc28c4c910377bdfc66217b72d07b786a5906cc1e3b93eb82770"
+    },
+    {
+      "path": "configs/config_relation_tube_label_noise_robustness_k17.yaml",
+      "sha256": "1a788c8435d9f968f20263278db787d012ee1eb35b58db8edb5ed02e09c58c27"
+    },
+    {
+      "path": "configs/config_relation_tube_oas_shrinkage_k9_20260811.yaml",
+      "sha256": "8f02010079723d1efa8578dfc05d64d8f290569bfe2ccedfa1e912e3657407e7"
+    },
+    {
+      "path": "configs/config_relation_tube_oas_shrinkage_k9_20260821.yaml",
+      "sha256": "a82e6452d305149efccf15154d61dc7e1a8cfcaeaf167053d9a2873bf4d09b33"
+    },
+    {
+      "path": "configs/config_relation_tube_oas_shrinkage_k9_20260831.yaml",
+      "sha256": "1dcfd862c148dee6922ac2698050e73738f190c5eed9b95cc175c4a341c04534"
+    },
+    {
+      "path": "configs/config_relation_tube_oas_shrinkage_k9_aggregate.yaml",
+      "sha256": "8fc5198f1c2030c48ce6268d919227b199253fa607e637a9ffec4c2a72a992fc"
+    },
+    {
+      "path": "configs/config_relation_tube_radius_scale_ablation_k15.yaml",
+      "sha256": "2ace7388456c224d511dba1387b59b45fa604f4a7b9419a0e4281c1e98adaa82"
+    },
+    {
+      "path": "configs/config_relation_tube_sign_coupling_k10.yaml",
+      "sha256": "aebbbe141d28ba630a38211985f21b69f569239b75ba7137b498c1fc8ff00b2e"
+    },
+    {
+      "path": "configs/config_relation_tube_vs_raw_subset_k44.yaml",
+      "sha256": "9e05467e55602eca71f1e36524239c797ca8482016d1eae6f77bbe7c304c64b7"
+    },
+    {
+      "path": "configs/config_resistance_spot_welding_anchor_preserving_v1_retrospective.yaml",
+      "sha256": "6198bd6d79b229306e6d7656abc548c64cad42fef67c2eadbf535117ebf53d10"
+    },
+    {
+      "path": "configs/config_resistance_spot_welding_relation_k43_heldout.yaml",
+      "sha256": "72662e64387284d6e3b339c7ec0e67839885084214534332e604238c14cb7af1"
+    },
+    {
+      "path": "configs/config_resistance_spot_welding_relation_k43_validation.yaml",
+      "sha256": "fb28f80bb2964ef70c48cd2b33836c71c94a44e1910597d75306ea2a1dbd83a5"
+    },
+    {
+      "path": "outputs/anchor_preserving_raw_ridge_v1/audit/comparison.json",
+      "sha256": "ea2e85b522c2b5b395765209851e61eb01cb663049e6e9cf5266723b94a923af"
+    },
+    {
+      "path": "outputs/anchor_preserving_raw_ridge_v1/audit/locked_metrics.json",
+      "sha256": "968f7de1af1d6ff21aa14c8103b8ce95654d6216b809865af54d0679ab1c4279"
+    },
+    {
+      "path": "outputs/bounded_unbounded_heldout_k45_v2/heldout_audit.json",
+      "sha256": "0d6c9e3126393ea5a3648f8e7b5b1689da854a662b93ab04b089a75817e9556c"
+    },
+    {
+      "path": "outputs/calibrated_relation_tube_k0_seed3407/formal/validation_readout.json",
+      "sha256": "b6f9237efeca50ee6c999cb4736c0b29772a796dfcc37c0baa47818c75c762ef"
+    },
+    {
+      "path": "outputs/calibrated_relation_tube_k3_seed0/formal/validation_readout.json",
+      "sha256": "045cd7d6282971b01d6ceb67ac4214539fef01e1077d98304026881348267d0d"
+    },
+    {
+      "path": "outputs/calibrated_relation_tube_k3_seed42/formal/validation_readout.json",
+      "sha256": "90ea0a611c644fdd6ed83ea355b883ca6b4205b8c4f13addff216ddd581060f2"
+    },
+    {
+      "path": "outputs/calibrated_relation_tube_multiseed_aggregate_k3/multiseed_aggregate.json",
+      "sha256": "d728a6a598b3528eae79dc446d7b9b8c01e9e359a518c659310ccde9c7e1a007"
+    },
+    {
+      "path": "outputs/causalverse_slope_heldout_k26/heldout_results.json",
+      "sha256": "db824d68a4b5faf30a7952c37d1bb923a9611fe1d4de9eabe923e7d272997f5e"
+    },
+    {
+      "path": "outputs/causalverse_slope_projection_parity_k32/projection_parity_results.json",
+      "sha256": "1c96278d2dcda7fc5adf6d1018f767e19f74ecccefd5f6b7a5c2e1d17e97501d"
+    },
+    {
+      "path": "outputs/causalverse_spring_correctness_k40_v4_unread/aggregate_results.json",
+      "sha256": "367b28d3f94b3796c079e300244a6d85b123424f41b651e33a4d7930bcc59c46"
+    },
+    {
+      "path": "outputs/conflict_projected_physics_k80_closed_v17_seed3407/formal/diagnostic_results.json",
+      "sha256": "fb973d64a53919b461a93d92ea4cff885e311544727a50a2c3350ca17e143454"
+    },
+    {
+      "path": "outputs/conflict_projected_physics_k80_closed_v18_seed0/formal/diagnostic_results.json",
+      "sha256": "57e3454d350444b4c6715db84953b4e1b50c864c96af24f45cebac4d405166b7"
+    },
+    {
+      "path": "outputs/conflict_projected_physics_k80_closed_v18_seed42/formal/diagnostic_results.json",
+      "sha256": "3994b655ab3e708dcc65173a497aaa085993290fec371fc647d1b410031d2661"
+    },
+    {
+      "path": "outputs/instrumented_slope_projected_external_k36/external_results.json",
+      "sha256": "5e1f26562376b7aa92407ed2b3fbb23b61b2788522d7aeee80530d6f738bdbca"
+    },
+    {
+      "path": "outputs/instrumented_slope_projected_replication_k35/evaluation/validation_results.json",
+      "sha256": "ac8517b0a87e99c559a7f95d6bd5bacb4709bc40308801d000f62681a72eafea"
+    },
+    {
+      "path": "outputs/instrumented_slope_relation_decoder_k33/evaluation/validation_results.json",
+      "sha256": "c17a6da30df708c98d383db6ccbd4b33a446b4a306ba0cd2a335bfb2b7dcb8b6"
+    },
+    {
+      "path": "outputs/isotropic_relation_tube_budget_k11/aggregate/budget_validation_aggregate.json",
+      "sha256": "866ee265cba5db828dfda30e0b9264e12ee54c9a0fc9e74ae6c417a2b526c810"
+    },
+    {
+      "path": "outputs/isotropic_relation_tube_heldout_k13/aggregate/heldout_aggregate.json",
+      "sha256": "61a2c951662876bd9bbfbf02fcce37109db719755ba907b34dfa36c0bea18abd"
+    },
+    {
+      "path": "outputs/isotropic_relation_tube_heldout_k13/baseline_comparator.json",
+      "sha256": "e89060b444e71f2c710db0dda33d760f9bf9ab035f464086b61d9db2f163ed6d"
+    },
+    {
+      "path": "outputs/isotropic_tube_vs_raw_downstream_k12b/paired_validation_downstream_audit.json",
+      "sha256": "677b965b652645e77de9543b0f9727880259de22b16e268e75ce00e7fb34267a"
+    },
+    {
+      "path": "outputs/isotropic_tube_vs_raw_propagation_k12/paired_validation_audit.json",
+      "sha256": "6ffe0ec967be85c8bfae0bbf7880c1d52041393b0c343a782723759241ff7ffd"
+    },
+    {
+      "path": "outputs/locked_metrics_2026-07-31/relation_budget_locked_metrics_v3.json",
+      "sha256": "9bec4733baa3f1bee5c90fabe1f7b58a9390d404895c2122b7d6b19263d17e17"
+    },
+    {
+      "path": "outputs/matched_point_control_k80_v1/formal_seed0/diagnostic_results.json",
+      "sha256": "9c5fb4a8c0163e895fee9a00d2f700a79c482738042dadba98c39b164c028b66"
+    },
+    {
+      "path": "outputs/matched_point_control_k80_v1/formal_seed3407/diagnostic_results.json",
+      "sha256": "e60436715e78fbba9bf1b91c2d0ffaef9bc9a1d1fb6d6657509403f9fe10dfc2"
+    },
+    {
+      "path": "outputs/matched_point_control_k80_v1/formal_seed42/diagnostic_results.json",
+      "sha256": "467332f519144b6fc5b9ab808b9270e0b871f1df0929bd3665187adf5b2c7cf8"
+    },
+    {
+      "path": "outputs/movi_sparse_collision_formal_v2/configs_v2/formal_heldout_v3.yaml",
+      "sha256": "602c97c6d49c6b5ee4e8e81d6b468a429657841425b3da996bac5aef8c83c142"
+    },
+    {
+      "path": "outputs/movi_sparse_collision_formal_v2/configs_v2/formal_validation_v3.yaml",
+      "sha256": "fc774b11a3f406a3807321faf7e3e0f40e2d0ad6f567e97ab7fe1f8811cc364b"
+    },
+    {
+      "path": "outputs/movi_sparse_collision_formal_v2/formal_heldout_v3.json",
+      "sha256": "08f6cce02f532fa091b4667a5283b96f3c93eb3c189cdf9a548f624d2e104a3b"
+    },
+    {
+      "path": "outputs/movi_sparse_collision_formal_v2/formal_validation_v3.json",
+      "sha256": "09ba19f868386f4208878b34397122e58b131507d0424c53189f05fa8d71e1f3"
+    },
+    {
+      "path": "outputs/physics_functional_anchor_v10/physics_functional_anchor_audit.json",
+      "sha256": "05329eeae526ffd3da47bfff7077285954c62611e7fc646b98cbcdc910a5028c"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/diagnostic_results_k12b/k80_seed0/diagnostic_results.json",
+      "sha256": "3b79eb009abb8bf5c69c9faf4216357bd2c2d1c65a698697eaaf5f1969936dda"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/diagnostic_results_k12b/k80_seed3407/diagnostic_results.json",
+      "sha256": "a2c4563fda725ddbea076bcaf3e6db0a5a0f50a7346d52f5b3e2dcfbe1321095"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/diagnostic_results_k12b/k80_seed42/diagnostic_results.json",
+      "sha256": "800e5117c925dd55b2cdba2cc204c2acfb24928fc70dd7b0172723294fb3366c"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/raw_aggregate_results.json",
+      "sha256": "59080b4c7791bc5295c48b885d01a9d478067000e8cc45ccb7e0261e1189babd"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/raw_locked_metrics_audit.json",
+      "sha256": "aecb0463479a852bc329e5eef2c457f14848cd5a99310c2ec650fe7c749ef289"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/teacher_audits/k160.json",
+      "sha256": "dfe99ef4baf0f5e2c59e831a4a86f7e37d5452a6c295bb563726e9a72c316e62"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/teacher_audits/k20.json",
+      "sha256": "58a5a66c30e9ee0e03fdd4b0f03092353e01bdb198c4f24e1c0563165fb7660d"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/teacher_audits/k40.json",
+      "sha256": "ef8a72c008ed4b8d2d056574f9b2a9fb2f03c7b59301759f0b0ff6b7a6818548"
+    },
+    {
+      "path": "outputs/raw_ridge_propagation_aggregate_v1/raw/teacher_audits/k80.json",
+      "sha256": "96225a61e2045d209db2456215d8a962746dea3e869f5cbbbf3918f71f5b87e9"
+    },
+    {
+      "path": "outputs/relation_budget_curve_v1/aggregate/aggregate_results.json",
+      "sha256": "18040bdecceeeb41d7b370726dc12b0b8153bb1dd110783d00c17e956e831d22"
+    },
+    {
+      "path": "outputs/relation_tube_calibration_subset_k8_aggregate_v1/calibration_subset_aggregate.json",
+      "sha256": "52c7e6aef5f7a8317b8ea5d1d5c72a470624bb5a13f3e625f52f4719dd7e06f1"
+    },
+    {
+      "path": "outputs/relation_tube_geometry_crossed_k18/aggregate/crossed_geometry_aggregate.json",
+      "sha256": "eac1c1ab7a5c2e614d55ab304dd6d5e7e6bfef9e6e2b4908601425d7a2758850"
+    },
+    {
+      "path": "outputs/relation_tube_geometry_downstream_k6_aggregate/aggregate_results.json",
+      "sha256": "c93784fc0363ac18707e6daf6d04eace455d1befe2042f6e4f68187ca008029c"
+    },
+    {
+      "path": "outputs/relation_tube_geometry_tradeoff_k5_aggregate/aggregate_results.json",
+      "sha256": "885feba5e50c09877b14ade24b437b030c896d96ccf524f1ffc264016109ebf9"
+    },
+    {
+      "path": "outputs/relation_tube_half_radius_instance_information_audit_k16/half_radius_instance_information_audit.json",
+      "sha256": "b868d9cff318d764b3316c697d5a8960dfedb98d8ba35f8548c7ddb26ed4e5ef"
+    },
+    {
+      "path": "outputs/relation_tube_instance_information_audit_k14/instance_information_audit.json",
+      "sha256": "fea5b098924b3eb4e19d9be8061c27ba3afc943a70075411a59b4a9334612dfd"
+    },
+    {
+      "path": "outputs/relation_tube_label_noise_robustness_k17/aggregate/noise_robustness_aggregate.json",
+      "sha256": "a11948b5ac79055b77a1713f4e98606200075a0363fe5e5407d81564f00437b4"
+    },
+    {
+      "path": "outputs/relation_tube_oas_shrinkage_k9_aggregate_v1/oas_shrinkage_aggregate.json",
+      "sha256": "fc3075bb1f3b07c2b9950803a1e042196097a8d231dd9dc12365f5d6a73d9b91"
+    },
+    {
+      "path": "outputs/relation_tube_radius_scale_ablation_k15/radius_scale_aggregate.json",
+      "sha256": "a39756ce7a6659b9884dd4fcde6e0d1ee865fcccecf45462eb8d530c1dc99cba"
+    },
+    {
+      "path": "outputs/relation_tube_sign_coupling_k10/sign_coupling_audit.json",
+      "sha256": "48f3881c0d6249c605e34332a8fe8bff87cdb69e33a7b06441b76e235a53a606"
+    },
+    {
+      "path": "outputs/relation_tube_vs_raw_subset_k44/aggregate/subset_aggregate.json",
+      "sha256": "a62eb7c013e85e58396c6c9bf824d4370682b5158b78d67219dc65721522cb04"
+    },
+    {
+      "path": "outputs/resistance_spot_welding_relation_k43/formal/formal_heldout_v1.json",
+      "sha256": "3ac3a3a097bf2199b6197a19647751d9d453108a888d32957b1757f08edfb8ec"
+    },
+    {
+      "path": "outputs/resistance_spot_welding_relation_k43/formal/retrospective_anchor_preserving_v1_full.json",
+      "sha256": "8406c7bfeb30e0c5d36de1aca46b6dc4af7e032db5c4b4a6bf2800100770123f"
+    },
+    {
+      "path": "outputs/resistance_spot_welding_relation_k43/formal/retrospective_anchor_preserving_v1_full_independent_audit.json",
+      "sha256": "1cdb294688d976d661f545460097132febf013d2a9495ced0e8b68f060470668"
+    },
+    {
+      "path": "outputs/resistance_spot_welding_relation_k43/formal/retrospective_anchor_preserving_v1_replay_audit.json",
+      "sha256": "214fdb41e0d65b25dcbe0b5e998e43733674be1d372bd1855ccd565d104c427c"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "6ac3d233c96e0a48d562defd39e73470d6a798da6856c37eb5f5a8842a7e5796"
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "aeae361f411adf98f6acbab037fb8c3b796b00ef8c40d32e8585f2e6cd35ec40"
+    },
+    {
+      "path": "scripts/aggregate_anchor_preserving_comparison.py",
+      "sha256": "972cd8db73968df84a8e745b4361b97bc897e7dd4cd98afcf19710be6d5d6d0f"
+    },
+    {
+      "path": "scripts/aggregate_calibrated_relation_tube_multiseed_k3.py",
+      "sha256": "15fe25c73d210b964644fce1837f826e7e4ff5ed3360ab0826a4ccaaa108a9a4"
+    },
+    {
+      "path": "scripts/aggregate_isotropic_relation_tube_budget_k11.py",
+      "sha256": "50e11092bc1d7cb1543f0970cc81430f39a7038743e7360a87fba856a6644155"
+    },
+    {
+      "path": "scripts/aggregate_isotropic_relation_tube_heldout_k13.py",
+      "sha256": "e93a70057cbfa37283663b1578f72b87c8827a06b5753d2dd0ec8395e6ca91bb"
+    },
+    {
+      "path": "scripts/aggregate_raw_ridge_propagation.py",
+      "sha256": "4704f9309fe5fdf5471a68e1cb8b11e1e192006fec91732eba6a0d427cf7f1ec"
+    },
+    {
+      "path": "scripts/aggregate_relation_budget_curve.py",
+      "sha256": "27b259ef7e10262cfa1ad51e1eae6ba9905386b15b108faaf8959c83c09b15da"
+    },
+    {
+      "path": "scripts/aggregate_relation_tube_calibration_subset_k8.py",
+      "sha256": "5450762e4af246a1fb259df13d293516c115d63abb357803fd90837b7b1f765e"
+    },
+    {
+      "path": "scripts/aggregate_relation_tube_geometry_crossed_k18.py",
+      "sha256": "55d2a22bab9e59ca15fbf1453d0f84a1b8af7e4684a00477abab8a0f9879e121"
+    },
+    {
+      "path": "scripts/aggregate_relation_tube_oas_shrinkage_k9.py",
+      "sha256": "0e39d89cc51a905384224fe3239f3634c1fb257fe18af72ae9d3d830b442b7b0"
+    },
+    {
+      "path": "scripts/anchor_preserving_raw_ridge.py",
+      "sha256": "c64577d41a5e0a005a72811309acf873c8778bb1bc17788d82b8949442406937"
+    },
+    {
+      "path": "scripts/audit_anchor_preserving_locked_metrics.py",
+      "sha256": "9aba484e6787a10fb9a5382727bb64ee8b13ae6a1722fa53a9b9235920633a30"
+    },
+    {
+      "path": "scripts/audit_bounded_unbounded_heldout_k45.py",
+      "sha256": "2edb2cb7f367067eaf331baef637f3901f7c317b76d42acbd2763546dc4cfda8"
+    },
+    {
+      "path": "scripts/audit_bounded_unbounded_heldout_k45_v2.py",
+      "sha256": "976320993d893869e65dcf924b99fb66d28293b8f7f39b8cbdf0e2de16d235a5"
+    },
+    {
+      "path": "scripts/audit_calibrated_relation_tube_gauge_k1.py",
+      "sha256": "83b95c0b111fd587b48d791bddef61dacb5676458c18ed3bfbfd62eab632f8c6"
+    },
+    {
+      "path": "scripts/audit_causalverse_slope_analytic_closure.py",
+      "sha256": "d8539059e4790d26b7efa95af08574aabce2d60d56ec127a27d0d25e28ec87f3"
+    },
+    {
+      "path": "scripts/audit_causalverse_slope_manifold_projection.py",
+      "sha256": "4681d1c7c1ecd41e227a782f75573be7c6709936dc1f8533e79cbbc150f05899"
+    },
+    {
+      "path": "scripts/audit_causalverse_slope_projection_parity_k32.py",
+      "sha256": "7d8df30d8c679c94e1af33a5c87f76e87c49dbcdc507f4295772a8fe48915298"
+    },
+    {
+      "path": "scripts/audit_instrumented_slope_geometry_k28.py",
+      "sha256": "aac90aa177f9f1ba03f42cc57997db4bcd07861d563e5e493554c0570d173165"
+    },
+    {
+      "path": "scripts/audit_instrumented_slope_interface_k27.py",
+      "sha256": "e94fdd16af1befeeea6434a507f0ddcaeb13eafc8348e9a83c1caee1271a1cce"
+    },
+    {
+      "path": "scripts/audit_isotropic_tube_vs_raw_downstream_k12b.py",
+      "sha256": "fea3644c56c7021ac891e55ce790ad72f0f3741a2b0a8553acf7c4c7fa7eddaf"
+    },
+    {
+      "path": "scripts/audit_isotropic_tube_vs_raw_propagation_k12.py",
+      "sha256": "22b17a8c70deab51aa91a870fe054cbb7dd051bf10b8a88e061abe29d18b816f"
+    },
+    {
+      "path": "scripts/audit_movi_collision_center_propagation_v1.py",
+      "sha256": "c7c7b0abff14d6182ca157679647522508b8efaeef34879e02360234355ba6df"
+    },
+    {
+      "path": "scripts/audit_movi_collision_conic_relation_tube_v1.py",
+      "sha256": "1dab78ab5ca9b52d8065276c991d3cec9c2700df2acd538bed935d5c69bafcb7"
+    },
+    {
+      "path": "scripts/audit_movi_collision_cross_fitted_residual_gate_v1.py",
+      "sha256": "f10d5803b52d2697ead464a226453291c656dcabe0ba57ce33f035e66eb1dc34"
+    },
+    {
+      "path": "scripts/audit_movi_collision_frame_alignment_v1.py",
+      "sha256": "2a0c424b386c933a1a3f989821d502352516e3514c9aafa4aab6c929b1f0ab4a"
+    },
+    {
+      "path": "scripts/audit_movi_collision_metadata_v1.py",
+      "sha256": "4245f58efbfb147452f3fafc610e1a1e911cc0e3366efe20234ca1764d7761a7"
+    },
+    {
+      "path": "scripts/audit_movi_collision_physics_budget_v1.py",
+      "sha256": "44130096e2fec6a83f0fc7c472f4ed15f41f2cf82ed01260de61738220606041"
+    },
+    {
+      "path": "scripts/audit_movi_collision_physics_budget_v2.py",
+      "sha256": "e7948b3ddda55560f1e56777e496228be01dc4fa857b99c899c7521e82e3b433"
+    },
+    {
+      "path": "scripts/audit_movi_collision_physics_proxy_v1.py",
+      "sha256": "8e3b423449a9ccf564f4892eeed5924472970e4759fb77969a67c102865296ee"
+    },
+    {
+      "path": "scripts/audit_movi_collision_projected_point_tube_v1.py",
+      "sha256": "27906b93bac7ffdc42d530215630aaad50d643bcf8abf551b2c118fb8527328e"
+    },
+    {
+      "path": "scripts/audit_movi_collision_relation_tube_pilot_v1.py",
+      "sha256": "749059ff461826aea2f09004589bf874377aac12a1db36bedc73a6e65371ca6b"
+    },
+    {
+      "path": "scripts/audit_movi_collision_state_headroom_v1.py",
+      "sha256": "f6142ee2b02709f9878e17e5f0c062ce1a4977a62b38ad8a3e174e1217be5dc9"
+    },
+    {
+      "path": "scripts/audit_movi_collision_visual_residual_v1.py",
+      "sha256": "355416d9b7c1d3ca93bd01747dfa825882527a42ec7cad3adb9332bfdd4a980b"
+    },
+    {
+      "path": "scripts/audit_physics_ccrl_gradient_conflict.py",
+      "sha256": "238d6ab789607b959679c476877aa60afa172a9c9321f81ce70b7baab2cc39c6"
+    },
+    {
+      "path": "scripts/audit_physics_functional_anchor.py",
+      "sha256": "c6d5ea3f501dbb8784c65003c101fdfa2480872e5b70998f67249f214d0278c2"
+    },
+    {
+      "path": "scripts/audit_physics_gradient_alignment.py",
+      "sha256": "3c59248dd0f9e0501f831ae4a63fa7312da898634fd96d18d438a040782a878f"
+    },
+    {
+      "path": "scripts/audit_raw_ridge_locked_metrics.py",
+      "sha256": "07d62230a446ab2d8b1352ffc656493c784172aabdc415bff656cd2089e0d41f"
+    },
+    {
+      "path": "scripts/audit_relation_budget_locked_metrics.py",
+      "sha256": "75db37dc35a54827724cbf907c382a83d964a2516695f1b9cf8c0140bc8df3a1"
+    },
+    {
+      "path": "scripts/audit_relation_tube_geometry_downstream_k6.py",
+      "sha256": "f1209618eb78bb6b929d1019d66ef4b64c14a5816cb1906506ab5a50e76cc137"
+    },
+    {
+      "path": "scripts/audit_relation_tube_sign_coupling_k10.py",
+      "sha256": "fc02cf10f82aa73f9a8a147c35b185b2881e7d63141dcb81c0b39c76eb889c74"
+    },
+    {
+      "path": "scripts/audit_relation_tube_vs_raw_subset_k44.py",
+      "sha256": "207d5310e71a5710137f9d1f5ad799c1e526a689b93a406a057e93bd4eb4e6df"
+    },
+    {
+      "path": "scripts/audit_resistance_spot_welding_anchor_preserving_v1.py",
+      "sha256": "d5ac0672068ab33635175f21e9c63112850207752edeee72b1821ca958f0fae7"
+    },
+    {
+      "path": "scripts/audit_resistance_spot_welding_anchor_replay_v1.py",
+      "sha256": "40bb904473106c6ffe2bbe7c674dacce37fd88abdefd4f5eb8ae6178fb4a5279"
+    },
+    {
+      "path": "scripts/causalverse_slope_preflight.py",
+      "sha256": "7b4b39e5f0cb2208d0489c0a23a4f45543b3467fa47b35e13f5f042beb94621a"
+    },
+    {
+      "path": "scripts/causalverse_spring_correctness_v3.py",
+      "sha256": "75c3a5590d3fddc35eef4742ac15bd7075122f4f05a73717c820e7095b9c5818"
+    },
+    {
+      "path": "scripts/causalverse_spring_pilot.py",
+      "sha256": "cb0d2f0367819fae859f13b08a884054b40ce9a2f837f8ae1712c1f8901aa5d4"
+    },
+    {
+      "path": "scripts/evaluate_causalverse_slope_confirmation.py",
+      "sha256": "12bf8cdd9cec0470d24f883b6051262ce4bcb17de5af2c2771a6d41cd97ed8da"
+    },
+    {
+      "path": "scripts/evaluate_causalverse_slope_heldout_k26.py",
+      "sha256": "89dfb64f38680a2beecb0ebe6f0e9344a15a3e43018775da317f5632d7108537"
+    },
+    {
+      "path": "scripts/evaluate_causalverse_spring_correctness_v3.py",
+      "sha256": "6b67b50bd3f156ecc71f5844bb538ac62483e85cdf5b60c97dc6f6a26392781e"
+    },
+    {
+      "path": "scripts/evaluate_causalverse_spring_correctness_v4.py",
+      "sha256": "37c7cb3491145abfb88a44a4a1fb7b1e50ab80fcd74df51eaf5ca857000f8502"
+    },
+    {
+      "path": "scripts/evaluate_instrumented_slope_external_k31.py",
+      "sha256": "eabff294bb39c565ebbb23f00a26d423e9733f42085c97fc3c65f35b53a9468c"
+    },
+    {
+      "path": "scripts/evaluate_instrumented_slope_projected_external_k36.py",
+      "sha256": "6375b0b1c816a12e3f87415ad6aa90f2070cca11b03f884f9ca4e99794a7458e"
+    },
+    {
+      "path": "scripts/evaluate_instrumented_slope_validation_k29.py",
+      "sha256": "0219624cf152eec39f4cb6fef215ee3917536e4b3f9b6bafcede3d8bc2c3251f"
+    },
+    {
+      "path": "scripts/evaluate_movi_collision_formal_relation_v1.py",
+      "sha256": "1f894a315574f83a756939f9f11b9762657b846d0f14b29c15570f46e4200e2f"
+    },
+    {
+      "path": "scripts/evaluate_resistance_spot_welding_anchor_preserving_v1.py",
+      "sha256": "b7f91ede072e1773f9ab58a02f554eba4ed2f0d91d4783c7ab09fad659fd4ae0"
+    },
+    {
+      "path": "scripts/evaluate_resistance_spot_welding_relation_v1.py",
+      "sha256": "173a6c8910ef13e6e4db698f7141e151ab6ac692f3cbc666783aeaf75850ab7c"
+    },
+    {
+      "path": "scripts/extract_heldout_baseline_comparator_k13.py",
+      "sha256": "e2b442d7c331584c8534f237745c85f2e0c4a4b580d01f1fa03afa7a3b6cdc82"
+    },
+    {
+      "path": "scripts/extract_movi_collision_multiview_dinov2_v1.py",
+      "sha256": "c264ea85bc4c23b1647b3a7867406e6029bda6367c9f557628786dc7451504df"
+    },
+    {
+      "path": "scripts/extract_raw_ridge_downstream_comparator_k12b.py",
+      "sha256": "ee30dd578ca3746c9bdcd7ca84f11773bd51836c2f44ec95293eeb5b2efa2705"
+    },
+    {
+      "path": "scripts/extract_raw_ridge_validation_comparator_k12.py",
+      "sha256": "8074108ef179d8bf001fa7a0aa2477f9996700423763651910a3f5713b2f24f3"
+    },
+    {
+      "path": "scripts/extract_relation_budget_validation_comparator.py",
+      "sha256": "c5b9f43b2242abfcf46f5423e684673bc6b02a226f53508d9c123374b0ccdb91"
+    },
+    {
+      "path": "scripts/extract_resistance_spot_welding_dinov2_v1.py",
+      "sha256": "89d2728a8696cbb7b7625e84972f5c2a6c779896ad920c6aad4cad90bbbaaafe"
+    },
+    {
+      "path": "scripts/materialize_movi_collision_splits_v1.py",
+      "sha256": "b085314f548a1dd131dee35eef154e8972f8c4d853a00d7bb785bbeede6dd896"
+    },
+    {
+      "path": "scripts/prepare_resistance_spot_welding_split_v1.py",
+      "sha256": "bdc307136ef26f7cdbc8229e161250023edc7ffed47118bc6de19c33abd74106"
+    },
+    {
+      "path": "scripts/raw_ridge_propagation.py",
+      "sha256": "47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d"
+    },
+    {
+      "path": "scripts/run_anchor_preserving_raw_ridge_condition.py",
+      "sha256": "1be332d1d07b9e19adbe9f07123106f2146e003646bea88a3d52ece1fc8f579b"
+    },
+    {
+      "path": "scripts/run_calibrated_relation_tube_k0.py",
+      "sha256": "1a4b1b8bdf5655043578165b03cccf43756ca08120da884f880d3e6cf1bdc615"
+    },
+    {
+      "path": "scripts/run_causalverse_slope_preflight.py",
+      "sha256": "511632ca3d23a185cca43fde2bb0b1239a7909295849bb232aac0d6a4e6643d6"
+    },
+    {
+      "path": "scripts/run_causalverse_spring_correctness_v3.py",
+      "sha256": "96ed6249493a9e77117b461d461c3211f7c253ba83b6dac290ecac87849dba2a"
+    },
+    {
+      "path": "scripts/run_causalverse_spring_pilot.py",
+      "sha256": "429f40e51faa5770d1109818e2551f8d4b7b51520963864f671ffa74bf4da2fd"
+    },
+    {
+      "path": "scripts/run_clamped_anchor_diagnostic.py",
+      "sha256": "5e76427a8fe186795e0028da7c15755dfa3bd574aefa22830dd48684d81690de"
+    },
+    {
+      "path": "scripts/run_conditioned_film_diagnostic.py",
+      "sha256": "a8db94e8ed0f190451615001afedf4c239ae2db3cc6bccf54606ff0c844ffa5e"
+    },
+    {
+      "path": "scripts/run_conflict_projected_physics_from_scratch.py",
+      "sha256": "c0a40cd5ef8305f606ec188f1aa2c742e9f2b259690e7d7f02f070f7c44c78df"
+    },
+    {
+      "path": "scripts/run_conflict_projected_physics_k80_closed.py",
+      "sha256": "18cbb734270fc2f2dd315bb6a2fe151daec79f07a8dae01305e36a13673aa0fa"
+    },
+    {
+      "path": "scripts/run_conflict_projected_physics_training.py",
+      "sha256": "038d6e407517dffa51df8277649c8c4f3017ed62db940de72aa36f87aa2c53e2"
+    },
+    {
+      "path": "scripts/run_diagnostic.py",
+      "sha256": "5d58e365d2fbfb80f607772457d5b9283d527f7f43d32e65a30d59e9bd6f81ac"
+    },
+    {
+      "path": "scripts/run_dynamic_residual_propagation_k0.py",
+      "sha256": "922ffc0c27ed4e8178e3ab323a815a9ecc62ef10a11cdd6c40539d6619086fd1"
+    },
+    {
+      "path": "scripts/run_empirical_function_control_k80.py",
+      "sha256": "47129c1fa316adc8121b712e54fba7ac45528083ed52ba0709e6acb6c21cf6e4"
+    },
+    {
+      "path": "scripts/run_instrumented_slope_neural_tube_k30.py",
+      "sha256": "5fa124138bc425e2cb2c7511d9ab7c876b126b59c54b4927f1bd5bfb2e62e83a"
+    },
+    {
+      "path": "scripts/run_instrumented_slope_projected_replication_k35.py",
+      "sha256": "99e69ab058db67602e086eb41f7d7d405bd971ae037600630858f3a49843ddcd"
+    },
+    {
+      "path": "scripts/run_instrumented_slope_projected_training_k34.py",
+      "sha256": "1848996cfcabe8ea32d922955b4341b8aa383e7cc217c512e7cc7dee8715721e"
+    },
+    {
+      "path": "scripts/run_instrumented_slope_relation_decoder_k33.py",
+      "sha256": "9851c30d479071f78af608fb5b6a9a6064e496613f00025ab0da3bc0eff876d1"
+    },
+    {
+      "path": "scripts/run_isotropic_relation_tube_budget_k11.py",
+      "sha256": "344101cc3382d56968537d2bd335fa180cfda4b28d05324c505d8efe87858b89"
+    },
+    {
+      "path": "scripts/run_isotropic_relation_tube_heldout_k13.py",
+      "sha256": "3d247e8e585473bc324bf659c61f85fb1dfbaf22ee32780d3f8ebc583136907e"
+    },
+    {
+      "path": "scripts/run_matched_point_control_k80.py",
+      "sha256": "15367bb35cd7c4893c71774313dde12051a570b4154a2c906ce7f569fd889633"
+    },
+    {
+      "path": "scripts/run_physics_functional_anchor_training.py",
+      "sha256": "f9da7d27ee6ad920c7e4e888e264560a264efbe3842e9e78bd1ca29c5233b41e"
+    },
+    {
+      "path": "scripts/run_raw_ridge_propagation_condition.py",
+      "sha256": "469703b79f643b33910b491a2b5ecbf0e969f68dd253aa52cc256b95ed5b5684"
+    },
+    {
+      "path": "scripts/run_raw_ridge_propagation_subset_robustness.py",
+      "sha256": "17b9408c0e948fc92e526a4725ef12b214f283cf27694d57708503ba867f3a43"
+    },
+    {
+      "path": "scripts/run_relation_budget_condition.py",
+      "sha256": "35b32aa4fb2a988bd34291b4cad6e158e6e124515f2206ad4b82f264ac3bd5a0"
+    },
+    {
+      "path": "scripts/run_relation_tube_calibration_subset_k8.py",
+      "sha256": "512c38a3650afa4baa95578e98c40fcda2a2ec4e3e2b9f25fc4a5927b0a5515a"
+    },
+    {
+      "path": "scripts/run_relation_tube_geometry_ablation_k4.py",
+      "sha256": "7fbdb468a2ca0d48990979bd3627cfa459a8ae37507554426c0273cfbcc45356"
+    },
+    {
+      "path": "scripts/run_relation_tube_geometry_crossed_k18.py",
+      "sha256": "6a1466303a06023eac474c69a4c93fa891ad60615fcfd033e5f571cbab04d448"
+    },
+    {
+      "path": "scripts/run_relation_tube_geometry_tradeoff_k5.py",
+      "sha256": "97aa410e871718095eaf88eb094eb5825751e434f454379f95e7e57a7c22ca0d"
+    },
+    {
+      "path": "scripts/run_relation_tube_half_radius_instance_information_audit_k16.py",
+      "sha256": "b170ba6fe019235b8ac3c4aa56ba38227632f8b16bb701186362469e7caddaec"
+    },
+    {
+      "path": "scripts/run_relation_tube_instance_information_audit_k14.py",
+      "sha256": "4b42a250351197ced6bd1613d55e65003d9f33d3bdeb35cb85028233adeb4dc7"
+    },
+    {
+      "path": "scripts/run_relation_tube_label_noise_robustness_k17.py",
+      "sha256": "cefd8a783d2b5d8266b7156c3156e22ec1b8a658492954a3570d0f50e27f7a96"
+    },
+    {
+      "path": "scripts/run_relation_tube_oas_shrinkage_k9.py",
+      "sha256": "c97060bcc76bc4931990e0dbdce3221f0ff17b82e4e0107039fb9cb15206966c"
+    },
+    {
+      "path": "scripts/run_relation_tube_radius_scale_ablation_k15.py",
+      "sha256": "5b7c457ed523dd7770d2e7012775af7352c108701fa39177361df8a97507adc9"
+    },
+    {
+      "path": "scripts/run_relation_tube_vs_raw_subset_k44.py",
+      "sha256": "b7a0a6ac92b29d264f849354fef98fb5f2c3d3981c35f10189b467a77c65bab1"
+    },
+    {
+      "path": "scripts/run_sparse_alignment_audit.py",
+      "sha256": "92899f2ed8b4e6b875b258c7fc42fe5be631b66f5b6099d9d86973d76713e0fd"
+    },
+    {
+      "path": "scripts/run_sparse_persistent_anchor_diagnostic.py",
+      "sha256": "f80574f3c9359cac057666fc68909f995995d6886a13fbc790dbbc0ef758a3ad"
+    },
+    {
+      "path": "scripts/run_supervised_continuation_diagnostic.py",
+      "sha256": "77f6b3bfffc23a615896ee0f2d2f0710d0619fdafd54b96b129232bb8b2ce757"
+    },
+    {
+      "path": "src/relation_tube/__init__.py",
+      "sha256": "ec472803d12b4b50bc5b0f1f52b03f889a45f203c48da5aeca2a6258b0e03e3e"
+    },
+    {
+      "path": "src/relation_tube/anchor_propagation.py",
+      "sha256": "60fb0d0ec702198231adffb1a4f6e5d1a61ea076ff5331215f2926e960983680"
+    },
+    {
+      "path": "src/relation_tube/calibration.py",
+      "sha256": "849ff2d3c9248bdad79bd2758f5f55e1ab1105e42ea40f3586ed113699808e09"
+    },
+    {
+      "path": "src/relation_tube/movi.py",
+      "sha256": "37a8506c23801535752f8a502c48b6e6b2321ad85df685838abdc0d09a732b8b"
+    },
+    {
+      "path": "src/relation_tube/projection.py",
+      "sha256": "8f9126702dc6573b4a21a831679c31a65a1b2467a649873881405497401e92f8"
+    },
+    {
+      "path": "src/relation_tube/welding.py",
+      "sha256": "64564ff86de1416dca03aea24c677c7b63e2a084c9c5d1b971f2fafb7509909b"
+    },
+    {
+      "path": "tests/test_aggregate_calibrated_relation_tube_multiseed_k3.py",
+      "sha256": "d8227553f78fdb588ef3029fe969b794f6f4a4b37cfaa46759b40b24dd0399ec"
+    },
+    {
+      "path": "tests/test_aggregate_isotropic_relation_tube_budget_k11.py",
+      "sha256": "6d3b0db41a4c0a2acf7d588d5baff5d857db4af58f627481ac289b5ef3173592"
+    },
+    {
+      "path": "tests/test_aggregate_isotropic_relation_tube_heldout_k13.py",
+      "sha256": "6f8319b7333de69b1a6d8f46804bbd2dd115bf73bac8cf981cacb9a698861d5c"
+    },
+    {
+      "path": "tests/test_aggregate_relation_tube_geometry_crossed_k18.py",
+      "sha256": "b234ae90921e86892e1638fee202f8811c12da0020036587012551c1f1467b7b"
+    },
+    {
+      "path": "tests/test_anchor_preserving_aggregation.py",
+      "sha256": "40ca0f649345a46b07e12edaf26afce654ef9dd859fb06d87a3fd1382b12ade7"
+    },
+    {
+      "path": "tests/test_anchor_preserving_raw_ridge.py",
+      "sha256": "f9c2b6dc04e983d86e9efafb94715392971d088a457d150cbb3fbc21ae9a7509"
+    },
+    {
+      "path": "tests/test_anchor_propagation.py",
+      "sha256": "6812ec84eeedee4c235891c4e506022082ac4400d439f900d79b2baaa10b2141"
+    },
+    {
+      "path": "tests/test_bounded_unbounded_heldout_k45.py",
+      "sha256": "ae046f0833a746fa1c87b3b0ce3acfe266bbe6f2b8dc96cfd393906eb00f2fa6"
+    },
+    {
+      "path": "tests/test_bounded_unbounded_heldout_k45_v2.py",
+      "sha256": "116baf9b32353f84f6cb70ff35dd35eb53b517365814ba5e93340a419cfb38f3"
+    },
+    {
+      "path": "tests/test_calibrated_relation_tube_k0.py",
+      "sha256": "df9bac7cd0696fa5c1ae03883e139c2422a94e511fbef73e6015aabb922c1105"
+    },
+    {
+      "path": "tests/test_causalverse_slope_heldout_k26.py",
+      "sha256": "496f5cea56c855e89d8e65722c0c49bb70a05cc6b99e84f57532b76d1fe6ce5d"
+    },
+    {
+      "path": "tests/test_causalverse_slope_projection_parity_k32.py",
+      "sha256": "5be7e28597f04caaf5fa86d87618546b77c8f651e827f1535717ccd079a7bf08"
+    },
+    {
+      "path": "tests/test_causalverse_spring_correctness_v3.py",
+      "sha256": "596892759d5ffa45fdc32ac4d1b7f91b7b229ac51c709b5d99a6c69737c8db72"
+    },
+    {
+      "path": "tests/test_evaluate_causalverse_spring_correctness_v4.py",
+      "sha256": "f0d0a84f51c7c0b0d899fbdf969c8f9e53f61c4aca4802993bfb9bb7699b4c7a"
+    },
+    {
+      "path": "tests/test_evaluate_movi_collision_formal_relation_v1.py",
+      "sha256": "b0008f6d43ccb3d4033cc3323139524f04662a991b515ed1e21ab43947a385d9"
+    },
+    {
+      "path": "tests/test_instrumented_slope_projected_external_k36.py",
+      "sha256": "913d8bf1c5f88ef7d8069ba3ed46a79f9290c24ef0796cdb8653e593393354fa"
+    },
+    {
+      "path": "tests/test_instrumented_slope_relation_decoder_k33.py",
+      "sha256": "a1cb42b73729b61c0e6c8b8490c12446c65927bedb2db7aaa607d09b034fc6a9"
+    },
+    {
+      "path": "tests/test_movi_collision_protocol.py",
+      "sha256": "ec2e4c5f191591179cdd5d4545b5597cd508dcc78b3321a36b16d957e96b4b63"
+    },
+    {
+      "path": "tests/test_public_relation_tube.py",
+      "sha256": "244bfc6094f36ab2ddde8dfdf50be6e1de806d363fdf0fd60a85d8b73ef3d493"
+    },
+    {
+      "path": "tests/test_relation_tube_calibration_subset_k8.py",
+      "sha256": "3f3b4fcd2147dda5685be49fb83c7db88b1ee91e2673b2a8e96436bab2e28b35"
+    },
+    {
+      "path": "tests/test_relation_tube_geometry_crossed_k18.py",
+      "sha256": "4c43d0b37ce994fe96cc88663449c708b7a38ae18a5809dac960a2ec1138811a"
+    },
+    {
+      "path": "tests/test_relation_tube_half_radius_instance_information_audit_k16.py",
+      "sha256": "e7eec989cc541a423a97b911407aef9bfb3eca4a1ebb0bf5479dfa245e62366a"
+    },
+    {
+      "path": "tests/test_relation_tube_instance_information_audit_k14.py",
+      "sha256": "cd95c26ec2472e9580aff50acbc9ee4cf6eaec0656e6953bdb27266b2ad799ad"
+    },
+    {
+      "path": "tests/test_relation_tube_radius_scale_ablation_k15.py",
+      "sha256": "4b24fe94079d4a0ce5f145603dcbf267fed78f22bcc9c3d1a325483276860407"
+    },
+    {
+      "path": "tests/test_resistance_spot_welding_relation_v1.py",
+      "sha256": "31b322449caa34191bf4dce3b85baf4549183fe84facaf2210e6838d0ae5575a"
+    },
+    {
+      "path": "tests/test_run_anchor_preserving_raw_ridge_condition.py",
+      "sha256": "81f36c009de9cfb1ed1a0e5745775d6a12bf2c1a8f217cde73dc07139d1ea8fd"
+    },
+    {
+      "path": "tools/audit_anonymous_repository.py",
+      "sha256": "e1c590223a228680948008183bdb1cad13132f48394d2d282c54bf86070c2450"
+    }
+  ]
+}

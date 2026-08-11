@@ -1,0 +1,57 @@
+protocol_version: bounded_unbounded_heldout_k45_v2
+amendment: PROTOCOLS.md
+evaluation:
+  seeds: [0, 42, 3407]
+  conditions: [unbounded_correct, tube_correct]
+  test_start: 9000
+  test_end: 10000
+  affine_ridge: 0.001
+  validation_reproduction_atol: 0.000005
+  training_allowed: false
+  selection_allowed: false
+  test_evaluation_authorized: true
+upstream:
+  0:
+    config_path: ./configs/config_calibrated_relation_tube_k3_seed0.yaml
+    config_sha256: 951b2fe5f25adbe5983cc7c646e4ca480e1e582daa661554f1a623027954ce08
+    output_root: outputs/calibrated_relation_tube_k3_seed0
+    source_commit: 4c50c48376f735d5715a79f864cba253f8a2ebfe
+    preflight_lock_sha256: 496656194643f811de9ce040cb8b815227eca7ef47a73fbdea5b548b3e71f7de
+    validation_readout_path: outputs/calibrated_relation_tube_k3_seed0/formal/validation_readout.json
+    validation_readout_sha256: 045cd7d6282971b01d6ceb67ac4214539fef01e1077d98304026881348267d0d
+    training_lock_sha256:
+      unbounded_correct: 1487f5e9e3e76b366c380f606922b3bbfdf516655dd12fb6b7e9a817998d3a55
+      tube_correct: 507a5d523162498a1495da9368bab5fc1c6848c8eb0f79b10f61f88526a2b936
+  42:
+    config_path: ./configs/config_calibrated_relation_tube_k3_seed42.yaml
+    config_sha256: 96ae2615b5f999b4f23137f2050efb171c06733e64f736d2eaa453c9beaa5594
+    output_root: outputs/calibrated_relation_tube_k3_seed42
+    source_commit: 4c50c48376f735d5715a79f864cba253f8a2ebfe
+    preflight_lock_sha256: a55b0800c4a0e8dc93ae2b660f6bdd0acac9c995b44f2618c4c347a3aeecba35
+    validation_readout_path: outputs/calibrated_relation_tube_k3_seed42/formal/validation_readout.json
+    validation_readout_sha256: 90ea0a611c644fdd6ed83ea355b883ca6b4205b8c4f13addff216ddd581060f2
+    training_lock_sha256:
+      unbounded_correct: cafcdf495b0c357f9460e0c0447405960168442825aedf0b8fbdd604e309c2ec
+      tube_correct: 5fff0a3c8f14e87fd5d6312584ecf7f00ff49053f4c14f3fd35ad167eac3418d
+  3407:
+    config_path: ./configs/config_calibrated_relation_tube_k0_seed3407.yaml
+    config_sha256: 7e22d6782467b4f676669d302f63a24edbdf8ee3d8886fd147fb3ffe9c8f6a81
+    output_root: outputs/calibrated_relation_tube_k0_seed3407
+    source_commit: 097a1319a65f488eaa94eaf75781429852e63afa
+    source_snapshot_root: outputs/bounded_unbounded_heldout_k45_v2/source_snapshots/097a1319a65f488eaa94eaf75781429852e63afa
+    preflight_lock_sha256: 56f1c2f7e4727d3113031be5d7795c4fbe2606395bdb3229bf07e8d0c69b6311
+    validation_readout_path: outputs/calibrated_relation_tube_k0_seed3407/formal/validation_readout.json
+    validation_readout_sha256: b6f9237efeca50ee6c999cb4736c0b29772a796dfcc37c0baa47818c75c762ef
+    training_lock_sha256:
+      unbounded_correct: 296170eda4e20aef8766ddbf41b79a52e03228b19de18ccd1835dd02a6f968fe
+      tube_correct: 48bd449f5ce71d2a284d9aacaf1095c46239e2f8bc89c6175b9db2c0ba81a0dd
+implementation:
+  entrypoint: audit_bounded_unbounded_heldout_k45_v2.py
+  entrypoint_sha256: 976320993d893869e65dcf924b99fb66d28293b8f7f39b8cbdf0e2de16d235a5
+  repository_root: .
+  failed_predecessor_config: ./configs/config_bounded_unbounded_heldout_k45.yaml
+  failed_predecessor_config_sha256: 5ad12a376248932cbe0d5dda34798dfc7775d0a7a9b0a8f79d9ba11c1cd99098
+runtime:
+  device: cuda
+  num_threads: 8
+  output_path: outputs/bounded_unbounded_heldout_k45_v2/heldout_audit.json

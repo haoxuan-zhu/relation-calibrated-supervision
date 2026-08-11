@@ -1,0 +1,891 @@
+{
+  "protocol_version": "raw_ridge_raw_aggregate_v1",
+  "raw_ridge": {
+    "budget_summaries": {
+      "160": {
+        "deltas": {
+          "raw_minus_empirical": {
+            "test": {
+              "mean": 0.034938487741682255,
+              "population_sd": 0.016394069891768556
+            },
+            "test_by_seed": {
+              "0": 0.058075348536173466,
+              "3407": 0.022080659866333008,
+              "42": 0.024659454822540283
+            },
+            "validation": {
+              "mean": 0.03942447855678155,
+              "population_sd": 0.016528121379459283
+            },
+            "validation_by_seed": {
+              "0": 0.06241093521463448,
+              "3407": 0.03160348418536585,
+              "42": 0.024259016270344325
+            }
+          },
+          "raw_minus_physical": {
+            "test": {
+              "mean": 0.03856720527013143,
+              "population_sd": 0.036566044739136536
+            },
+            "test_by_seed": {
+              "0": 0.09018415212631226,
+              "3407": 0.01004183292388916,
+              "42": 0.015475630760192871
+            },
+            "validation": {
+              "mean": 0.03341063474917231,
+              "population_sd": 0.03345646739294109
+            },
+            "validation_by_seed": {
+              "0": 0.08044493235161898,
+              "3407": 0.014347018523978461,
+              "42": 0.005439953371919493
+            }
+          },
+          "raw_minus_point": {
+            "test": {
+              "mean": 0.21825637420018518,
+              "population_sd": 0.0402448721261207
+            },
+            "test_by_seed": {
+              "0": 0.25749649604161584,
+              "3407": 0.16293429334958398,
+              "42": 0.2343383332093557
+            },
+            "validation": {
+              "mean": 0.2175901063114507,
+              "population_sd": 0.03779295329604735
+            },
+            "validation_by_seed": {
+              "0": 0.25260852560346037,
+              "3407": 0.1651131442216216,
+              "42": 0.23504864910927015
+            }
+          }
+        },
+        "readout": {
+          "empirical": {
+            "mean": 0.7416204081641303,
+            "population_sd": 0.0024134860792937502
+          },
+          "physical": {
+            "mean": 0.7379916906356812,
+            "population_sd": 0.018561576180177772
+          },
+          "point": {
+            "mean": 0.5583025217056274,
+            "population_sd": 0.028047801306307726
+          },
+          "raw_ridge": {
+            "mean": 0.7765588959058126,
+            "population_sd": 0.018176563357327688
+          }
+        }
+      },
+      "20": {
+        "deltas": {
+          "raw_minus_empirical": {
+            "test": {
+              "mean": 0.06368833118014865,
+              "population_sd": 0.02580932490947344
+            },
+            "test_by_seed": {
+              "0": 0.09771682818730665,
+              "3407": 0.035240451494852776,
+              "42": 0.0581077138582865
+            },
+            "validation": {
+              "mean": 0.07535470186603921,
+              "population_sd": 0.02615781099862956
+            },
+            "validation_by_seed": {
+              "0": 0.10777907381943352,
+              "3407": 0.043720398916274106,
+              "42": 0.07456463286241
+            }
+          },
+          "raw_minus_physical": {
+            "test": {
+              "mean": 0.06368092033598156,
+              "population_sd": 0.030238681148302766
+            },
+            "test_by_seed": {
+              "0": 0.06048385302225745,
+              "3407": 0.10221048196156823,
+              "42": 0.028348426024119022
+            },
+            "validation": {
+              "mean": 0.0855960125396203,
+              "population_sd": 0.029900515436258483
+            },
+            "validation_by_seed": {
+              "0": 0.07512056558685365,
+              "3407": 0.12631274380068847,
+              "42": 0.05535472823131882
+            }
+          },
+          "raw_minus_point": {
+            "test": {
+              "mean": 0.4854444474395779,
+              "population_sd": 0.044854506518361086
+            },
+            "test_by_seed": {
+              "0": 0.5248286525408427,
+              "3407": 0.4226878186066946,
+              "42": 0.5088168711711963
+            },
+            "validation": {
+              "mean": 0.4867658743700242,
+              "population_sd": 0.0436846375167011
+            },
+            "validation_by_seed": {
+              "0": 0.5183753072972586,
+              "3407": 0.42499210152102584,
+              "42": 0.5169302142917883
+            }
+          }
+        },
+        "readout": {
+          "empirical": {
+            "mean": 0.6651079720920987,
+            "population_sd": 0.039972425841941855
+          },
+          "physical": {
+            "mean": 0.6651153829362658,
+            "population_sd": 0.011778329311178098
+          },
+          "point": {
+            "mean": 0.24335185583266947,
+            "population_sd": 0.06275748032353891
+          },
+          "raw_ridge": {
+            "mean": 0.7287963032722473,
+            "population_sd": 0.019140907724095196
+          }
+        }
+      },
+      "40": {
+        "deltas": {
+          "raw_minus_empirical": {
+            "test": {
+              "mean": 0.05549102359347872,
+              "population_sd": 0.008077060527981796
+            },
+            "test_by_seed": {
+              "0": 0.045924703280130985,
+              "3407": 0.05486840009689331,
+              "42": 0.06567996740341187
+            },
+            "validation": {
+              "mean": 0.055659267719414575,
+              "population_sd": 0.0074425050900905464
+            },
+            "validation_by_seed": {
+              "0": 0.048891041401167734,
+              "3407": 0.05206271777230098,
+              "42": 0.06602404398477502
+            }
+          },
+          "raw_minus_physical": {
+            "test": {
+              "mean": 0.11721816990110608,
+              "population_sd": 0.01434426763407358
+            },
+            "test_by_seed": {
+              "0": 0.13148037592569983,
+              "3407": 0.12258023023605347,
+              "42": 0.09759390354156494
+            },
+            "validation": {
+              "mean": 0.13890156476181734,
+              "population_sd": 0.009514559056032632
+            },
+            "validation_by_seed": {
+              "0": 0.14797768821374702,
+              "3407": 0.14296630713452274,
+              "42": 0.12576069893718222
+            }
+          },
+          "raw_minus_point": {
+            "test": {
+              "mean": 0.29797789454460144,
+              "population_sd": 0.037503241325978626
+            },
+            "test_by_seed": {
+              "0": 0.34742242097854614,
+              "3407": 0.28987395763397217,
+              "42": 0.256637305021286
+            },
+            "validation": {
+              "mean": 0.29804835101212895,
+              "population_sd": 0.0391477047629397
+            },
+            "validation_by_seed": {
+              "0": 0.3502859523119765,
+              "3407": 0.2878115823524155,
+              "42": 0.2560475183719949
+            }
+          }
+        },
+        "readout": {
+          "empirical": {
+            "mean": 0.7214253611034818,
+            "population_sd": 0.028389184237346158
+          },
+          "physical": {
+            "mean": 0.6596982147958544,
+            "population_sd": 0.01693212462850201
+          },
+          "point": {
+            "mean": 0.478938490152359,
+            "population_sd": 0.020755612020294877
+          },
+          "raw_ridge": {
+            "mean": 0.7769163846969604,
+            "population_sd": 0.021662138510161202
+          }
+        }
+      },
+      "80": {
+        "deltas": {
+          "raw_minus_empirical": {
+            "test": {
+              "mean": 0.043498747878604416,
+              "population_sd": 0.040798751785876865
+            },
+            "test_by_seed": {
+              "0": 0.09878752628962195,
+              "3407": 0.0015655358632404859,
+              "42": 0.03014318148295081
+            },
+            "validation": {
+              "mean": 0.048487305166917495,
+              "population_sd": 0.04174931918988879
+            },
+            "validation_by_seed": {
+              "0": 0.10681106402420548,
+              "3407": 0.011371631436399965,
+              "42": 0.027279220040147045
+            }
+          },
+          "raw_minus_physical": {
+            "test": {
+              "mean": 0.005135496457417769,
+              "population_sd": 0.03446470501516976
+            },
+            "test_by_seed": {
+              "0": 0.04909851153691602,
+              "3407": -0.035071372985839844,
+              "42": 0.0013793508211771277
+            },
+            "validation": {
+              "mean": 0.007234856049173695,
+              "population_sd": 0.027871175973822177
+            },
+            "validation_by_seed": {
+              "0": 0.043034128101023916,
+              "3407": -0.02494808371446755,
+              "42": 0.0036185237609647203
+            }
+          },
+          "raw_minus_point": {
+            "test": {
+              "mean": 0.23417330119344923,
+              "population_sd": 0.02225230712439478
+            },
+            "test_by_seed": {
+              "0": 0.244733065366745,
+              "3407": 0.2032201588153839,
+              "42": 0.25456667939821875
+            },
+            "validation": {
+              "mean": 0.2391063377360139,
+              "population_sd": 0.02355807926676083
+            },
+            "validation_by_seed": {
+              "0": 0.24599758935844662,
+              "3407": 0.20743204499885648,
+              "42": 0.2638893788507386
+            }
+          }
+        },
+        "readout": {
+          "empirical": {
+            "mean": 0.7251439756817288,
+            "population_sd": 0.023469666299969678
+          },
+          "physical": {
+            "mean": 0.7635072271029154,
+            "population_sd": 0.014987996781700166
+          },
+          "point": {
+            "mean": 0.5344694223668839,
+            "population_sd": 0.00960500692854443
+          },
+          "raw_ridge": {
+            "mean": 0.7686427235603333,
+            "population_sd": 0.02360638242022881
+          }
+        }
+      }
+    },
+    "config_path": "./config_raw_ridge_propagation_v1a.yaml",
+    "config_sha256": "12022010923d08c199a009b8b3db72739f6f1bad62c3731b31a766b4e568f3f4",
+    "decision": {
+      "all_formal_runs_valid": true,
+      "budgets_with_raw_minus_point_test_3_of_3_positive": [
+        20,
+        40,
+        80,
+        160
+      ],
+      "performance_magnitude_threshold_used": false,
+      "required_budget_count": 3,
+      "verdict": "generic_propagation_major_gain_supported"
+    },
+    "entries": {
+      "160": {
+        "0": {
+          "budget": 160,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k160_seed0/diagnostic_results.json",
+          "result_sha256": "e1a7c0fb8c7d0a097a82f30f07e2dce9d940872b2fd732173d826ece80a80de7",
+          "seed": 0,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.801941990852356,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.8119150703467629,
+          "validation_rgb_mean_r2": 0.5424628853797913,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        },
+        "3407": {
+          "budget": 160,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k160_seed3407/diagnostic_results.json",
+          "result_sha256": "f4f696883af087b07fa9f7b01c504d2d624b1f82bf298629d8612ddc159413c8",
+          "seed": 3407,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.760352373123169,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.7780271529078954,
+          "validation_rgb_mean_r2": 0.40550875663757324,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        },
+        "42": {
+          "budget": 160,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k160_seed42/diagnostic_results.json",
+          "result_sha256": "f9306f3def0102a2721329717e347ca601c624db909a3b389fe40eb95843fbab",
+          "seed": 42,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.7673823237419128,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.7767019741319396,
+          "validation_rgb_mean_r2": 0.41573086380958557,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        }
+      },
+      "20": {
+        "0": {
+          "budget": 20,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k20_seed0/diagnostic_results.json",
+          "result_sha256": "b7e5e94218a737e015f3b875f2bcc85f91b025a8136280d995c7f36d40ea2193",
+          "seed": 0,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.7223875919977824,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.7339186787825144,
+          "validation_rgb_mean_r2": 0.28758978843688965,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        },
+        "3407": {
+          "budget": 20,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k20_seed3407/diagnostic_results.json",
+          "result_sha256": "0b0dfda977f72d2c22dc3a4f0a89c6006f8a5bf8cf30cd6fa3c6458b0162069c",
+          "seed": 3407,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.7547769149144491,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.769404787467967,
+          "validation_rgb_mean_r2": 0.30391934514045715,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        },
+        "42": {
+          "budget": 20,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k20_seed42/diagnostic_results.json",
+          "result_sha256": "d49b5d1e7a2cb2243e34acb765aa6d3e31aae937eca29292169220d9c853c360",
+          "seed": 42,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.7092244029045105,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.7272047585162218,
+          "validation_rgb_mean_r2": 0.12185847759246826,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        }
+      },
+      "40": {
+        "0": {
+          "budget": 40,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k40_seed0/diagnostic_results.json",
+          "result_sha256": "c1f2adade2454c48ff435f0f867695ce00e2de5fb7a7b8b1bf62ffe5a36dc33c",
+          "seed": 0,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.8073832988739014,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.8233014989456717,
+          "validation_rgb_mean_r2": 0.5443232655525208,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        },
+        "3407": {
+          "budget": 40,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k40_seed3407/diagnostic_results.json",
+          "result_sha256": "241c91bcbf7f4c67402f5ed1ad7a3c521eccf4b803b6ddc5a9ac63e2a9e3f272",
+          "seed": 3407,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.7589084506034851,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.7754170549098715,
+          "validation_rgb_mean_r2": 0.34276214241981506,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        },
+        "42": {
+          "budget": 40,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k40_seed42/diagnostic_results.json",
+          "result_sha256": "5c7ae9a6dd7fb64cd10ad36404f68d0a7dc32e319ad34492c92466ff9d2c5406",
+          "seed": 42,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.7644574046134949,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.7840385408339735,
+          "validation_rgb_mean_r2": 0.4261171817779541,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        }
+      },
+      "80": {
+        "0": {
+          "budget": 80,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k80_seed0/diagnostic_results.json",
+          "result_sha256": "3b79eb009abb8bf5c69c9faf4216357bd2c2d1c65a698697eaaf5f1969936dda",
+          "seed": 0,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.7916449705759684,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.8008503953682132,
+          "validation_rgb_mean_r2": 0.5171954035758972,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        },
+        "3407": {
+          "budget": 80,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k80_seed3407/diagnostic_results.json",
+          "result_sha256": "a2c4563fda725ddbea076bcaf3e6db0a5a0f50a7346d52f5b3e2dcfbe1321095",
+          "seed": 3407,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.736187736193339,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.7531210992649595,
+          "validation_rgb_mean_r2": 0.3291354775428772,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        },
+        "42": {
+          "budget": 80,
+          "condition_kind": "empirical",
+          "final_supervision_weight": 0.1,
+          "identity_checks": {
+            "budget": true,
+            "condition_kind": true,
+            "mode": true,
+            "protocol": true,
+            "registry_sha256": true,
+            "seed": true,
+            "semantic_validation_evaluated": true,
+            "subset_hash": true,
+            "subset_seed": true,
+            "test_evaluated": true
+          },
+          "parameter_count": 16902384,
+          "protocol_version": "raw_ridge_propagation_v1",
+          "result_path": "outputs/raw_ridge_propagation_v1a/formal/k80_seed42/diagnostic_results.json",
+          "result_sha256": "800e5117c925dd55b2cdba2cc204c2acfb24928fc70dd7b0172723294fb3366c",
+          "seed": 42,
+          "subset_seed": 20260731,
+          "test_rgb_mean_direct_abs_correlation": 0.7780954639116923,
+          "training_condition": "raw_ridge_correct_floor",
+          "valid": true,
+          "validation_rgb_mean_direct_abs_correlation": 0.7948042635629801,
+          "validation_rgb_mean_r2": 0.46098220348358154,
+          "validity_checks": {
+            "anchors_exact": true,
+            "floor_exact": true,
+            "no_semantic_truth_before_lock": true,
+            "no_warm_checkpoint_in_config": true,
+            "normalization_budget_exact": true,
+            "preflight_budget_exact": true,
+            "preflight_numerically_valid": true,
+            "random_initial_state_exact": true,
+            "same_initial_state_loaded": true,
+            "same_parameter_count": true,
+            "semantic_metrics_finite": true,
+            "subset_budget_exact": true,
+            "subset_hash_exact": true,
+            "training_values_finite": true
+          }
+        }
+      }
+    }
+  },
+  "reference_aggregate": {
+    "path": "./outputs/relation_budget_curve_v1/aggregate/aggregate_results.json",
+    "sha256": "18040bdecceeeb41d7b370726dc12b0b8153bb1dd110783d00c17e956e831d22"
+  }
+}

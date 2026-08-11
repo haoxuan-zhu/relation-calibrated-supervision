@@ -1,0 +1,217 @@
+{
+  "comparisons": {
+    "oas_minus_full": {
+      "complete_semantic_advantage_count": 1,
+      "graph_advantage_count": 0,
+      "semantic_deltas": {
+        "coordinatewise_r2": {
+          "maximum": 0.009442449248113549,
+          "mean": -0.0005284592485133762,
+          "minimum": -0.01403304463060917,
+          "sample_std": 0.012130121906257153,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        },
+        "full_affine_r2": {
+          "maximum": 0.012761922677790083,
+          "mean": -0.0013487345656934362,
+          "minimum": -0.012577125221221785,
+          "sample_std": 0.012913072160416999,
+          "strict_negative_count": 2,
+          "strict_positive_count": 1
+        },
+        "raw_correlation": {
+          "maximum": 0.005152157771630583,
+          "mean": -0.0018413900518452857,
+          "minimum": -0.01138836320474379,
+          "sample_std": 0.008560794018499275,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        },
+        "raw_r2": {
+          "maximum": 0.04529845714569092,
+          "mean": -0.028515100479125977,
+          "minimum": -0.06858384609222412,
+          "sample_std": 0.06400257026848834,
+          "strict_negative_count": 2,
+          "strict_positive_count": 1
+        },
+        "rgb_mcc": {
+          "maximum": 0.005152106285095215,
+          "mean": -0.001841425895690918,
+          "minimum": -0.011387944221496582,
+          "sample_std": 0.008560468525883859,
+          "strict_negative_count": 1,
+          "strict_positive_count": 2
+        }
+      },
+      "subsets": {
+        "20260811": {
+          "candidate_minus_full_ccrl_total": 0.034100656827290854,
+          "complete_semantic_advantage": true,
+          "edge_auroc_delta": -0.013333333333333308,
+          "full_minus_candidate_shd": 0,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": 0.009442449248113549,
+            "full_affine_r2": 0.012761922677790083,
+            "raw_correlation": 0.005152157771630583,
+            "raw_r2": 0.04529845714569092,
+            "rgb_mcc": 0.005152106285095215
+          }
+        },
+        "20260821": {
+          "candidate_minus_full_ccrl_total": -0.0003046118418375543,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": 0.053333333333333344,
+          "full_minus_candidate_shd": -1,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": -0.01403304463060917,
+            "full_affine_r2": -0.004231001153648606,
+            "raw_correlation": -0.01138836320474379,
+            "raw_r2": -0.06858384609222412,
+            "rgb_mcc": -0.011387944221496582
+          }
+        },
+        "20260831": {
+          "candidate_minus_full_ccrl_total": 0.05219463992118839,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": 0.0,
+          "full_minus_candidate_shd": 2,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": 0.003005217636955493,
+            "full_affine_r2": -0.012577125221221785,
+            "raw_correlation": 0.0007120352775773497,
+            "raw_r2": -0.06225991249084473,
+            "rgb_mcc": 0.0007115602493286133
+          }
+        }
+      }
+    },
+    "oas_minus_isotropic": {
+      "complete_semantic_advantage_count": 0,
+      "graph_advantage_count": 0,
+      "semantic_deltas": {
+        "coordinatewise_r2": {
+          "maximum": 0.0002870038101612238,
+          "mean": -0.036450291749389,
+          "minimum": -0.056856093395281526,
+          "sample_std": 0.031880584368021686,
+          "strict_negative_count": 2,
+          "strict_positive_count": 1
+        },
+        "full_affine_r2": {
+          "maximum": 0.021464950807427052,
+          "mean": -0.005875622995887879,
+          "minimum": -0.022973616068936886,
+          "sample_std": 0.023924451958577415,
+          "strict_negative_count": 2,
+          "strict_positive_count": 1
+        },
+        "raw_correlation": {
+          "maximum": -0.0022582765389684845,
+          "mean": -0.022140749144418697,
+          "minimum": -0.0321750224335674,
+          "sample_std": 0.017218977715320424,
+          "strict_negative_count": 3,
+          "strict_positive_count": 0
+        },
+        "raw_r2": {
+          "maximum": -0.06783145666122437,
+          "mean": -0.11915038029352824,
+          "minimum": -0.2122703194618225,
+          "sample_std": 0.08078452789156217,
+          "strict_negative_count": 3,
+          "strict_positive_count": 0
+        },
+        "rgb_mcc": {
+          "maximum": -0.002258777618408203,
+          "mean": -0.022140681743621826,
+          "minimum": -0.032174766063690186,
+          "sample_std": 0.017218485919224133,
+          "strict_negative_count": 3,
+          "strict_positive_count": 0
+        }
+      },
+      "subsets": {
+        "20260811": {
+          "candidate_minus_full_ccrl_total": 0.20032419498761497,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": 0.01333333333333342,
+          "full_minus_candidate_shd": -1,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": 0.0002870038101612238,
+            "full_affine_r2": 0.021464950807427052,
+            "raw_correlation": -0.0022582765389684845,
+            "raw_r2": -0.07734936475753784,
+            "rgb_mcc": -0.002258777618408203
+          }
+        },
+        "20260821": {
+          "candidate_minus_full_ccrl_total": 0.08128030598163605,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": 0.07999999999999996,
+          "full_minus_candidate_shd": -2,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": -0.0527817856630467,
+            "full_affine_r2": -0.0161182037261538,
+            "raw_correlation": -0.0321750224335674,
+            "raw_r2": -0.06783145666122437,
+            "rgb_mcc": -0.032174766063690186
+          }
+        },
+        "20260831": {
+          "candidate_minus_full_ccrl_total": 0.040787498792012544,
+          "complete_semantic_advantage": false,
+          "edge_auroc_delta": -0.026666666666666727,
+          "full_minus_candidate_shd": -1,
+          "graph_advantage": false,
+          "semantic_deltas": {
+            "coordinatewise_r2": -0.056856093395281526,
+            "full_affine_r2": -0.022973616068936886,
+            "raw_correlation": -0.0319889484607202,
+            "raw_r2": -0.2122703194618225,
+            "rgb_mcc": -0.03198850154876709
+          }
+        }
+      }
+    }
+  },
+  "config_path": ".\\configs\\config_relation_tube_oas_shrinkage_k9_aggregate.yaml",
+  "config_sha256": "8fc5198f1c2030c48ce6268d919227b199253fa607e637a9ffec4c2a72a992fc",
+  "decision": {
+    "interpretation": "automatic_covariance_shrinkage_does_not_replace_axis_prior",
+    "isotropic_raw_correlation_above_oas_all_subsets": true,
+    "isotropic_raw_r2_above_oas_all_subsets": true,
+    "oas_complete_semantic_advantage_over_full_all_subsets": false,
+    "oas_complete_semantic_advantage_over_isotropic_any_subset": false,
+    "test_evaluated": false
+  },
+  "inputs": {
+    "20260811": {
+      "path": ".\\outputs\\relation_tube_oas_shrinkage_k9_20260811\\formal\\oas_validation_readout.json",
+      "sha256": "8a41b091bc1c230ef310d22728e2e94265f70d2e1300b0edfb5c526a72456f77"
+    },
+    "20260821": {
+      "path": ".\\outputs\\relation_tube_oas_shrinkage_k9_20260821\\formal\\oas_validation_readout.json",
+      "sha256": "15461b09bcdd0d46cd8bbbcc1a764118013ef8608cd368f4a26f4d9368637fca"
+    },
+    "20260831": {
+      "path": ".\\outputs\\relation_tube_oas_shrinkage_k9_20260831\\formal\\oas_validation_readout.json",
+      "sha256": "d8366bffc1b9af3e26bcd6ed70ed4eaf17a2f14ae4539e596987d205150e70ee"
+    }
+  },
+  "mode": "three_calibration_subset_exact_oas_aggregate",
+  "protocol_version": "relation_tube_oas_shrinkage_k9_aggregate_v1",
+  "shrinkage": {
+    "maximum": 0.04672133609023008,
+    "mean": 0.04211389331952373,
+    "minimum": 0.03355367873719755,
+    "sample_std": 0.0074205864854316045
+  },
+  "test_evaluated": false
+}

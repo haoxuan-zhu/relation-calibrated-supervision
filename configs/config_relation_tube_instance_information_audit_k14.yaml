@@ -1,0 +1,44 @@
+protocol_version: relation_tube_instance_information_audit_k14_v1
+preregistration: PROTOCOLS.md
+scope:
+  budget: 80
+  seeds: [3407, 0, 42]
+  calibration_rows: train_subset_only
+  validation_rows: [8000, 9000]
+  test_rows: [9000, 10000]
+  test_evaluated: false
+interventions:
+  order: [correct_image, fixed_anchor_visual_derangement, projected_residual_reassignment, center_only]
+  derangement_seed: 20260803
+evaluation:
+  full_affine_ridge: 0.001
+  reproduction_atol: 0.000005
+  bootstrap_replicates: 2000
+  bootstrap_seed: 20260804
+decision:
+  strong_directional_seeds: 3
+  strong_bootstrap_positive_seeds: 2
+  mixed_directional_seeds: 2
+runs:
+  3407:
+    geometry_protocol: relation_tube_geometry_ablation_k4_v1
+    geometry_config_path: ./config_relation_tube_geometry_ablation_k4_seed3407.yaml
+    geometry_config_sha256: f008d07c3daf4fb7ec80ae7ab029531e509c54ea3f760d60885795fe182c3b1c
+    downstream_readout_path: outputs/relation_tube_geometry_downstream_k6_seed3407/downstream_validation_readout.json
+    downstream_readout_sha256: 2e0fa9b12dd5f8f9f354602076b3f0337dc5690bde787f95edc4925f8f8e98e4
+  0:
+    geometry_protocol: relation_tube_geometry_tradeoff_k5_v1
+    geometry_config_path: ./config_relation_tube_geometry_tradeoff_k5_seed0.yaml
+    geometry_config_sha256: b30b17a2904acffca099fd9b3dbad03a4cb5ff08cde286115159deeb6938e635
+    downstream_readout_path: outputs/relation_tube_geometry_downstream_k6_seed0/downstream_validation_readout.json
+    downstream_readout_sha256: 6e925138ae5358ee6fec3c2fe465624fe3ed9bb60ac7c9616da2f126397c9551
+  42:
+    geometry_protocol: relation_tube_geometry_tradeoff_k5_v1
+    geometry_config_path: ./config_relation_tube_geometry_tradeoff_k5_seed42.yaml
+    geometry_config_sha256: 6e1c9a8699241405b9aabb242ae7d2cd3ae967133a57302602d84cbf29ce2511
+    downstream_readout_path: outputs/relation_tube_geometry_downstream_k6_seed42/downstream_validation_readout.json
+    downstream_readout_sha256: c81a6f074e7a8bd42272957975d367da5d7ec9432d8d13b05369dd1402d99e98
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/relation_tube_instance_information_audit_k14

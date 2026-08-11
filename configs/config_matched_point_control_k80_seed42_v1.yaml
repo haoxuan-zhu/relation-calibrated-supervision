@@ -1,0 +1,67 @@
+protocol_version: partial_anchor_crl_matched_point_k80_v1
+preregistration: PROTOCOLS.md
+dataset:
+  root: data/causal_chamber/lt_crl_benchmark_v1
+  cache_path: outputs/stochastic_measurement_crl_oracle_v1/cache/real_images_uint8.npy
+  experiment_prefix: buchholz_1
+  domain_suffix: ""
+  environments: [obs, red, green, blue, pol_1, pol_2]
+  samples_per_environment: 10000
+  latent_columns: [red, green, blue, pol_1, pol_2]
+split: {train_end: 8000, validation_end: 9000, test_end: 10000}
+model:
+  latent_dim: 5
+  learned_indices: [0, 1, 2]
+  anchor_indices: [3, 4]
+  hidden_channels: 64
+  conv_layers: 2
+initialization:
+  mode: same_seed_random_no_warm
+  expected_state_dict_sha256: 9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56
+  provenance: matched_to_v18_seed42
+normalization:
+  rgb_statistics_source: k80_calibration_subset_rgb_full_train_known_angles_v17
+  rgb_statistics_budget: 80
+  subset_sha256: 4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84
+  angle_statistics_source: all_8000_known_sensor_anchors
+implementation:
+  runner: run_matched_point_control_k80.py
+  runner_sha256: 15367bb35cd7c4893c71774313dde12051a570b4154a2c906ce7f569fd889633
+training:
+  seed: 42
+  shuffle_seed: 20260730
+  epochs: 100
+  batch_size: 512
+  learning_rate: 0.0005
+  scheduler_factor: 0.3
+  scheduler_patience: 3
+  validation_interval: 10
+  targets: [0, 1, 2]
+  kappa: 0.1
+  eta: 0.0001
+  mu: 0.00001
+  conditions: [matched_point_correct_floor]
+point_anchor:
+  budget: 80
+  subset_seed: 20260731
+  sampling: ccrl_row_modulo_registered_subset
+  supervised_environments: [obs]
+floor_schedule: {hold_weight: 1.0, hold_epochs: 20, decay_end_epoch: 80, nonzero_floor: 0.1}
+matched_reference:
+  condition: vanilla_correct_floor
+  expected_parameter_count: 16902384
+  functional_subset_sha256: 4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84
+  functional_result_sha256: 3994b655ab3e708dcc65173a497aaa085993290fec371fc647d1b410031d2661
+evaluation:
+  graph_threshold: 0.3
+  minimum_oracle_anchor_r2: 0.999
+  strong_validation_delta_each_gt: 0.0
+  strong_validation_mean_delta_min: 0.05
+  strong_test_delta_each_min: 0.05
+  strong_test_mean_delta_min: 0.10
+  positive_small_test_delta_each_gt: 0.0
+  positive_small_test_mean_delta_min: 0.05
+runtime:
+  device: cuda
+  num_threads: 8
+  output_dir: outputs/partial_anchor_crl_matched_point_k80_v1/real_seed42

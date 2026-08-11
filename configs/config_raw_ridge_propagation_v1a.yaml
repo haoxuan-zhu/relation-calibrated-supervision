@@ -1,0 +1,84 @@
+protocol_version: raw_ridge_propagation_v1
+preregistration: PROTOCOLS.md
+runtime_amendment: PROTOCOLS.md
+dataset:
+  root: data/causal_chamber/lt_crl_benchmark_v1
+  cache_path: outputs/stochastic_measurement_crl_oracle_v1/cache/real_images_uint8.npy
+  experiment_prefix: buchholz_1
+  domain_suffix: ""
+  environments: [obs, red, green, blue, pol_1, pol_2]
+  samples_per_environment: 10000
+  latent_columns: [red, green, blue, pol_1, pol_2]
+split: {train_end: 8000, validation_end: 9000, test_end: 10000}
+model:
+  latent_dim: 5
+  learned_indices: [0, 1, 2]
+  anchor_indices: [3, 4]
+  hidden_channels: 64
+  conv_layers: 2
+initialization:
+  mode: same_seed_random_no_warm
+  expected_state_dict_sha256:
+    0: 6037afc85fa38492ba8b6854e7467d610016d6bfe4a06e96276c11a1c302a7b2
+    42: 9e21bbf9d3cd2c6abefe2029a6e845c2a12175b0a49ec445234fc1258dbddc56
+    3407: 4b599031478a138433ed0208cc4871be1895b15db07576b2e13b5b9f81572731
+budget_curve:
+  budgets: [20, 40, 80, 160]
+  subset_seed: 20260731
+  subset_sha256:
+    20: f493e4899eb1fb98c9e6e55de571e42ae1d83e36c153163d8828c54727e224b7
+    40: 5345ec49fa3f372f489491f78af66711157afcb6aa91138c9caa124a1a7c7187
+    80: 4bf1156bbf3f8f8ed0b5e63c530efd171e36395cd9d7d59003a8465ba43ddc84
+    160: fd27b8e2045a01fe8eec95d706d3d60c4c1f3af6bd74ab0373abcf8ebddda31e
+  rgb_statistics_source:
+    20: registered_k20_subset_rgb_all_known_angles_raw_ridge_v1
+    40: registered_k40_subset_rgb_all_known_angles_raw_ridge_v1
+    80: registered_k80_subset_rgb_all_known_angles_raw_ridge_v1
+    160: registered_k160_subset_rgb_all_known_angles_raw_ridge_v1
+  conditions: [empirical]
+  seeds: [0, 42, 3407]
+normalization:
+  angle_statistics_source: all_8000_known_sensor_anchors
+training:
+  shuffle_seed: 20260730
+  epochs: 100
+  batch_size: 512
+  learning_rate: 0.0005
+  scheduler_factor: 0.3
+  scheduler_patience: 3
+  validation_interval: 10
+  targets: [0, 1, 2]
+  kappa: 0.1
+  eta: 0.0001
+  mu: 0.00001
+functional_anchor:
+  permutation_seed: 910246
+  pinv_rcond: 0.000001
+  clip_predictions_to_unit_interval: true
+empirical_anchor:
+  family: internal_slot_replaced_by_raw_ridge
+  clip_predictions_to_unit_interval: true
+raw_ridge_anchor:
+  family: raw_ridge_[m,tau]_to_rgb
+  alphas: [0.0, 0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 1.0, 10.0]
+  selection: deterministic_leave_one_out_mse_ties_choose_larger_alpha
+  clip_predictions_to_unit_interval: true
+point_anchor:
+  sampling: unused_in_raw_ridge_followup
+  supervised_environments: [obs]
+floor_schedule: {hold_weight: 1.0, hold_epochs: 20, decay_end_epoch: 80, nonzero_floor: 0.1}
+evaluation:
+  graph_threshold: 0.3
+  minimum_oracle_anchor_r2: 0.999
+implementation:
+  entrypoint: run_raw_ridge_propagation_condition.py
+  runner: run_relation_budget_condition.py
+  base_runner_sha256: 35b32aa4fb2a988bd34291b4cad6e158e6e124515f2206ad4b82f264ac3bd5a0
+  runner_sha256: 35b32aa4fb2a988bd34291b4cad6e158e6e124515f2206ad4b82f264ac3bd5a0
+  entrypoint_sha256: 469703b79f643b33910b491a2b5ecbf0e969f68dd253aa52cc256b95ed5b5684
+  teacher_module_sha256: 47259efb97617d4aabdb8afcf566a98ae565877fbd26241d8b45183e02ab632d
+  expected_parameter_count: 16902384
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/raw_ridge_propagation_v1a

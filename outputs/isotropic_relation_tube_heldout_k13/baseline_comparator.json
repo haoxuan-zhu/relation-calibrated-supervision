@@ -1,0 +1,317 @@
+{
+  "budgets": [
+    20,
+    40,
+    80,
+    160
+  ],
+  "candidate_test_evaluated": false,
+  "conditions": [
+    "point",
+    "empirical",
+    "physical",
+    "raw_ridge"
+  ],
+  "entries": {
+    "160": {
+      "empirical": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.7438666423161825,
+          "parameter_count": 16902384,
+          "source_result_sha256": "8617ffac5a6c11d4befbda243241031440a8e5097fd5a8a3a1b1f5b34002726d"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.7382717132568359,
+          "parameter_count": 16902384,
+          "source_result_sha256": "d406c2833bcc8d1fd7babf09dd9ec10cb04e6015aa24e0dac3f9d64f8c1ab6c2"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.7427228689193726,
+          "parameter_count": 16902384,
+          "source_result_sha256": "418b18b132ecfd0f4983724113a43acd213e0912b897bb035d554a03cebb77a2"
+        }
+      },
+      "physical": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.7117578387260437,
+          "parameter_count": 16902384,
+          "source_result_sha256": "63cf9c4ac3b118fe960d7e34d49dd3728fedb0d01bdac27a6d3e82553cf170a5"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.7503105401992798,
+          "parameter_count": 16902384,
+          "source_result_sha256": "041ae100339fe1fd1d058b501860e9e91966042f37bd68e3f0d3673e4e73ed9c"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.75190669298172,
+          "parameter_count": 16902384,
+          "source_result_sha256": "c4b6cff4cfa74945efe6741eb41b33be5b60849fe068e1df0f8b4ee62ce5aa4a"
+        }
+      },
+      "point": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.5444454948107401,
+          "parameter_count": 16902384,
+          "source_result_sha256": "b75261115d6e4605b4b08498edbc571a7c6d10f14591cb776e16abdd2d7d3265"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.597418079773585,
+          "parameter_count": 16902384,
+          "source_result_sha256": "810426e297fa568f1e3fa44bb33ec99bb65c92efb16f6f970fb58d47a528c706"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.5330439905325571,
+          "parameter_count": 16902384,
+          "source_result_sha256": "8d97e65d1fd43bd01a25169b2603c998d74b4806050efeb56b8699575f7a430b"
+        }
+      },
+      "raw_ridge": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.801941990852356,
+          "parameter_count": 16902384,
+          "source_result_sha256": "e1a7c0fb8c7d0a097a82f30f07e2dce9d940872b2fd732173d826ece80a80de7"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.760352373123169,
+          "parameter_count": 16902384,
+          "source_result_sha256": "f4f696883af087b07fa9f7b01c504d2d624b1f82bf298629d8612ddc159413c8"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.7673823237419128,
+          "parameter_count": 16902384,
+          "source_result_sha256": "f9306f3def0102a2721329717e347ca601c624db909a3b389fe40eb95843fbab"
+        }
+      }
+    },
+    "20": {
+      "empirical": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.6246707638104757,
+          "parameter_count": 16902384,
+          "source_result_sha256": "29f67748b5fcab234bc80b47bcc1f9f0a9948c8616b1dd41c2c72612d4b7fb84"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.7195364634195963,
+          "parameter_count": 16902384,
+          "source_result_sha256": "e0945b55d8c01c4adb436eac1d3f96c7cbfa306d919141d8cc511506ecf28657"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.651116689046224,
+          "parameter_count": 16902384,
+          "source_result_sha256": "578e2ddb8282e792f7c6a7ad22008e710265001e18eac72c870fb016d70a8958"
+        }
+      },
+      "physical": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.6619037389755249,
+          "parameter_count": 16902384,
+          "source_result_sha256": "8755213fe29ba038e6015d4118fd487e4d97f0f681cbae65a35624fdcb2b7841"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.6525664329528809,
+          "parameter_count": 16902384,
+          "source_result_sha256": "f4c964ea088834c4151386ac243c75dddb7a92070e00a9618b872f214aefe1da"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.6808759768803915,
+          "parameter_count": 16902384,
+          "source_result_sha256": "e843f436eb2c6447c9100ea25ed235665333ca625285953731121ae6b87b7430"
+        }
+      },
+      "point": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.1975589394569397,
+          "parameter_count": 16902384,
+          "source_result_sha256": "b94698c5256a940a78e388fafd3571dd94972d021f2349ef306e2d62b5de16ee"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.3320890963077545,
+          "parameter_count": 16902384,
+          "source_result_sha256": "eeec8fbe9ceb7d398ae1f3792f27a820f8843352b365807f61468ff20b3e3a60"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.2004075317333142,
+          "parameter_count": 16902384,
+          "source_result_sha256": "2a96b8e80a97a4f1e7d4dea54ddb8d6a179ff74d3aab01e39ef559fd53360a44"
+        }
+      },
+      "raw_ridge": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.7223875919977824,
+          "parameter_count": 16902384,
+          "source_result_sha256": "b7e5e94218a737e015f3b875f2bcc85f91b025a8136280d995c7f36d40ea2193"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.7547769149144491,
+          "parameter_count": 16902384,
+          "source_result_sha256": "0b0dfda977f72d2c22dc3a4f0a89c6006f8a5bf8cf30cd6fa3c6458b0162069c"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.7092244029045105,
+          "parameter_count": 16902384,
+          "source_result_sha256": "d49b5d1e7a2cb2243e34acb765aa6d3e31aae937eca29292169220d9c853c360"
+        }
+      }
+    },
+    "40": {
+      "empirical": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.7614585955937704,
+          "parameter_count": 16902384,
+          "source_result_sha256": "3d02d0a340f08b089d0a4f44649f58b99e087a6f4f19fdb6327bb8f88d4b562e"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.7040400505065918,
+          "parameter_count": 16902384,
+          "source_result_sha256": "de82f6458ceba0a2b049fd001f2b90320a7872fd6700a2ee6febfa23f0f5ac3b"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.698777437210083,
+          "parameter_count": 16902384,
+          "source_result_sha256": "4183af2421643a40e0bd1656a96bbebffa2f1f030b43c1a7b051fa3a5d58cae5"
+        }
+      },
+      "physical": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.6759029229482015,
+          "parameter_count": 16902384,
+          "source_result_sha256": "7e2d33da642e66e3ae7129636ed8d484407f7858dd03a2fefd454298520610b0"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.6363282203674316,
+          "parameter_count": 16902384,
+          "source_result_sha256": "48d271a71f69ce6bd93483b1aebd1588e2b87fb288dbe355c0c74aa3686ddbe4"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.6668635010719299,
+          "parameter_count": 16902384,
+          "source_result_sha256": "c4d255063a7918f4ad76f30b9cbb71db15425105c500a6100f237c55f7633c8f"
+        }
+      },
+      "point": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.4599608778953552,
+          "parameter_count": 16902384,
+          "source_result_sha256": "56903f9b65f4af7f8b2ab4c656fe33d95ddcabcacf41ded93f1969a859a0ac9e"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.46903449296951294,
+          "parameter_count": 16902384,
+          "source_result_sha256": "8824c7e90179648d7bb7891f8a703a3ab243138102e797601a4ce260973e30d7"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.5078200995922089,
+          "parameter_count": 16902384,
+          "source_result_sha256": "822b3aad99f7812d2e7dc3706e0fd53bef8462cf07e55f079fd36b5c3d542831"
+        }
+      },
+      "raw_ridge": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.8073832988739014,
+          "parameter_count": 16902384,
+          "source_result_sha256": "c1f2adade2454c48ff435f0f867695ce00e2de5fb7a7b8b1bf62ffe5a36dc33c"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.7589084506034851,
+          "parameter_count": 16902384,
+          "source_result_sha256": "241c91bcbf7f4c67402f5ed1ad7a3c521eccf4b803b6ddc5a9ac63e2a9e3f272"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.7644574046134949,
+          "parameter_count": 16902384,
+          "source_result_sha256": "5c7ae9a6dd7fb64cd10ad36404f68d0a7dc32e319ad34492c92466ff9d2c5406"
+        }
+      }
+    },
+    "80": {
+      "empirical": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.6928574442863464,
+          "parameter_count": 16902384,
+          "source_result_sha256": "2b096a49e0d7a68a6c786e516fba3f5cf759855570c3b165f6505a8f6883c6cb"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.7346222003300985,
+          "parameter_count": 16902384,
+          "source_result_sha256": "299bbb001328c7aa7efe8b074026dee7729331e4865567ccc11c5db0d30b01bb"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.7479522824287415,
+          "parameter_count": 16902384,
+          "source_result_sha256": "5e744543607faeff57b442a1fe1d2ee01d6c5ddde5beab135beb989e025a34a4"
+        }
+      },
+      "physical": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.7425464590390524,
+          "parameter_count": 16902384,
+          "source_result_sha256": "57e3454d350444b4c6715db84953b4e1b50c864c96af24f45cebac4d405166b7"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.7712591091791788,
+          "parameter_count": 16902384,
+          "source_result_sha256": "fb973d64a53919b461a93d92ea4cff885e311544727a50a2c3350ca17e143454"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.7767161130905151,
+          "parameter_count": 16902384,
+          "source_result_sha256": "3994b655ab3e708dcc65173a497aaa085993290fec371fc647d1b410031d2661"
+        }
+      },
+      "point": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.5469119052092234,
+          "parameter_count": 16902384,
+          "source_result_sha256": "9c5fb4a8c0163e895fee9a00d2f700a79c482738042dadba98c39b164c028b66"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.5329675773779551,
+          "parameter_count": 16902384,
+          "source_result_sha256": "e60436715e78fbba9bf1b91c2d0ffaef9bc9a1d1fb6d6657509403f9fe10dfc2"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.5235287845134735,
+          "parameter_count": 16902384,
+          "source_result_sha256": "467332f519144b6fc5b9ab808b9270e0b871f1df0929bd3665187adf5b2c7cf8"
+        }
+      },
+      "raw_ridge": {
+        "0": {
+          "mean_direct_abs_rgb_correlation": 0.7916449705759684,
+          "parameter_count": 16902384,
+          "source_result_sha256": "3b79eb009abb8bf5c69c9faf4216357bd2c2d1c65a698697eaaf5f1969936dda"
+        },
+        "3407": {
+          "mean_direct_abs_rgb_correlation": 0.736187736193339,
+          "parameter_count": 16902384,
+          "source_result_sha256": "a2c4563fda725ddbea076bcaf3e6db0a5a0f50a7346d52f5b3e2dcfbe1321095"
+        },
+        "42": {
+          "mean_direct_abs_rgb_correlation": 0.7780954639116923,
+          "parameter_count": 16902384,
+          "source_result_sha256": "800e5117c925dd55b2cdba2cc204c2acfb24928fc70dd7b0172723294fb3366c"
+        }
+      }
+    }
+  },
+  "historical_baseline_test_metrics_copied": true,
+  "protocol_version": "heldout_baseline_comparator_k13_v1",
+  "seeds": [
+    0,
+    42,
+    3407
+  ],
+  "source_files_sha256": {
+    "extract_heldout_baseline_comparator_k13.py": "e2b442d7c331584c8534f237745c85f2e0c4a4b580d01f1fa03afa7a3b6cdc82"
+  },
+  "sources": {
+    "raw_aggregate": {
+      "path": ".\\outputs\\raw_ridge_propagation_aggregate_v1\\raw\\raw_aggregate_results.json",
+      "sha256": "59080b4c7791bc5295c48b885d01a9d478067000e8cc45ccb7e0261e1189babd"
+    },
+    "relation_aggregate": {
+      "path": ".\\outputs\\relation_budget_curve_v1\\aggregate\\aggregate_results.json",
+      "sha256": "18040bdecceeeb41d7b370726dc12b0b8153bb1dd110783d00c17e956e831d22"
+    }
+  }
+}

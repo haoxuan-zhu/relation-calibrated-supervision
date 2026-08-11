@@ -1,0 +1,41 @@
+protocol_version: relation_tube_half_radius_instance_information_audit_k16_v1
+preregistration: PROTOCOLS.md
+scope:
+  budget: 80
+  seeds: [3407, 0, 42]
+  calibration_rows: train_subset_only
+  validation_rows: [8000, 9000]
+  test_rows: [9000, 10000]
+  test_evaluated: false
+upstream:
+  radius_mode: half_empirical
+  k15_config_path: ./config_relation_tube_radius_scale_ablation_k15.yaml
+  k15_config_sha256: 2ace7388456c224d511dba1387b59b45fa604f4a7b9419a0e4281c1e98adaa82
+  k14_result_path: outputs/relation_tube_instance_information_audit_k14/instance_information_audit.json
+  k14_result_sha256: fea5b098924b3eb4e19d9be8061c27ba3afc943a70075411a59b4a9334612dfd
+interventions:
+  order: [correct_image, fixed_anchor_visual_derangement, projected_residual_reassignment, center_only]
+  derangement_seed: 20260803
+evaluation:
+  full_affine_ridge: 0.001
+  reproduction_atol: 0.000005
+  bootstrap_replicates: 2000
+  bootstrap_seed: 20260804
+decision:
+  strong_directional_seeds: 3
+  strong_bootstrap_positive_seeds: 2
+  mixed_directional_seeds: 2
+runs:
+  3407:
+    validation_readout_path: outputs/relation_tube_radius_scale_ablation_k15/seed3407/half_empirical/formal/validation_readout.json
+    validation_readout_sha256: ee07edc0347e6c33eb86ddf8afda7d4b09469a4447a4c6a3ce7496437f70a8ef
+  0:
+    validation_readout_path: outputs/relation_tube_radius_scale_ablation_k15/seed0/half_empirical/formal/validation_readout.json
+    validation_readout_sha256: 186b4a751409f8059326a20c831cbefd2e4e85ee54ea1f7ea9444c21ab2adc1d
+  42:
+    validation_readout_path: outputs/relation_tube_radius_scale_ablation_k15/seed42/half_empirical/formal/validation_readout.json
+    validation_readout_sha256: 81223eac088472a8f632afea41c1ea364a4502dc8f8b1f8e81f61017e3c3950d
+runtime:
+  device: cuda
+  num_threads: 8
+  output_root: outputs/relation_tube_half_radius_instance_information_audit_k16

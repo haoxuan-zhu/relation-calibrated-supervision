@@ -1,0 +1,25 @@
+protocol_version: causalverse_slope_heldout_k26
+protocol_document: PROTOCOLS.md
+parent:
+  config: ./configs/config_causalverse_slope_relation_confirmation_k23.yaml
+  config_sha256: a8fffaa82f7bd38bf57ca299046dd83dd1ec8666799c7557c5a399fd2fc8aff3
+  confirmation_result: outputs/causalverse_slope_relation_confirmation_k23/multiseed_results.json
+  confirmation_result_sha256: 2b734ac0d3cfd8fba8d124628a152bc7f884860c855e10075ac2801a3e577843
+  manifold_validation_audit: outputs/causalverse_slope_manifold_projection_k25/manifold_projection_results.json
+  manifold_validation_audit_sha256: a71dc1956964153126f01c540977c9d57b3403d8f8ef73814482b89c1ef15c91
+  contract_audit: outputs/causalverse_slope_relation_confirmation_k23/contract_audit.json
+  checkpoint_root: outputs/causalverse_slope_relation_confirmation_k23
+evaluation:
+  split: test
+  seeds: [3407, 42, 0]
+  conditions: [point, coefficient_permuted_relation, correct_relation]
+  relation_indices: [3, 4, 5, 6]
+  free_indices: [0, 1, 2]
+  maximum_free_correlation_drop: 0.05
+bootstrap:
+  resamples: 2000
+  seed: 20260804
+  confidence: 0.95
+runtime:
+  python: artifacts/envs/context_residual_ad/bin/python
+  output_root: outputs/causalverse_slope_heldout_k26

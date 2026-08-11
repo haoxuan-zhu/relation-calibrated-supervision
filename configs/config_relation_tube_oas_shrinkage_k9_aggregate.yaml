@@ -1,0 +1,13 @@
+protocol_version: relation_tube_oas_shrinkage_k9_aggregate_v1
+inputs:
+  20260811:
+    path: outputs/relation_tube_oas_shrinkage_k9_20260811/formal/oas_validation_readout.json
+    sha256: 8a41b091bc1c230ef310d22728e2e94265f70d2e1300b0edfb5c526a72456f77
+  20260821:
+    path: outputs/relation_tube_oas_shrinkage_k9_20260821/formal/oas_validation_readout.json
+    sha256: 15461b09bcdd0d46cd8bbbcc1a764118013ef8608cd368f4a26f4d9368637fca
+  20260831:
+    path: outputs/relation_tube_oas_shrinkage_k9_20260831/formal/oas_validation_readout.json
+    sha256: d8366bffc1b9af3e26bcd6ed70ed4eaf17a2f14ae4539e596987d205150e70ee
+output_path: outputs/relation_tube_oas_shrinkage_k9_aggregate_v1/oas_shrinkage_aggregate.json
+test_evaluated: false
