@@ -1,4 +1,5 @@
 import hashlib
+import json
 import subprocess
 from pathlib import Path
 
@@ -12,16 +13,29 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_historical_seed3407_entrypoint_is_recoverable() -> None:
-    if not (ROOT / ".git").exists():
-        pytest.skip("the copied remote project uses the registered source snapshot")
     commit = "097a1319a65f488eaa94eaf75781429852e63afa"
+    git_object = f"{commit}:scripts/run_calibrated_relation_tube_k0.py"
+    manifest_path = ROOT / "release-manifest.json"
+    if manifest_path.is_file():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        if manifest.get("source_git_history_included") is False:
+            if not (ROOT / ".git").exists():
+                pytest.skip("the release archive excludes development Git history")
+            probe = subprocess.run(
+                ["git", "-C", str(ROOT), "cat-file", "--batch-check"],
+                input=f"{git_object}\n".encode("ascii"),
+                check=True,
+                capture_output=True,
+            )
+            if probe.stdout.strip() == f"{git_object} missing".encode("ascii"):
+                pytest.skip("the release clone excludes the locked development Git object")
     payload = subprocess.run(
         [
             "git",
             "-C",
             str(ROOT),
             "show",
-            f"{commit}:scripts/run_calibrated_relation_tube_k0.py",
+            git_object,
         ],
         check=True,
         capture_output=True,

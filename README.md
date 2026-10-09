@@ -28,6 +28,7 @@ python analysis/plot_budget_curve.py \
 ```
 
 The compact JSON files are sufficient to regenerate the tables and budget figure without downloading datasets. Re-running feature extraction or training requires the public data listed in [DATASETS.md](DATASETS.md).
+The public release does not include development Git history, so the corresponding historical-source recovery test is reported as skipped.
 Exact principal commands and the status of large checkpoint/feature dependencies are given in [COMMANDS.md](COMMANDS.md). Frozen stage identifiers are explained in [PROTOCOLS.md](PROTOCOLS.md).
 
 ## Main experiment entry points
