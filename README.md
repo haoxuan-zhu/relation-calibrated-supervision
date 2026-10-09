@@ -1,6 +1,6 @@
 # Relation-Calibrated Supervision
 
-This repository contains the implementation and locked evaluation summaries for the accompanying double-anonymized manuscript. The code studies how sparse measured labels can define constraints for a larger image or video collection while retaining direct measurements and observation-specific residual information.
+This repository contains the implementation, experiment configurations, and evaluation summaries for *Relation-calibrated supervision for causal representation learning from sparse measurements*. The code studies how sparse measured labels can define constraints for a larger image or video collection while retaining direct measurements and observation-specific residual information.
 
 ## Contents
 
@@ -12,8 +12,6 @@ This repository contains the implementation and locked evaluation summaries for 
 - `tests/`: unit and protocol tests for the released implementation.
 
 The protocol-specific Light Tunnel clipping and normalization sequence is implemented in `scripts/run_calibrated_relation_tube_k0.py`. The model-independent `fit_ridge_center_with_loo` helper returns unconstrained predictions; bounded RGB calls use `RidgeCenter.predict(..., clip=True)` explicitly.
-
-The historical experiment notebook, author information, submission files, remote-machine scripts, and development-only branches are not part of this review package.
 
 ## Quick check
 
@@ -27,7 +25,6 @@ python analysis/plot_budget_curve.py \
   --aggregate outputs/relation_budget_curve_v1/aggregate/aggregate_results.json \
   --raw-aggregate outputs/raw_ridge_propagation_aggregate_v1/raw/raw_aggregate_results.json \
   --output-prefix analysis/generated/relation_budget_curve
-python tools/audit_anonymous_repository.py .
 ```
 
 The compact JSON files are sufficient to regenerate the tables and budget figure without downloading datasets. Re-running feature extraction or training requires the public data listed in [DATASETS.md](DATASETS.md).

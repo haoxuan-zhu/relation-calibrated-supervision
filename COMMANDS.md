@@ -17,7 +17,6 @@ python analysis/plot_budget_curve.py \
   --aggregate outputs/relation_budget_curve_v1/aggregate/aggregate_results.json \
   --raw-aggregate outputs/raw_ridge_propagation_aggregate_v1/raw/raw_aggregate_results.json \
   --output-prefix analysis/generated/relation_budget_curve
-python tools/audit_anonymous_repository.py .
 ```
 
 ## Light Tunnel supervision and Relation Tube
@@ -66,7 +65,7 @@ python scripts/run_isotropic_relation_tube_budget_k11.py \
   --output-root outputs/reproduction/isotropic_k11
 ```
 
-The once-held-out K13 interface is released for verification, but it requires the K11 checkpoints named by its configuration; those large files are not stored in the review repository.
+The once-held-out K13 interface is released for verification, but it requires the K11 checkpoints named by its configuration; those large files are not stored in this repository.
 
 The target-fidelity control keeps each measured target unchanged and propagates the fitted relation only to the remaining rows:
 
@@ -77,7 +76,7 @@ python scripts/run_anchor_preserving_raw_ridge_condition.py \
   --output-dir outputs/reproduction/anchor_preserving_k80_seed3407
 ```
 
-The compact outputs for all 12 anchor-preserving runs and the matched K=80 bounded/unbounded held-out audit are included for deterministic table regeneration. Re-evaluating the latter from checkpoints requires the archived Light Tunnel checkpoints and the exact source versions recorded by its configuration; those large historical assets are not copied into the review repository.
+The compact outputs for all 12 anchor-preserving runs and the matched K=80 bounded/unbounded held-out audit are included for deterministic table regeneration. Re-evaluating the latter from checkpoints requires the archived Light Tunnel checkpoints and the exact source versions recorded by its configuration; those large historical assets are not distributed in this repository.
 
 ## Cross-system evaluations
 

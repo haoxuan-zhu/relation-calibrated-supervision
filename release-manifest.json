@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_kind": "double_anonymized_review_repository",
+  "release_kind": "public_research_repository",
   "source_git_history_included": false,
   "title_page_included": false,
   "files": [
@@ -14,7 +14,7 @@
     },
     {
       "path": "COMMANDS.md",
-      "sha256": "954082f9a282ee3e456a45e2aaf50fff52bc2b3ece47eb3a2660a304f43e12af"
+      "sha256": "67d9d4b5ed903be5d63695e6f8d6f3fb38661e64fc02cfe950c712e12db07b8d"
     },
     {
       "path": "DATASETS.md",
@@ -22,15 +22,15 @@
     },
     {
       "path": "PROTOCOLS.md",
-      "sha256": "7dcb69ea73748961d570399fd9e9669b23d53a3bf4867be38f1628a5c535bf91"
+      "sha256": "9731568ac4690d1c93158dcc57e9032092d3f3e536634d4a3e4c441059c124c4"
     },
     {
       "path": "README.md",
-      "sha256": "45d713b986db17de816ee5de08431aa186377417f493ff412d389fddcdad80c0"
+      "sha256": "7b069e13f8aab362bf87923502816e35bc98bb2571a31835084ae1ce17c7bc46"
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "sha256": "1bfca01f5742560c2240d60bc7a98bf657f7819b8b213d9ba3e72b3aec88134f"
+      "sha256": "81c9d9656b0fe586912acbbebbce0132b378d5ff2bcda2365960b679ba217d16"
     },
     {
       "path": "analysis/build_tables.py",

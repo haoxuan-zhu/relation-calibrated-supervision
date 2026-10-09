@@ -2,7 +2,7 @@
 
 Configuration suffixes such as `k11` and `k26` identify frozen experiment stages. They bind the implementation, data split, label budget, random initialization, and evaluation phase used by the released evidence.
 
-The internal chronological notebooks are not part of the double-anonymized package. Their file references are replaced by this page during export. This does not alter a model setting or numerical result: executable settings remain in the YAML files, implementation dependencies remain hash-locked, and the compact machine results used by the paper remain under `outputs/`.
+The YAML configurations specify the model and evaluation settings, and the compact results used by the paper are under `outputs/`. This page maps the stage identifiers to their corresponding studies.
 
 The main protocol families are:
 
@@ -12,4 +12,4 @@ The main protocol families are:
 - `k43`: resistance spot welding validation/held-out;
 - `k44`: independent Light Tunnel label-subset stability.
 
-Exact commands for the principal released interfaces are listed in [COMMANDS.md](COMMANDS.md). The machine-readable release manifest binds every public file to its review-package SHA-256.
+Exact commands for the principal released interfaces are listed in [COMMANDS.md](COMMANDS.md). The machine-readable `release-manifest.json` records the SHA-256 of each released file other than the manifest itself.
